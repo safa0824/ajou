@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*리셋*/
+button,input,select,textarea {border:0 none;border-radius:0; background-color:transparent; vertical-align:middle; cursor:pointer; outline:none;}
+img {vertical-align:top}
+input[type=button],input[type=email],input[type=password],input[type=reset], input[type=search],input[type=submit],input[type=tel],input[type=text] {border-radius:0;-webkit-appearance:none;}
+a {color:#333; text-decoration:none}
+a:active, a:hover{text-decoration:none}
+caption,legend {font-size:0;line-height:0;visibility:hidden}
+input:focus,select:focus,textarea:focus { outline-width:thin; outline:none; }
+input::-ms-clear { display:none }
+input::-webkit-contacts-auto-fill-button {display:none !important;position:absolute;right:0 ; visibility:hidden;pointer-events:none;}
+body {background-color:#fff;-webkit-text-size-adjust:none }
+body,button,input,pre,select,table,textarea {color:#000;font-family:'Noto Sans KR', sans-serif; font-size:14px;line-height:1.4em;}
+
+/*css초기셋팅*/
+input { color:#555; }
+input::placeholder{ color:#a0a0a0; } 
+input::-webkit-input-placeholder { color:#a0a0a0; } 
+input:-ms-input-placeholder { color:#a0a0a0; } 
+input:-moz-placeholder { color:#a0a0a0; }
+textarea::placeholder{ color:#a0a0a0; } 
+textarea::-webkit-input-placeholder { color:#a0a0a0; } 
+textarea:-ms-input-placeholder { color:#a0a0a0; } 
+textarea:-moz-placeholder { color:#a0a0a0; }
+a, a:hover, a:active, a:focus { color:#000;}
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+} */
+
+/* check, radio */
+input[type=checkbox], input[type=radio], input[type=file] { display: none !important; }
+input[type=checkbox] + label,  input[type=radio] + label { position:relative; display: inline-block; color:#333; padding:0 0 0 20px; transition:0.2s; }
+input[type=checkbox] + label:after { content:""; display: inline-block; position:absolute; left:0; top:1px; width:20px; height:20px; background:#fff; border:1px solid #b2b2b2; transition:0.1s; box-sizing:border-box; }
+input[type=checkbox]:checked + label:after {  content:""; background:#f26e50 url(이미지주소) no-repeat center;  background-size:10px auto; border:1px solid #f26e50 !important;  }
+input[type=radio] + label:after { content:""; display: inline-block; position:absolute; left:0; top:1px; width:20px; height:20px; border-radius:50%; background:#fff; border:1px solid #ccc; transition:0.1s; box-sizing: border-box;  }
+input[type=radio]:checked + label:after {  content:""; background:#f26e50; border:1px solid #f26e50 !important;  }
+/* select */
+.select_div { position:relative; }
+.select_div select { height:100%; width:100%; padding:0 20px; font-size:18px; vertical-align:top; color:#666; background:#fff; }
+select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+select::-ms-expand { display:none; }
+/* 텍스트 숨김, 마스크 */
+.hidden, caption{visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+.mask { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index:10;}
+
+/*css시작*/
