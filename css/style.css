@@ -23,7 +23,7 @@ textarea::placeholder{ color:#a0a0a0; }
 textarea::-webkit-input-placeholder { color:#a0a0a0; } 
 textarea:-ms-input-placeholder { color:#a0a0a0; } 
 textarea:-moz-placeholder { color:#a0a0a0; }
-a, a:hover, a:active, a:focus { color:#000;}
+a, a:hover, a:active, a:focus { color:#000;  }
 /* input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
