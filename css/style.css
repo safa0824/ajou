@@ -48,4 +48,26 @@ select::-ms-expand { display:none; }
 .mask { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index:10;}
 
 /*css시작*/
-header { background: #2ab5d3; border-radius: 0; background: #2ab5d3; background: -webkit-linear-gradient(-45deg, #57cfb0, #2ab5d3); background: -o-linear-gradient(-45deg, #57cfb0, #2ab5d3); background: -moz-linear-gradient(-45deg, #57cfb0, #2ab5d3); background: -webkit-linear-gradient(135deg, #57cfb0, #2ab5d3); background: -o-linear-gradient(135deg, #57cfb0, #2ab5d3); background: linear-gradient(-45deg, #57cfb0, #2ab5d3);}
+#skip_nav a { position:absolute; left:0; top:-40px; width:100%; height:40px;  text-align: center; padding:10px 0; background:#fff; z-index: 1; border:2px dotted #dc1920;  }
+#skip_nav a:hover, #skip_nav a:focus { top:0; }
+
+.header { position:relative; margin-bottom:50px;  background: #2ab5d3; border-radius: 0; background: #2ab5d3; background: -webkit-linear-gradient(-45deg, #57cfb0, #2ab5d3); background: -o-linear-gradient(-45deg, #57cfb0, #2ab5d3); background: -moz-linear-gradient(-45deg, #57cfb0, #2ab5d3); background: -webkit-linear-gradient(135deg, #57cfb0, #2ab5d3); background: -o-linear-gradient(135deg, #57cfb0, #2ab5d3); background: linear-gradient(-45deg, #57cfb0, #2ab5d3);}
+
+.gnb {  padding:10px 0; }
+.gnb li { display:inline-block }
+.gnb button { padding:6px 10px;  margin:0 5px; color:#fff; transition: 0.3s; border-radius:5px;  }
+.gnb button i { margin-right:5px; }
+.gnb button:hover { color:#3abec6; background:#fff;  }
+
+.double_arrow { position:absolute; bottom:5px; left:50%; margin-left:-17px;  }
+.double_arrow i { position:absolute; top:0; font-size:40px; color:#3abec6;  animation: arrow_flash 1.2s 0s linear infinite; }
+.double_arrow i:last-child { animation: arrow_flash 1.2s 0.6s linear infinite; }
+@keyframes arrow_flash{
+    0% { opacity:0; margin-top:0; margin-top:0;} 
+    50% { opacity:0.7;} 
+    100% { opacity:1; margin-top:25px; } 
+}
+.main { padding:20px; }
+.pf_list_wrap .list_item { display:inline-block; position: relative; border-radius:10px; border:1px solid #ddd; display: block; box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.3);  } 
+.list_item .top_info { position:absolute; top:0; left:0; right:0; background:rgba(0,0,0,0.7); } 
+.header > .inner_wrap, .main > .inner_wrap { width:1024px; margin:0 auto; }

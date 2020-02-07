@@ -17,25 +17,47 @@
         <meta property="og:description" content="">
         <meta property="description" content="">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
         <div id="skip_nav">
-            <ul><a href="#gnb">메뉴바로가기</a></ul>
-            <ul><a href="#main">본문바로가기</a></ul>
+            <ul>
+                <li><a href="#gnb">메뉴바로가기</a></li>
+                <li><a href="#main">본문바로가기</a></li>
+            </ul>
         </div>
         <div class="wrapper">
-            <header>                
-                <h1>테스트단</h1>
-                <ul>
-                    <li><button>All</button></li>
-                    <li><button><i class="fas fa-desktop"></i>desktop</button></li>
-                    <li><button>mobile</button></li>
-                </ul>
+            <h1 class="hidden">jh의 portfolio</h1>
+            <header class="header">
+                <div class="inner_wrap">
+                    <ul id="gnb" class="gnb">
+                        <li><button><i class="fas fa-align-justify" data-type="all"></i>ALL</button></li>
+                        <li><button><i class="fas fa-desktop" data-type="pc"></i>DESCKTOP</button></li>
+                        <li><button><i class="fas fa-mobile-alt" data-type="mobile"></i>MOBILE</button></li>
+                    </ul>
+                </div>
+                <div class="double_arrow">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
             </header>
+            <section class="main">
+                <div class="inner_wrap">
+                    <div class="pf_list_wrap">
+                        <ul>
+                            <li class="list_item pc mobile">
+                                <div class="top_info">
+                                    <strong></strong>
+                                </div>
+    
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
         
     </body>
