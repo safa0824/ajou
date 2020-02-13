@@ -68,6 +68,23 @@ select::-ms-expand { display:none; }
     100% { opacity:1; margin-top:25px; } 
 }
 .main { padding:20px; }
-.pf_list_wrap .list_item { display:inline-block; position: relative; border-radius:10px; border:1px solid #ddd; display: block; box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.3);  } 
+.pf_list_wrap { overflow:hidden; }
+.list_item { float:left; margin:5px; width:calc(25% - 10px); } 
+.list_item .item_inner { position: relative; border-radius:10px; border:1px solid #ddd; box-shadow: 0px 15px 10px -15px rgba(0,0,0,0.3); padding-top:100%; overflow:hidden }
+.list_item .item_inner:after, 
+.list_item .item_inner:before { content:""; display: block; position:absolute; background:#000; transition:0.3s; width:200%; height:200%; opacity:0;  }
+.list_item .item_inner:before { bottom:0; right:0; transform:skew(-30deg) translateX(150%); }
+.list_item .item_inner:after { top:0; left:0; transform:skew(-30deg) translateX(-150%);  }
+.list_item .item_inner:hover:before { transform:skew(-30deg) translateX(50%); opacity:0.1; }
+.list_item .item_inner:hover:after { transform:skew(-30deg) translateX(-50%); opacity:0.1; }
+
 .list_item .top_info { position:absolute; top:0; left:0; right:0; background:rgba(0,0,0,0.7); } 
-.header > .inner_wrap, .main > .inner_wrap { width:1024px; margin:0 auto; }
+.header > .inner_wrap, .main > .inner_wrap { max-width:1024px; margin:0 auto; }
+
+@media  all and ( max-width:640px ){    
+    .header > .inner_wrap, .main > .inner_wrap { width: }
+    .pf_list_wrap ul { overflow:hidden; display:flex; flex-wrap:wrap; }
+    .list_item { float:none;  margin:5px; width:calc(50% - 10px); } 
+    .list_item .item_inner { width:100%; }
+
+}
