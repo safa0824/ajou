@@ -137,6 +137,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-touch-callout: none;
 }
 .forge_board .item_inner {
   position: relative;
@@ -198,6 +199,13 @@
   background-size: 10px;
   z-index: 2;
   box-sizing: border-box;
+  -webkit-touch-callout: auto;
+  -webkit-user-select: auto;
+  -khtml-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  user-select: auto;
 }
 /* .forge_board .item_inner.added:after {
   content: "";
