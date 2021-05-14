@@ -1,0 +1,892 @@
+@font-face {
+  font-family: "Noto";
+  src: url("Noto/notokr-regular.eot");
+  src: url("Noto/notokr-regular.eot?#iefix") format("embedded-opentype"),
+    url("Noto/notokr-regular.woff2") format("woff2"),
+    url("Noto/notokr-regular.woff") format("woff"),
+    url("Noto/notokr-regular.ttf") format("truetype"),
+    url("Noto/notokr-regular.svg#notokr-regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto";
+  src: url("Noto/notokr-medium.eot");
+  src: url("Noto/notokr-medium.eot?#iefix") format("embedded-opentype"),
+    url("Noto/notokr-medium.woff2") format("woff2"),
+    url("Noto/notokr-medium.woff") format("woff"),
+    url("Noto/notokr-medium.ttf") format("truetype"),
+    url("Noto/notokr-medium.svg#notokr-medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto";
+  src: url("Noto/notokr-bold.eot");
+  src: url("Noto/notokr-bold.eot?#iefix") format("embedded-opentype"),
+    url("Noto/notokr-bold.woff2") format("woff2"),
+    url("Noto/notokr-bold.woff") format("woff"),
+    url("Noto/notokr-bold.ttf") format("truetype"),
+    url("Noto/notokr-bold.svg#notokr-bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto", "Roboto", sans-serif;
+  letter-spacing: -0.5;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+body {
+  font-size: 12px;
+}
+
+/*타이틀공통*/
+body {
+  font-size: 12px;
+  height: 100%;
+  min-height: 640px;
+}
+.hidden {
+  display: none;
+}
+
+.ytxt {
+  color: #ff9600 !important;
+}
+
+.notice_txt li a:link,
+.notice_txt li a:visited {
+  text-decoration: none;
+  color: #565656;
+}
+
+/*타이틀공통*/
+.wrapper {
+  /*height:100%;*/
+  position: relative;
+  /*overflow-x:hidden;*/
+}
+.inner_padding {
+  padding: 0 10px 10px 10px;
+}
+.sub_common_title {
+  height: 55px;
+  line-height: 55px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  position: relative;
+}
+.sub_common_title ul li {
+  float: left;
+}
+.sub_common_title ul li h3 {
+  color: #555;
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 15px;
+}
+
+.sub_common_title ul li h3.sub_title_name {
+  color: #fff;
+}
+
+.sub_common_title ul li.back_icon {
+  position: absolute;
+  left: 15px;
+  margin-top: 3px;
+}
+.sub_common_title ul li.sub_title_h3 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.sub_common_title ul li.home_icon {
+  position: absolute;
+  right: 15px;
+  margin-top: 4px;
+}
+.sub_common_title ul li.back_icon .back_btn {
+  width: 10px;
+  height: 17px;
+  background: url(../images/back_history.png) no-repeat center;
+  background-size: 10px 17px;
+  display: inline-block;
+}
+.sub_common_title ul li.sub_title_h3 .title_logo {
+  width: 15px;
+  height: 15px;
+  background: url(../images/sub_title_logo.png) no-repeat center;
+  background-size: 15px 15px;
+  display: inline-block;
+}
+.sub_common_title ul li.home_icon .home_btn {
+  width: 22px;
+  height: 20px;
+  background: url(../images/sub_home_icon.png) no-repeat center;
+  background-size: 22px 20px;
+  display: inline-block;
+}
+/*//타이틀공통*/
+
+/*버튼 공통*/
+button:focus {
+  outline: 1px solid transparent;
+}
+button {
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+}
+/*공지사항*/
+.notice {
+  height: 35px;
+  line-height: 25px;
+  background: #eaeaea;
+}
+.notice_icon img {
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 17px;
+}
+.notice_icon {
+  height: 35px;
+  width: 10%;
+  float: left;
+}
+.notice_txt {
+  width: 75%;
+  font-size: 11px;
+  margin-left: 10px;
+  line-height: 35px;
+  float: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.notice_close {
+  float: right;
+  padding-right: 15px;
+  line-height: 35px;
+}
+.notice_close img {
+  width: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+/*스포골드*/
+.spo_glod {
+  display: none;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  background: #eaeaea;
+  vertical-align: top;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 5px 0;
+}
+.glod_icon {
+  box-sizing: border-box;
+  float: left;
+  margin-left: 15px;
+  line-height: 25px;
+  height: 25px;
+  width: 25%;
+  display: inline-block;
+}
+.glod_icon img {
+  margin-top: 3px;
+}
+.glod_icon .glod_txt {
+  margin-left: 7px;
+  color: #3e3e3e;
+  position: relative;
+  margin-top: -5px;
+  vertical-align: top;
+}
+.glod_num_wrap {
+  width: 64%;
+  box-sizing: border-box;
+  float: right;
+  height: 30px;
+  margin-right: 15px;
+}
+.glod_icon2 {
+  float: right;
+}
+.glod_icon2 img {
+  margin-top: 4px;
+}
+#spo_glod_num {
+  float: right;
+  margin-top: 0px;
+  margin-right: 5px;
+  color: #363f51;
+  font-size: 13px;
+}
+
+/*탭메뉴(2개)*/
+#menu {
+  height: 40px;
+  line-height: 40px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+}
+#menu > li {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#menu > li > a {
+  display: block;
+  color: #666;
+  font-size: 13px;
+}
+#menu > li.on {
+  background: #ff6d00;
+  color: white;
+}
+#menu > li.on > a {
+  color: #fff;
+}
+#content {
+  clear: both;
+}
+/*탭메뉴(1개)*/
+#menu > li.one_menu {
+  float: left;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+/*탭메뉴(3개)*/
+#menu > li.three_menu {
+  float: left;
+  width: 33.3%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+/*탭메뉴(4개)*/
+#menu > li.four_menu {
+  float: left;
+  width: 25%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+/*탭메뉴 두줄일때*/
+#menu.two_line > li {
+  float: left;
+  width: 25%;
+  height: 40px;
+  padding-top: 1px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#menu.two_line > li.four_menu {
+  float: left;
+  width: 25%;
+  height: 40px;
+  line-height: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+/*해피라이브 아래 탭메뉴*/
+#menu2 {
+  height: 40px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+}
+#menu2 > li {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#menu2 > li > a {
+  display: block;
+  color: #666;
+  font-size: 13px;
+}
+#menu2 > li.on {
+  background: #ff6d00;
+  color: white;
+}
+#menu2 > li.on > a {
+  color: #fff;
+}
+#situation_content {
+  clear: both;
+}
+/*엑스버튼*/
+.close-thik:after {
+  content: "✖"; /* UTF-8 symbol */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+}
+.dialog {
+  background: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+/*체크박스 버튼(전체선택)*/
+.con_check .all_delete_check {
+  margin-left: 20px;
+}
+.con_check input[type="checkbox"] {
+  cursor: pointer;
+  font-size: 12px;
+  height: 15px;
+  width: 15px;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.con_check input[type="checkbox"]:after {
+  content: " ";
+  background-color: #ddd;
+  display: inline-block;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  visibility: visible;
+  border-radius: 4px;
+}
+
+.con_check input[type="checkbox"]:checked:after {
+  content: "\2714";
+  background: #ff6d00;
+  font-weight: bold;
+}
+
+/* Safari 9.0+ (iOS Only) */
+@supports (-webkit-text-size-adjust: none) and (not (-ms-accelerator: true)) and
+  (not (-moz-appearance: none)) {
+  .con_check input[type="checkbox"]:checked:after {
+    content: "\2714";
+    background: #ff6d00;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0 0 1px 2px;
+  }
+}
+
+/*고객센터-체크박스 버튼*/
+.qalist_list_wrap .list > ul > li.custom_con_check {
+  color: #878787;
+}
+.custom_con_check input[type="checkbox"] {
+  cursor: pointer;
+  font-size: 12px;
+  height: 15px;
+  width: 15px;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.custom_con_check input[type="checkbox"]:after {
+  content: " ";
+  background-color: #ddd;
+  display: inline-block;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  visibility: visible;
+  border-radius: 4px;
+}
+
+.custom_con_check input[type="checkbox"]:checked:after {
+  content: "\2714";
+  background: #ff6d00;
+  font-weight: bold;
+}
+/*체크박스*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  font-size: 11px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  height: 15px;
+  width: 15px;
+  border-radius: 4px;
+  background-color: #eee;
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #ff6d00;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 4px;
+  top: 2px;
+  width: 4px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*본인인증페이지*/
+.wrap_signupConfirm {
+  position: relative;
+  width: 95%;
+  margin: 0 auto 30px;
+}
+.wrap_signupConfirm .findConfirm_select .tit {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 15px 10px;
+  letter-spacing: -0.5px;
+  line-height: 18px;
+  color: #909090;
+}
+.wrap_signupConfirm .findConfirm_select .tit h2 {
+  text-align: left;
+  color: #3a3a3a;
+  font-size: 15px;
+  line-height: 45px;
+  height: 45px;
+  font-weight: 600;
+}
+.wrap_signupConfirm .findConfirm_select .signupConfirm_link {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 200px;
+}
+.wrap_signupConfirm .findConfirm_select .signupConfirm_link a {
+  width: 45%;
+  height: 150px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.wrap_signupConfirm
+  .findConfirm_select
+  .signupConfirm_link
+  .signupConfirm_mobile {
+  background: url(../images/phone_accredit_banner.png) no-repeat center;
+  width: 45%;
+  background-size: 143px 143px;
+  height: 150px;
+  margin-right: 2%;
+  text-indent: -9999px;
+}
+.wrap_signupConfirm .findConfirm_select .signupConfirm_link .signupConfirm_pin {
+  background: url(../images/i_pin_accredit_banner.png) no-repeat center;
+  width: 45%;
+  background-size: 143px 143px;
+  height: 150px;
+  text-indent: -9999px;
+}
+.signupConfirm_text {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.signupConfirm_text .tit {
+  text-align: center;
+  padding: 20px 0 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.signupConfirm_text .fp1 {
+  font-size: 15px;
+  padding: 5px 0;
+}
+.signupConfirm_text .fp1:before {
+  display: none;
+}
+.signupConfirm_text p {
+  color: #333;
+}
+.signupConfirm_text p:before {
+  content: "-";
+  margin-right: 5px;
+}
+.signupConfirm_link a {
+  display: inline-block;
+  width: 90px;
+  height: 40px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 40px;
+  background: #ff6d00;
+  color: #fff;
+}
+.signupConfirm_link a:active {
+  background: #ddd;
+}
+.signupConfirm_link a:first-child {
+  margin-right: 5px;
+}
+
+.signupConfirm_select {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+}
+.signupConfirm_select .tit {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+/*본인인증페이지*/
+
+.tb_board_write {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  border-left: 0;
+  border-right: 0;
+}
+.tb_board_write .frm_input {
+  width: 97%;
+  height: 40px;
+  line-height: 40px;
+  border: 0;
+  outline: none;
+}
+.tb_board_write textarea {
+  width: 97%;
+  height: auto;
+  line-height: 1.2;
+  border: 0;
+  outline: none;
+}
+.board_btns {
+  height: 35px;
+  line-height: 35px;
+  width: 100%;
+  float: left;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.board_btns button {
+  float: left;
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+  text-align: center;
+  width: 20%;
+  margin-right: 5px;
+  height: 30px;
+  line-height: 30px;
+  color: #555555;
+  display: block;
+}
+
+/*베팅카트*/
+.betting_ship {
+  height: 38px;
+  line-height: 38px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  z-index: 50;
+}
+.betting_ship > ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.betting_ship > ul > li {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background: #151b25;
+  color: #fff;
+  z-index: 100 !important;
+}
+.betting_ship > ul > li > button {
+  color: #fff;
+}
+.betting_ship > ul > li > button > a {
+  color: #fff;
+  font-size: 14px;
+}
+.betting_ship > ul > li.betting_cart {
+  /* background-color:#ff6d00; */
+  border-radius: 15px 0 0 0;
+  z-index: 100;
+  position: relative;
+}
+.betting_ship > ul > li.betting_cart a {
+  color: #fff;
+}
+.betting_ship > ul > li.on {
+  background-color: #ff6d00;
+}
+.betting_ship > ul > li button {
+  width: 100%;
+  height: 38px;
+}
+.betting_ship > ul > li.live_chat {
+  background-color: #151b25;
+  border-radius: 0 15px 0 0;
+
+  position: relative;
+}
+.betting_ship > ul > li.live_chat a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.betting_ship > ul > li.live_chat a span {
+  color: #fff;
+  line-height: 38px;
+  vertical-align: middle;
+  height: 38px;
+}
+.betting_ship > ul > li .cart_num {
+  display: inline-block;
+  background: #fff;
+  width: 20px;
+  border-radius: 5px;
+  height: 20px;
+  line-height: 20px;
+}
+.betting_ship > ul > li .cart_num b {
+  color: #ff6d00;
+}
+
+.betting_ship > ul > li.mybet .cart_num {
+  margin-left: 3px;
+}
+
+/*채팅카트*/
+.chatting_ship {
+  height: 38px;
+  line-height: 38px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+}
+.chatting_ship > ul > li {
+  width: 100%;
+  text-align: center;
+}
+.chatting_ship > ul > li > a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.chatting_ship > ul > li.live_chat {
+  background-color: #363f51;
+  border-radius: 15px 15px 0 0;
+}
+/*푸터*/
+.footer_fixed {
+  width: 100%;
+  position: relative;
+}
+.footer {
+  background-color: #f7f7f7;
+  height: 350px;
+  padding-top: 10px;
+}
+
+.login_footer ul {
+  height: 40px;
+}
+.login_footer ul li {
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.login_footer ul li a {
+  color: #333;
+}
+.login_footer ul li button {
+  width: 90%;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.footer_txt {
+  position: relative;
+  clear: both;
+  height: 50px;
+  text-align: center;
+}
+.footer_logo {
+  position: absolute;
+  left: 50%;
+  top: 9px;
+  transform: translate(-50%, 0);
+}
+.footer_rights {
+  color: #ccc;
+  font-size: 10px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  text-align: center;
+}
+
+.footer_mark_detail {
+  margin: 0 auto;
+  background-color: #cb2929;
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.4em;
+  display: inline-block;
+}
+.footer_mark_detail ul {
+  float: left;
+  padding: 3px 3px;
+}
+.footer_mark_detail ul li {
+  position: relative;
+  padding: 2px 0 3px 75px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer_mark_detail ul span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.footer_mark_detail ul:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.footer_mark_detail ul:first-child + ul li {
+  padding-left: 95px;
+}
+
+.signupConfirm_select .tit
+
+
+/*아이콘*/
+
+span[class*="icon-"] {
+  display: inline-block;
+  background-image: url(../images/icon.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+span.icon-arr {
+  width: 13px;
+  height: 26px;
+  margin: 0;
+  background: url(../images/sellect_button_bg.png) no-repeat;
+}
+span.icon-onoff {
+  display: inline-block;
+  width: 62px;
+  height: 26px;
+  margin: 0 0 0 0px;
+  background-image: url(../images/icon.png);
+  background-position: -0px -28px;
+  zoom: 0.8;
+  vertical-align: -8px;
+}
+/*아이콘끝*/
+
+/*모바일 무료충전소 풀페이지*/
+#pointclick {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+/*모바일 무료충전소 풀페이지 끝*/
+
+.sub_content.m_sns_info_modify .page_wrap .board_btns button {
+  height: 45px;
+  line-height: 45px;
+  width: 48%;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+.sub_content.m_sns_info_modify
+  .page_wrap
+  .board_btns
+  button.btn_board_cancel.cencell_btn {
+  float: left;
+  background-color: #d2d7dd;
+}
+
+.sub_content.m_sns_info_modify .page_wrap .board_btns button.btn_board_write {
+  background-color: #ff6d00;
+}

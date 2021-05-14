@@ -1,0 +1,436 @@
+/*마이페이지 슬라이딩되는 content*/
+.my_page_wrap {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  position: absolute;
+  z-index: 150;
+  top: 0;
+  width: 90%;
+  background-color: #fff;
+}
+.my_page_wrap {
+  right: -100%;
+}
+.my_page_wrap .my_menu_btn {
+  right: 112%;
+}
+.my_page_wrap.my-menu-active {
+  right: 0;
+}
+.my_page_wrap.my-menu-active .my_menu_btn {
+  left: 100%;
+  margin-left: -6px;
+  z-index: 999;
+  top: -10px;
+}
+.my_page_wrap.my-menu-active .my_menu_btn span:before,
+.my_page_wrap.my-menu-active .my_menu_btn span:after {
+  background: #f00;
+}
+.my_dark {
+  position: fixed;
+  top: 0;
+  z-index: 149;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.dg-white {
+  color: #fff;
+}
+#my_close {
+  z-index: 999999;
+  position: absolute;
+  width: 12%;
+  height: 36px;
+  left: -12%;
+  top: 0px;
+}
+#my_close:hover {
+  border: 0;
+  cursor: pointer;
+}
+#my_close img {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/*마이페이지 내용*/
+.profile_wrap {
+  clear: both;
+  /*
+	height: 720px;
+	overflow-y: scroll;
+	*/
+}
+.profile_content {
+  height: 103px;
+  background: #363f51;
+  padding: 10px;
+}
+.profile_content .user_photo {
+  border-radius: 50%;
+  height: 78px;
+  width: 76px;
+  float: left;
+}
+.profile_content .user_photo img {
+  border-radius: 50%;
+}
+.profile_content .ham_on_login {
+  position: relative;
+  float: left;
+  top: -5px;
+  margin-left: 10px;
+  width: 70%;
+  height: 80px;
+}
+.wrap_profile {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+.wrap_profile input {
+  margin-left: 10px;
+}
+.wrap_profile label {
+  margin-left: 1px;
+}
+.profile_img {
+  /*width:40%;
+	margin-top:5px;
+	height:62px;
+	margin-bottom: 5px;
+	display: block;
+	margin-left: -5px;*/
+  position: relative;
+  float: left;
+  width: 28%;
+  margin-top: 5px;
+  height: 80px;
+}
+.profile_img img {
+  height: 70px;
+  display: block;
+  position: relative;
+}
+.profile_modify {
+  width: 68px;
+  height: 23px;
+  position: absolute;
+  bottom: -14px;
+}
+.profile_modify img {
+  /* margin-top:5px; */
+  margin-left: 0px;
+}
+.my_hold_wrap {
+  width: 70%;
+  float: right;
+}
+.my_hold_wrap ul li {
+  height: 35px;
+  line-height: 35px;
+}
+.my_message {
+  background: #f1f1f1;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #ddd;
+}
+.my_message ul li {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.my_message ul li:first-child {
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.my_message ul li a {
+  color: #363f51;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.profile_list ul li {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 15px;
+}
+.profile_list ul li.accept_check {
+  border-bottom: 0;
+  background: #fff;
+}
+.profile_list ul li .accept_wrap {
+  float: right;
+  width: 205px;
+}
+.profile_list ul li h4 {
+  float: left;
+  color: #565656;
+}
+.profile_list ul li span {
+  float: right;
+  color: #2b2b2b;
+  margin-left: 5px;
+}
+.profile_list ul li.accept_check {
+  height: 100px;
+}
+.profile_list ul li.accept_check .accept {
+  float: right;
+  letter-spacing: 0px;
+  font-size: 10px;
+  line-height: 15px;
+  padding-top: 13px;
+  text-align: right;
+}
+.accept_alert {
+  height: 35px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  text-align: right;
+  padding: 5px 10px;
+}
+.accept_alert span {
+  color: #a7a7a7;
+  font-size: 9px;
+  letter-spacing: -1px;
+  line-height: 15px;
+}
+.my_hold_wrap ul li span.hold_icon {
+  float: left;
+}
+.my_hold_wrap ul li span.hold_icon img {
+  width: 18px;
+  height: 18px;
+  vertical-align: -4px;
+}
+.my_hold_wrap ul li span.hold_txt {
+  float: left;
+  color: #fff;
+  margin-left: 5px;
+}
+.my_hold_wrap ul li span.hold_num {
+  float: right;
+  color: #fff;
+  margin: 0 5px;
+}
+
+.my_hold_wrap ul li span.detail_img {
+  float: right;
+}
+.my_hold_wrap ul li span.detail_img img {
+  margin-top: 9px;
+  float: right;
+}
+.my_hold_wrap ul li span.my_glod {
+  color: #ffda3c;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 23px;
+}
+.my_hold_wrap ul > li {
+  position: relative;
+}
+.my_hold_wrap ul > li .hold_num.my_glod a {
+  position: absolute;
+  display: inline-block;
+  width: 19px;
+  height: 18px;
+  top: 9px;
+  right: 0;
+  background: url(../img/safe_icon.png);
+  text-indent: -9999px;
+}
+.profile_btns {
+  height: 46px;
+  margin: 25px 0 25px 0;
+  background: #fff;
+}
+.profile_wrap .profile_btns {
+  margin: 0;
+}
+.profile_btns ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.profile_btns ul li {
+  float: left;
+  width: 50%;
+  position: relative;
+  box-sizing: border-box;
+  height: 45px;
+}
+.profile_btns ul li div {
+  width: 85%;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.profile_btns ul li .drawal_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #d3d7dc;
+  color: #fff;
+}
+.profile_btns ul li .information_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ff6d00;
+  color: #fff;
+  border-color: #ff6d00;
+}
+.profile_wrap .profile_btns table {
+  width: 95%;
+  margin: 0 auto;
+}
+.profile_wrap .profile_btns table tr td a {
+  width: 100%;
+  height: 100%;
+}
+.profile_wrap .profile_btns table tr td a div {
+  background: #d3d7dc;
+  color: #565656;
+  text-align: center;
+  padding: 14px 0;
+}
+.profile_wrap .profile_btns table tr td a div.information_btn {
+  background: #ff6d00;
+  color: #fff;
+}
+/*쿠폰 충전소*/
+.sub_common_title {
+  height: 55px;
+  line-height: 55px;
+  width: 100%;
+  position: relative;
+  background-color: #363f51;
+}
+.pop_tit {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: fit-content;
+  color: #fff;
+  font-size: 14px;
+}
+.dialog_two {
+  background: #888fa2;
+  border: 1px solid #888fa2;
+  border-radius: 4px;
+  height: 20px;
+  position: absolute;
+  width: 36px;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+.btn_pop_close .close-thik::after {
+  content: "닫기";
+  /*    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);*/
+  position: relative;
+  left: 0;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+.inner_padding {
+  padding: 10px 10px 0 10px;
+}
+.tb_board_write {
+  border: 0;
+}
+
+.pop_btns {
+  margin: 5px 0;
+}
+.pop_btns input {
+  background-color: #f1f1f1;
+  border: 1px solid #898989;
+  font-size: 15px;
+  width: 19.4%;
+  height: 33px;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.cont_agreement_button_01 {
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 0 0 0 3px;
+  background-color: #d3d7dc;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-weight: 400;
+  float: left;
+  text-align: center;
+  color: #7d7d7d;
+}
+
+.cont_agreement_button_02 {
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 0 0 0 3px;
+  background-color: #ff6d00;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-weight: 400;
+  float: right;
+  color: #fff;
+  text-align: center;
+}
+.cp_re_check {
+  float: right;
+  padding: 11px 0;
+  background: #363f51;
+  color: #fff;
+  width: 19.4%;
+  box-sizing: border-box;
+  line-height: 12px;
+}
+.charging_btns {
+  margin-top: 15px;
+}
+
+.set-limit {
+  color: #fff;
+  text-align: left;
+}
+.set-limit span {
+  float: right;
+}
+.set-limit button {
+  margin-left: 5px;
+  zoom: 0.5;
+  vertical-align: middle;
+}
+.set-limit:after {
+  content: " ";
+  display: block;
+  clear: both;
+}

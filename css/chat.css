@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+.user_info li .inventory:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  background: url(../images/common/user_info_img.png);
+  background-position: -69px -1px;
+  vertical-align: -2px;
+}
+
+.user_info li .inventory button {
+  width: 129px;
+  height: 24px;
+  line-height: 23px;
+  background: #ff6d00;
+  border: 1px solid #fe5b00;
+  border-radius: 3px;
+  color: #fff;
+}
+
+div.user_in .inventory_info {
+  position: absolute;
+  z-index: 9;
+  left: 10px;
+  top: 140px;
+}
+
+div.user_in .inventory_info .item_detail_box {
+  width: 330px;
+}
+.item_detail_box {
+  background: #f9f9f9;
+  padding: 50px 15px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.item_detail_box .item_top {
+  display: flex;
+  margin-bottom: 30px;
+}
+.item_detail_box .item_top > div {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #333;
+}
+.item_detail_box .item_top .img {
+  width: 130px;
+  min-width: 130px;
+  height: 130px;
+  border: 1px solid #dfdee3;
+  background: #fff;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.item_detail_box .opt_title {
+  margin-top: 30px;
+  text-align: center;
+}
+.item_detail_box .gaege {
+  border: 1px solid #dddce1;
+  height: 30px;
+  border-radius: 50px;
+  background: #fff;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.item_detail_box .gaege span {
+  display: block;
+  line-height: 30px;
+  height: 30px;
+  width: 50%;
+  background: #ff6d00;
+  color: #fff;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-size: 15px;
+}
+.item_detail_box .opt_list {
+  margin-bottom: 45px;
+}
+.item_detail_box .opt_list button {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background: #323b4c;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+}
+.item_detail_box .opt_list li {
+  color: #878787;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.item_detail_box .opt_list li:last-child {
+  margin-bottom: 0;
+}
+.item_detail_box .item_btn_wrap button {
+  display: block;
+  width: 194px;
+  height: 46px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  background: #ff6d00;
+  border-radius: 5px;
+  border: 0;
+}
