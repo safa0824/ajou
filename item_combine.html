@@ -27,12 +27,12 @@
             <div class="item_combine">
                 <div class="forge_top">
                     <div class="forge_board">
-                        <div class="item_box main_item">
+                        <div class="item_box main_item added">
                             <p class="tit">조합 대상</p>
-                            <div class="item_inner added">
-                                <img src="" alt="">
-                                <button type="button" class="item_reset_btn"></button>
+                            <div class="item_inner">
+                                <img src="images/test_img.png" alt="">
                             </div>
+                            <button type="button" class="item_reset_btn"></button>
                         </div>
                         <div class="item_box sub_item1">
                             <p class="tit">조합 재료1</p>
@@ -78,7 +78,7 @@
         <script>
             $(function(){
                 // 조합대상이나 재료가 추가되었을때 버튼 클릭시
-                $('.item_inner.added').each(function() {
+                $('.item_box.added .item_inner').each(function() {
                     var timeout, longtouch;
                     $(this).mousedown(function() {
                         timeout = setTimeout(function() {
