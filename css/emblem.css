@@ -1299,6 +1299,7 @@ div.user_in .inventory_info {
   left: 0;
   right: 0;
   height: 40px;
+  z-index: 1;
 }
 .item_search_popup [class*="search_opt"] > [class*="swiper-button"]:after {
   display: none;
