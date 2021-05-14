@@ -80,22 +80,27 @@
                 // 조합대상이나 재료가 추가되었을때 버튼 클릭시
                 $('.item_box.added .item_inner').each(function() {
                     var timeout, longtouch;
-                    $(this).mousedown(function() {
-                        timeout = setTimeout(function() {
-                            longtouch = true;
-                        }, 500);
-                    }).mouseup(function() {
-                        if (longtouch) {
-                            // 길게 터치했을때 해당 아이템 정보 팝업 호출
-                            alert('0.5초 이상 터치!');
-                        } else {
-                            // 짧게 터치했을때 조합 대상 팝업 호출
-                            alert('0.5초 이하 터치!');
+                  
+                    $(this).on({ 
+                        'touchstart': function(e) {
+                            e.preventDefault();
+                            timeout = setTimeout(function() {
+                                longtouch = true;
+                            }, 500);
+                        },
+                        'touchend':function(e) {
+                            e.preventDefault();
+                            if (longtouch) {
+                                // 길게 터치했을때 해당 아이템 정보 팝업 호출
+                                alert('0.5초 이상 터치!');
+                            } else {
+                                // 짧게 터치했을때 조합 대상 팝업 호출
+                                alert('0.5초 이하 터치!');
+                            }
+                            longtouch = false;
+                            clearTimeout(timeout);
                         }
-                        longtouch = false;
-                        clearTimeout(timeout);
                     });
-
                 });
             });
         </script>
