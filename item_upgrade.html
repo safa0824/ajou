@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+        <meta name="format-detection" content="telephone=no, address=no, email=no">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/swiper.css" />
+        <link rel="stylesheet" type="text/css" href="css/font.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/my_page.css">
+        <link rel="stylesheet" href="./css/emblem.css">
+        <script src="https://m.spolive.com/lib/js/jquery-1.9.1.min.js"></script>
+        <script src="./js/swiper.min.js"></script>
+    </head>
+    <body>
+        <!-- 임시로 넣은 text_tit 관련 css, 태그 실서버 적용 안함 -->
+        <style> .text_tit { font-size:20px; background:#ff6d00; color:#000; line-height: 2em; margin:20px 0 40px 0; text-align: center; clear: both;} 
+        </style>
+
+        <!-- 엠블럼 강화 -->
+        <div class="item_forge_wrap clearfix">
+            <div class="sub_tit">
+                <h3>엠블럼 강화</h3>
+            </div>    
+            <div class="left item_enhance">
+                <div class="forge_top">
+                    <div class="forge_board">
+                        <div class="item_box main_item">
+                            <p class="tit">강화 대상</p>
+                            <div class="item_inner added">
+                                <img src="" alt="">
+                                <button type="button" class="item_reset_btn"></button>
+                            </div>
+                        </div>
+                        <span class="bg_plus"></span>
+                        <div class="item_box sub_item1">
+                            <p class="tit">강화 재료</p>
+                            <div class="item_inner">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="txt">강화 대상을 장착해주세요.</p>
+                </div>
+                <div class="forge_info">
+                    <p class="info_row">강화도 <span>A</span>><span>A'</span></p>
+                    <p class="info_row">강화 성공 확률 <span>[95%]</span></p>
+                    <p class="info_row gold">내구도 <span>9,000,000,000</span>><span>10,000,000,000</span></p>
+                    <div class="item_opt_info">
+                        <p class="tit">엠블럼 옵션</p>
+                        <ul>
+                            <li>· [엠블럼 옵션 영역]</li>
+                            <li>· 배당율 0.01 증가</li>
+                            <li>· 배당율 0.01 증가</li>
+                            <li>· 배당율 0.01 증가</li>
+                            <li>· 배당율 0.01 증가</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="forge_btn">
+                    <button type="button" class="btn_board_write enhance_btn">강화하기</button>
+                    <button type="button" class="btn_board_cancel rest_btn">초기화</button>
+                </div>
+                <button type="button" class="forge_close_btn"></button>
+            </div>
+        </div>
+
+        <script>
+            $(function(){
+               // 강화대상이나 재료가 추가되었을때 버튼 클릭시
+               $('.item_inner.added').each(function() {
+                    var timeout, longtouch;
+                    $(this).mousedown(function() {
+                        timeout = setTimeout(function() {
+                            longtouch = true;
+                        }, 500);
+                    }).mouseup(function() {
+                        if (longtouch) {
+                            // 길게 터치했을때 해당 아이템 정보 팝업 호출
+                            alert('0.5초 이상 터치123!');
+                        } else {
+                            // 짧게 터치했을때 조합 대상 팝업 호출
+                            alert('0.5초 이하 터치123!');
+                        }
+                        longtouch = false;
+                        clearTimeout(timeout);
+                    });
+
+                });
+            });
+        </script>
+        <!-- 강화 대상 선택 팝업 -->
+        <div class="item_list_popup">
+            <div class="inner_box">
+                <h4>강화 대상 선택</h4>
+                <ul>
+                    <li class="item_box">
+                        <div class="item_top_box">
+                            <div class="item_img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="item_info">
+                                <p class="item_tit"><span class="item_grade">[등급]</span><strong class="item_value">+15</strong> 아이템명 영역</p>
+                                <div class="item_gaege">
+                                    <p class="info_tit">내구도</p>
+                                    <p class="num">[최대 내구도 표기]</p>
+                                    <div class="gaege">
+                                        <p class="bar" style="width:50%"></p>
+                                        <p class="num">5,500,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bot_box">
+                            <ul class="opt_list">
+                                <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                                <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                                <li>엠블럼 영웅 등급에서 개방</li>
+                                <li>엠블럼 전설 등급에서 개방</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_top_box">
+                            <div class="item_img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="item_info">
+                                <p class="item_tit"><span class="item_grade">[등급]</span><strong class="item_value">+15</strong> 아이템명 영역</p>
+                                <div class="item_gaege">
+                                    <p class="info_tit">내구도</p>
+                                    <p class="num">[최대 내구도 표기]</p>
+                                    <div class="gaege">
+                                        <p class="bar" style="width:50%"></p>
+                                        <p class="num">5,500,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bot_box">
+                            <ul class="opt_list">
+                                <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                                <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                                <li>엠블럼 영웅 등급에서 개방</li>
+                                <li>엠블럼 전설 등급에서 개방</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_top_box">
+                            <div class="item_img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="item_info">
+                                <p class="item_tit"><span class="item_grade">[등급]</span><strong class="item_value">+15</strong> 아이템명 영역</p>
+                                <div class="item_gaege">
+                                    <p class="info_tit">내구도</p>
+                                    <p class="num">[최대 내구도 표기]</p>
+                                    <div class="gaege">
+                                        <p class="bar" style="width:50%"></p>
+                                        <p class="num">5,500,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bot_box">
+                            <ul class="opt_list">
+                                <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                                <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                                <li>엠블럼 영웅 등급에서 개방</li>
+                                <li>엠블럼 전설 등급에서 개방</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_top_box">
+                            <div class="item_img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="item_info">
+                                <p class="item_tit"><span class="item_grade">[등급]</span><strong class="item_value">+15</strong> 아이템명 영역</p>
+                                <div class="item_gaege">
+                                    <p class="info_tit">내구도</p>
+                                    <p class="num">[최대 내구도 표기]</p>
+                                    <div class="gaege">
+                                        <p class="bar" style="width:50%"></p>
+                                        <p class="num">5,500,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bot_box">
+                            <ul class="opt_list">
+                                <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                                <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                                <li>엠블럼 영웅 등급에서 개방</li>
+                                <li>엠블럼 전설 등급에서 개방</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_top_box">
+                            <div class="item_img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="item_info">
+                                <p class="item_tit"><span class="item_grade">[등급]</span><strong class="item_value">+15</strong> 아이템명 영역</p>
+                                <div class="item_gaege">
+                                    <p class="info_tit">내구도</p>
+                                    <p class="num">[최대 내구도 표기]</p>
+                                    <div class="gaege">
+                                        <p class="bar" style="width:50%"></p>
+                                        <p class="num">5,500,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bot_box">
+                            <ul class="opt_list">
+                                <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                                <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                                <li>엠블럼 영웅 등급에서 개방</li>
+                                <li>엠블럼 전설 등급에서 개방</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="popup_close_btn"></button>
+        </div>
+        
+        <!-- 강화 대상 선택 팝업 -->
+        <div class="item_list_popup">
+            <div class="inner_box">
+                <h4>강화 재료 선택</h4>
+                <ul>
+                    <li class="item_box">
+                        <div class="item_top_box">
+                            <div class="item_img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="item_info">
+                                <p class="item_tit"><span class="item_grade">[등급]</span><strong class="item_value">+15</strong> 아이템명 영역</p>
+                                <div class="item_gaege">
+                                    <p class="info_tit">내구도</p>
+                                    <p class="num">[최대 내구도 표기]</p>
+                                    <div class="gaege">
+                                        <p class="bar" style="width:50%"></p>
+                                        <p class="num">5,500,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bot_box">
+                            <ul class="opt_list">
+                                <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                                <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                                <li>엠블럼 영웅 등급에서 개방</li>
+                                <li>엠블럼 전설 등급에서 개방</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_top_box">
+                            <div class="item_img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="item_info">
+                                <p class="item_tit"><span class="item_grade">[등급]</span><strong class="item_value">+15</strong> 아이템명 영역</p>
+                                <div class="item_gaege">
+                                    <p class="info_tit">내구도</p>
+                                    <p class="num">[최대 내구도 표기]</p>
+                                    <div class="gaege">
+                                        <p class="bar" style="width:50%"></p>
+                                        <p class="num">5,500,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bot_box">
+                            <ul class="opt_list">
+                                <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                                <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                                <li>엠블럼 영웅 등급에서 개방</li>
+                                <li>엠블럼 전설 등급에서 개방</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_top_box">
+                            <div class="item_img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="item_info">
+                                <p class="item_tit"><span class="item_grade">[등급]</span><strong class="item_value">+15</strong> 아이템명 영역</p>
+                                <div class="item_gaege">
+                                    <p class="info_tit">내구도</p>
+                                    <p class="num">[최대 내구도 표기]</p>
+                                    <div class="gaege">
+                                        <p class="bar" style="width:50%"></p>
+                                        <p class="num">5,500,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bot_box">
+                            <ul class="opt_list">
+                                <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                                <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                                <li>엠블럼 영웅 등급에서 개방</li>
+                                <li>엠블럼 전설 등급에서 개방</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_top_box">
+                            <div class="item_img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="item_info">
+                                <p class="item_tit"><span class="item_grade">[등급]</span><strong class="item_value">+15</strong> 아이템명 영역</p>
+                                <div class="item_gaege">
+                                    <p class="info_tit">내구도</p>
+                                    <p class="num">[최대 내구도 표기]</p>
+                                    <div class="gaege">
+                                        <p class="bar" style="width:50%"></p>
+                                        <p class="num">5,500,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bot_box">
+                            <ul class="opt_list">
+                                <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                                <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                                <li>엠블럼 영웅 등급에서 개방</li>
+                                <li>엠블럼 전설 등급에서 개방</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_top_box">
+                            <div class="item_img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="item_info">
+                                <p class="item_tit"><span class="item_grade">[등급]</span><strong class="item_value">+15</strong> 아이템명 영역</p>
+                                <div class="item_gaege">
+                                    <p class="info_tit">내구도</p>
+                                    <p class="num">[최대 내구도 표기]</p>
+                                    <div class="gaege">
+                                        <p class="bar" style="width:50%"></p>
+                                        <p class="num">5,500,000,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_bot_box">
+                            <ul class="opt_list">
+                                <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                                <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                                <li>엠블럼 영웅 등급에서 개방</li>
+                                <li>엠블럼 전설 등급에서 개방</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="popup_close_btn"></button>
+        </div>        
+        <script>
+            $(function(){
+                $('.item_list_popup .item_box').on('click',function(){
+                    $(this).addClass('select').siblings().removeClass('select');
+                });
+            });
+        </script>
+
+        <!-- 기본 아이템 상세 팝업, 아이템 장착 후 0.5초이상 터치했을때 호출 팝업-->
+        <p class="text_tit">기본 아이템 상세 팝업, 아이템 장착 후 0.5초이상 터치했을때 호출 팝업</p>
+        <div class="item_detail_box type1">
+            <div class="inner_box">
+                <div class="item_top">
+                    <div class="item_img">
+                        <span class="upgrade_num">+15</span>
+                    </div>
+                    <div class="item_info">
+                        <p class="item_tit"><strong class="item_value">+15</strong> 아이템명 영역</p>
+                        <div class="item_etc">
+                            <p class="item_grade">[등급]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_mid">
+                    <div class="item_mid_info">
+                        <p class="info_tit">내구도</p>
+                        <p class="num">최대 100억 골드</p>
+                        <div class="gaege">
+                            <p class="bar" style="width:50%"></p>
+                            <p class="num">5,500,000,000</p>
+                        </div>
+                    </div>
+                    <div class="item_opt">
+                        <p class="opt_tit">옵션</p>                    
+                        <ul class="opt_list">
+                            <li><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                            <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                            <li>엠블럼 영웅 등급에서 개방</li>
+                            <li>엠블럼 전설 등급에서 개방</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="popup_close_btn"></button>
+        </div>
+
+        <!-- 엠블럼 강화 성공 -->
+        <p class="text_tit">엠블럼 강화 성공/실패 팝업</p>
+        <div class="popup_type2 ">
+            <div class="inner_box">
+                <h4>강화 성공</h4>
+                <div class="popup_con_wrap">
+                    <div class="img_box"></div>
+                    <div class="forge_info">
+                        <p class="info_row">강화도 <span>A</span>→<span>A'</span></p>
+                        <p class="info_row gold"><span>[최대골드사용]</span>→<span>[최대골드사용]</span></p>
+                        <div class="item_opt_info">
+                            <p class="tit">엠블럼 옵션</p>
+                            <ul>
+                                <li>배당율 0.01 ↑ ▶ <span class="new_opt">0.03 ↑</span></li>
+                                <li>배당율 0.01 ↑ ▶ <span class="new_opt">0.03 ↑</span></li>
+                                <li>배당율 0.01 ↑ ▶ <span class="new_opt">0.03 ↑</span></li>
+                                <li>배당율 0.01 ↑ ▶ <span class="new_opt">0.03 ↑</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <button type="button" class="orange_btn">확인</button>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="popup_close_btn"></button>
+        </div>
+
+       <!-- 엠블럼 강화 실패 -->
+        <div class="popup_type2 ">
+        <div class="inner_box">
+            <h4>강화 실패</h4>
+            <div class="popup_con_wrap">
+                <div class="img_box"></div>
+                <div class="forge_info">
+                    <p class="info_row">강화도 <span>A</span>→<span>A</span></p>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="orange_btn">확인</button>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="popup_close_btn"></button>
+    </div>
+    </body>
+
+</html>
+
+<!--
+
+-->
