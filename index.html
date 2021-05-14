@@ -5,83 +5,307 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
         <meta name="format-detection" content="telephone=no, address=no, email=no">
-        <title>  </title>
-        <meta name="title" content="">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta property="og:title" content="">
-        <meta property="title" content="">
-        <meta property="og:locale" content="ko_KR">
-        <meta property="og:url" content="-">
-        <meta property="og:site_name" content="">
-        <meta property="og:description" content="">
-        <meta property="description" content="">
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/swiper.css" />
+        <link rel="stylesheet" href="./css/font.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/my_page.css">
+        <link rel="stylesheet" href="./css/emblem.css">
+        <script src="./js/jquery-1.12.0.min.js"></script>
+        <script src="./js/swiper.min.js"></script>
     </head>
     <body>
-        <div id="skip_nav">
-            <ul>
-                <li><a href="#gnb">메뉴바로가기</a></li>
-                <li><a href="#main">본문바로가기</a></li>
-            </ul>
+        <!-- 임시로 넣은 text_tit 관련 css, 태그 실서버 적용 안함 -->
+        <style> .text_tit { font-size:20px; background:#ff6d00; color:#000; line-height: 2em; margin:20px 0 40px 0; text-align: center; clear: both;} 
+        </style>
+
+        <!-- 인벤토리 -->
+        <div class="main_section tab-content" style="display: block;">
+            <div class="tap_wrap">
+                <ul id="menu">
+                    <li class="four_menu on"><a href="">엠블럼</a></li>
+                    <li class="four_menu"><a href="">판매 등록</a></li>
+                    <li class="four_menu"><a href="">판매 내역</a></li>
+                    <li class="four_menu"><a href="">구매 등록</a></li>
+                </ul>
+            </div>
+            <div class="item_search_box">
+                <div class="search_left">
+                    <button type="button" class="search_term_btn">검색조건</button>
+                    <!-- 검색조건 설정 후 조건버튼 숨김 & 검색조건 노출 -->
+                    <div class="search_opt" style="display:none">
+                        <span>호랑이</span>
+                        <span>전설</span>
+                        <span>+15</span>
+                    </div>
+                </div>
+                <div class="search_input">
+                    <input type="text" class="" placeholder="검색어를 입력해 주세요.">
+                    <button type="button" class="search_btn">검색</button>
+                </div>
+                <button type="button" class="reset_btn">초기화</button>
+            </div>
+            <div class="search_item_list">
+                <ul class="">
+                    <li class="item_box">
+                        <div class="item_img">
+                        </div>
+                        <div class="item_info">
+                            <p class="type">엠블럼 [전설]</p>
+                            <p class="item_tit">아이템명 영역</p>
+                        </div>
+                        <button type="button" class="item_list_btn">판매목록</button>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_img">
+                        </div>
+                        <div class="item_info">
+                            <p class="type">엠블럼 [전설]</p>
+                            <p class="item_tit">아이템명 영역</p>
+                        </div>
+                        <button type="button" class="item_list_btn">판매목록</button>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_img">
+                        </div>
+                        <div class="item_info">
+                            <p class="type">엠블럼 [전설]</p>
+                            <p class="item_tit">아이템명 영역</p>
+                        </div>
+                        <button type="button" class="item_list_btn">판매목록</button>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_img">
+                        </div>
+                        <div class="item_info">
+                            <p class="type">엠블럼 [전설]</p>
+                            <p class="item_tit">아이템명 영역</p>
+                        </div>
+                        <button type="button" class="item_list_btn">판매목록</button>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_img">
+                        </div>
+                        <div class="item_info">
+                            <p class="type">엠블럼 [전설]</p>
+                            <p class="item_tit">아이템명 영역</p>
+                        </div>
+                        <button type="button" class="item_list_btn">판매목록</button>
+                    </li>
+                    <li class="item_box">
+                        <div class="item_img">
+                        </div>
+                        <div class="item_info">
+                            <p class="type">엠블럼 [전설]</p>
+                            <p class="item_tit">아이템명 영역</p>
+                        </div>
+                        <button type="button" class="item_list_btn">판매목록</button>
+                    </li>
+                </ul>
+                <button type="button" class="list_more_btn">더보기</button>
+            </div>
         </div>
-        <div class="wrapper">
-            <h1 class="hidden">jh의 portfolio</h1>
-            <header class="header">
-                <div class="inner_wrap">
-                    <ul id="gnb" class="gnb">
-                        <li><button><i class="fas fa-align-justify" data-type="all"></i>ALL</button></li>
-                        <li><button><i class="fas fa-desktop" data-type="pc"></i>DESCKTOP</button></li>
-                        <li><button><i class="fas fa-mobile-alt" data-type="mobile"></i>MOBILE</button></li>
-                    </ul>
+        
+        <!-- 아이템 검색 팝업 -->
+        <p class="text_tit">검색조건 클릭했을때 검색팝업</p>
+        <div class="item_search_popup" >
+            <div class="inner_box">
+                <h4 class="tit">검색 구분</h4>
+                <div class="opt_type_wrap">
+                    <div class="swiper-container search_opt1">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide" data-opt="-">전체</div>
+                            <div class="swiper-slide" data-opt="엠블럼1">
+                                <div class="img_box">
+                                    <img src="images/test_img.png" alt="엠블럼1">
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-opt="엠블럼2">
+                                <div class="img_box">
+                                    <img src="images/test_img.png" alt="엠블럼1">
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-opt="엠블럼3">
+                                <div class="img_box">
+                                    <img src="images/test_img.png" alt="엠블럼1">
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-opt="엠블럼4">
+                                <div class="img_box">
+                                    <img src="images/test_img.png" alt="엠블럼1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper-container search_opt2">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide" data-opt="-">전체</div>
+                            <div class="swiper-slide" data-opt="일반">일반</div>
+                            <div class="swiper-slide" data-opt="희귀">희귀</div>
+                            <div class="swiper-slide" data-opt="영웅">영웅</div>
+                            <div class="swiper-slide" data-opt="전설">전설</div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper-container search_opt3">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide" data-opt="-">전체</div>
+                            <div class="swiper-slide" data-opt="0">+0</div>
+                            <div class="swiper-slide" data-opt="1">+0</div>
+                            <div class="swiper-slide" data-opt="1">+1</div>
+                            <div class="swiper-slide" data-opt="2">+2</div>
+                            <div class="swiper-slide" data-opt="3">+3</div>
+                            <div class="swiper-slide" data-opt="4">+4</div>
+                            <div class="swiper-slide" data-opt="5">+5</div>
+                            <div class="swiper-slide" data-opt="6">+6</div>
+                            <div class="swiper-slide" data-opt="7">+7</div>
+                            <div class="swiper-slide" data-opt="8">+8</div>
+                            <div class="swiper-slide" data-opt="9">+9</div>
+                            <div class="swiper-slide" data-opt="10">+10</div>
+                            <div class="swiper-slide" data-opt="11">+11</div>
+                            <div class="swiper-slide" data-opt="12">+12</div>
+                            <div class="swiper-slide" data-opt="13">+13</div>
+                            <div class="swiper-slide" data-opt="14">+14</div>
+                            <div class="swiper-slide" data-opt="15">+15</div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <input type="text" id="itemSearchOpt1" disabled style="display:none" >
+                    <input type="text" id="itemSearchOpt2" disabled style="display:none">
+                    <input type="text" id="itemSearchOpt3" disabled style="display:none">
                 </div>
-                <div class="double_arrow">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-chevron-down"></i>
+                <div class="btn_wrap">
+                    <button type="button">닫기</button>
+                    <button type="button" class="" id="searchReset">검색초기화</button>
+                    <button type="button" class="orange_btn">검색 적용</button>
                 </div>
-            </header>
-            <section class="main">
-                <div class="inner_wrap">
-                    <div class="pf_list_wrap">
-                        <ul>
-                            <li class="list_item pc mobile">
-                                <div class="item_inner">
-                                    <div class="top_info">
-                                        <strong></strong>
-                                    </div>    
-                                </div>
-                            </li>
-                            <li class="list_item pc mobile">
-                                <div class="item_inner">
-                                    <div class="top_info">
-                                        <strong></strong>
-                                    </div>    
-                                </div>
-                            </li>
-                            <li class="list_item pc mobile">
-                                <div class="item_inner">
-                                    <div class="top_info">
-                                        <strong></strong>
-                                    </div>    
-                                </div>
-                            </li>
-                            <li class="list_item pc mobile">
-                                <div class="item_inner">
-                                    <div class="top_info">
-                                        <strong></strong>
-                                    </div>    
-                                </div>
-                            </li>
+            </div>
+            <button type="button" class="popup_close_btn"></button>
+        </div>
+        <script>
+            $('.searchBtn').on('click',function(){
+                $('.item_search_popup').fadeIn();
+                searchOpt1
+            });
+            var searchOpt1 = new Swiper(".search_opt1", {
+                direction: "vertical",
+                loop: true,
+                slidesPerView: 3,
+                centeredSlides: true,
+                observer: true,
+                observeParents: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: false,
+                on: {
+                    slideChangeTransitionEnd: function () {
+                        $('#itemSearchOpt1').attr('value', this.$el.find('.swiper-slide-active').attr('data-opt') ); 
+                    },
+                    init: function () {
+                        $('#itemSearchOpt1').attr('value', this.$el.find('.swiper-slide-active').attr('data-opt') ); 
+                    }
+                }
+            });
+            var searchOpt2 = new Swiper(".search_opt2", {
+                direction: "vertical",
+                loop: true,
+                slidesPerView: 5,
+                centeredSlides: true,
+                observer: true,
+                observeParents: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: false,
+                on: {
+                    slideChangeTransitionEnd: function () {
+                        $('#itemSearchOpt2').attr('value', this.$el.find('.swiper-slide-active').attr('data-opt') ); 
+                    },
+                    init: function () {
+                        $('#itemSearchOpt2').attr('value', this.$el.find('.swiper-slide-active').attr('data-opt') ); 
+                    }
+                }
+            });
+            var searchOpt3 = new Swiper(".search_opt3", {
+                direction: "vertical",
+                loop: true,
+                slidesPerView: 5,
+                centeredSlides: true,
+                observer: true,
+                observeParents: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: false,
+                on: {
+                    slideChangeTransitionEnd: function () {
+                        $('#itemSearchOpt3').attr('value', this.$el.find('.swiper-slide-active').attr('data-opt') ); 
+                    },
+                    init: function () {
+                        $('#itemSearchOpt3').attr('value', this.$el.find('.swiper-slide-active').attr('data-opt') ); 
+                    }
+                }
+            });
+            $(document).on('click','.item_search_popup #searchReset', function(){
+                console.log( $(this).find().attr('data-swiper-slide-index') )
+                searchOpt1.slideToLoop( 0,  1000 );
+                searchOpt2.slideToLoop( 0,  1000 );
+                searchOpt3.slideToLoop( 0,  1000 );
+                
+            });
+        </script>
+
+        <!-- 엠블럼 아이템 클릭했을때 정보 팝업 -->
+        <p class="text_tit">엠블럼 아이템 클릭했을때 정보 팝업</p>
+        <div class="item_detail_box">
+            <div class="inner_box">
+                <div class="item_top">
+                    <div class="item_img"></div>
+                    <div class="item_info">
+                        <p class="item_tit"><strong class="item_value">+15</strong> 아이템명 영역</p>
+                        <div class="item_etc">
+                            <p class="item_grade ">[등급]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_mid">
+                    <div class="item_mid_info">
+                        <p class="info_tit">일일교체횟수</p> <p class="num">0 / 4</p>
+                    </div>
+                    <div class="item_mid_info">
+                        <p class="info_tit">내구도</p>
+                        <p class="num">최대 100억 골드</p>
+                        <div class="gaege">
+                            <p class="bar" style="width:50%"></p>
+                            <p class="num">5,500,000,000</p>
+                        </div>
+                    </div>
+                    <div class="item_opt">
+                        <p class="opt_tit">옵션(사용중)</p>
+                        <ul class="opt_list">
+                            <li class="active"><strong class="value">+10</strong><p> 배당률이 0.12배 증가한다</p></li>
+                            <li><strong class="value">+10</strong> <p>베팅 패널티 감소 1%</p></li>
+                            <li>엠블럼 영웅 등급에서 개방</li>
+                            <li>엠블럼 전설 등급에서 개방</li>
                         </ul>
                     </div>
                 </div>
-            </section>
+                <div class="btn_wrap">
+                    <button type="button" class="orange_btn">즐겨찾기</button>
+                    <button type="button" class="orange_btn">잠금</button>
+                </div>
+            </div>
+            <button type="button" class="popup_close_btn"></button>
         </div>
-        
     </body>
 
 </html>
