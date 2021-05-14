@@ -1229,8 +1229,11 @@ div.user_in .inventory_info {
   border: 1px solid #f8f8f8;
 }
 .item_search_popup .opt_type_wrap {
-  border-radius: 20px;
   border: 5px solid #ddd;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.item_search_popup .opt_type_wrap .slide_wrap {
   height: 250px;
   display: grid;
   grid-template-columns: 33% 34% 33%;
@@ -1275,18 +1278,18 @@ div.user_in .inventory_info {
   font-size: 18px;
   font-weight: 500;
 }
-.item_search_popup .opt_type_wrap > [class*="search_opt"] {
+.item_search_popup .slide_wrap > [class*="search_opt"] {
   width: 100%;
   position: relative;
   box-sizing: border-box;
 }
-.item_search_popup .opt_type_wrap > .search_opt1 {
+/* .item_search_popup .slide_wrap .search_opt1 {
   border-radius: 15px 0 0 15px;
 }
-.item_search_popup .opt_type_wrap > .search_opt3 {
+.item_search_popup .slide_wrap .search_opt3 {
   border-radius: 0 15px 15px 0;
-}
-.item_search_popup .opt_type_wrap > .search_opt2 {
+} */
+.item_search_popup .slide_wrap .search_opt2 {
   border-left: 2px solid #333;
   border-right: 2px solid #333;
 }
