@@ -550,6 +550,9 @@
   font-size: 12px;
   vertical-align: top;
   box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .item_search_box .search_input input::placeholder,
 .item_search_box .search_input input::-webkit-input-placeholder {
@@ -682,6 +685,9 @@
   border: 1px solid #dcdde1;
   background: #fff;
   border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .popup_type2.search .search_terms .wave {
   line-height: 54px;
@@ -1273,6 +1279,12 @@ div.user_in .inventory_info {
   width: 100%;
   position: relative;
   box-sizing: border-box;
+}
+.item_search_popup .opt_type_wrap > .search_opt1 {
+  border-radius: 15px 0 0 15px;
+}
+.item_search_popup .opt_type_wrap > .search_opt3 {
+  border-radius: 0 15px 15px 0;
 }
 .item_search_popup .opt_type_wrap > .search_opt2 {
   border-left: 2px solid #333;
