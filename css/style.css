@@ -728,6 +728,7 @@ textarea.form-input {
   display: flex;
   align-items: center;
   margin-top:10px;
+  width: 100%;
 }
 .detail-img__info .btn-heart { 
   position:absolute;
