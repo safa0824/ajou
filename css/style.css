@@ -412,7 +412,7 @@ textarea.form-input {
 }
 
 .wrapper { 
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 /*header*/
@@ -421,12 +421,22 @@ textarea.form-input {
   justify-content: center;
   position: fixed;
   height: 60px;
-  top:0;
+  align-items: center;
+  /* top:0;
   left:0; 
   right:0;
   z-index: 2;
   padding:12px 0;
-  align-items: center;
+  transition: all .3s ease-out; */
+
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 90;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
 .header.header-white { 
@@ -1559,6 +1569,10 @@ h2.common-tit {
 .search-result-wrap li { 
   padding:10px 40px;
   background:url(../images/icon-location-gray.svg) 15px 10px no-repeat;
+}
+
+.search-result-wrap li.active { 
+  background-color:#f2f2f2
 }
 .search-result-wrap .restrang-name {
   color:#e83737;

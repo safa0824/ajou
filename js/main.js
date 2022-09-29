@@ -30,27 +30,18 @@ $(document).ready(function () {
         dayNamesShort: [ "S","M","T","W","T","F","S" ],
         dayNamesMin: [ "S","M","T","W","T","F","S" ],
     }) : '';
-    // if( $("#datepicker").length ){        
-    //     // $("#datepicker" ).daterangepicker({parentEl: $(this).parent()});
-    //     $("#datepicker" ).daterangepicker({
-    //         singleDatePicker: true,
-    //         autoApply: true,
-    //         alwaysShowCalendars: true,
-    //         locale: {
-    //             "format": "YYYY.MM.DD",
-    //             "daysOfWeek": ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'], 
-    //             "monthNames": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
-    //         }
-    //     });
-    // }
 
+    $(".search-result-wrap").on("click", "li", function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    $(window).on("scroll", headerAni());
     $(window).on("scroll", function () {
         if ( $(".header-bg-check").length && $(this).scrollTop() >= Math.ceil($(".header-bg-check").offset().top) - 62) {
             $(".header").addClass("header-white");
         } else {
             $(".header").removeClass("header-white");
         }
-        headerAni();
     });
 
     const swiper = new Swiper(".main-slider-wrap", {
@@ -208,6 +199,7 @@ $(document).ready(function () {
             }
         });
     }
+    
 });
 
 var headerAni = function(){
@@ -233,7 +225,8 @@ var headerAni = function(){
 			return;
 		if (st > lastScrollTop && st > navbarHeight) {
 			$('.header').removeClass('header_dw').addClass('header_up');
-			$('.header.fixed').removeClass('header_up').addClass('header_dw'); // 바로팝콘 헤더 고정 2020.06.08
+			$('.header.fixed').removeClass('header_up').addClass('header_dw'); 
+
 		} else {
 			if (st + $(window).height() < $(document).height()) {
 				$('.header').removeClass('header_up').addClass('header_dw');
