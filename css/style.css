@@ -873,7 +873,7 @@ h2.common-tit {
   position: relative;
 }
 .map-area { 
-  /* min-height: 50vh; */
+  min-height: 50vh;
 }
 .location-info { 
   display: flex;
