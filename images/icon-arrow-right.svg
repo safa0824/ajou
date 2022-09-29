@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.31" height="17.287" viewBox="0 0 9.31 17.287">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="chevron-right" transform="translate(-10.123 -3.373)">
+    <path id="패스_4718" data-name="패스 4718" class="cls-1" d="M10.319,3.569a.665.665,0,0,1,.941,0l7.978,7.978a.665.665,0,0,1,0,.941L11.26,20.465a.666.666,0,1,1-.941-.941l7.508-7.507L10.319,4.51a.665.665,0,0,1,0-.941Z"/>
+  </g>
+</svg>
