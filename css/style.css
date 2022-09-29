@@ -454,9 +454,11 @@ textarea.form-input {
 }
 
 .main-logo { 
-  height: 36px;
-  width: 102px;
+  height: 40px;
+  width: 118px;
   background:url(../images/logo.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 .main-logo a { 
   display: block;
@@ -483,6 +485,7 @@ textarea.form-input {
   left:0;
   top:0;
   background-image:url(../images/icon-list.svg);
+  background-size: 30px auto;
 }
 .btn-search { 
   right:0;
@@ -514,6 +517,9 @@ textarea.form-input {
 .header .btn-close.left { 
   right: auto;
   left: 0;
+}
+.header .btn-search {
+  background-size: 28px auto;
 }
 .btn-close {
   background-image:url(../images/icon-close.svg);
