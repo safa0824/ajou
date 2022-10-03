@@ -257,6 +257,7 @@ textarea.form-input {
   background:url(../images/icon-calendar-heart.svg) no-repeat 0 0;
   width: 20px;
   height: 20px;
+  background-size: contain
 }
 .icon-date2 { 
   display: inline-block;
@@ -286,9 +287,10 @@ textarea.form-input {
 }
 .icon-heart { 
   display: inline-block;
-  width: 23px;
-  height: 23px;
-  background:url(../images/icon-heart.svg) no-repeat 0 0;
+  width: 26px;
+  height: 26px;
+  background:url(../images/icon-heart.svg) no-repeat center;
+  background-size: contain
 }
 .on .icon-heart { 
   background-image:url(../images/icon-heart-on.svg) !important; 
@@ -466,7 +468,7 @@ textarea.form-input {
 }
 
 .header .main-tit { 
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500; 
   color:#000; 
 }
@@ -506,6 +508,7 @@ textarea.form-input {
   right:0;
   top:0;
   background-image: url(../images/icon-lock.svg);
+  background-size: 18px auto
 }
 .header .btn-close {
   position: absolute;
@@ -596,10 +599,11 @@ textarea.form-input {
   opacity: 0.3;
 }
 .bot-menu .icon-setting {
-  width: 17px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   background:url(../images/icon-setting.svg) no-repeat 0 0;
   opacity: 0.3;
+  background-size: 19px auto
 }
 .bot-menu .icon-camera { 
   display: block;
@@ -640,7 +644,7 @@ textarea.form-input {
   line-height: 1.2;
 }
 .main-slider-wrap .img-slide_txt strong { 
-  font-size: 24px;
+  font-size: 26px;
   font-family:  "NanumSquareRound";
 }
 .main-slider-wrap .swiper-pagination{ 
@@ -810,6 +814,7 @@ h2.common-tit {
   border-radius:50px;
   margin: auto;
 }
+.food-list .food-img > img{width: 92px;  height: 92px;}
 .food-list .food-name { 
   padding: 0 10px;
   white-space: normal;
@@ -929,7 +934,7 @@ h2.common-tit {
   width: 100%;
 }
 .location-tel { 
-  font-size:12px;
+  font-size:15px;
   font-weight: 700;
   color:#575757;
 }
@@ -1615,6 +1620,6 @@ h2.common-tit {
   display: block;
   padding:24px 15px;
   font-size:16px;
-  font-weight: 300;
+  font-weight: 400;
   background: url(../images/icon-arrow-right.svg) 95% center no-repeat;
 }
