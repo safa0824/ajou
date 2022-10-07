@@ -302,7 +302,7 @@ textarea.form-input {
   display: inline-block;
   width: 26px;
   height: 26px;
-  background:url(../images/icon-heart.svg) no-repeat center;
+  background:url(../images/icon-heart-dis.svg) no-repeat center;
   background-size: contain
 }
 .on .icon-favorite { 
