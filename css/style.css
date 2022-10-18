@@ -1252,7 +1252,7 @@ h2.common-tit {
 .slider-check .check-woman { 
   position: absolute;
   height: 44px;
-  width: 70%;
+  width: 55%;
   z-index: 1;
   top:1px;
 }
@@ -1263,30 +1263,32 @@ h2.common-tit {
   right:1px;
 }
 .slider-check-wrap input ~ p { 
-  opacity: 0;
-  color:#fff;
+  color:#aaa;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .slider-check-wrap input ~ .check-man {
-  opacity: 1;
+  z-index: 1;
+  color: #fff;
 }
 .slider-check-wrap input ~ .check-woman { 
-  opacity: 0;
+  z-index: 0;
 }
 .slider-check-wrap input ~ .slider-bg { 
   left:1px;
 }
 .slider-check-wrap input:checked ~ .check-man {
-  opacity: 0;
+  z-index: 0;
+  color: #aaa;
 }
 .slider-check-wrap input:checked ~ .check-woman { 
-  opacity: 1;
+  z-index: 1;
+  color: #fff;
 }
 .slider-check-wrap input:checked ~ .slider-bg { 
-  left:58px;
+  left: 45%;
   background:#ff0088
 }
 .slider-check-wrap .icon-man {
@@ -1310,7 +1312,7 @@ h2.common-tit {
   left:2px;
   border-radius:50px;
   background: #1d61f9;
-  width: 70%;
+  width: 55%;
   z-index: 0;
   transition:0.3s;
 }
