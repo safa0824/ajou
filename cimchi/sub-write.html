@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+        <meta name="format-detection" content="telephone=no, address=no, email=no" />
+        <title> </title>
+        <meta name="title" content="GIMCHI" />
+        <meta name="description" content="GIMCHI app" />
+        <meta name="subject" content="GIMCHI" />
+        <meta name="keywords" content="GIMCHI, gimchi" />
+        <meta name="robots" content="index,follow" />
+        <meta property="og:title" content="GIMCHI" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta property="og:url" content="-" />
+        <meta property="og:site_name" content="GIMCHI" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="GIMCHI" />
+        <link rel="canonical" href="" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/swiper.css" />
+        <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/swiper.min.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/datepicker.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <style></style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header header-red">
+                <button type="button" class="btn-close left"></button>
+                <h1 class="main-tit">New Diary</h1>
+                <button type="button" class="btn-check"></button>
+            </header>
+            <main class="main">
+                <!-- header-bg-check -->
+                <section class="write-section">
+                    <h2 class="hidden">Join</h2>
+                    <div class="write-form">
+                        <button type="button" class="btn-favorite"><i class="icon-favorite"></i></button>
+                        <div class="form-row">
+                            <p class="form-tit"><i class="icon-date2"></i> Date</p>
+                            <input type="text" class="form-input date-input pop-open" readonly data-call-popup="date-select" value="20-09-2022 10:00:50 PM" />
+                        </div>
+                        <div class="form-row">
+                            <p class="form-tit"><i class="icon-photo"></i> Photo</p>
+                            <div class="photo-add-wrap">
+                                <div class="photo-added">
+                                    <img src="https://vrthumb.clipartkorea.co.kr/2016/02/22/tip243t000520.jpg" />
+                                </div>
+                                <div class="photo-added">
+                                    <img src="https://vrthumb.clipartkorea.co.kr/2019/01/07/tica101m18110130.jpg" />
+                                </div>
+                                <div class="photo-added">
+                                    <img src="https://vrthumb.clipartkorea.co.kr/2019/01/14/tica101m18120147.jpg" />
+                                </div>
+                                <div class="photo-added">
+                                    <img src="images/sample-img-detail-main.png" />
+                                </div>
+                                <button type="button" class="btn-add"></button>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <p class="form-tit"><i class="icon-memo"></i> Memo</p>
+                            <textarea name="" id="" cols="30" rows="10" class="form-input" placeholder="Write down the foods you can't eat" value=""></textarea>
+                        </div>
+                        <div class="form-row">
+                            <p class="form-tit"><i class="icon-hashtag"></i> Hashtag (#)</p>
+                            <input type="text" class="form-input" placeholder="Write down hashtag" />
+                            <div class="memo-hash">
+                                <span class="hashtag">#delecious <i class="btn-close-mini"></i></span>
+                                <span class="hashtag">#seoul <i class="btn-close-mini"></i></span>
+                                <span class="hashtag">#k-food <i class="btn-close-mini"></i></span>
+                                <span class="hashtag">#hot <i class="btn-close-mini"></i></span>
+                                <span class="hashtag">#delecious <i class="btn-close-mini"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <p class="form-tit"><i class="icon-price"></i> Price</p>
+                            <div class="price-radio">
+                                <label class="form-radio-label"> <input type="radio" name="priceType" checked /><i></i> Dollar(＄) </label>
+                                <label class="form-radio-label"> <input type="radio" name="priceType" /><i></i> Korean Won(￦) </label>
+                            </div>
+                            <input type="text" class="form-input" placeholder="Write down price" />
+                        </div>
+                        <div class="form-row">
+                            <p class="form-tit"><i class="icon-restaurant"></i> Restaurant</p>
+                            <input type="text" class="form-input search-input pop-open" data-call-popup="restaurant-search" readonly placeholder="Write down restaurant" />
+                        </div>
+                        <div class="form-btn">
+                            <button type="button" class="common-btn">Save</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="popup" data-popup="date-select">
+            <div class="popup-inner date-popup">
+                <div class="popup-con">
+                    <div class="date-set-top">
+                        <div id="datepicker"></div>
+                    </div>
+                    <div class="date-set-bot">
+                        <p class="popup-tit">Set Time</p>
+                        <div class="time-set-box">
+                            <div class="select-list hour-list">
+                                <div class="swiper-wrapper"></div>
+                            </div>
+                            <div class="select-list minute-list">
+                                <div class="swiper-wrapper"></div>
+                            </div>
+                            <div class="select-list am-list">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">AM</div>
+                                    <div class="swiper-slide">PM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrap">
+                            <button type="button" class="line-btn">OK</button>
+                            <button type="button" class="line-btn popup-close">Cancle</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button type="button" class="popup-close btn-close black"></button> -->
+            </div>
+        </div>
+        <div class="popup" data-popup="restaurant-search">
+            <div class="popup-inner restaurant-popup">
+                <div class="popup-tit">Restaurant</div>
+                <div class="popup-con">
+                    <div class="search-wrap">
+                        <input type="text" class="form-input search-input2" placeholder="search" />
+                        <button type="button" class="search-clear"></button>
+                        <div class="search-result-wrap">
+                            <ul>
+                                <li>
+                                    <p class="restrang-name">강변연가아아</p>
+                                    <p class="restrang-addr">경기도 남양주시 조안면 다산로760</p>
+                                </li>
+                                <li class="active">
+                                    <p class="restrang-name">강변연가아아</p>
+                                    <p class="restrang-addr">경기도 남양주시 조안면 다산로760</p>
+                                </li>
+                                <li>
+                                    <p class="restrang-name">강변연가아아</p>
+                                    <p class="restrang-addr">경기도 남양주시 조안면 다산로760</p>
+                                </li>
+                                <li>
+                                    <p class="restrang-name">강변연가아아</p>
+                                    <p class="restrang-addr">경기도 남양주시 조안면 다산로760</p>
+                                </li>
+                                <li>
+                                    <p class="restrang-name">강변연가아아</p>
+                                    <p class="restrang-addr">경기도 남양주시 조안면 다산로760</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="map-box">
+                        <div class="map-area">
+                            <!-- api불러올 영역 -->
+                            <img src="images/sample-img-map.png" alt="" style="width: 100%" />
+                        </div>
+                        <div class="location-info">
+                            <p class="location-name"><i class="icon-location"></i> Principle Hangdong Arboretum</p>
+                            <p class="location-addr">Room 109, 110, 1st floor, 2124 Seohaean-ro, Guro-gu, Seoul</p>
+                            <p class="location-tel"><i class="icon-phone"></i> 02-2689-2569</p>
+                            <p class="location-star">
+                                <i class="icon-star on"></i>
+                                <i class="icon-star on"></i>
+                                <i class="icon-star on"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="popup-close btn-close black"></button>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--
+
+-->

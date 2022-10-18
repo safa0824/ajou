@@ -323,6 +323,13 @@ textarea.form-input {
   background-image: url(../images/icon-bill.svg);
   background-size: 100% auto;
 }
+.icon-bill-dollor {
+  display: inline-block;
+  width: 30px; 
+  height: 27px;
+  background-image: url(../images/icon-bill-dollor.svg);
+  background-size: 100% auto;
+}
 .icon-delete {
   display: inline-block;
   width: 30px; 
@@ -370,6 +377,20 @@ textarea.form-input {
   width: 18px; 
   height: 18px;
   background-image: url(../images/icon-dollar.svg);
+  background-size: 100% auto;
+}
+.icon-won {
+  display: inline-block;
+  width: 18px; 
+  height: 18px;
+  background-image: url(../images/icon-won.svg);
+  background-size: 100% auto;
+}
+.icon-won-red {
+  display: inline-block;
+  width: 18px; 
+  height: 18px;
+  background-image: url(../images/icon-won-red.svg);
   background-size: 100% auto;
 }
 .icon-dallar.red {
@@ -704,6 +725,11 @@ textarea.form-input {
   top:7px;
   right:7px;
 }
+
+/*no-data*/
+.main-no-data{text-align: center;margin-top: 15%;}
+.main-no-data i{display:inline-block;width: 140px;height: 85px;background: url('../images/main_nodata.svg') no-repeat center;}
+.main-no-data span{display: block;font-size: 16px;font-weight: 500;}
 
 /*상세*/
 .detail-section { 
@@ -1210,6 +1236,85 @@ h2.common-tit {
   background-image: url(../images/icon-woman-on.svg);
 }
 
+.slider-check-wrap {
+  width: 100%;
+}
+.slider-check-inner { 
+  position: relative;
+  width: 200px;
+  border-radius:50px;
+  border:1px solid #ccc;
+  margin:0 auto;
+  background:#eee;
+  height: 48px;
+}
+.slider-check .check-man,
+.slider-check .check-woman { 
+  position: absolute;
+  height: 44px;
+  width: 70%;
+  z-index: 1;
+  top:1px;
+}
+.slider-check .check-man {
+  left:1px;
+}
+.slider-check .check-woman {
+  right:1px;
+}
+.slider-check-wrap input ~ p { 
+  opacity: 0;
+  color:#fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-check-wrap input ~ .check-man {
+  opacity: 1;
+}
+.slider-check-wrap input ~ .check-woman { 
+  opacity: 0;
+}
+.slider-check-wrap input ~ .slider-bg { 
+  left:1px;
+}
+.slider-check-wrap input:checked ~ .check-man {
+  opacity: 0;
+}
+.slider-check-wrap input:checked ~ .check-woman { 
+  opacity: 1;
+}
+.slider-check-wrap input:checked ~ .slider-bg { 
+  left:58px;
+  background:#ff0088
+}
+.slider-check-wrap .icon-man {
+  background-image: url(../images/icon-man-on.svg);
+  background-position: -3px -3px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+ }
+.slider-check-wrap .icon-woman { 
+  background-image: url(../images/icon-woman-on.svg);
+  background-position: -3px -3px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+} 
+.slider-bg { 
+  position:absolute;
+  top:1px;
+  bottom:1px;
+  left:2px;
+  border-radius:50px;
+  background: #1d61f9;
+  width: 70%;
+  z-index: 0;
+  transition:0.3s;
+}
+
 .img-check-wrap {
   flex-wrap: wrap;
   justify-content: center;
@@ -1643,4 +1748,61 @@ h2.common-tit {
   font-size:16px;
   font-weight: 400;
   background: url(../images/icon-arrow-right.svg) 95% center no-repeat;
+}
+
+/* loader */
+.loader-box { 
+}
+.loader { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.loader span { 
+  position: relative;
+} 
+.loader span::after { 
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 100%;
+  transform-style: preserve-3d;
+} 
+.loader span:nth-child(1) {   
+  animation: rotate 2s forwards infinite;
+}
+.loader span:nth-child(2) { 
+  animation: rotate 1.5s forwards infinite;
+}
+.loader span:nth-child(3) { 
+  animation: rotate 2s forwards infinite;
+}
+.loader span:nth-child(1)::after {   
+  background: #fe5b6e;
+  transform: translate3d(0, -20px, 0);
+  box-shadow: -2px 2px 100px 12px #fe5b6e;
+}
+.loader span:nth-child(2)::after {   
+  transform: translate3d(0, -40px, 0);
+  background:#0093ba;
+  box-shadow: -2px 2px 100px 12px #0093ba;
+}
+.loader span:nth-child(3)::after {   
+  transform: translate3d(0, -60px, 0);
+  background:#ffbb00;
+  box-shadow: -2px 2px 100px 12px #ffbb00;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

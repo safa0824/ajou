@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.446" height="20.715" viewBox="0 0 24.446 20.715">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ea2f5c;
+      }
+
+      .cls-2 {
+        fill: #353535;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="그룹_2642" data-name="그룹 2642" transform="translate(-364.121 -301.524)">
+    <path id="패스_4355" data-name="패스 4355" class="cls-1" d="M387.2,319.2a7.678,7.678,0,1,1-7.678-7.678A7.679,7.679,0,0,1,387.2,319.2Z" transform="translate(-3.586 -4.641)"/>
+    <g id="그룹_2586" data-name="그룹 2586" transform="translate(364.121 301.524)">
+      <path id="패스_4356" data-name="패스 4356" class="cls-2" d="M382.9,308.98l-1.071-.039.536.02-.536-.018a7.3,7.3,0,0,0-.416-2.311,8.256,8.256,0,0,0-3.247-4.223l.605-.884a9.674,9.674,0,0,1,2.453,2.4,9.252,9.252,0,0,1,1.22,2.414A8.188,8.188,0,0,1,382.9,308.98Z" transform="translate(-370.638 -301.524)"/>
+      <path id="패스_4357" data-name="패스 4357" class="cls-2" d="M383.58,314.554a3.419,3.419,0,0,1-1.691-.432,2.559,2.559,0,0,1-1.1-1.173l.98-.434a1.965,1.965,0,0,0,1.811.968,1.907,1.907,0,0,0,1.848-1.061l1.016.341a2.5,2.5,0,0,1-1.085,1.308A3.391,3.391,0,0,1,383.58,314.554Z" transform="translate(-371.857 -306.581)"/>
+      <rect id="사각형_539" data-name="사각형 539" class="cls-3" width="23.374" height="4.58" transform="translate(0.536 12.298)"/>
+      <path id="사각형_539_-_윤곽선" data-name="사각형 539 - 윤곽선" class="cls-2" d="M-1-1H23.446V4.651H-1ZM22.374.072H.072V3.58h22.3Z" transform="translate(1 12.762)"/>
+      <g id="그룹_2585" data-name="그룹 2585" transform="translate(2.419 12.387)">
+        <path id="선_861" data-name="선 861" class="cls-2" d="M.072,2.032H-1V0H.072Z" transform="translate(1 0)"/>
+        <path id="선_862" data-name="선 862" class="cls-2" d="M.072,2.032H-1V0H.072Z" transform="translate(3.558 0)"/>
+        <path id="선_863" data-name="선 863" class="cls-2" d="M.072,2.032H-1V0H.072Z" transform="translate(6.117 0)"/>
+        <path id="선_864" data-name="선 864" class="cls-2" d="M.072,2.032H-1V0H.072Z" transform="translate(8.676 0)"/>
+        <path id="선_865" data-name="선 865" class="cls-2" d="M.072,2.032H-1V0H.072Z" transform="translate(11.234 0)"/>
+        <path id="선_866" data-name="선 866" class="cls-2" d="M.072,2.032H-1V0H.072Z" transform="translate(13.792 0)"/>
+        <path id="선_867" data-name="선 867" class="cls-2" d="M.072,2.032H-1V0H.072Z" transform="translate(16.352 0)"/>
+        <path id="선_868" data-name="선 868" class="cls-2" d="M.072,2.032H-1V0H.072Z" transform="translate(18.91 0)"/>
+      </g>
+    </g>
+  </g>
+</svg>

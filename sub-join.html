@@ -57,15 +57,16 @@
                         </div>
                         <div class="form-row">
                             <p class="form-tit">Gender</p>
-                            <div class="img-radio-wrap gender">
-                                <label class="img-radio">
-                                    <input type="radio" name="gender" />
-                                    <p><i class="icon-man"></i> man</p>
-                                </label>
-                                <label class="img-radio">
-                                    <input type="radio" name="gender" />
-                                    <p><i class="icon-woman"></i> Woman</p>
-                                </label>
+                            <div class="slider-check-wrap gender">
+                                <!-- default - man / checked - woman-->
+                                <div class="slider-check-inner">
+                                    <label class="slider-check">
+                                        <input type="checkbox" name="gender" checked />
+                                        <p class="check-man"><i class="icon-man"></i> man</p>
+                                        <p class="check-woman"><i class="icon-woman"></i> woman</p>
+                                        <div class="slider-bg"></div>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-row">
@@ -77,7 +78,8 @@
                             <div class="form-select pop-open" data-call-popup="vegan-select">123</div>
                         </div>
                         <div class="form-btn">
-                            <button type="button" class="common-btn" onclick="NextPageGo()">Continue</button><!--  비활성화일경우 disabled-->
+                            <button type="button" class="common-btn" onclick="NextPageGo()">Continue</button
+                            ><!--  비활성화일경우 disabled-->
                         </div>
                     </div>
                 </section>

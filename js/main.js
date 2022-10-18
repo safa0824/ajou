@@ -35,6 +35,13 @@ $(document).ready(function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
 
+    // $(".slider-check-wrap").on("click", "label", function(){
+    //     let current = $(".slider-radio-wrap input[type=radio]:checked").parent('label').position().left;
+    //     $('.slider-bg').css('left',current);
+    //     console.log('aa');
+
+    // });
+    
     $(window).on("scroll", headerAni());
     $(window).on("scroll", function () {
         if ( $(".header-bg-check").length && $(this).scrollTop() >= Math.ceil($(".header-bg-check").offset().top) - 62) {

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="18" viewBox="0 0 22.5 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fa4545;
+      }
+    </style>
+  </defs>
+  <g id="그룹_2478" data-name="그룹 2478" transform="translate(-105 -441)">
+    <path id="bx-dish" d="M24.375,18.375a10.137,10.137,0,0,0-9-10.059V6h-2.25V8.317a10.137,10.137,0,0,0-9,10.059v2.25h20.25v-2.25Zm-18,0a7.875,7.875,0,0,1,15.75,0ZM3,21.75H25.5V24H3Z" transform="translate(102 435)"/>
+    <path id="bx-dish-2" data-name="bx-dish" class="cls-1" d="M3,21.75H25.5V24H3Z" transform="translate(102 435)"/>
+  </g>
+</svg>

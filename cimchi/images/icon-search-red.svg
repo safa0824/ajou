@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #d90808;
+      }
+    </style>
+  </defs>
+  <g id="btn_search" transform="translate(-323 -17)">
+    <rect id="사각형_22" data-name="사각형 22" class="cls-1" width="24" height="24" transform="translate(323 17)"/>
+    <path id="bx-search" class="cls-2" d="M11.635,20.271a8.583,8.583,0,0,0,5.285-1.821l4.746,4.744,1.526-1.526-4.745-4.745a8.625,8.625,0,1,0-6.813,3.348Zm0-15.112a6.477,6.477,0,1,1-6.477,6.477A6.483,6.483,0,0,1,11.635,5.159Z" transform="translate(322 16)"/>
+  </g>
+</svg>
