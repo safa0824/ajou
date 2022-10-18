@@ -1252,7 +1252,7 @@ h2.common-tit {
 .slider-check .check-woman { 
   position: absolute;
   height: 44px;
-  width: 60%;
+  width: 55%;
   z-index: 1;
   top:1px;
 }
@@ -1283,7 +1283,7 @@ h2.common-tit {
 }
 .slider-check-wrap input ~ .check-woman { 
   z-index: 0;
-  text-indent: -10px;
+  text-indent: -20px;
 }
 .slider-check-wrap input ~ .check-woman i { 
   /* width: 0; */
@@ -1295,7 +1295,7 @@ h2.common-tit {
 .slider-check-wrap input:checked ~ .check-man {
   z-index: 0;
   color: #aaa;
-  text-indent: -40px;
+  text-indent: -30px;
 }
 .slider-check-wrap input:checked ~ .check-man i {
   /* width: 0; */
@@ -1311,7 +1311,7 @@ h2.common-tit {
   transform: scale(1)
 }
 .slider-check-wrap input:checked ~ .slider-bg { 
-  left: 40%;
+  left: 45%;
   background:#ff0088
 }
 .slider-check-wrap .icon-man {
@@ -1335,7 +1335,7 @@ h2.common-tit {
   left:2px;
   border-radius:50px;
   background: #1d61f9;
-  width: 60%;
+  width: 55%;
   z-index: 0;
   transition:0.3s;
 }
