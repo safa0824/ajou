@@ -1241,7 +1241,7 @@ h2.common-tit {
 }
 .slider-check-inner { 
   position: relative;
-  width: 200px;
+  width: 240px;
   border-radius:50px;
   border:1px solid #ccc;
   margin:0 auto;
@@ -1252,7 +1252,7 @@ h2.common-tit {
 .slider-check .check-woman { 
   position: absolute;
   height: 44px;
-  width: 55%;
+  width: 60%;
   z-index: 1;
   top:1px;
 }
@@ -1268,13 +1268,25 @@ h2.common-tit {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+}
+.slider-check-wrap input ~ p i { 
+  transition: 0.3s transform;
 }
 .slider-check-wrap input ~ .check-man {
   z-index: 1;
   color: #fff;
+  text-indent: 0;
+}
+.slider-check-wrap input ~ .check-man i {
+  width: 40px;
 }
 .slider-check-wrap input ~ .check-woman { 
   z-index: 0;
+  text-indent: 30px;
+}
+.slider-check-wrap input ~ .check-woman i { 
+  width: 0;
 }
 .slider-check-wrap input ~ .slider-bg { 
   left:1px;
@@ -1282,13 +1294,21 @@ h2.common-tit {
 .slider-check-wrap input:checked ~ .check-man {
   z-index: 0;
   color: #aaa;
+  text-indent: -20px;
+}
+.slider-check-wrap input:checked ~ .check-man i {
+  width: 0;
 }
 .slider-check-wrap input:checked ~ .check-woman { 
   z-index: 1;
   color: #fff;
+  text-indent: 0;
+}
+.slider-check-wrap input:checked ~ .check-woman i { 
+  width: 40px;
 }
 .slider-check-wrap input:checked ~ .slider-bg { 
-  left: 45%;
+  left: 40%;
   background:#ff0088
 }
 .slider-check-wrap .icon-man {
@@ -1312,7 +1332,7 @@ h2.common-tit {
   left:2px;
   border-radius:50px;
   background: #1d61f9;
-  width: 55%;
+  width: 60%;
   z-index: 0;
   transition:0.3s;
 }
