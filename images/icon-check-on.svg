@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-    <g data-name="그룹 2834">
-        <path data-name="사각형 170" style="fill:none" d="M0 0h32v32H0z"/>
-        <g transform="translate(4 4)">
-            <circle cx="12" cy="12" r="12"/>
-            <path d="m6 11.674 1.4-1.346 3.6 3.461L17.007 8l1.4 1.346L11 16.482z" style="fill:#fff;fill-rule:evenodd"/>
-        </g>
-    </g>
-</svg>

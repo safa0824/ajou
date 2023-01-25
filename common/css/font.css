@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* Noto Sans Korean */
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Korean Thin');
+  src: url(../fonts/NotoSansKR-Thin.woff2) format('woff2'),     
+  url(../fonts/NotoSansKR-Thin.woff) format('woff'),
+  url(../fonts/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Noto Sans Korean Light');
+  src: url(../fonts/NotoSansKR-Light.woff2) format('woff2'),
+  url(../fonts/NotoSansKR-Light.woff) format('woff'),
+  url(../fonts/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Korean DemiLight');
+  src: url(../fonts/NotoSansKR-DemiLight.woff2) format('woff2'),
+  url(../fonts/NotoSansKR-DemiLight.woff) format('woff'),
+  url(../fonts/NotoSansKR-DemiLight.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Korean Regular');
+  src: url(../fonts/NotoSansKR-Regular.woff2) format('woff2'),
+  url(../fonts/NotoSansKR-Regular.woff) format('woff'),
+  url(../fonts/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Korean Medium');
+  src: url(../fonts/NotoSansKR-Medium.woff2) format('woff2'),
+  url(../fonts/NotoSansKR-Medium.woff) format('woff'),
+  url(../fonts/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Korean bold');
+  src: url(../fonts/NotoSansKR-Bold.woff2) format('woff2'),
+  url(../fonts/NotoSansKR-Bold.woff) format('woff'),
+  url(../fonts/NotoSansKR-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Noto Sans Korean black');
+  src: url(../fonts/NotoSansKR-Black.woff2) format('woff2'),
+  url(../fonts/NotoSansKR-Black.woff) format('woff'),
+  url(../fonts/NotoSansKR-Black.otf) format('opentype');
+}
+
+
+/* gmarket font */
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url(../fonts/GmarketSansLight.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url(../fonts/GmarketSansMedium.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url(../fonts/GmarketSansBold.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gmarket';
+  src: url(../fonts/GmarketSansLight.otf) format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gmarket';
+  src: url(../fonts/GmarketSansMedium.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gmarket';
+  src: url(../fonts/GmarketSansBold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
