@@ -154,7 +154,7 @@ background: url('../images/research/sub04_icon01.png') no-repeat;padding:.2rem 0
 .map_wrap .map_guide .contents dd{width: 100%;}
 .map_wrap .map_guide .contents dd p{font-size: 1.055rem;line-height: 1.2rem;padding: 0.45rem 0}
 .map_wrap .map_guide .contents dd p.road{font-weight:500;color: #000}
-.map_wrap .map_guide .contents dd p.route{;line-height: 1.2rem;font-weight: 100;}
+.map_wrap .map_guide .contents dd p.route{line-height: 1.2rem;font-weight: 100;}
 .map_wrap .map_guide .contents dd p.route span{position: relative;padding-right:1.6rem;margin-right:0.4rem;}
 .map_wrap .map_guide .contents dd p.route span::after{content: '';display: block;position: absolute;right:0;top:2px;width:16px;height:16px ;
     background: url('../images/research/sub01_06_arrow.png') no-repeat center;}
