@@ -166,12 +166,9 @@ background: url('../images/research/sub04_icon01.png') no-repeat;padding:.2rem 0
 }
 
 /* 조직도 */
-:root { 
-    --group-gap: min(50px)
- }
 .group_wrap{}
 .group_chart{ background: #f1f7fd;padding: 4rem 1rem;}
-.group_chart > section{ max-width: 900px;margin: 0 auto;}
+.group_chart > section{ width: 900px;margin: 0 auto;}
 .group_chart .top_tit{width: 180px;height: 184px;background: url('../images/research/sub01_05_img01.png');margin: 0 auto;}
 .group_chart .top_tit span{display: flex;align-items: center;justify-content: space-around; height: 100%;font-family:'GmarketSansMedium';font-size: 1.4rem;color: #fff;}
 .group_chart .group_box{margin: 0 auto;display: flex;justify-content: space-around; }
@@ -272,6 +269,8 @@ background: url('../images/research/sub04_icon01.png') no-repeat;padding:.2rem 0
 @media (max-width: 1000px){ 
     .leader_main_msg p { font-size: 1.5rem; align-self: flex-start; }
     .leader_main_msg strong { font-size: 1.8rem; }
+    .group_chart { overflow-x: auto; }
+    .group_chart > section { zoom: 0.8}
 
 }
 @media (max-width: 640px){
