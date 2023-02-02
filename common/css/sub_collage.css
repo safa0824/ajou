@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* collage */
+
+.txt_blue { color: #004098; }
+.clear_both:after { content: ''; display: block; clear: both;}
+
+/* 학장인사말 */
+.collage_wrap { color: #000; }
+.collage_intro_msg { position: relative; display: flex; align-items: center; justify-content: center;  margin-bottom: 4.35rem;  } 
+.collage_intro_msg .qouta_msg { position: relative; font-size: 1.75rem; text-align: center; padding: 10px 55px; line-height: 1.5; letter-spacing: -2px; margin: 0 5rem;}
+.collage_intro_msg .qouta_msg:before ,
+.collage_intro_msg .qouta_msg:after { content:'';  position: absolute; display: inline; font-weight: 400; color: #d6d6d6; font-size: 4.5rem; top:0; bottom: 0; width: 50px;}
+.collage_intro_msg .qouta_msg:before  {left: 0; background:url(/common/images/collage/icon_quot2_left.png) no-repeat 0 0;}
+.collage_intro_msg .qouta_msg:after  { right:0;  background:url(/common/images/collage/icon_quot2_right.png) no-repeat 100% 100%;}
+.collage_intro_wrap { font-size: 1.1rem; line-height:2.2; font-weight: 200;}
+.intro_main_img { position: relative; float: right; margin-left: 6.25rem;} 
+.intro_main_img .img_label { position: absolute; bottom:0; left: -35px; background: #011e46; color: #fff; font-size: 1.125rem; font-weight: 400;} 
+.intro_main_img .img_label p:first-child { background: #004098;}
+.intro_main_img .img_label p { display: flex; align-items: center; justify-content: flex-start; min-height: 51px; padding:0 35px;   }
+.intro_main_msg .dash_bar { margin-bottom: 2rem; }
+.intro_main_msg > p { margin-top: 2.5rem;}
+.intro_main_msg strong{ font-size: 1.6rem; }
+.dash_bar { display: flex; height: 3px; background: url(/common/images/collage/bg_intro_repeat_bar.png) repeat-x 0 0;  }
+
+.collage_blue_box { display: flex; align-items: center; justify-content: center; background: #e7f2fb; border-top: 1px solid #0e3f8f; border-bottom: 1px solid #e5e6e9; padding:55px 0 50px;  }
+.match_box_list { display: flex; gap:4.375rem;}
+.match_box_list li {  display: flex; flex-direction:column; max-width: 137px; gap: 35px; align-content: center;}
+.match_box_list .match_img { position: relative; display: flex; align-items: center; justify-content: center; background: #fff; height:  110px; width: 100%; border-radius: 6px; }
+.match_box_list .match_img:after { content: ''; display: block; position: absolute; top:100%; width: 19px; height: 19px; background:url(/common/images/collage/icon_mark02.png) no-repeat 0 0; margin-top:-9px;}
+.match_box_list .match_tit { color: #011e46; font-size: 1.125rem; font-weight: 700; white-space: nowrap; line-height: 1.2; }
+
+@media (max-width:1200px){ 
+}
+@media (max-width:980px){ 
+}
+@media (max-width:640px){ 
+}
