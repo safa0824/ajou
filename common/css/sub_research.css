@@ -758,8 +758,8 @@ box-sizing: border-box;}
 @media (max-width: 640px){
     .company_list_wrap ul { gap: 20px; }
     .company_list_wrap li { width: calc(50% - 10px);}
-    .company_list_wrap .company_logo { margin-bottom: 15px; }
-    .company_list_wrap :is(.company_name, .company_date) span { font-size: 0.9rem; width: 55px;}
+    .company_list_wrap .company_logo { margin-bottom: 15px; height: 120px; }
+    .company_list_wrap :is(.company_name, .company_date) span { font-size: 0.9rem; width: 55px; white-space: nowrap; line-height: 1.4;} 
     .list_pager > a span{ background-color: #fff; padding:0 5px;}
     .list_pager > .list_pager_prev { padding-left: 20px}
     .list_pager > .list_pager_next { padding-right: 20px}
