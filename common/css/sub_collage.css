@@ -13,6 +13,10 @@
 .collage_intro_msg .qouta_msg:after { content:'';  position: absolute; display: inline; font-weight: 400; color: #d6d6d6; font-size: 4.5rem; top:0; bottom: 0; width: 50px;}
 .collage_intro_msg .qouta_msg:before  {left: 0; background:url(/common/images/collage/icon_quot2_left.png) no-repeat 0 0;}
 .collage_intro_msg .qouta_msg:after  { right:0;  background:url(/common/images/collage/icon_quot2_right.png) no-repeat 100% 100%;}
+.collage_intro_msg.type2 { position: relative; background: #fbfbfb; border:1px solid #dadce0; padding: 50px 15px;}
+.collage_intro_msg .qouta_msg:before  {left: 0; background:url(/common/images/collage/icon_quot1_left.png) no-repeat 0 0;}
+.collage_intro_msg .qouta_msg:after  { right:0;  background:url(/common/images/collage/icon_quot1_right.png) no-repeat 100% 100%;}
+.collage_intro_msg.type2 .bottom_img { position: absolute; top: 100%; left:50%; margin: -42px 0 0 -42px; }
 .collage_intro_wrap { font-size: 1.1rem; line-height:2.2; font-weight: 200;}
 .intro_main_img { position: relative; float: right; margin-left: 6.25rem;} 
 .intro_main_img .img_label { position: absolute; bottom:0; left: -35px; background: #011e46; color: #fff; font-size: 1.125rem; font-weight: 400;} 
@@ -23,12 +27,21 @@
 .intro_main_msg strong{ font-size: 1.6rem; }
 .dash_bar { display: flex; height: 3px; background: url(/common/images/collage/bg_intro_repeat_bar.png) repeat-x 0 0;  }
 
-.collage_blue_box { display: flex; align-items: center; justify-content: center; background: #e7f2fb; border-top: 1px solid #0e3f8f; border-bottom: 1px solid #e5e6e9; padding:55px 0 50px;  }
+.collage_blue_box { display: flex; align-items: center; justify-content: center; background: #e7f2fb; border-top: 1px solid #0e3f8f; border-bottom: 1px solid #e5e6e9; padding:55px 0 50px;  margin: 50px 0; }
 .match_box_list { display: flex; gap:4.375rem;}
 .match_box_list li {  display: flex; flex-direction:column; max-width: 137px; gap: 35px; align-content: center;}
 .match_box_list .match_img { position: relative; display: flex; align-items: center; justify-content: center; background: #fff; height:  110px; width: 100%; border-radius: 6px; }
-.match_box_list .match_img:after { content: ''; display: block; position: absolute; top:100%; width: 19px; height: 19px; background:url(/common/images/collage/icon_mark02.png) no-repeat 0 0; margin-top:-9px;}
-.match_box_list .match_tit { color: #011e46; font-size: 1.125rem; font-weight: 700; white-space: nowrap; line-height: 1.2; }
+.match_box_list .match_img:after { content: ''; display: block; position: absolute; top:100%; width: 19px; height: 43px; background:url(/common/images/collage/icon_mark02.png) no-repeat 0 0; margin-top:-9px;}
+.match_box_list .match_tit { position: relative; color: #011e46; font-size: 1.125rem; font-weight: 700; white-space: nowrap; line-height: 1.2; padding: 5px 0; }
+
+/* 역대간호학장*/
+.leader_history_list { display: flex; justify-content: space-between; color: #fff; gap: 25px; }
+.leader_history_list .leader_info { background: #004098 url(/common/images/collage/sub01_collage_logo01.png) no-repeat 85% 1.8rem; padding:1.875rem 2.375rem ;}
+.leader_history_list .leader_name { line-height: 1; font-size: 1.875rem; font-weight: 500; margin-bottom: 15px; }
+.leader_history_list .leader_desc_box { position: relative; padding-left:15px;}
+.leader_history_list p:not(.leader_name) { font-weight: 200; margin-bottom: 8px }
+.leader_history_list .leader_desc1:before { content: ''; display: block; position: absolute; width: 7px; height: 7px; border-radius: 50%; background: #fff; left: 0; top: 7px; }
+.leader_history_list .leader_desc_box:before { content: ''; display: block; position: absolute; left: 3px; top: 17px; bottom:3px; left: 3px; width: 1px; border-left: 1px dotted #fff;  }
 
 @media (max-width:1200px){ 
 }
