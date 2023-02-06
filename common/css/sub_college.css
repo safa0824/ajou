@@ -30,7 +30,8 @@
 .intro_main_img.type2 { margin-bottom: 20px;}
 .dash_bar { display: flex; height: 5px; background: url(../images/college/bg_intro_repeat_bar.png) repeat-x 0 0;  }
 
-.college_blue_box { display: flex; align-items: center; justify-content: center; background: #e7f2fb; border-top: 1px solid #0e3f8f; border-bottom: 1px solid #e5e6e9; padding:55px 15px 50px 15px;  }
+.college_blue_box { display: flex; align-items: center; justify-content: center; background: #e7f2fb; border-top: 1px solid #0e3f8f; border-bottom: 1px solid #e5e6e9; padding:55px 15px 50px 15px; }
+.college_blue_box.type2 { padding: 0; }
 .college_blue_box2 { background: #f5fafd; padding:35px; border:1px solid #dadce0;  }
 .college_gray_box { background: #f7f9fb; padding:35px; border:1px solid #dadfe7;  }
 .college_intro_wrap :is(.college_blue_box2, .college_blue_box) { margin: 60px 0; }
@@ -40,6 +41,7 @@
 .match_box_list .match_img { position: relative; display: flex; align-items: center; justify-content: center; background: #fff; height:  110px; width: 100%; border-radius: 6px; }
 .match_box_list .match_img:after { content: ''; display: block; position: absolute; top:100%; width: 19px; height: 43px; background:url(../images/college/icon_mark02.png) no-repeat 0 0; margin-top:-9px;}
 .match_box_list .match_tit { display: flex; justify-content: center; position: relative; color: #011e46; font-size: 1.125rem; font-weight: 700; white-space: nowrap; line-height: 1.2; padding: 5px 0; }
+
 
 /* 역대간호학장*/
 .leader_history_list { display: flex; justify-content: space-between; color: #fff; gap: 25px; width: 100%;}
@@ -58,7 +60,7 @@
 .college_con_wrap.inner_flex { display: flex; gap: 20px;  }
 .college_con_wrap.inner_flex > div { flex: 1;  }
 .college_con_wrap.inner_flex .con_tit { margin-bottom: 1rem; }
-.college_con_wrap .con_tit ~ .college_blue_box { margin: 40px 0; }
+.college_con_wrap .con_tit ~ .college_blue_box { margin: 40px 0; clear:both}
 .college_con_wrap .con_tit + .college_blue_box { margin: 0; }
 
 .college_schema_box1 { display: flex;align-items: center; justify-content: center; background: url(../images/college/sub01_02_01_bg01.png) no-repeat 0 0; font-size: 1.25rem; font-weight: 700; line-height: 1.2; }
@@ -218,7 +220,7 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 .number_list1 li { display: block; line-height: 1.4;}
 .number_list1 li + li { margin-top: 10px; }
 .number_list1 > li { position: relative; padding: 5px 0 5px 40px;  }
-.number_list1 .list_number { position: absolute; top: 3px; left: 0; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #fea921; border-radius: 50%; background: #fcf1df; width: 29px; height: 29px; color: #fea921; font-weight: 500; margin-right: 5px;}
+.number_list1 .list_number { position: absolute; top: 3px; left: 0; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #fea921; border-radius: 50%; background: #fcf1df; width: 29px; height: 29px; color: #ffa414; font-weight: 400; margin-right: 5px;}
 .number_list1 ul { margin: 10px 0 0 10px; font-weight: 500; }
 
 /* 대학생활 */
@@ -245,17 +247,27 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 .club_list1 .club_item_con .item_con_info img { margin-right: 5px; }
 
 /* 대학원 */
-.course_box .icon_box_blue { width: 132px; height: 118px; }
+.course_box .icon_box_blue { width: 132px; height: 118px; border-radius: 5px; }
 .course_box { display: flex; gap: 30px;}
 .course_box .course_con { flex: 1; padding: 10px 0 30px 0; line-height: 2; border-bottom: 1px solid #cbcbcb; font-size: 1.06rem; }
 .course_box .course_con > p { font-weight: 200;}
-.course_box .course_con ul { margin-top: 10px; }
+.course_box .course_con ul { margin-top: 10px; font-weight: 200; }
 
-.match_box_list.type1 { gap: 0; width: 100%;}
-.match_box_list.type1 li { flex: 1; width: 50%;  max-width: unset; align-items: center;}
-.match_box_list.type1 li + li { border-left: 1px solid #dadce0; }
-.match_box_list.type1 .match_tit { font-size: 1.69rem; color:#16468f; font-weight: 700;  }
-.match_box_list.type1 .match_img { width: 134px;}
+.match_box_list.type2 { gap: 0; width: 100%; flex-wrap:wrap; }
+.match_box_list.type2 li { flex: 1; width: 50%;  padding: 50px 10px 40px 10px; max-width: unset; align-items: center; gap: 25px; }
+.match_box_list.type2 li + li { border-left: 1px solid #dadce0; }
+.match_box_list.type2 .match_tit { font-size: 1.69rem; color:#16468f; font-weight: 700; padding:0; margin-bottom: 35px; }
+.match_box_list.type2 .match_img { width: 134px;}
+.match_box_list.type2 .match_img:after { top: auto; bottom: 100%; margin-bottom:-3px}
+.match_box_list.type2 .match_desc { text-align: center; line-height: 2; font-size: 1.09rem; font-weight: 200;}
+
+.college_con_wrap.type2 .intro_main_img { margin-bottom: 50px; }
+.college_search_box { border: 1px solid #dadce0; background: #fbfbfb; padding: 20px 10px; display: flex; gap: 4px; justify-content: center; margin-bottom: 50px;}
+.college_search_box  select { font-weight: 340; width: 180px;}
+.college_search_box input::-webkit-input-placeholder { opacity: 1; color: #c4c4c4; font-weight: 300; letter-spacing: -0.5px;}
+.college_search_box .search_input_box { display: flex; flex: 1; max-width: 530px; }
+.college_search_box .search_input_box button { background:#fff url(../images/college/icon_search_btn.png) no-repeat center; width: 54px; border:1px solid #cbcbcb; border-left: 0 none;}
+.college_search_box .search_input_box button:hover { background-color:#fafafa; }
 
 @media (max-width:1200px){ 
   .leader_history_list .leader_info { padding: 25px; background-position: 90% 1rem; }
@@ -307,8 +319,9 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
   .college_schema_box1 li:nth-child(3) { border-color: #ffa414;}
   .college_schema_box1 li + li { margin: 0; }
   .college_con_wrap .con_tit { font-size: 1.5rem;}
-  .college_con_wrap .con_tit:before { top: 11px; }
+  .college_con_wrap .con_tit:before { top: 9px; }
   .college_con_wrap .con_box { padding-left: 5px; }
+  .college_con_wrap ~ .college_con_wrap { margin-top: 2rem; }
   .college_wrap .top_img_banner img { height: 120px; }
   .history_rail_wrap .history_rail_visual:not(.txt) img { width: 200px; }
   .history_rail_wrap .history_rail_visual:not(.txt) { flex-direction: column !important;  justify-content: flex-start; padding-top: 10px; }
@@ -325,8 +338,14 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
   .club_list1 .club_item_con .item_con_info { gap:10px; }
   .club_list1 .club_item_con .item_con_info li { padding: 5px 15px; }
   .club_list1 .club_item_con .item_con_info p { width: calc(100% - 35px ); margin-left: auto;}
-  .club_list1 .club_item_con .item_con_info img { margin: 0 auto; }
-
+  .club_list1 .club_item_con .item_con_info img { margin: 0 auto; }  
+  
+  .match_box_list.type2 .match_tit{ font-size: 1.4rem; margin-bottom: 20px; }
+  .match_box_list.type2 li { padding:30px 10px 20px 10px; flex: 1 1 100%; }
+  .match_box_list.type2 li + li { border:0 none; border-top: 1px solid #dadce0;}
+  .match_box_list.type2 .match_img { height: 100px; width: 100px;}
+  .match_box_list.type2 .match_desc { font-size: 1rem; }
+  .match_box_list.type2 .match_desc br { display: none;}
 }  
 @media (min-width: 641px) and (max-width: 980px) {
   .mobile_map :is(.organ_dep1,.organ_dep2) > li { display: flex; align-items: flex-start;}
@@ -340,8 +359,9 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
   .college_intro_msg { margin-bottom: 3rem;}
   .college_intro_msg .qouta_msg{ padding: 30px 0; font-size: 1.5rem; margin:0 1rem}
   .college_intro_msg .qouta_msg:before, 
-  .college_intro_msg .qouta_msg:after { zoom: 0.8; } 
-  .college_intro_msg.type2 { margin-bottom: 5rem; }
+  .college_intro_msg .qouta_msg:after { zoom: 0.7; } 
+  .college_intro_msg.type2 { margin-bottom: 5rem; padding: 25px 10px;  }
+  .college_intro_msg.type2 .bottom_img { zoom: 0.7; }
   .intro_main_img { display: block; float: none; max-width: none; width: 90%; margin: 20px 0 30px auto; }
   .intro_main_img .img_label{ left: -0.875rem; }
   .intro_main_img .img_label p { min-height: 44px; padding: 0 20px; }
@@ -405,4 +425,9 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
   .college_blue_box2 .inner_flex.center { gap: 20px; }
   .college_blue_box2 .inner_flex.center .credits_box { margin: 0; }
   .icon_box_list { justify-content: center; }
+
+  .course_box { display: block;}
+  .course_box .course_con { padding:0 0 20px 0;}
+  .course_box .icon_box_blue { width: 50px; height: 50px; float: left; margin: 4px 20px 5px 0;}
+  .course_box .icon_box_blue img { zoom: 0.5; }
 }
