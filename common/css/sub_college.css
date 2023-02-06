@@ -251,9 +251,11 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 .course_box .course_con > p { font-weight: 200;}
 .course_box .course_con ul { margin-top: 10px; }
 
-.college_blue_box.type2 { gap: 0; }
-.college_blue_box.type2 li { flex: 1;}
-.college_blue_box.type2 .match_tit { font-size: 1.69rem; color:#16468f; font-weight: 700;  }
+.match_box_list.type1 { gap: 0; width: 100%;}
+.match_box_list.type1 li { flex: 1; width: 50%;  max-width: unset; align-items: center;}
+.match_box_list.type1 li + li { border-left: 1px solid #dadce0; }
+.match_box_list.type1 .match_tit { font-size: 1.69rem; color:#16468f; font-weight: 700;  }
+.match_box_list.type1 .match_img { width: 134px;}
 
 @media (max-width:1200px){ 
   .leader_history_list .leader_info { padding: 25px; background-position: 90% 1rem; }
