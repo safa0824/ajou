@@ -58,6 +58,8 @@
 .college_con_wrap.inner_flex { display: flex; gap: 20px;  }
 .college_con_wrap.inner_flex > div { flex: 1;  }
 .college_con_wrap.inner_flex .con_tit { margin-bottom: 1rem; }
+.college_con_wrap .con_tit ~ .college_blue_box { margin: 40px 0; }
+.college_con_wrap .con_tit + .college_blue_box { margin: 0; }
 
 .college_schema_box1 { display: flex;align-items: center; justify-content: center; background: url(../images/college/sub01_02_01_bg01.png) no-repeat 0 0; font-size: 1.25rem; font-weight: 700; line-height: 1.2; }
 .college_schema_box1 li { width: 250px; height: 250px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
@@ -189,7 +191,9 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 .study_info tbody td { padding: 10px 7px; }
 
 /*  학과소개 */
+.college_con_wrap.type2 .con_tit,
 .college_intro_wrap.type2 .con_tit { margin-bottom:0; }
+.college_con_wrap.type2 .con_box,
 .college_intro_wrap.type2 .con_box { line-height: 2.1; font-size: 1.06rem; }
 .college_intro_wrap.type2 h3 ~ .intro_main_img { margin-top: 10px; }
 
@@ -236,10 +240,20 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 .club_list1 .club_item_con .item_con_img { float: right; margin-left: 10px;} 
 .club_list1 .club_item_con .item_con_msg { font-weight: 500; font-size: 1.625rem; font-family: 'Gmarket'; letter-spacing: -1px; line-height: 1.4; margin-bottom:5px;}
 .club_list1 .club_item_con .item_con_name { font-size: 1.09rem; color:#3987ee; font-weight: 500;  font-family: 'Gmarket';  }
-.club_list1 .club_item_con .item_con_desc {}
 .club_list1 .club_item_con .item_con_info { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap:wrap; }
 .club_list1 .club_item_con .item_con_info li { display: flex; flex: 1 1 250px; align-items: center; gap: 5px; background: #ffffff; border:1px solid #dadfe7; border-radius: 3px; padding: 5px 25px; height: 57px; font-size: 1.09rem; font-weight: 300; box-sizing: border-box;}
 .club_list1 .club_item_con .item_con_info img { margin-right: 5px; }
+
+/* 대학원 */
+.course_box .icon_box_blue { width: 132px; height: 118px; }
+.course_box { display: flex; gap: 30px;}
+.course_box .course_con { flex: 1; padding: 10px 0 30px 0; line-height: 2; border-bottom: 1px solid #cbcbcb; font-size: 1.06rem; }
+.course_box .course_con > p { font-weight: 200;}
+.course_box .course_con ul { margin-top: 10px; }
+
+.college_blue_box.type2 { gap: 0; }
+.college_blue_box.type2 li { flex: 1;}
+.college_blue_box.type2 .match_tit { font-size: 1.69rem; color:#16468f; font-weight: 700;  }
 
 @media (max-width:1200px){ 
   .leader_history_list .leader_info { padding: 25px; background-position: 90% 1rem; }
