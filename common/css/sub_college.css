@@ -218,9 +218,9 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 .college_blue_box2 .credits_box { padding: 0; margin: 15px 0; }
 
 .number_list1 li { display: block; line-height: 1.4;}
-.number_list1 li + li { margin-top: 10px; }
+.number_list1 li + li { margin-top: 5px; }
 .number_list1 > li { position: relative; padding: 5px 0 5px 40px;  }
-.number_list1 .list_number { position: absolute; top: 3px; left: 0; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #fea921; border-radius: 50%; background: #fcf1df; width: 29px; height: 29px; color: #ffa414; font-weight: 400; margin-right: 5px;}
+.number_list1 .list_number { position: absolute; top: 3px; left: 0; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #fea921; border-radius: 50%; background: #fcf1df; width: 29px; height: 29px; color: #ffa414; font-weight: 400; margin-right: 5px; box-sizing: border-box; padding-bottom: 1px;}
 .number_list1 ul { margin: 10px 0 0 10px; font-weight: 500; }
 
 /* 대학생활 */
@@ -247,7 +247,7 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 .club_list1 .club_item_con .item_con_info img { margin-right: 5px; }
 
 /* 대학원 */
-.course_box .icon_box_blue { width: 132px; height: 118px; border-radius: 5px; }
+.course_box .icon_box_blue { width: 132px; height: 118px; }
 .course_box { display: flex; gap: 30px;}
 .course_box .course_con { flex: 1; padding: 10px 0 30px 0; line-height: 2; border-bottom: 1px solid #cbcbcb; font-size: 1.06rem; }
 .course_box .course_con > p { font-weight: 200;}
@@ -428,6 +428,6 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 
   .course_box { display: block;}
   .course_box .course_con { padding:0 0 20px 0;}
-  .course_box .icon_box_blue { width: 50px; height: 50px; float: left; margin: 4px 20px 5px 0;}
+  .course_box .icon_box_blue { width: 50px; height: 50px; float: left; margin: 4px 20px 5px 0; border-radius: 5px;}
   .course_box .icon_box_blue img { zoom: 0.5; }
 }
