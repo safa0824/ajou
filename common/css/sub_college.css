@@ -42,6 +42,7 @@
 .match_box_list .match_img { position: relative; display: flex; align-items: center; justify-content: center; background: #fff; height:  110px; width: 100%; border-radius: 6px; }
 .match_box_list .match_img:after { content: ''; display: block; position: absolute; top:100%; width: 19px; height: 43px; background:url(../images/college/icon_mark02.png) no-repeat 0 0; margin-top:-9px;}
 .match_box_list .match_tit { display: flex; justify-content: center; position: relative; color: #011e46; font-size: 1.125rem; font-weight: 700; white-space: nowrap; line-height: 1.2; padding: 5px 0; }
+.match_box_list .match_tit span { color: #004098; margin-right: 5px; }
 .college_intro_msg + .college_blue_box { margin-top: 100px; }
 
 /* 역대간호학장*/
@@ -73,8 +74,8 @@
 .college_txt_box1 { font-size: 1.125rem; color:#fff; font-weight: 400; border-radius: 30px; background: #ffa414; width: fit-content; padding: 10px 55px; min-height: 55px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; }
 .college_schema_box2 + .college_txt_box1 { margin-top: -13px; }
 
-.college_con_wrap .con_box { padding-left: 27px; }
-.college_con_wrap .con_box + .con_box { margin-top: 50px; }
+.college_con_wrap .con_tit ~ .con_box { padding-left: 27px; }
+.college_con_wrap .con_tit ~ .con_box + .con_box { margin-top: 50px; }
 .college_con_wrap .con_box_tit { font-size: 1.5rem; color:#004098; font-weight: 700; margin-bottom: 5px; line-height: 1.4;}
 .college_txt_list1 { margin-top: 10px;}
 .college_txt_list1 li { position: relative; padding-left: 15px; font-size: 1.1rem; font-weight: 200; display: block; line-height: 1.3;}
@@ -95,7 +96,7 @@
 .history_rail_wrap .history_rail_tit:before { content: ''; display: block; position: absolute; right: -40px; top: 7px; width: 19px; height: 19px; background:url(../images/college/icon_mark03.png) no-repeat 0 0;}
 .history_rail_wrap li:nth-child(odd) .history_rail_tit:before { right: auto; left: -39px; }
 .history_rail_wrap .history_rail_con p { display: flex; align-items: flex-start; gap: 5px; margin-top: 15px; font-weight: 200; line-height: 1.4; font-size: 1.06rem; letter-spacing: -1.2px;}
-.history_rail_wrap .history_rail_con p span { width: 50px; font-weight: 500;}
+.history_rail_wrap .history_rail_con p span { flex: 0 0 50px; font-weight: 500;}
 .history_rail_wrap li .history_rail_con { text-align: right;}
 .history_rail_wrap li:nth-child(odd) { flex-direction: row-reverse; }
 .history_rail_wrap li:nth-child(odd) .history_rail_con { text-align: left;}
@@ -301,6 +302,17 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 .nurse_research_map .organ_group2_1 > li { position: relative; margin-top: 15px; }
 .nurse_research_map .organ_group2_1 > li:before { content: ''; display: block; position: absolute; bottom:100%; left: 50%; width: 1px; height: 15px; background: #cbcbcb;}
 
+/* 시설대관 */
+.match_box_list.type3 li { position: relative;}
+.match_box_list.type3 li + li:before { content: ''; display: block; position: absolute; right: 100%; background:url(../images/college/icon_arrow_half.png) no-repeat center; width: 4.375rem; top:0; height: 110px;}
+.contact_type1 { display: flex; gap: 25px; flex-wrap:wrap; font-size: 1.06rem; line-height: 1; align-items: center;}
+.contact_type1 :is(.contact_tit, .contact_download) {  color: #fff; padding: 16px 35px;}
+.contact_type1 .contact_tit { background: #ffa414; }
+.contact_type1 .contact_download {  background: #383c3d;}
+.contact_type1 .contact_download img { margin-left: 15px; vertical-align: middle; margin-top: -7px;}
+.contact_type1 p img { margin-right: 5px;}
+.contact_type1 p strong { margin-left: 3px;}
+
 @media (max-width:1200px){ 
   .leader_history_list .leader_info { padding: 25px; background-position: 90% 1rem; }
   .leader_history_list .leader_name { font-size: 1.5rem; }
@@ -324,6 +336,9 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
   .match_box_list .match_img { height: 80px;}
   .match_box_list .match_img img { zoom: 0.85; }
   .match_box_list .match_tit { font-size: 1rem; }
+  .match_box_list.type3  { gap: 3rem; }
+  .match_box_list.type3 li { flex: 1 1 50%;}
+  .match_box_list.type3 li + li:before { width: 3rem; background-size: 20px auto; }
   .leader_history_list {  flex-wrap: wrap; gap: 20px;  }
   .leader_history_list li { width: calc(50% - 10px);}
   .leader_history_list .leader_img img { width: 100%; max-height: 300px; object-fit: cover; }
@@ -342,6 +357,7 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 
   
   .college_blue_box2{ padding: 20px; }
+  
 }
 @media (max-width:800px){
   .college_schema_box1 { background: none; flex-wrap:wrap;}
@@ -352,7 +368,7 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
   .college_schema_box1 li + li { margin: 0; }
   .college_con_wrap .con_tit { font-size: 1.5rem;}
   .college_con_wrap .con_tit:before { top: 9px; }
-  .college_con_wrap .con_box { padding-left: 5px; }
+  .college_con_wrap .con_tit ~ .con_box { padding-left: 5px; }
   .college_con_wrap ~ .college_con_wrap { margin-top: 2rem; }
   .college_wrap .top_img_banner img { height: 120px; }
   .history_rail_wrap .history_rail_visual:not(.txt) img { width: 200px; }
@@ -483,5 +499,9 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
   .nurse_research_map li > p { padding: 10px 0; font-size: 1rem; }
   .nurse_research_map .organ_group2_1 > li { margin-top: 10px;}
   .nurse_research_map .organ_group2_1 > li:before { height: 9px;}
+  
+  .contact_type1 p:not(.contact_tit) { flex: 1 1 100%; }
+  .contact_type1 :is(.contact_tit, .contact_download) { padding: 12px 30px;}
+  .contact_type1 .contact_download { margin-top: 20px; }
   
 }
