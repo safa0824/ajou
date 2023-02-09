@@ -313,6 +313,9 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 .contact_type1 p img { margin-right: 5px;}
 .contact_type1 p strong { margin-left: 3px;}
 
+/* 의과학연구소 */
+
+
 @media (max-width:1200px){ 
   .leader_history_list .leader_info { padding: 25px; background-position: 90% 1rem; }
   .leader_history_list .leader_name { font-size: 1.5rem; }
