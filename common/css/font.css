@@ -104,3 +104,29 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
+@font-face {
+  font-family: 'Agaramond';
+  src: url(../fonts/AGaramondPro-Bold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Agaramond';
+  src: url(../fonts/AGaramondPro-BoldItalic.otf) format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Agaramond';
+  src: url(../fonts/AGaramondPro.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Agaramond';
+  src: url(../fonts/AGaramondPro-Italic.otf) format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
