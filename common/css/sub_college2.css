@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* college */
+
+.txt_blue { color: #004098; }
+.txt_orange { color: #ff8500; }
+.clear_both:after { content: ''; display: block; clear: both;}
+.inner_flex { display: flex; }
+
+/* 의과학연구소 */
+.college_wrap2 { color: #000;}
+.college_wrap2_tit { font-size: 2rem; font-weight: 700; color: #004098; }
+.college_intro2 .main_intro_tit { color: #004098; font-size: 2.25rem; font-family: 'Agaramond'; font-weight: 400;margin:2.5rem 0; }
+.college_intro2 .main_intro_tit strong { font-weight: 700; text-transform: uppercase; font-size: 2.625rem; }
+.college_intro2 .inner_flex { gap: 5rem; flex-wrap: wrap;}
+.college_intro2 .inner_flex > div {flex:1 1 400px; }
+.college_intro2 .inner_flex img { margin: 0 auto; display: block;}
+.college_intro2 .main_intro_desc { font-size: 1.625rem; line-height: 1.5; margin-bottom: 30px;  }
+.college_intro2 .sub_intro_desc { font-weight: 200; font-size: 1.06rem; line-height: 2; }
+.college_intro2 .sub_intro_desc + .sub_intro_desc { margin-top: 1.8rem; }
+.college_wrap2 .full_img { margin-top: 7.5rem; }
+.college_wrap2 .feature_box { display: flex; flex-wrap: wrap; margin-top: 3.75rem; border:1px solid #004098; }
+.college_wrap2 .feature_box .feature_item { flex: 1; padding: 2rem; }
+.college_wrap2 .feature_box .feature_item + .feature_item { border-left: 1px solid #004098; }
+.college_wrap2 .feature_box .feature_item_tit {  text-align: center; font-size: 1.5rem; font-weight: 700; margin-top:2rem; }
+.college_wrap2 .feature_box .feature_item_img { margin: 1.5rem auto 2.5rem auto; display: block;}
+.college_wrap2 .feature_box .feature_bottom { display: flex; flex: 1 1 100%; align-items: center; justify-content: center; color: #fff; background: #004098; min-height: 125px; font-family: 'Agaramond'; font-weight: 700; font-size: 2.5rem; }
+.college_wrap2 .num_list2 { font-weight: 200; }
+.college_wrap2 .num_list2 li { display: flex; width: 100%; gap: 10px; }
+.college_wrap2 .num_list2 li + li { margin-top: 10px;}
+.college_wrap2 .num_list2 .list_num { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 26px; border-radius: 50%; width: 26px; height: 26px; color: #fff; background: #004098;}
+.college_wrap2 .feature_gray_box { background: #fafafa; border:1px solid #d7e0e9; border-radius: 6px; font-weight: 200; text-align: center; padding:15px; line-height: 2; }
+
+.organ2 .organ_head { width: fit-content; height: 84px; display: flex; align-items: center; justify-content: center; padding: 0 55px; font-size: 1.375rem; font-weight: 500; color: #fff; background: #004098; outline:1px dashed #004098; box-shadow: inset 0 0 0 10px #fff}
+.organ2 :is(.organ_group1, .organ_group2) { display: flex; align-items: start;}
+.organ2 :is(.organ_group1, .organ_group2) > li > p { display: flex; align-items: center; justify-content: center; background: #ffa415; font-weight: 500; color: #fff; font-size: 1.06rem; padding:0 45px; height: 46px; box-sizing: border-box } 
+.organ2 .organ_group2 { align-items: top;}
+.organ2 .organ_group2 > li > p { background: #004098; width: 204px; ;}
+.organ2 .organ_group2 ul p { display: flex; align-items: center; justify-content: center; border: 1px solid #004098; width: 126px; min-height: 48px; color: #004098;   }
+.organ2 .organ_group2_1 { display: flex; justify-content: start;}
+
+@media (max-width:1200px){ 
+
+}
+@media (max-width:980px){ 
+  .pc_map { display: none;  }
+  .mobile_map { display: block; }
+  
+}
+@media (max-width:800px){
+
+  .college_intro2 .main_intro_tit { font-size: 1.8rem; margin:1.5rem 0; }
+  .college_intro2 .main_intro_desc { font-size: 1.5rem; }
+  .college_wrap2 .full_img { margin-top:3rem; }
+  .college_wrap2 .feature_box.type2 .feature_item { flex: 1 1 100%; }
+  .college_wrap2 .feature_box .feature_item_tit { margin-top:0; }
+  .college_wrap2 .num_list2 li { gap: 5px; }
+  .college_wrap2 .num_list2 .list_num { font-size:0.8rem; width: 24px; height: 24px; flex: 0 0 24px; }
+  .college_wrap2 .feature_box .feature_bottom { font-size: 2rem; padding: 30px 20px; min-height: auto; text-align: center;}
+  .college_wrap2 .feature_box .feature_item + .feature_item { border: 0 none; border-top: 1px solid #004098;}
+  
+}  
+@media (min-width: 641px) and (max-width: 980px) {
+}
+@media (max-width:640px){ 
+}
