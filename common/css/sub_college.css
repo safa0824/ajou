@@ -314,32 +314,6 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
 .contact_type1 p img { margin-right: 5px;}
 .contact_type1 p strong { margin-left: 3px;}
 
-/* 의과학연구소 */
-.college_wrap2 { color: #000;}
-.college_wrap2_tit { font-size: 2rem; font-weight: 700; color: #004098; }
-.college_intro2 .main_intro_tit { color: #004098; font-size: 2.25rem; font-family: 'Agaramond'; font-weight: 400;margin:2.5rem 0; }
-.college_intro2 .main_intro_tit strong { font-weight: 700; text-transform: uppercase; font-size: 2.625rem; }
-.college_intro2 .inner_flex { gap: 5rem; flex-wrap: wrap;}
-.college_intro2 .inner_flex > div {flex:1 1 400px; }
-.college_intro2 .inner_flex img { margin: 0 auto; display: block;}
-.college_intro2 .main_intro_desc { font-size: 1.625rem; line-height: 1.5; margin-bottom: 30px;  }
-.college_intro2 .sub_intro_desc { font-weight: 200; font-size: 1.06rem; line-height: 2; }
-.college_intro2 .sub_intro_desc + .sub_intro_desc { margin-top: 1.8rem; }
-.college_wrap2 .full_img { margin-top: 7.5rem; }
-.college_wrap2 .feature_box { display: flex; flex-wrap: wrap; margin-top: 3.75rem; border:1px solid #004098; }
-.college_wrap2 .feature_box .feature_item { flex: 1; padding: 2rem; }
-.college_wrap2 .feature_box .feature_item + .feature_item { border-left: 1px solid #004098; }
-.college_wrap2 .feature_box .feature_item_tit {  text-align: center; font-size: 1.5rem; font-weight: 700; margin-top:2rem; }
-.college_wrap2 .feature_box .feature_item_img { margin: 1.5rem auto 2.5rem auto; display: block;}
-.college_wrap2 .feature_box .feature_bottom { display: flex; flex: 1 1 100%; align-items: center; justify-content: center; color: #fff; background: #004098; min-height: 125px; font-family: 'Agaramond'; font-weight: 700; font-size: 2.5rem; }
-.college_wrap2 .num_list2 { font-weight: 200; }
-.college_wrap2 .num_list2 li { display: flex; width: 100%; gap: 10px; }
-.college_wrap2 .num_list2 li + li { margin-top: 10px;}
-.college_wrap2 .num_list2 .list_num { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 26px; border-radius: 50%; width: 26px; height: 26px; color: #fff; background: #004098;}
-.college_wrap2 .feature_gray_box { background: #fafafa; border:1px solid #d7e0e9; border-radius: 6px; font-weight: 200; text-align: center; padding:15px; line-height: 2; }
-
-
-
 @media (max-width:1200px){ 
   .leader_history_list .leader_info { padding: 25px; background-position: 90% 1rem; }
   .leader_history_list .leader_name { font-size: 1.5rem; }
