@@ -169,10 +169,10 @@
 .college_promtion .college_video_list .video_tit { font-weight: 300; font-size: 1.06rem; height: 2.6rem; line-height: 1.3; display: -webkit-box; overflow:hidden; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all; font-weight: 200;}
 
 /* 대중교통 */
-.college_table_wrap { border-top:1px solid #004098; border-bottom: 0 none; color: #000; margin-bottom:20px; margin-top: 15px; }
-.college_table_wrap table * { box-sizing: border-box;}
-.college_table_wrap table th { background: #f7f9fb; color: #273454; }
-.college_table_wrap table :is(th, td) { height: 53px; font-size: 1.06rem; line-height: 1.75; padding: 10px 20px; border:1px solid #dadfe7 !important; }
+.college_table_wrap2 {  border-bottom: 0 none; color: #000; margin-bottom:20px; margin-top: 15px; }
+.college_table_wrap2 table * { box-sizing: border-box;}
+.college_table_wrap2 table th { background: #f7f9fb; color: #273454; }
+.college_table_wrap2 table :is(th, td) { height: 53px; font-size: 1.06rem; line-height: 1.75; padding: 10px 20px; border:1px solid #dadfe7 !important; }
 
 .college_table_wrap table th.th_line4 { line-height: 1.4; padding:3px 0;}
 .college_table_wrap table th.th_line5 { line-height: 1.2; font-size: 15px; padding:3px 0;}
