@@ -7,6 +7,7 @@
 .clear_both:after { content: ''; display: block; clear: both;}
 .inner_flex { display: flex; }
 .line_blue_box { border: 1px solid #004098; padding: 70px 0; }
+.icon_blue_arrow_right { display: inline-block; width: 4px; height: 6px; background:url(../images/icon_arrow_right_blue1.png) no-repeat 0 0; background-size: contain;  }
 
 /* 의과학연구소 */
 .college_wrap2 { color: #000; }
@@ -181,6 +182,8 @@
 .con_noti1_desc { display: block; margin-top: 1rem; font-size: 1rem; border: 1px solid #004098; padding:1.3rem 0.5rem 1.3rem 2.5rem; align-items: center; justify-content: center; color: #004098; font-weight: 500; line-height: 1.8; }
 .con_noti1_desc > p { padding-left:35px; background:url(../images/icon_notice1.png) no-repeat 0 0; font-weight: 200;}
 .con_noti1_desc > p ~ p { margin-top: 7px;}
+.noti_txt1{ padding-left:35px; background:url(../images/icon_notice1.png) no-repeat 0 0; font-weight: 200; line-height: 1.8; }
+.noti_txt1 ~ .noti_txt1{ margin-top: 7px;}
 
 .icon_sub03_03_04_01 { display: inline-block; width: 105px; height: 75px; background:url(../images/sub03_03_04_icon03.png) no-repeat 0 0; background-size: contain; }
 .icon_sub03_03_04_02 { display: inline-block; width: 90px; height: 64px; background:url(../images/sub03_03_04_icon04.png) no-repeat 0 0; background-size: contain; }
@@ -243,8 +246,23 @@
 .college_step_list1 .label_box > p.step_label6:before,
 .college_step_list1 .label_box > p.step_label6:after { background: #eeeeee;}
 
+.college_step_list2 { background: #f9f9f9;}
+
 .label_box_wrap { flex: 1; display: flex; gap: 10px; flex-wrap: wrap; }
 .label_box_wrap > div { flex: 1 1 100% !important; }
+
+.college_step_list2 { display: flex; justify-content: center; padding:4rem 2rem; font-size: 1.06rem; gap:4.3rem; margin: 2rem 0;  }
+.college_step_list2 .inner_list { flex: 0 1 400px; }
+.college_step_list2 .inner_list dd { display: block;}
+.college_step_list2 .step_tit { display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 500; background: #aaa; min-height: 55px; padding: 0.5rem; box-sizing: border-box; border-radius: 0 25px 0 0; margin-bottom:1.6rem; }
+.college_step_list2 .type1 .step_tit { background: #004098;}
+.college_step_list2 .type2 .step_tit { background: #001e45;}
+.college_step_list2 .step_order { position: relative; width: 100%; border:1px solid #95afd2; background: #fff; border-radius: 5px; min-height: 55px; padding: 1.2rem 0.5rem;  box-sizing: border-box; text-align: center; font-weight: 200;}
+.college_step_list2 .step_order + .step_order { margin-top:1.6rem; }
+.college_step_list2 .step_order + .step_order:after { content:''; height: 1.6rem; width: 1px; display: block; position: absolute; bottom:100%; margin-bottom:1px; background: #dddddd; left: 50%; }
+.college_step_list2 .step_order + .step_order:before { content:''; height: 19px; width: 19px; display: block; position: absolute; bottom:100%; margin: 0 0 -4px -9px; background: #004098 url(../images/icon_arrow_down1.png) no-repeat 7px 8px; left: 50%; box-shadow: 0 0 0 8px rgba(57, 134, 238,0.1); border-radius: 50%; z-index: 1;}
+.college_step_list2 .type2 .step_order + .step_order:before { background-color: #001e45; box-shadow: 0 0 0 8px rgba(0,30,69,0.1); }
+
 
 @media (min-width:901px) { 
   .medi_science_map { background: url(../images/sub01_02_bg01.png) no-repeat 64px 80px; width: 1060px; height: 510px; position: relative; margin:0 auto; }
@@ -333,7 +351,7 @@
 }
 @media (max-width:800px){
 
-  .table_scroll_wrap2 table :is(th, td) { padding: 0.5rem; }
+  .table_scroll_wrap2 table :is(th, td) { padding: 0.5rem; font-size: 1rem; }
   .table_scroll_wrap2 table strong { white-space:nowrap; }
 
   .college_intro2 .main_intro_tit { font-size: 1.8rem; margin:1.5rem 0; }
@@ -376,10 +394,13 @@
   .college_step_list1 { padding: 15px; overflow-x: auto;  }
   .college_step_list1 > ul { min-width: 700px;}
   .college_step_list1 .step_box > .step_tit { flex: 0 0 80px;}
+  .college_step_list2 { gap: 2rem; }
 }  
 @media (min-width: 641px) and (max-width: 980px) {
 }
-@media (max-width:640px){ 
+@media (max-width:640px){
+  .college_wrap2_tit { font-size: 1.8rem;}
+  .college_con_wrap2 :is(h3,h4).con_tit { font-size: 1.6rem; background-position: left 0.4rem; }
   .con_icon_wrap1 .con_icon_box { display: none;}
   .con_icon_wrap1 .con_main { margin-left: 10px;}
   .inner_con_tit:before { margin-left: 10px; }
@@ -389,5 +410,11 @@
   .con_box_list1 li i { flex: none; margin: 5px 0 0 auto; zoom: 0.6; }
   .con_box_list1 li:nth-child(even) { margin: 0; }
   .con_box_list1 > li ~ li { border-top: 0 none; }
+  .college_step_list2 { padding: 2rem 1rem; gap: 1rem; flex-wrap:wrap; }
+  .college_step_list2 .step_tit { margin-bottom:1rem;}
+  .college_step_list2 .step_order { min-height: 50px; }
+  .college_step_list2 .step_order + .step_order { margin-top: 1rem; }
+  .college_step_list2 .step_order + .step_order:after { height: 1rem;} 
+  .college_step_list2 .step_order + .step_order:before { box-shadow: 0 0 0 4px rgb(57 134 238 / 10%); margin: 0 0 -10px -9px; }
   
 }
