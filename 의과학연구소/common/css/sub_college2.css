@@ -346,7 +346,7 @@
 
 @media (max-width:980px){ 
   .pc_map { display: none;  }
-  .mobile_map { display: block; }
+  .mobile_map { display: block; } 
   
 }
 @media (max-width:800px){
