@@ -63,6 +63,7 @@
 
 
 .table_scroll_wrap2 { overflow-x:auto;}
+.table_scroll_wrap2 + .table_scroll_wrap2 { margin-top: 1.5rem; }
 .table_scroll_wrap2 thead tr:first-child > * { border-top:2px solid #004098; color: #004098; background: #ebf4fc;}
 .table_scroll_wrap2 tbody tr:first-child > * { border-top:1px solid #004098; }
 .table_scroll_wrap2 table { min-width: 100%; font-size: 1.07rem; color: #000; border-bottom:1px solid #004098; text-align: center; }
@@ -75,6 +76,7 @@
 .table_inner_list { min-width: 300px; text-align: left; padding-left:0.5rem; font-size: 1.07rem;}
 .table_inner_list dt { font-weight: 500;}
 .table_inner_list dd { font-weight: 200;}
+.table_scroll_wrap2 .table_pd_thin  :is(th, td) { padding: 1rem 0.5rem; }.txt_noti_right { text-align: right; font-weight: 200; margin-top:0.5rem; }
 
 
 .college_con_wrap2 .table_scroll_wrap:not(:first-child) { margin:0; }
