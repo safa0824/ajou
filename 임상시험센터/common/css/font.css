@@ -1,0 +1,20 @@
+
+/* suit */
+@font-face {
+  font-family: 'SUIT';
+  src: url(../fonts/SUIT-Regular.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url(../fonts/SUIT-Light.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url(../fonts/SUIT-Bold) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
