@@ -150,3 +150,9 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: 'SUIT';
+  src: url(../fonts/SUIT-Heavy) format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
