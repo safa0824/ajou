@@ -366,10 +366,11 @@
 .ctrial_step_list1.type3 .step_circle { padding: 10px; border-width: 8px; transition: 0.3s; } 
 .ctrial_step_list1.type3 .step_circle strong { font-size: 1rem; font-weight: 500; color: #222; } 
 .ctrial_step_list1.type3 .step_circle_inner { width: 150px; height: 150px; } 
-.ctrial_step_list1.type3 > ul { gap: 1.25rem; } 
+.ctrial_step_list1.type3 > ul { gap: 15px; justify-content: center; flex-wrap: wrap;} 
+.ctrial_step_list1.type3 .ctrial_step_item { flex: 0;}
 .ctrial_step_list1.type3 .ctrial_step_item:after,.ctrial_step_list1.type3 .ctrial_step_item::before { top:50%; opacity: 1; right: 100%; } 
-.ctrial_step_list1.type3 .ctrial_step_item:after { width: 1.25rem; background: #e2e2e6; height: 1px; border:0 none; margin: 0; } 
-.ctrial_step_list1.type3 .ctrial_step_item::before { width: 8px; height: 8px; background: #dbe1eb; border-radius: 50%; border:0 none; margin: -4px 5px 0 0; transform: unset; } 
+.ctrial_step_list1.type3 .ctrial_step_item:after { width: 15px; background: #e2e2e6; height: 1px; border:0 none; margin: 0; } 
+.ctrial_step_list1.type3 .ctrial_step_item::before { width: 8px; height: 8px; background: #dbe1eb; border-radius: 50%; border:0 none; margin: -4px 3px 0 0; transform: unset; } 
 .ctrial_step_list1.type3 .on { position: relative; z-index: 1; } 
 .ctrial_step_list1.type3 .on .step_circle { border: 1px solid #6cb1fe; background:#fff; } 
 .ctrial_step_list1.type3 .on .step_circle_inner { box-shadow: 0 0 0 0; background: #f0f7ff; border: 7px solid #f0f7ff; } 
@@ -524,20 +525,49 @@
 .ctrial_diagram06 .diagram06_box3 .diagram06_tit { background: #164690; color: #fff;}
 .ctrial_diagram06 .diagram06_box4 .diagram06_tit { background: #4db1b1; color: #fff;}
 
-.ctrial_step_list2.type2 ul { gap: 30px;}
-.ctrial_step_list2.type2 .ctrial_step_item { flex: 1; max-width: none; padding-bottom: 100px; margin-bottom: 3rem;}
+.ctrial_step_list2.type2 { position: relative;}
+.ctrial_step_list2.type2 ul { gap: 1.875rem;}
+.ctrial_step_list2.type2 .ctrial_step_item { display: flex; flex: 1; max-width: none; flex-direction: column; gap: 1.25rem; }
 .ctrial_step_list2.type2 .ctrial_step_item:after, 
 .ctrial_step_list2.type2 .ctrial_step_item:before { display: none;}
-.ctrial_step_list2.type2 .step_desc { margin-top: 20px; height: 100%; box-sizing: border-box; }
+.ctrial_step_list2.type2 .step_desc { height: 100%; box-sizing: border-box; flex: 1; height: auto; margin-top:0; }
 .ctrial_step_list2.type2 .step_inner_tit { padding: 12px 5px; border-radius: 5px; background: #ebf3fd; border:1px solid #3986ee; color: #3986ee;text-align: center; font-size: 1.125rem; font-weight: 500; margin-bottom: 1rem; }
 .ctrial_step_list2.type2 .type2 .step_inner_tit { color: #3986ee; border-color: #3986ee;}
 .ctrial_step_list2.type2 .type3 .step_inner_tit { color: #164690; border-color: #164690; background: #e7ecf4;}
 .ctrial_step_list2.type2 .type5 .step_inner_tit { color: #4db1b1; border-color: #4db1b1}
 .ctrial_step_list2.type2 .step_inner_tit + ul { padding-left: 0.5rem;}
-.ctrial_step_list2.type2 .flex_row2 { display: flex; flex-direction: column; gap:1rem;}
-.ctrial_step_list2.type2 .flex_row2 > div { flex: 1; }
+.ctrial_step_list2.type2 .flex_row2 { display: flex; flex-direction: column; gap:1rem; background: #fff; }
+.ctrial_step_list2.type2 .flex_row2 > div { flex: 1; min-height: 200px;}
 .ctrial_step_list2.type2 .flex_col2 { display: flex; gap:1rem; }
 .ctrial_step_list2.type2 .flex_col2 > div { flex: 1; }
+
+.ctrial_step_list2.type2 .step_result { margin-top: 30px; padding:15px 0 17px 0;  border: 2px solid #3986ee; color:#3986ee; font-size:1.06rem; font-weight: 500; text-align: center; position: relative; }
+.ctrial_step_list2.type2 .step_result:before { position: absolute; content: ''; display: inline-block; border-top:9px solid #3986ee; border-left: 7px solid transparent; border-right: 7px solid transparent; top:-25px; left: 50%; margin:-5px 0 0 -7px; }
+.ctrial_step_list2.type2 .type2 .step_result { border-color: #3986ee; color:#3986ee }
+.ctrial_step_list2.type2 .type3 .step_result { border-color: #164690; color:#164690 }
+.ctrial_step_list2.type2 .type5 .step_result { border-color: #4db1b1; color:#4db1b1 }
+.ctrial_step_list2.type2 .type2 .step_result:before { border-top-color:#3986ee }
+.ctrial_step_list2.type2 .type3 .step_result:before { border-top-color:#164690}
+.ctrial_step_list2.type2 .type5 .step_result:before { border-top-color:#4db1b1}
+
+.ctrial_step_list2.type2 .ctrial_top { display: flex; align-items: center; justify-content: center; margin-bottom: 5rem; }
+.ctrial_step_list2.type2 .ctrial_top > i { width:100%; height: 1px; position: relative; display:block; background:#dbe1eb;   }
+.ctrial_step_list2.type2 .ctrial_top > i.line_l { margin-right: 30px;}
+.ctrial_step_list2.type2 .ctrial_top > i.line_r { margin-left: 30px;}
+.ctrial_step_list2.type2 .ctrial_top > i:after { content:''; display: block; position: absolute; width: 8px; height: 8px; background: #dbe1eb; border-radius: 50%; margin-top:-4px; }
+.ctrial_step_list2.type2 .ctrial_top > i.line_l:after { right: 0;  }
+.ctrial_step_list2.type2 .ctrial_top > i.line_r:after { left: 0; }
+.ctrial_step_list2.type2 .ctrial_top ul { display: flex; align-items: center; gap: 0; }
+.ctrial_step_list2.type2 .ctrial_top li { position: relative; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; color: #fff; border-radius: 50%; margin: 0 -7px;  }
+.ctrial_step_list2.type2 .ctrial_top li:nth-child(1)  { background: #3986ee } 
+.ctrial_step_list2.type2 .ctrial_top li:nth-child(2)  { background: rgba(22,70,144,0.9); } 
+.ctrial_step_list2.type2 .ctrial_top li:nth-child(3)  { background: rgba(77,177,177,0.9); }
+.ctrial_step_list2.type2 .ctrial_top span { position: absolute; top:100%; transform:translateY(-50%); font-family:'SUIT'; color: #444; font-size: 1rem; background: #fff; border-radius: 20px; padding:7px 0 9px; min-width: 75px; line-height: 1; border:1px solid #3986ee; box-sizing: border-box; text-align: center; }
+.ctrial_step_list2.type2 .ctrial_top li:nth-child(1) span { }
+.ctrial_step_list2.type2 .ctrial_top li:nth-child(2) span { border-color: #164690; }
+.ctrial_step_list2.type2 .ctrial_top li:nth-child(3) span { border-color: #4db1b1; }
+.ctrial_step_list2.type2 .bg_arrow { background: url(../images/sub02_02_03_01_bg1.png) no-repeat center 0; height: 300px; position: absolute; top: 50px; left: 0; right:0; z-index: -1; }
+
 
 @media ( max-width:1200px){
  .corgan_dep_wrap { zoom: 0.8; } 
@@ -673,7 +703,7 @@
  .ctrial_step_list1 .step_desc:before { width: calc(2rem + 20px); left: calc(-2rem + -20px); } 
 
  .ctrial_step_list1.type3 { margin: 2rem 0; overflow-x:auto; padding:20px 0; } 
- .ctrial_step_list1.type3 > ul { justify-content: center; gap: 0.5rem; } 
+ .ctrial_step_list1.type3 > ul { justify-content: center; gap: 1rem 0.5rem; } 
  .ctrial_step_list1.type3 .step_circle { border-radius: 20px; border: 0;}
  .ctrial_step_list1.type3 .step_circle_inner { border-radius: 15px; padding: 5px; box-shadow: 0 0 10px 5px rgba(0,0,0,0.2); } 
  .ctrial_step_list1.type3 .on .step_circle_inner { border: 0 none; }
@@ -685,6 +715,8 @@
  .ctrial_step_list2 > ul + ul:before { content: ''; display: block; position: absolute; top: -30px; left: 0; right: 1px; height: 1px; background: #ddd; } 
  .ctrial_step_list2 .ctrial_step_item:not(:first-child):after, .ctrial_step_list2 .ctrial_step_item:not(:first-child):before { transform: rotate(90deg); top:auto; bottom: 100%; margin:0 0 0 0; left: 50%; } 
  .ctrial_step_list2 .ctrial_step_item:not(:first-child):before { margin-bottom: 6px; } 
+
+ 
 
  .ctrial_step_list1.type4 > ul { gap: 10px;}
  .ctrial_step_list1.type4 .step_circle_inner img  {display: none;}
@@ -752,4 +784,13 @@
  .ctrial_diagram05 .circle_box:first-child { order:1;}
  .ctrial_diagram05 .circle_box:last-child { order:2;}
  .ctrial_diagram05 .line_box { order: 3; width: 100%; flex: 1 1 100%;}
+
+ .ctrial_step_list2.type2 .ctrial_top { margin-bottom: 3rem; }
+ .ctrial_step_list2.type2 .ctrial_top li { width: 90px; height: 90px; margin: 0 -3px; font-size: 1rem;  }
+ .ctrial_step_list2.type2 .ctrial_top span { min-width: 60px; padding: 4px 0; font-size: 0.9rem; }
+ .ctrial_step_list2.type2 .step_inner_tit { margin-bottom:0.5rem; font-size: 1rem; padding:10px 5px; }
+ .ctrial_step_list2.type2 .ctrial_step_item { flex: 1 1 100%; gap: 10px;}
+ .ctrial_step_list2.type2 .flex_row2 > div { min-height: auto;}
+ .ctrial_step_list2.type2 .step_result { margin-top: 0; font-size: 1.1rem;}
+ .ctrial_step_list2.type2 .step_result:before { top:-7px;}
  }
