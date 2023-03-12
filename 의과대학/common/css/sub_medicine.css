@@ -6,35 +6,39 @@
 .txt_orange { color: #ff8500; } 
 .clear_both:after { content: ''; display: block; clear: both; } 
 .inner_flex { display: flex; } 
-.txt_center { text-align: center; }
+.txt_center { text-align: center; } 
 .icon_link01 { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: #3987ee url(../images/medicine/icon_link01.png) no-repeat center; } 
 .icon_arrow_half01 { display: inline-block; width: 31px; height: 11px; background: url(../images/medicine/icon_arrow_right_half02.png) no-repeat 0 0; background-size: contain; } 
 .icon_plus01 { display: inline-block; width: 30px; height: 30px; border-radius: 50%; background: #fff url(../images/medicine/icon_plus01.png) no-repeat center; } 
+.divider { background: #dadfe7;height: 1px; margin: 3rem 0; }
 
-
-.mcollege_wrap { color: #000; }
+.mcollege_wrap { color: #000; } 
 * + .mcollege_con_wrap { margin-top: 3.5rem; } 
-.mcollege_con_wrap .con_tit { position: relative; font-size: 1.75rem; font-weight: 700; line-height: 1.6; padding-left: 27px; } 
+.mcollege_con_wrap .con_tit { position: relative; font-size: 1.75rem; font-weight: 700; line-height: 1.6; padding-left: 27px; margin-bottom:0.5rem;} 
 .mcollege_con_wrap .con_tit:before { content: ''; display: inline-block; width: 17px; height: 17px; border-radius: 50%; border:1px solid #004098; background: #004098; box-shadow: inset 0 0 0 4px #fff; margin-right:10px; position:absolute; left: 0; top:13px; } 
-.mcollege_con_wrap .con_tit2 { display: flex; align-items: center; line-height: 1; color: #1e63be; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; } 
-.mcollege_con_wrap .con_tit strong { font-weight: 700; }
-.mcollege_con_wrap .con_desc { line-height: 2; font-size: 1.07rem; font-weight: 200; }
-.mcollege_con_wrap * + .con_tit2 { margin-top: 1rem; } 
+.mcollege_con_wrap .con_tit2 { display: flex; align-items: center; line-height: 1.6; color: #1e63be; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;  } 
+.mcollege_con_wrap .con_tit strong { font-weight: 700; } 
+.mcollege_con_wrap .con_desc { line-height: 2; font-size: 1.07rem; font-weight: 200; } 
+.mcollege_con_wrap * + .con_tit2 { margin-top: 1rem; }
+.mcollege_con_wrap .con_tit + .con_tit2 { margin-top: 0.5rem; } 
 .mcollege_con_wrap .con_tit ~ .con_box + .con_box { margin-top: 4rem; } 
 
-.tab_menu01 { display: flex; border: 1px solid #cbcbcb; margin-bottom: 3rem; } 
-.tab_menu01 .tab_menu_item { position: relative; flex: 1; height: 65px; display: flex; align-items: center; justify-content: center; font-size: 1.1875rem; padding-bottom: 3px; box-sizing: border-box; transition: 0.3s; } 
+.tab_menu01 { display: flex; border: 1px solid #cbcbcb; margin-bottom: 3rem; flex-wrap: wrap; } 
+.tab_menu01 .tab_menu_item { position: relative; flex: 1; height: 65px; display: flex; align-items: center; justify-content: center; font-size: 1.1875rem; padding-bottom: 3px; box-sizing: border-box; transition: 0.3s; min-width: 25%; margin-bottom:-1px; border-bottom:1px solid #cbcbcb; text-align: center; padding:0 0.5rem; } 
 .tab_menu01 .tab_menu_item:after { content: ''; position: absolute; font-weight: 300; left: 0; height: 7px; bottom: 0; right: 0; background: #16468f; display: none; } 
 .tab_menu01 .tab_menu_item:hover { background: #eaeaea; } 
 .tab_menu01 .tab_menu_item.on { color: #16468f; font-weight: 500; } 
 .tab_menu01 .tab_menu_item.on:after { display: block; } 
 .tab_menu01 .tab_menu_item + .tab_menu_item:before { content: ''; position: absolute; height: 20px; width: 1px; background: #cbcbcb; display: block; left: 0; top:50%; margin-top:-10px; } 
 
+.tab_menu01 .tab_menu_item:nth-child(5n):before { display: none; }
 
 
 /* 테이블 */
-.table_scroll_wrap { overflow-x:auto; margin: 1.5rem 0; }  
-.con_tit + .table_scroll_wrap { margin-top: 0; }
+:is(.con_desc,.con_tit, ul, .table_scroll_wrap) + .table_scroll_wrap { margin-top: 1.5rem; } 
+li .table_scroll_wrap { margin-top: 1.5rem; } 
+.table_scroll_wrap { width: 100%; }
+.table_scroll_wrap { overflow-x:auto; margin: 4rem 0 1.5rem; } 
 .table_scroll_wrap table { min-width: 100%; font-size: 1rem; color: #000; border-bottom:1px solid #ddd; text-align: center; line-height: 1.6; } 
 .table_scroll_wrap table :is(th, td) { height: 27px; border-right: 1px solid #ddd; border-top: 1px solid #ddd; line-height: 1.6; padding: 1rem 1.5rem; font-size: 1.06rem; word-break: keep-all; } 
 .table_scroll_wrap tr:first-child > * { border-top:1px solid #38496b; } 
@@ -42,91 +46,232 @@
 .table_scroll_wrap table :is(td,th).inner_bd { border-right: 1px solid #ddd; } 
 .table_scroll_wrap table strong { display: inline-block; color:#222; font-weight: 500; } 
 .table_scroll_wrap table tr:last-child td { border-bottom: 0 none; } 
-.table_scroll_wrap table th { background: #f1f6fd; color: #222222; font-weight: 400;  } 
+.table_scroll_wrap table th { background: #f1f6fd; color: #222222; font-weight: 400; } 
 .table_scroll_wrap thead th { color: #273454; font-weight: 500; white-space: nowrap; } 
 .table_scroll_wrap tfoot td,
 .table_scroll_wrap tbody th { background: #f7f9fb; color: #222; } 
-.table_scroll_wrap tbody td {  } 
+.table_scroll_wrap tbody td { } 
+.table_scroll_wrap colgroup + tbody {  border-bottom:1px solid #000000; }
+.table_scroll_wrap colgroup + tbody th { background: #f1f6fd ;}
 .table_inner_list { min-width: 300px; text-align: left; padding-left:0.5rem; font-size: 1.07rem; } 
 .table_inner_list dt { font-weight: 500; } 
-.table_inner_list dd { }
+.table_inner_list dd { } 
 
 .table_common_list1 li { width: 100%; display: list-item; display: flex; } 
 .table_common_list1 li ~ li { margin-top: 0.5rem; } 
 .table_common_list1 li:before { content:''; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: #222; margin:0.7rem 8px 0 0; align-self: flex-start; } 
 
-.mcollege_intro_box { display: flex; align-items: center; justify-content: space-between; position: relative; background: #f1f6fd; padding: 28px 30px 28px 130px; margin: 4rem 0; gap: 1rem; flex-wrap:wrap; min-height: 90px; box-sizing: border-box; color: #000; } 
+.mcollege_intro_box { display: flex; align-items: center; justify-content: space-between; position: relative; background: #f1f6fd; padding: 28px 30px 28px 130px; gap: 1rem; margin-bottom: 1.5rem; flex-wrap:wrap; min-height: 90px; box-sizing: border-box; color: #000; } 
+* + .mcollege_intro_box { margin-top: 4rem; } 
 .mcollege_intro_logo { width: 90px; height: 90px; background: #16468f; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top:0; } 
 [class*=mcollege_intro_msg] { font-family: 'Gmarket'; font-size: 1.625rem; font-weight: 500; } 
 .mcollege_intro_msg strong { display: block; text-transform: uppercase; font-size: 1.06rem; margin-top:1rem; display: block; } 
 .mcollege_intro_img { margin-left: auto; } 
-.mcollege_intro_msg2 { font-size: 1.125rem; display: flex; align-items: baseline; gap: 1rem; }
-.mcollege_intro_msg2 strong { font-weight: 500; font-size: 1.625rem; }
+.mcollege_intro_msg2 { font-size: 1.125rem; display: flex; align-items: baseline; gap: 1rem; flex-wrap:wrap; } 
+.mcollege_intro_msg2 strong { font-weight: 500; font-size: 1.625rem; } 
 
 p[class*=mcollege_notice] { display: flex; gap: 0.5rem; margin-top: 0.5rem; line-height: 1.6; font-weight: 200; } 
 p[class*=mcollege_notice] * { vertical-align: middle; } 
 p[class*=mcollege_notice]:before { content: ''; display: block; width: 26px; height: 26px; border-radius: 50%; background: #aaa url(../images/medicine/icon_notice01.png) no-repeat center; flex: 0 0 26px; } 
 p.mcollege_notice01:before { background-color: #767676; } 
 p.mcollege_notice02:before { background-color: #3987ee; } 
+p[class*=mcollege_notice]:last-child { margin-bottom: 1.5rem; }
 
-.mcollege_desc01 { padding: 3px; background: repeating-linear-gradient(-45deg, #fff 0px, #fff 3px, #e5e5e5 4px, #e5e5e5 8px ); font-size:1.07rem; margin: 1rem 0; } 
-.mcollege_desc01 > div { padding: 1.2rem 2rem; background: #f7f9fb; }
-.mcollege_desc01 .desc_item { display: flex; gap: 1rem; align-items: flex-start;} 
-.mcollege_desc01 .desc_item dt { color: #2061c4; font-weight: 500;}
-.mcollege_desc01 .desc_item dd { color: #000; font-weight: 200; margin-top:0.3rem; }
-.mcollege_desc01 .desc_item dl { flex: 1; }
-*:not([class*=con_tit]) + .mcollege_desc01 { margin-top: 3rem; }
+.mcollege_desc01 { padding: 3px; background: repeating-linear-gradient(-45deg, #fff 0px, #fff 2px, #e5e5e5 3px, #e5e5e5 7px ); font-size:1.07rem; margin: 1rem 0; } 
+.mcollege_desc01 > div { padding: 1.2rem 2rem; background: #f7f9fb; } 
+.mcollege_desc01 .desc_item { display: flex; gap: 1rem; align-items: flex-start; } 
+.mcollege_desc01 .desc_item dt { color: #2061c4; font-weight: 500; } 
+.mcollege_desc01 .desc_item dd { color: #000; font-weight: 200; margin-top:0.3rem; } 
+.mcollege_desc01 .desc_item dl { flex: 1; } 
+*:not(:is([class*=con_tit], ul)) + .mcollege_desc01 { margin-top: 3rem; } 
+
+.mcollege_desc01 .desc_link { display: flex; align-items: flex-start; gap: 0.5rem; }
+.mcollege_desc01 .desc_link .txt_blue2 { display: inline-block;}
+.mcollege_desc01 .desc_link .txt_blue2 a { display: flex; align-items: center; gap: 0.5rem; }
+.mcollege_desc01 .desc_link > div { flex: 1; }
 
 .mcollege_diagram01 { display: flex; align-items: center; justify-content: center; flex-wrap:wrap; gap: 3rem; margin: 3.75rem 0; } 
 .mcollege_diagram01_item01 { display: flex; gap: 2rem; } 
 .mcollege_diagram01 .circle { width: 134px; height: 134px; border-radius: 50%; background: #3aaae9; color: #fff; font-size: 1.07rem; display: flex; align-items: center; justify-content: center; flex-direction: column; } 
 .mcollege_diagram01 .circle strong { color: #ffd877; font-family: 'Gmarket'; font-size: 2.25rem; font-weight: 700; line-height: 1; } 
 .mcollege_diagram01 .circle p { margin-top: 0.5rem; } 
-.mcollege_diagram01_item02 { display: flex; width: 484px; height: 133px; border-radius: 70px;  position: relative; overflow: hidden;}
+.mcollege_diagram01_item02 { display: flex; width: 484px; height: 133px; border-radius: 70px; position: relative; overflow: hidden; } 
 .mcollege_diagram01_item02:after,
-.mcollege_diagram01_item02:before { content:''; display: block; position: absolute; top:0; height: 100%; z-index: 0;}
-.mcollege_diagram01_item02:after { left:0; right:50%; background: #ffd877;}
-.mcollege_diagram01_item02:before { right:0; left:50%; background: #3aaae9; }
-[class*=mcollege_diagram01_inner] { position: relative; z-index: 1; flex: 1; }
-.mcollege_diagram01_inner2 { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0.5rem; width: 133px; height: 133px; flex: 1 1 133px; max-width: 133px; border-radius: 50%; background: #ffe4a0; color: #000; font-size: 1.07rem; font-weight: 500;} 
-.mcollege_diagram01_inner1 { padding: 0 10px 0 30px; box-sizing: border-box; }
-.mcollege_diagram01_inner3 { padding: 0 30px 0 10px; box-sizing: border-box; }
-:is(.mcollege_diagram01_inner1, .mcollege_diagram01_inner3) { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
-:is(.mcollege_diagram01_inner1, .mcollege_diagram01_inner3) > div { display: flex; flex-direction: column; font-weight: 500; color: #000;}
-:is(.mcollege_diagram01_inner1, .mcollege_diagram01_inner3) span { font-size: 1.375rem; }
-:is(.mcollege_diagram01_inner1, .mcollege_diagram01_inner3) strong { font-size: 2.25rem; font-weight: 700; font-family: 'Gmarket'; }
-.mcollege_diagram01_inner1 strong {color: #3aaae9; }
-.mcollege_diagram01_inner3 strong {color: #ffd877; }
+.mcollege_diagram01_item02:before { content:''; display: block; position: absolute; top:0; height: 100%; z-index: 0; } 
+.mcollege_diagram01_item02:after { left:0; right:50%; background: #ffd877; } 
+.mcollege_diagram01_item02:before { right:0; left:50%; background: #3aaae9; } 
+[class*=mcollege_diagram01_inner] { position: relative; z-index: 1; flex: 1; } 
+.mcollege_diagram01_inner2 { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0.5rem; width: 133px; height: 133px; flex: 1 1 133px; max-width: 133px; border-radius: 50%; background: #ffe4a0; color: #000; font-size: 1.07rem; font-weight: 500; } 
+.mcollege_diagram01_inner1 { padding: 0 10px 0 30px; box-sizing: border-box; } 
+.mcollege_diagram01_inner3 { padding: 0 30px 0 10px; box-sizing: border-box; } 
+:is(.mcollege_diagram01_inner1, .mcollege_diagram01_inner3) { display: flex; align-items: center; justify-content: center; gap: 0.5rem; } 
+:is(.mcollege_diagram01_inner1, .mcollege_diagram01_inner3) > div { display: flex; flex-direction: column; font-weight: 500; color: #000; } 
+:is(.mcollege_diagram01_inner1, .mcollege_diagram01_inner3) span { font-size: 1.375rem; } 
+:is(.mcollege_diagram01_inner1, .mcollege_diagram01_inner3) strong { font-size: 2.25rem; font-weight: 700; font-family: 'Gmarket'; } 
+.mcollege_diagram01_inner1 strong { color: #3aaae9; } 
+.mcollege_diagram01_inner3 strong { color: #ffd877; } 
 
-.txt_list01 { display: flex;}
-.txt_list01 li { display: list-item; line-height: 1.5; margin-top:0.5rem; }
+.txt_list01 { display: block; margin:1rem 0; } 
+.txt_list01 li { display: list-item; line-height: 1.5; margin-top:0.5rem; } 
+.txt_list01.light { font-weight: 200;}
 
-.box_list01 { display: flex; }
-.box_list01 li { display: flex; align-items: center; justify-content: center; border-radius: 5px; background: #ffd877; min-width: 105px; height: 95px; box-sizing: border-box; position: relative; text-align: center; padding: 10px; font-weight: 700; }
-.box_list01 li:after { content: ''; display:block;  position: absolute; top: 8px; left: 8px; right: 8px; bottom: 8px; border:1px solid #fff;}
-.box_list01 li ~ li { margin-left:25px; }
-.box_list01 li ~ li:before { content: ''; display:block; position: absolute; top:0; bottom: 0; width: 25px; left:-25px; background: url(../images/medicine/icon_arrow_right_half02.png) no-repeat center;}
+.txt_list02 { display: block; padding-left:27px; font-weight: 200; } 
+.txt_list02 li { display: list-item; padding-left:5px; line-height: 1.5; list-style:'-'; } 
+.txt_list02 li ~ li { margin-top: 0.5rem; } 
+
+.box_list01 { display: flex; } 
+.box_list01 li { display: flex; align-items: center; justify-content: center; border-radius: 5px; background: #ffd877; min-width: 105px; height: 95px; box-sizing: border-box; position: relative; text-align: center; padding: 10px; font-weight: 700; } 
+.box_list01 li:after { content: ''; display:block; position: absolute; top: 8px; left: 8px; right: 8px; bottom: 8px; border:1px solid #fff; } 
+.box_list01 li ~ li { margin-left:25px; } 
+.box_list01 li ~ li:before { content: ''; display:block; position: absolute; top:0; bottom: 0; width: 25px; left:-25px; background: url(../images/medicine/icon_arrow_right_half02.png) no-repeat center; } 
+
+.num_list01 {font-weight: 200; margin: 1rem 0; } 
+.num_list01 li { display: flex; line-height: 1.5; }
+.num_list01 li ~ li { margin-top: 0.5rem; } 
+.num_list01 li strong { font-weight: 400;}
+.num_list01 .num { border:1px solid #3987ee; border-radius: 50%; color: #3987ee; width: 27px; height: 27px; display: flex; align-items: center; justify-content: center; margin-right: 0.5rem; font-size: 0.9375rem;box-sizing: border-box; min-width: 27px;}
+
+.icon_list01 { display: flex; flex-wrap:wrap; border-top: 1px solid #16468f; border-bottom: 1px solid #cbcbcb; }
+.icon_list01 .list_item { flex: 1 1 50%; padding: 30px; box-sizing: border-box; display: flex; gap: 30px; align-items: center; }
+.icon_list01 .list_item + .list_item { padding-left: 0; }
+.icon_list01 .num { position: absolute; left: 0; top:0; width: 26px; height: 26px; border:1px solid #3987ee; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; color: #3987ee; font-size: 0.875rem; padding-bottom:1px; }
+.icon_list01 .icon_box { position: relative; background: #f1f6fd; width: 88px; height: 88px; border-radius: 25px; display: flex; align-items: center; justify-content: center; min-width: 88px;}
+.icon_list01 .list_divider { width: 100%; height: 1px;background: #cbcbcb; flex: 1 1 100%;}
+.icon_list01 .flag_box { width: 100px; text-align: center; min-width: 100px; }
+.icon_list01 .list_info_box { font-weight: 400;}
+.icon_list01 .list_info_box p ~ p { margin-top: 0.8rem;  }
+
+.mcollege_notice_box01 { margin-top: 3rem; display: flex; } 
+.mcollege_notice_box01 .box_tit { display: flex; gap: 1rem; flex-direction: column; width: 130px; background: #1e63be; color: #fff; font-size: 1.125rem; font-weight: 500; font-family: 'Gmarket'; align-items: center; justify-content: center; text-align: center; line-height: 1.8; } 
+.mcollege_notice_box01 .box_con { flex: 1; background: #f7f9fb; border: 1px solid #dadfe7; border-left: 0 none; padding:3rem 1.875rem; } 
+
+.dot_list01 li { display: flex; line-height: 2; gap: 0.5rem; } 
+.dot_list01 li:before { content: ''; display: block; width: 4px; height: 4px; flex: 0 0 4px; border-radius: 50%; background: #1e63be; margin-top: 1rem; } 
+
+.circle_list01 { display: flex; margin:0 auto; justify-content: center; gap: 1rem 3rem; flex-wrap:wrap; align-items: flex-start; } 
+.circle_list01 li { display: flex; flex-direction: column; gap:1rem; justify-content: center; text-align: center; line-height: 1.6; font-size:1.07rem; } 
+.circle_list01 .circle { display: flex; align-items: center; justify-content: center; width: 106px; height: 106px; border-radius: 50%; border:1px solid #dadfe7; background: #fff url(../images/medicine/icon_arrow_bottom01.png) no-repeat center 90%; margin: 0 auto; } 
+.circle_list01 .desc > .tit { display: block; }
+
+.circle_list02 { display: flex; margin:0 auto; justify-content: center; flex-wrap:wrap; align-items: flex-start; } 
+.circle_list02 li { display: flex; flex-direction: column; gap:0.8rem; justify-content: center; text-align: center; line-height: 1.6; font-size:1.07rem; } 
+.circle_list02 li ~ li .circle:before { content:''; position: absolute; display: block;height: 100%; background: url(../images/medicine/icon_arrow_right_half02.png) no-repeat center; right:100%; top: 0; width: 6rem;  }
+.circle_list02 .circle { display: flex; align-items: center; justify-content: center; width: 106px; height: 106px; border-radius: 50%; border:1px solid #dadfe7; background: #fff; margin: 0 3rem; position: relative;} 
+
+.blue_bg_box01 { background: #f7f9fb; border:1px solid #dadfe7; border-top-color:#16468f; padding: 3.75rem 1rem 3.4rem 1rem; margin: 1.5rem 0; } 
+.blue_bg_box02 { background: #f7f9fb; border: 1px solid #dce1e9;  padding: 2rem 1rem; margin: 1.5rem 0; }
+.blue_bg_list01 { display: flex; background: #f7f9fb; border:1px solid #dde2e9;  }
+.blue_bg_list01 li { display: flex; align-items: center; justify-content: center; flex-wrap:wrap; flex: 1; text-align: center; padding: 1.25rem 0.5rem; font-size: 1.125rem; font-weight: 400; }
+.blue_bg_list01 li p { width: 100%; margin-top: auto;  }
+.blue_bg_list01 li + li { border-left: 1px solid #dde2e9;}
+
+.mcollege_organ_list01 { position: relative; border-top: 1px solid #808080; border-bottom: 1px solid #808080; box-sizing: border-box; } 
+.mcollege_organ_list01:after { content: ''; display: block; position: absolute; top:0; bottom:0; right:1px; width: 1px; background: #fff; } 
+.mcollege_organ_list01 ul { display: flex; flex-wrap: wrap; } 
+.mcollege_organ_list01 li { flex: 1 1 33.3%; min-width: 300px; border-right:1px solid #edeff3; border-bottom:1px solid #edeff3; box-sizing: border-box; padding: 1.25rem 0.5rem 1.25rem 1.25rem; display: flex; gap: 1.25rem; align-items: center; } 
+.mcollege_organ_list01 li .organ_tit { color:#1e63be; font-weight: 500; font-size: 1.07rem; margin-bottom: 0.5rem; } 
+.mcollege_organ_list01 li p { font-weight: 200; } 
+.mcollege_organ_list01 li p ~ p { margin-top: 0.5rem; } 
+
+.inner_wrap01 { justify-content: space-between; gap: 1rem; } 
+.inner_wrap01 ~ .inner_wrap01 { margin-top: 3rem; } 
+.inner_wrap01 > div { flex: 1; } 
+.inner_wrap01 > img { max-width: 40%; object-fit: cover; } 
+.inner_wrap01 .con_tit { margin-bottom: 0.5rem; } 
+
+/* 동아리 */
+.club_list1 { margin-top: 4rem; }
+.club_list1 li { display: block;}
+.club_list1 .club_item_top {  margin-bottom: 23px }
+.club_list1 .club_item_top .item_tit { color: #2061c4; font-weight: 500; text-align: left;  }
+.club_list1 .club_item_top .item_open_btn { width: 100%; height: 65px; display: flex; align-items: center; justify-content: space-between; background: #f7f9fb; border:1px solid #dce1e9; padding: 0 70px 0 35px; box-sizing: border-box; font-size: 1.06rem; position: relative; font-weight: 500; font-size: 1rem; align-items: center; letter-spacing: 0;}
+.club_list1 .club_item_top .item_open_btn:hover { border-color:#2061c4; }
+.club_list1 .club_item_top .item_open_btn:after { content:''; display: block; position: absolute; right:35px; background: #b6bfcf; height: 3px; width: 15px;}
+.club_list1 .club_item_top .item_open_btn:before { content:''; display: block; position: absolute; right:41px; background: #b6bfcf; height: 15px; width: 3px; transition: 0.3s; }
+.club_list1 .on .club_item_top .item_open_btn{ background: #2061c4; border-color: #2061c4;}
+.club_list1 .on .club_item_top :is(.item_tit, .item_tit span, .item_open_btn ) { color: #fff;}
+.club_list1 .on .club_item_top .item_open_btn:before { background: #fff; transform: rotate(270deg); }
+.club_list1 .on .club_item_top .item_open_btn:after { background: #fff; }
+.club_list1 .club_item_con { gap: 1.5rem; padding: 50px 55px; background: #f1f6fd; margin-bottom: 23px ; line-height: 2; display: none; }
+.club_list1 .club_item_con .item_con_msg { font-weight: 500; font-size: 1.625rem; font-family: 'Gmarket'; letter-spacing: -1px; line-height: 1.4; margin-bottom:5px;}
+.club_list1 .club_item_con .icon_box { flex: 0 0 88px; width: 88px; height: 88px; border-radius: 25px; background: #fff; display: flex; align-items: center; justify-content: center; }
+.club_list1 .on .club_item_con{ display: flex;}
+
+.mcollege_diagram02 { display: flex; justify-content: center; }
+.mcollege_diagram02 li { position: relative; background: #ffffff; color: #2061c4; border:1px solid #2061c4;border-radius: 30px; width: 225px; display: flex; align-items: center; justify-content: center; box-sizing: border-box; font-weight: 700; font-size: 1.07rem; height: 45px; }
+.mcollege_diagram02 li+li:before { content: ''; display: block; position: absolute;  height: 43px; width: 43px; border-radius: 50%; left: -22px; background: #2061c4 url(../images/medicine/icon_plus03.png) no-repeat center; }
 
 @media (max-width:1200px){
- .mcollege_intro_box br { display: none; } 
- }
+  .mcollege_intro_box br { display: none; } 
+}
 @media (max-width:1000px){
- .pc_map { display: none; } 
- .mobile_map { display: block; } 
- }
+  .pc_map { display: none; } 
+  .mobile_map { display: block; } 
+}
 @media (max-width:800px){
- .mcollege_con_wrap .con_tit { font-size: 1.5rem; } 
- .mcollege_con_wrap .con_tit:before { top: 9px; } 
- .mcollege_con_wrap .con_tit ~ .con_box { padding-left: 5px; } 
- .mcollege_con_wrap ~ .college_con_wrap { margin-top: 2rem; } 
- .mcollege_con_wrap .con_tit ~ .con_box + .con_box { margin-top: 2rem;  }
+  .table_scroll_wrap table :is(th, td) { padding: 0.7rem 1rem; }
 
+  .tab_menu01 .tab_menu_item { font-size: 1rem; line-height: 1.2;}
+    
+  * + .mcollege_con_wrap { margin-top: 2.5rem; }
+  .mcollege_con_wrap .con_tit { font-size: 1.5rem; } 
+  .mcollege_con_wrap .con_tit:before { top: 9px; } 
+  .mcollege_con_wrap .con_tit ~ .con_box { padding-left: 5px; } 
+  .mcollege_con_wrap ~ .college_con_wrap { margin-top: 2rem; } 
+  .mcollege_con_wrap .con_tit ~ .con_box + .con_box { margin-top: 2rem; } 
+  .mcollege_con_wrap .con_tit2 { font-size: 1.38rem; }
 
- .mcollege_diagram01 { gap: 1.5rem; }
- .mcollege_diagram01 .circle { width: 110px; height: 110px;}
- .mcollege_diagram01_item02 { height: 110px; }
- .mcollege_diagram01_inner2 { height: 110px; }
- :is(.mcollege_diagram01_inner1, .mcollege_diagram01_inner3) strong { font-size: 1.8rem; }
+  .mcollege_intro_box { padding: 45px 20px 20px 20px; gap: 1.5rem; margin-top: 30px; } 
+  .mcollege_intro_logo { top: -30px; width: 60px; height: 60px; } 
+  .mcollege_intro_logo img { zoom: 0.8; } 
+  [class*=mcollege_intro_msg] { font-size: 1.4rem; } 
+  .mcollege_intro_msg2 { gap: 0.5rem; font-size: 1rem; } 
+  .mcollege_intro_msg2 strong { font-size: 1.5rem; } 
+
+  .mcollege_diagram01 { gap: 1.5rem; } 
+  .mcollege_diagram01 .circle { width: 110px; height: 110px; } 
+  .mcollege_diagram01_item02 { height: 110px; } 
+  .mcollege_diagram01_inner2 { height: 110px; } 
+  :is(.mcollege_diagram01_inner1, .mcollege_diagram01_inner3) strong { font-size: 1.8rem; } 
+
+  .mcollege_notice_box01 .box_tit { width: 80px; font-size: 1rem; } 
+  .mcollege_notice_box01 .box_con { padding: 1.5rem 1rem; } 
+
+  .circle_list01 { gap: 1rem; } 
+
+  .club_list1 .club_item_top { margin-bottom: 15px;}
+  .club_list1 .club_item_top .item_open_btn { padding:0 45px 0 20px;}
+  .club_list1 .club_item_con { padding: 20px;}
+  .club_list1 .club_item_top .item_open_btn:after { right: 14px; }
+  .club_list1 .club_item_top .item_open_btn:before { right: 20px;}
+  .club_list1 .club_item_con .item_con_msg { font-size: 1.5rem; }
+  .club_list1 .club_item_con .icon_box { width: 50px; height: 50px; flex: 0 0 50px; border-radius: 10px; }
+  .club_list1 .club_item_con .icon_box img { max-width: 65%; }
+
+  .circle_list02 { gap: 1rem;}
+  .circle_list02 .circle { margin:0; align-items: center;}
+  .circle_list02 li { font-size: 1rem; align-items: center;  flex: 1; }
+  .circle_list02 li ~ li .circle:before { width: 3rem;}
+
+  p[class*=mcollege_notice]:before { zoom: 0.8;}
+
+  
+  .icon_list01 .list_item { flex: 1 1 100%; padding: 20px !important; gap: 20px; }
+  .icon_list01 .list_item ~ .list_item { padding-top: 0 !important; }
+  .icon_list01 .list_divider { display: none; }
+  .icon_list01 .icon_box { width: 72px; height: 72px; min-width: 72px; border-radius: 20px; }
+  .icon_list01 .icon_box img { zoom: 0.9; }
+
+  .num_list01 .num { width: 24px; height: 24px; min-width: 24px; }
+  
+  .blue_bg_list01 li { font-size: 0.9rem; }
+
+  .mcollege_diagram02 li { font-size: 1rem; }
+
+  .mcollege_diagram02 { flex-direction: column; gap: 10px; align-items: center;}
+  .mcollege_diagram02 li+li:before { left: 50%; top:-20px; margin-left:-15px; width: 30px; height: 30px;}
 }
 @media (min-width: 641px) and (max-width: 980px) { } 
-@media (max-width:640px) { } 
+@media (max-width:640px){
+ .inner_wrap01 > img { display: none; } 
+ }
