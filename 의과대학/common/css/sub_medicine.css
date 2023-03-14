@@ -7,6 +7,7 @@
 .clear_both:after { content: ''; display: block; clear: both; } 
 .inner_flex { display: flex; } 
 .txt_center { text-align: center; } 
+.block_center { margin:0 auto; display: block; } 
 .icon_link01 { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: #3987ee url(../images/medicine/icon_link01.png) no-repeat center; } 
 .icon_arrow_half01 { display: inline-block; width: 31px; height: 11px; background: url(../images/medicine/icon_arrow_right_half02.png) no-repeat 0 0; background-size: contain; } 
 .icon_plus01 { display: inline-block; width: 30px; height: 30px; border-radius: 50%; background: #fff url(../images/medicine/icon_plus01.png) no-repeat center; } 
@@ -68,11 +69,16 @@ li .table_scroll_wrap { margin-top: 1.5rem; }
 .mcollege_intro_box { display: flex; align-items: center; justify-content: space-between; position: relative; background: #f1f6fd; padding: 28px 30px 28px 130px; gap: 1rem; margin-bottom: 1.5rem; flex-wrap:wrap; min-height: 90px; box-sizing: border-box; color: #000; } 
 * + .mcollege_intro_box { margin-top: 4rem; } 
 .mcollege_intro_logo { width: 90px; height: 90px; background: #16468f; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top:0; } 
+.mcollege_intro_box + .con_desc { line-height: 2; font-weight: 200; font-size: 1.0625rem; margin-top: 1rem; } 
 [class*=mcollege_intro_msg] { font-family: 'Gmarket'; font-size: 1.625rem; font-weight: 500; } 
 .mcollege_intro_msg strong { display: block; text-transform: uppercase; font-size: 1.06rem; margin-top:1rem; display: block; } 
 .mcollege_intro_img { margin-left: auto; } 
 .mcollege_intro_msg2 { font-size: 1.125rem; display: flex; align-items: baseline; gap: 1rem; flex-wrap:wrap; } 
 .mcollege_intro_msg2 strong { font-weight: 500; font-size: 1.625rem; } 
+.mcollege_intro_msg3 { font-size: 1.5rem; } 
+
+.mcollege_intro_sub { max-width: 1060px; margin: 0 auto; } 
+
 
 p[class*=mcollege_notice] { display: flex; gap: 0.5rem; margin-top: 0.5rem; line-height: 1.6; font-weight: 200; } 
 p[class*=mcollege_notice] * { vertical-align: middle; } 
@@ -194,6 +200,11 @@ ul .num_list01 { margin:1rem 0; }
 .inner_wrap01 > img { max-width: 40%; object-fit: cover; } 
 .inner_wrap01 .con_tit { margin-bottom: 0.5rem; } 
 
+.dashed_box01 { margin-top:1.5rem; border:1px dashed #b3b3b3; background: #fff; padding: 1.2rem 1.875rem; font-size: 1.0625rem; font-weight: 200; line-height: 2; } 
+
+.pic_list01 { display: flex; gap:1.25rem; justify-content: space-between; } 
+.pic_list01 li { width: 33.3%; flex: 1 1 33.3%; object-fit: cover; } 
+
 /* 동아리 */
 .club_list1 { margin-top: 4rem; } 
 .club_list1 li { display: block; } 
@@ -215,6 +226,21 @@ ul .num_list01 { margin:1rem 0; }
 .mcollege_diagram02 { display: flex; justify-content: center; } 
 .mcollege_diagram02 li { position: relative; background: #ffffff; color: #2061c4; border:1px solid #2061c4; border-radius: 30px; width: 225px; display: flex; align-items: center; justify-content: center; box-sizing: border-box; font-weight: 700; font-size: 1.0625rem; height: 45px; } 
 .mcollege_diagram02 li+li:before { content: ''; display: block; position: absolute; height: 43px; width: 43px; border-radius: 50%; left: -22px; background: #2061c4 url(../images/medicine/icon_plus03.png) no-repeat center; } 
+
+.group_list01 { display: flex; flex-wrap:wrap; gap:5rem; } 
+.group_list01 > li { display: flex; flex-direction: column; flex: 1 1 calc(50% - 2.5rem); max-width: calc(50% - 2.5rem); } 
+.group_list01 .group_top { display: flex; } 
+.group_list01 .group_top_l { display: flex; flex-direction: column; justify-content: space-between; } 
+.group_list01 .group_top_r { position: relative; z-index: -1; width: -webkit-fill-available; max-width: 160px; } 
+.group_list01 .group_msg { font-size:1.5rem; font-weight: 500; color: #3987ee; font-family: "Gmarket"; margin: auto 0; line-height: 1.4; } 
+.group_list01 .group_name { position: relative; width: fit-content; font-size: 2.5rem; font-weight: 700; color: #16468f; line-height: 1; padding: 0 30px; } 
+.group_list01 .group_name:before,
+.group_list01 .group_name:after { content:''; position: absolute; display:inline-block; font-family: "Gmarket"; font-weight: 500; color: #16468f; font-size: 4.5rem; top: -5px; height: 2.5rem; } 
+.group_list01 .group_name:before { content:'“'; left: 0; } 
+.group_list01 .group_name:after { content:'”'; right: 0; } 
+.group_list01 .group_bot { position: relative; padding:15px 15px 25px 0; background: #fff; margin-top:-1px; line-height: 2; flex: 1; } 
+.group_list01 .group_bot:before { content:''; position: absolute; left: 30px; right:0; top:0; bottom:0; display: block; border: 1px solid #16468f; border-left: 0; } 
+.group_list01 .gorup_last_msg { position: absolute; left: 0; bottom: 0; margin-bottom:-0.4rem; line-height:1.5rem; font-size: 1.5rem; font-weight: 500; color: #1e63be; background: #fff; padding-right:10px; } 
 
 @media (max-width:1200px){
  .mcollege_intro_box br { display: none; } 
@@ -256,8 +282,8 @@ ul .num_list01 { margin:1rem 0; }
  .mcollege_notice_box01 .box_con { padding: 1.5rem 1rem; } 
 
  .circle_list01 { gap: 1rem 2rem; } 
- .circle_list01 .circle { width: 90px; height: 90px;} 
- .circle_list01 .circle img { zoom: 0.8; }
+ .circle_list01 .circle { width: 90px; height: 90px; } 
+ .circle_list01 .circle img { zoom: 0.8; } 
 
  .club_list1 .club_item_top { margin-bottom: 15px; } 
  .club_list1 .club_item_top .item_open_btn { padding:0 45px 0 20px; } 
@@ -269,8 +295,8 @@ ul .num_list01 { margin:1rem 0; }
  .club_list1 .club_item_con .icon_box img { max-width: 65%; } 
 
  .circle_list02 { gap: 1rem 2rem; } 
- .circle_list02 .circle { margin:0; align-items: center; width: 90px; height: 90px;} 
- .circle_list02 .circle img { zoom: 0.8; }
+ .circle_list02 .circle { margin:0; align-items: center; width: 90px; height: 90px; } 
+ .circle_list02 .circle img { zoom: 0.8; } 
  .circle_list02 li { font-size: 1rem; align-items: center; } 
  .circle_list02 li ~ li .circle:before { width: 2rem; background-size: 18px auto; } 
 
@@ -298,4 +324,6 @@ ul .num_list01 { margin:1rem 0; }
 @media (min-width: 641px) and (max-width: 980px) { } 
 @media (max-width:640px){
  .inner_wrap01 > img { display: none; } 
+ .pic_list01 { overflow-x: auto; } 
+ .pic_list01 li { width: 50%; flex: none } 
  }
