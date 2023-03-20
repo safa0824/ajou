@@ -10,25 +10,38 @@
 .block_center { margin:0 auto; display: block; } 
 .icon_link01 { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: #3987ee url(../images/medicine/icon_link01.png) no-repeat center; } 
 .icon_arrow_half01 { display: inline-block; width: 31px; height: 11px; background: url(../images/medicine/icon_arrow_right_half02.png) no-repeat 0 0; background-size: contain; } 
+.icon_arrow_half03 { display: inline-block; width: 31px; height: 11px; background: url(../images/medicine/icon_arrow_right_half03.png) no-repeat 0 0; background-size: contain; } 
 .icon_plus01 { display: inline-block; width: 30px; height: 30px; border-radius: 50%; background: #fff url(../images/medicine/icon_plus01.png) no-repeat center; } 
+.icon_arrow_right01 { display: inline-block; width: 19px; height: 19px; background: url(../images/medicine/icon_arrow_right02.png) no-repeat 0 0; } 
 .divider { background: #dadfe7; height: 1px; margin: 3rem 0; } 
 .btn_download01 { background: #324a71; color: #fff !important; font-weight: 500; font-size: 0.9375rem; height: 30px; display: inline-flex; align-items: center; gap: 0.7rem; padding: 0 1.5rem; margin-left: 5px; } 
+.btn_download02 { width: 30px; height: 30px; background: #3987ee; border-radius: 50%; display: flex; align-items: center; justify-content: center; } 
+.btn_download02.type2 { background: #273454; } 
 .icon_download01 { background:url(../images/medicine/icon_download01.png) no-repeat 0 0; display: inline-block; width: 12px; height: 12px; } 
+.icon_location01 { background:#96a3bd url(../images/medicine/icon_location01.png) no-repeat center; border-radius: 50%; display: inline-block; width: 34px; height: 34px; } 
+.txt_underline { position: relative; font-weight: 700; } 
+.txt_underline:after { content:''; position: absolute; display: block; left: -0px; right:-0px; bottom:0px; height: 1px; background: #000; } 
+figcaption { font-size: 0px; line-height: 0px; overflow: hidden; height: 0px; text-indent: -9999px; } 
+
 
 .mcollege_wrap { color: #000; } 
 * + .mcollege_con_wrap { margin-top: 3.5rem; } 
 .mcollege_con_wrap .con_tit { position: relative; font-size: 1.75rem; font-weight: 700; line-height: 1.6; padding-left: 27px; margin-bottom:0.5rem; } 
 .mcollege_con_wrap .con_tit:before { content: ''; display: inline-block; width: 17px; height: 17px; border-radius: 50%; border:1px solid #004098; background: #004098; box-shadow: inset 0 0 0 4px #fff; margin-right:10px; position:absolute; left: 0; top:13px; } 
 .mcollege_con_wrap .con_tit2 { display: flex; align-items: center; line-height: 1.6; color: #1e63be; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; } 
-.mcollege_con_wrap .con_tit strong { font-weight: 700; } 
+.mcollege_con_wrap :is(.con_tit, .con_tit2) strong { font-weight: 700; margin-left: 5px; } 
+.mcollege_con_wrap :is(.con_tit, .con_tit2) [class*=btn_download] { margin-left: 10px; } 
 .mcollege_con_wrap .con_desc { line-height: 2; font-size: 1.0625rem; font-weight: 200; } 
+.mcollege_con_wrap .con_desc span { font-weight: 400; } 
 .mcollege_con_wrap * + .con_tit2 { margin-top: 1rem; } 
 .mcollege_con_wrap .con_tit + .con_tit2 { margin-top: 0.5rem; } 
 .mcollege_con_wrap .con_tit ~ .con_box + .con_box { margin-top: 4rem; } 
+.mcollege_con_wrap .con_tit.inner_flex { justify-content: space-between; align-items: center; flex-wrap: wrap; } 
+.mcollege_con_wrap .mcollege_leader { font-size: 1.25rem; display: block; font-weight: 500; } 
 
 .tab_menu01 { display: flex; border: 1px solid #cbcbcb; margin-bottom: 3rem; flex-wrap: wrap; } 
-.tab_menu01 .tab_menu_item { position: relative; flex: 1; height: 65px; display: flex; align-items: center; justify-content: center; font-size: 1.1875rem; padding-bottom: 3px; box-sizing: border-box; transition: 0.3s; min-width: 25%; margin-bottom:-1px; border-bottom:1px solid #cbcbcb; text-align: center; padding:0 0.5rem; } 
-.tab_menu01 .tab_menu_item.mini { font-size:0.9375rem; letter-spacing: -1px; }
+.tab_menu01 .tab_menu_item { position: relative; flex: 1; height: 65px; display: flex; align-items: center; justify-content: center; font-size: 1.1875rem; padding-bottom: 3px; box-sizing: border-box; transition: 0.3s; min-width: 25%; margin-bottom:-1px; border-bottom:1px solid #cbcbcb; text-align: center; padding:0 0.5rem; word-break: break-word; } 
+.tab_menu01 .tab_menu_item.mini { font-size:0.9375rem; letter-spacing: -1px; } 
 .tab_menu01 .tab_menu_item:after { content: ''; position: absolute; font-weight: 300; left: 0; height: 7px; bottom: 0; right: 0; background: #16468f; display: none; } 
 .tab_menu01 .tab_menu_item:hover { background: #eaeaea; } 
 .tab_menu01 .tab_menu_item.on { color: #16468f; font-weight: 500; } 
@@ -43,25 +56,29 @@
 /* 테이블 */
 :is( [class*=con_desc], [class*=con_tit], ul, .table_scroll_wrap) + .table_scroll_wrap { margin-top: 1.5rem; } 
 li .table_scroll_wrap { margin-top: 1.5rem; } 
+.table_scroll_wrap:first-child { margin-top:0; }
 .table_scroll_wrap { width: 100%; } 
 .table_scroll_wrap { overflow-x:auto; margin: 4rem 0 1.5rem; } 
 .table_scroll_wrap table { min-width: 100%; font-size: 1rem; color: #000; border-bottom:1px solid #ddd; text-align: center; line-height: 1.6; } 
-.table_scroll_wrap table :is(th, td) { height: 27px; border-right: 1px solid #ddd; border-top: 1px solid #ddd; line-height: 1.6; padding: 1rem; font-size: 1.06rem; word-break: keep-all; } 
+.table_scroll_wrap table :is(th, td) { height: 27px; border-right: 1px solid #ddd; border-top: 1px solid #ddd; line-height: 1.6; padding: 1rem; font-size: 1.0625rem; word-break: keep-all; } 
 .table_scroll_wrap tr:first-child > * { border-top:1px solid #38496b; } 
 .table_scroll_wrap table :is(th,td):last-child { border-right: 0 none; } 
 .table_scroll_wrap table :is(td,th).inner_bd { border-right: 1px solid #ddd; } 
-.table_scroll_wrap table strong { display: inline-block; color:#222; font-weight: 500; } 
+.table_scroll_wrap table strong { display: inline-block; font-weight: 500; } 
+.table_scroll_wrap table strong:not([class]) { color:#222; } 
 .table_scroll_wrap table tr:last-child td { border-bottom: 0 none; } 
 .table_scroll_wrap table th { background: #f1f6fd; color: #222222; font-weight: 400; } 
 .table_scroll_wrap thead th { color: #273454; font-weight: 500; white-space: nowrap; } 
 .table_scroll_wrap tfoot td,
 .table_scroll_wrap tbody th { background: #f7f9fb; color: #222; } 
-.table_scroll_wrap tbody td { } 
+.table_scroll_wrap tbody td { font-weight: 200; } 
 .table_scroll_wrap colgroup + tbody { border-bottom:1px solid #000000; } 
 .table_scroll_wrap colgroup + tbody th { background: #f1f6fd; } 
+.table_scroll_wrap table th.pd_thin { padding-left:0.1rem !important; padding-right: 0.1rem !important; } 
 .table_inner_list { min-width: 300px; text-align: left; padding-left:0.5rem; font-size: 1.0625rem; } 
 .table_inner_list dt { font-weight: 500; } 
 .table_inner_list dd { } 
+.table_scroll_wrap table.table2 :is(th, td) { padding:1rem 2rem; } 
 
 .table_common_list1 li { width: 100%; display: list-item; display: flex; } 
 .table_common_list1 li ~ li { margin-top: 0.5rem; } 
@@ -72,11 +89,25 @@ li .table_scroll_wrap { margin-top: 1.5rem; }
 .mcollege_intro_logo { width: 90px; height: 90px; background: #16468f; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top:0; } 
 .mcollege_intro_box + .con_desc { line-height: 2; font-weight: 200; font-size: 1.0625rem; margin-top: 1rem; } 
 [class*=mcollege_intro_msg] { font-family: 'Gmarket'; font-size: 1.625rem; font-weight: 500; } 
-.mcollege_intro_msg strong { display: block; text-transform: uppercase; font-size: 1.06rem; margin-top:1rem; display: block; } 
+.mcollege_intro_msg strong { display: block; text-transform: uppercase; font-size: 1.06rem; margin-top:0.5rem; line-height: 2; } 
 .mcollege_intro_img { margin-left: auto; } 
 .mcollege_intro_msg2 { font-size: 1.125rem; display: flex; align-items: baseline; gap: 1rem; flex-wrap:wrap; } 
 .mcollege_intro_msg2 strong { font-weight: 500; font-size: 1.625rem; } 
 .mcollege_intro_msg3 { font-size: 1.5rem; } 
+.mcollege_intro_msg4 { font-size: 1.75rem; line-height: 1.4; } 
+.mcollege_intro_msg5 { font-family: 1.5rem; font-family: 'Noto Sans KR'; font-weight: 300; line-height: 1.5; margin-bottom: 15px; } 
+.mcollege_intro_part { font-family: 'Gmarket'; font-weight: 500; font-size: 1.25rem; line-height: 1.6; color: #3987ee; } 
+.mcollege_intro_part.type2 { text-transform:none; font-size: 1.5rem; } 
+.dash_division { background: repeating-linear-gradient(-45deg, #fff 0px, #fff 2px, #e5e5e5 3px, #e5e5e5 7px ); height: 3px; margin:2rem 0; } 
+.mcollege_intro_wrap .inner_flex { } 
+.mcollege_intro_wrap .inner_flex + .inner_flex { margin-top: 3rem; } 
+.mcollege_intro_wrap .inner_flex > div { flex: 1; } 
+.mcollege_intro_wrap .inner_flex > div:first-child { padding-right: 40px; } 
+.mcollege_intro_wrap .inner_flex > div.msg { letter-spacing: -1px; display: flex; } 
+.mcollege_intro_wrap .inner_flex > div.msg > div { padding-right: 25px; display: flex; flex-direction: column; } 
+.mcollege_intro_wrap .mcollege_intro_sign { margin-top: auto; display: flex; align-items: flex-end; gap: 15px; font-size: 1.125rem; font-weight: 700; } 
+.mcollege_intro_wrap .intro_detail_desc { font-size: 1.0625rem; line-height: 2; font-weight: 200; letter-spacing: -0.8px; } 
+.mcollege_intro_wrap .people_img img { height: 100%; object-fit: cover; width: 100%; } 
 
 .mcollege_intro_sub { max-width: 1060px; margin: 0 auto; } 
 
@@ -86,7 +117,10 @@ p[class*=mcollege_notice] * { vertical-align: middle; }
 p[class*=mcollege_notice]:before { content: ''; display: block; width: 26px; height: 26px; border-radius: 50%; background: #aaa url(../images/medicine/icon_notice01.png) no-repeat center; flex: 0 0 26px; } 
 p.mcollege_notice01:before { background-color: #767676; } 
 p.mcollege_notice02:before { background-color: #3987ee; } 
+p.mcollege_notice02.color_txt { color: #3987ee; } 
 p[class*=mcollege_notice]:last-child { margin-bottom: 1.5rem; } 
+p[class*=mcollege_notice] .btn_download02 { margin-top: -3px; } 
+.mcollege_con_wrap + p[class*=mcollege_notice] { margin-top: 1rem; } 
 
 .mcollege_desc01 { padding: 3px; background: repeating-linear-gradient(-45deg, #fff 0px, #fff 2px, #e5e5e5 3px, #e5e5e5 7px ); font-size:1.0625rem; margin: 1rem 0; } 
 .mcollege_desc01 > div { padding: 1.2rem 2rem; background: #f7f9fb; } 
@@ -101,6 +135,12 @@ p[class*=mcollege_notice]:last-child { margin-bottom: 1.5rem; }
 .mcollege_desc01 .desc_link .txt_blue2 { display: inline-block; } 
 .mcollege_desc01 .desc_link .txt_blue2 a { display: flex; align-items: center; gap: 0.5rem; } 
 .mcollege_desc01 .desc_link > div { flex: 1; } 
+
+.mcollege_desc01 .desc_info01 { display: flex; flex-wrap:wrap; gap:1rem 3rem; justify-content: center; align-items: center; } 
+.mcollege_desc01 .desc_info01 strong { font-weight: 500; color: #fff; background: #3987ee; line-height: 1; padding:4px 15px 6px 15px; border-radius: 30px; margin-right:10px; } 
+.mcollege_desc01 .desc_list01 { display: flex; flex-wrap:wrap; } 
+.mcollege_desc01 .desc_list01 li { flex: 1; display: flex; flex-wrap:wrap; align-content: flex-start; } 
+.mcollege_desc01 .desc_list01 li strong { font-weight: 500; } 
 
 .mcollege_diagram01 { display: flex; align-items: center; justify-content: center; flex-wrap:wrap; gap: 3rem; margin: 3.75rem 0; } 
 .mcollege_diagram01_item01 { display: flex; gap: 2rem; } 
@@ -129,10 +169,15 @@ p[class*=mcollege_notice]:last-child { margin-bottom: 1.5rem; }
 .txt_list01 li { display: list-item; line-height: 2; } 
 .txt_list01.light { font-weight: 200; } 
 .txt_list01 .list_inner_desc { margin-left:10px; } 
+.txt_list01:first-child { margin: 0; } 
 
 .txt_list02 { display: block; padding-left:27px; font-weight: 200; } 
 .txt_list02 li { display: list-item; padding-left:5px; line-height: 2; list-style:'-'; } 
-/* .txt_list02 li ~ li { margin-top: 0.5rem; } */
+
+.txt_list03 { display: block; font-weight: 200; font-size: 1.0625rem; padding-left:5px; } 
+.txt_list03 li { display: list-item; padding-left:5px; line-height: 2; list-style:'-'; } 
+.txt_list03 li a { display: inline-flex; margin-left: 5px; } 
+td .txt_list03 li { line-height: 1.6; } 
 
 .box_list01 { display: flex; } 
 .box_list01 li { display: flex; align-items: center; justify-content: center; border-radius: 5px; background: #ffd877; min-width: 105px; height: 95px; box-sizing: border-box; position: relative; text-align: center; padding: 10px; font-weight: 700; } 
@@ -140,12 +185,25 @@ p[class*=mcollege_notice]:last-child { margin-bottom: 1.5rem; }
 .box_list01 li ~ li { margin-left:25px; } 
 .box_list01 li ~ li:before { content: ''; display:block; position: absolute; top:0; bottom: 0; width: 25px; left:-25px; background: url(../images/medicine/icon_arrow_right_half02.png) no-repeat center; } 
 
-.num_list01 { font-weight: 200; margin: 1rem 0; } 
-.num_list01 li { display: flex; line-height: 1.5; flex-wrap:wrap; } 
-.num_list01 li ~ li { margin-top: 0.5rem; } 
-.num_list01 li strong { font-weight: 400; } 
-.num_list01 .num { border:1px solid #3987ee; border-radius: 50%; color: #3987ee; width: 27px; height: 27px; display: flex; align-items: center; justify-content: center; margin-right: 0.5rem; font-size: 0.9375rem; box-sizing: border-box; min-width: 27px; } 
-ul .num_list01 { margin:1rem 0; } 
+.box_list02 { font-size:1.0625rem; margin-top: 1rem; } 
+.box_list02 li { display: flex; align-items: center; gap: 2rem; padding: 1.2rem 2rem; background: #f7f9fb; border:1px solid #dce1e9; } 
+.box_list02 li ~ li { margin-top: 1.5rem; } 
+.box_list02 .list_con { flex: 1; } 
+
+.number_list01 { font-weight: 200; margin: 1rem 0; font-size:1.0625rem; } 
+.number_list01 li { line-height: 1.6; position: relative; padding-left: 35px; display: block; } 
+.number_list01 li ~ li { margin-top: 0.5rem; } 
+.number_list01 li strong { font-weight: 400; } 
+.number_list01 .num { position: absolute; left:0; border:1px solid #3987ee; border-radius: 50%; color: #3987ee; width: 27px; height: 27px; display: flex; align-items: center; justify-content: center; margin-right: 0.5rem; font-size: 0.9375rem; box-sizing: border-box; min-width: 27px; } 
+.number_list01 .btn_download01 { align-self: center; } 
+ul .number_list01 { margin:1rem 0; } 
+
+.number_list02 { max-width: 730px; margin: 3rem auto 0 auto; } 
+.number_list02 li { display: flex; font-size: 1.0625rem; gap: 7px; line-height: 1.6; } 
+.number_list02 li ~ li { margin-top: 10px; } 
+.number_list02 .number { flex: 0 0 26px; border-radius: 50%; color: #fff; font-size: 0.9375rem; width: 26px; height: 26px; background: #3987ee; display: flex; align-items: center; justify-content: center; } 
+.number_list02 .number.type2 { background: #1e63be; } 
+.number_list02 .number.type3 { background: #16468f; } 
 
 .list_inner_link { display: flex; margin:0 5px; gap: 5px; align-items: center; } 
 
@@ -159,6 +217,7 @@ ul .num_list01 { margin:1rem 0; }
 .icon_list01 .list_info_box { font-weight: 400; } 
 .icon_list01 .list_info_box p ~ p { margin-top: 0.8rem; } 
 .icon_list01 .list_info_box2 { font-size: 1.125rem; font-weight: 500; } 
+.icon_list01 .icon_box { width: 86px; height: 86px; border-radius: 25px; display: flex; align-items: center; justify-content: center; background: #f1f6fd; } 
 
 
 .mcollege_notice_box01 { margin-top: 3rem; display: flex; } 
@@ -187,6 +246,9 @@ ul .num_list01 { margin:1rem 0; }
 .blue_bg_list01 li + li { border-left: 1px solid #dde2e9; } 
 .blue_bg_list01.type2 li { padding: 3rem 0.5rem; } 
 
+.gray_bg_box01 { background: #f7f9fb; border:1px solid #dfe3ea; padding:1.875rem 2.6rem; } 
+* + .gray_bg_box01 { margin-top: 4rem; } 
+
 .mcollege_organ_list01 { position: relative; border-top: 1px solid #808080; border-bottom: 1px solid #808080; box-sizing: border-box; } 
 .mcollege_organ_list01:after { content: ''; display: block; position: absolute; top:0; bottom:0; right:1px; width: 1px; background: #fff; } 
 .mcollege_organ_list01 ul { display: flex; flex-wrap: wrap; } 
@@ -208,10 +270,11 @@ ul .num_list01 { margin:1rem 0; }
 
 /* 동아리 */
 .club_list1 { margin-top: 4rem; } 
+.club_list1:first-child { margin-top: 0;}
 .club_list1 li { display: block; } 
 .club_list1 .club_item_top { margin-bottom: 23px } 
 .club_list1 .club_item_top .item_tit { color: #2061c4; font-weight: 500; text-align: left; } 
-.club_list1 .club_item_top .item_tit span { font-weight: 200; color: #000000;}
+.club_list1 .club_item_top .item_tit span { font-weight: 200; color: #000000; } 
 .club_list1 .club_item_top .item_open_btn { width: 100%; height: 65px; display: flex; align-items: center; justify-content: space-between; background: #f7f9fb; border:1px solid #dce1e9; padding: 0 65px 0 35px; box-sizing: border-box; font-size: 1.06rem; position: relative; font-weight: 500; font-size: 1rem; align-items: center; letter-spacing: 0; } 
 .club_list1 .club_item_top .item_open_btn:hover { border-color:#2061c4; } 
 .club_list1 .club_item_top .item_open_btn:after { content:''; display: block; position: absolute; right:35px; background: #b6bfcf; height: 3px; width: 15px; } 
@@ -221,20 +284,16 @@ ul .num_list01 { margin:1rem 0; }
 .club_list1 .on .club_item_top .item_open_btn:before { background: #fff; transform: rotate(270deg); } 
 .club_list1 .on .club_item_top .item_open_btn:after { background: #fff; } 
 .club_list1 .club_item_con { font-size:1.0625rem; font-weight: 200; padding: 50px 55px; background: #f1f6fd; margin-bottom: 23px; line-height: 2; display: none; min-height: 88px; } 
-.club_list1 .club_item_con .item_con_msg { font-weight: 500; font-size: 1.625rem; font-family: 'Gmarket'; letter-spacing: -1px; line-height: 1.4; margin:0.8rem 0 0.6rem;  } 
+.club_list1 .club_item_con .item_con_msg { font-weight: 500; font-size: 1.625rem; font-family: 'Gmarket'; letter-spacing: -1px; line-height: 1.4; margin:0.8rem 0 0.6rem; } 
 .club_list1 .club_item_con .icon_box { float:left; margin-right: 1.5rem; width: 88px; height: 88px; border-radius: 25px; background: #fff; display: flex; align-items: center; justify-content: center; } 
 
 
-.club_list1 .club_item_con .item_con_img { float: right; margin-left: 30px;} 
-.club_list1 .club_item_con .item_con_name { font-size:1.0625rem; color:#3987ee; font-weight: 500;  font-family: 'Gmarket';  }
-.club_list1 .club_item_con .item_con_info { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap:wrap; }
-.club_list1 .club_item_con .item_con_info li { display: flex; flex: 1 1 250px; align-items: center; gap: 5px; background: #ffffff; border:1px solid #dadfe7; border-radius: 3px; padding: 5px 25px; height: 57px; font-size: 1.06rem; font-weight: 300; box-sizing: border-box;}
-.club_list1 .club_item_con .item_con_info img { margin-right: 5px; }
-
-
-
+.club_list1 .club_item_con .item_con_img { float: right; margin-left: 30px; } 
+.club_list1 .club_item_con .item_con_name { font-size:1.0625rem; color:#3987ee; font-weight: 500; font-family: 'Gmarket'; } 
+.club_list1 .club_item_con .item_con_info { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap:wrap; } 
+.club_list1 .club_item_con .item_con_info li { display: flex; flex: 1 1 250px; align-items: center; gap: 5px; background: #ffffff; border:1px solid #dadfe7; border-radius: 3px; padding: 5px 25px; height: 57px; font-size: 1.06rem; font-weight: 300; box-sizing: border-box; } 
+.club_list1 .club_item_con .item_con_info img { margin-right: 5px; } 
 .club_list1 .on .club_item_con { display: block; } 
-
 
 .mcollege_diagram02 { display: flex; justify-content: center; } 
 .mcollege_diagram02 li { position: relative; background: #ffffff; color: #2061c4; border:1px solid #2061c4; border-radius: 30px; width: 225px; display: flex; align-items: center; justify-content: center; box-sizing: border-box; font-weight: 700; font-size: 1.0625rem; height: 45px; } 
@@ -255,22 +314,176 @@ ul .num_list01 { margin:1rem 0; }
 .group_list01 .group_bot:before { content:''; position: absolute; left: 30px; right:0; top:0; bottom:0; display: block; border: 1px solid #16468f; border-left: 0; } 
 .group_list01 .gorup_last_msg { position: absolute; left: 0; bottom: 0; margin-bottom:-0.4rem; line-height:1.5rem; font-size: 1.5rem; font-weight: 500; color: #1e63be; background: #fff; padding-right:10px; } 
 
+.mcollege_diagram03 { margin: 0 -0.5rem; } 
+.mcollege_diagram03 .diagram_tit { font-family: "Gmarket"; font-size: 1.5rem; font-weight: 700; text-align: center; text-transform: uppercase; } 
+.mcollege_diagram03 ul { display: flex; gap: 1rem 3.125rem; justify-content: center; margin: 2rem 0; flex-wrap:wrap; } 
+.mcollege_diagram03 .diagram_circle { border-radius: 50%; width: 230px; height: 230px; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; text-align: center; position: relative; line-height: 1.6; } 
+.mcollege_diagram03 .diagram_circle.type0 { background: #579fff; } 
+.mcollege_diagram03 .diagram_circle.type1 { background: #3987ee; } 
+.mcollege_diagram03 .diagram_circle.type2 { background: #1e63be; } 
+.mcollege_diagram03 .diagram_circle.type3 { background: #16468f; } 
+.mcollege_diagram03 .diagram_circle:not(:first-child):before { content:''; display: block; position: absolute; right:100%; width: 3.125rem; height: 100%; background:url(../images/medicine/icon_dot01.png) no-repeat center; top:0; } 
+
+.mcollege_diagram03.type2 .diagram_circle { justify-content: flex-start; padding-top:20px; box-sizing: border-box; } 
+
+.mcollege_diagram03.type3 ul { width: fit-content; margin:0 auto; border-radius: 130px; padding:15px; background: #fff; border: 1px dashed #b1b1b1; margin-top: 4rem; gap: 20px; } 
+.mcollege_diagram03.type3 .diagram_tit + ul { margin-top: 1rem; } 
+.mcollege_diagram03.type3 .diagram_circle { padding:20px 0 30px; box-sizing: border-box; justify-content: space-between; gap:0; } 
+.mcollege_diagram03.type3 .step { background: #fff; color: #3987ee; width: 27px; height: 27px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9375rem; } 
+.mcollege_diagram03.type3 p:not([class]) { font-family: 'Gmarket'; font-size: 1.25rem; font-weight: 500; line-height: 1.3; } 
+.mcollege_diagram03.type3 * + .diagram_tit { margin-top: 3rem; } 
+.mcollege_diagram03.type3 .diagram_tit_sub { font-family: 'Gmarket'; font-size: 1.5rem; font-weight: 500; text-align: center; margin-top: 1rem; } 
+.mcollege_diagram03.type3 .diagram_tit_eng { font-size: 1.125rem; font-family: 'Gmarket'; margin: 0.5rem 0 1rem 0; } 
+.mcollege_diagram03.type3 .diagram_circle:before { display: none; } 
+
+.mcollege_part_list01 { display: flex; flex-wrap:wrap; padding-left: 1px; margin-top: 3rem; } 
+.mcollege_part_list01 .part_box { display: flex; flex-direction: column; border:1px solid #13376e; margin-top: -1px; margin-left:-1px; box-sizing: border-box; padding: 2.5rem 2.5rem 2.5rem 2.8rem; } 
+.mcollege_part_list01 .part_tit { font-size: 1.75rem; font-weight: 700; color: #13376e; margin-bottom:1rem; } 
+.mcollege_part_list01 .part_desc { font-size: 1.0625rem; font-weight: 200; line-height: 2; letter-spacing: -0.7px; } 
+.mcollege_part_list01 .part_info { margin-top:1rem; } 
+.mcollege_part_list01 .part_info li { display: flex; font-weight: 200; color: #16468f; font-size: 1rem; align-items: center; gap: 0.5rem; } 
+.mcollege_part_list01 .part_info li ~ li { margin-top: 8px; } 
+.mcollege_part_list01 .part_info li:before { content:''; display: block; width: 4px; height: 4px; border-radius: 50%; background: #3987ee; } 
+.mcollege_part_list01 .part_icon { display: flex; align-items: center; justify-content: center; background: #f1f6fd; width: 88px; height: 88px; border-radius: 25px; } 
+.mcollege_part_list01 .part_link { margin-top: 1.5rem; } 
+.mcollege_part_list01 .part_link_btn { background: #13376e url(../images/medicine/icon_arrow_right01.png) no-repeat 85% center; color: #fff; font-weight: 500; min-width: 137px; height: 41px; border-radius: 30px; padding: 10px 60px 10px 20px; box-sizing: border-box; transition: 0.3s; } 
+.mcollege_part_list01 .part_link_btn:hover { opacity: 0.9; } 
+.mcollege_part_list01 .part_round_tit { background: #13376e; color: #fff; font-weight: 500; border-radius: 30px; padding:11px 25px 13px 25px; box-sizing: border-box; width: min-content; line-height: 1; margin-top: 1rem; } 
+.mcollege_part_list01.type1 .part_box { flex: 1 1 33.3%; } 
+.mcollege_part_list01.type1 .inner_flex { margin-top: auto; justify-content: space-between; align-items: center; } 
+.mcollege_part_list01.type2 .part_box { flex: 1 1 50%; } 
+.mcollege_part_list01.type2 .inner_flex { flex: 1; justify-content: space-between; } 
+.mcollege_part_list01.type2 .part_icon { margin-top:auto; flex: 0 0 88px; } 
+.mcollege_part_list01 .part_tag { flex: 1; display: flex; gap: 4px; flex-wrap:wrap; margin-top: 1.5rem; max-width: 900px; } 
+.mcollege_part_list01 .part_tag li { display: flex; align-items: center; justify-content: center; color:#16468f; font-size: 1.0625rem; background: #f1f6fd; border-radius: 20px; padding: 0 1.875rem 4px 1.875rem; box-sizing: border-box; line-height: 1; height: 44px; } 
+
+.mcollege_step_list01 { border:1px solid #dadfe7; border-top: 1px solid #16468f; font-size: 1.0625rem; overflow-x: auto; } 
+.mcollege_step_list01 ul { display: flex; flex: 1; min-height: 200px; background: #f7f9fb; min-width: 500px; } 
+.mcollege_step_list01 ul + ul { border-top: 1px solid #dadfe7; } 
+.mcollege_step_list01 .step_first { position: relative; background: #3987ee; color: #fff; font-family: 'Gmarket'; margin-top: 0; } 
+.mcollege_step_list01 .step_number { border:1px solid #3987ee; color: #3987ee; box-sizing: border-box; width: 27px; height: 27px; border-radius: 50%; text-align: center; background: #fff; display: flex; align-items: center; justify-content: center; font-size:0.9375rem; } 
+.mcollege_step_list01 .step_first:after { content: ''; position: absolute; display: block; width: 43px; height: 43px; border-radius: 50%; background: #2061c4 url(../images/medicine/icon_arrow_right_half04.png) no-repeat center 13px; left:100%; transform: translateX(-50%); } 
+.mcollege_step_list01 ul.type2 .step_first { background: #1e63be; } 
+.mcollege_step_list01 ul.type2 .step_first:after { background-color: #16468f; } 
+.mcollege_step_list01 ul li { width: 20%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding:1.75rem 0.5rem; text-align: center; } 
+.mcollege_step_list01 ul li:not(.setp_first) ~ li { border-left:1px solid #dadfe7; } 
+.mcollege_step_list01 ul li img { margin : 10px 0; } 
+
+
+.mcollege_link { margin:3rem auto; text-align: center; } 
+.mcollege_link .mcollege_link_btn { display: inline-flex; align-items: center; justify-content: center; background: #3987ee; padding: 0 45px 0 60px; height: 78px; border-radius: 40px; font-size: 1.125rem; font-weight: 400; color: #fff; text-align: center; gap: 1rem; transition: 0.3s; } 
+.mcollege_link .mcollege_link_btn:hover { opacity: 0.9; } 
+
+.location_box01 { padding-left:50px; position: relative; line-height: 1.4; } 
+.location_box01 .icon_location01 { position: absolute; left: 0; } 
+.location_box01 .location_tit { color: #626f89; font-size: 1.0625rem; font-weight: 500; } 
+.location_box01 .location_info { display: flex; gap: 5px 10px; flex-wrap:wrap; margin-top: 5px; font-size: 1rem; font-weight: 200; } 
+
+.mcollege_leader_history { display: flex; gap:20px; flex-wrap:wrap; } 
+.mcollege_leader_history > li { flex: 1 1 calc(25% - 15px); max-width: calc(25% - 15px); display: flex; flex-direction: column; } 
+.mcollege_leader_history .leader_img { max-width: 285px; max-height: 266px; overflow: hidden; border:1px solid #dadfe7; border-bottom: 0 none; box-sizing: border-box; } 
+.mcollege_leader_history .leader_img img { object-fit: cover; object-position: top; width: 100%; height: 100%; } 
+.mcollege_leader_history .leader_info_box { border: 1px solid #13376e; padding: 1.625rem 2.5rem; background: url(../images/medicine/bg_logo01.png) no-repeat 110% -60%; font-family: 'Gmarket'; color: #13376e; font-weight: 500; flex: 1; display: flex; flex-direction: column; } 
+.mcollege_leader_history .leader_info1 { position: relative; font-size: 0.875rem; } 
+.mcollege_leader_history .leader_info1:before { content:''; position: absolute; display: block; background: #3aaae9; width: 3px; height: 11px; left: -10px; top:2px } 
+.mcollege_leader_history .leader_info2 { font-size: 1.75rem; margin-top:0.8rem; line-height: 1; flex: 1; } 
+.mcollege_leader_history .leader_info3 { margin-top:0.8rem; font-weight: 200; font-size: 1rem; line-height: 1.4; font-family: 'Noto Sans KR', sans-serif; } 
+
+.mcollege_dash_list01 { border: 0 none !important; background: none !important; max-width: 1012px; margin: 0 auto; } 
+.mcollege_dash_list01 > li { padding:10px; border-radius: 100px; border: 1px dashed #aeaeae; width: 100%; background: #fff; display: flex; align-items: center; gap: 1.875rem; } 
+.mcollege_dash_list01 .dash_item_tit { display: flex; align-items: center; justify-content: center; width: 129px; flex: 0 0 129px; height: 123px; border-radius: 50%; color: #fff; background: #579fff; font-size: 1.375rem; font-weight: 500; font-family: 'Gmarket'; } 
+.mcollege_dash_list01 .type1 .dash_item_tit { background: #579fff; } 
+.mcollege_dash_list01 .type2 .dash_item_tit { background: #3987ee; } 
+.mcollege_dash_list01 .type3 .dash_item_tit { background: #1e63be; } 
+.mcollege_dash_list01 .type4 .dash_item_tit { background: #16468f; } 
+.mcollege_dash_list01 .type5 .dash_item_tit { background: #f79433; } 
+.mcollege_dash_list01 .dash_item_con { font-size: 1.0625rem; line-height: 1.8; } 
+
+.mcollege_history_wrap { display: flex; gap:6.25rem; } 
+.mhistory_cover { width: 230px; font-family: 'Gmarket'; } 
+.mhistory_cover .history_term { font-size: 1.75rem; font-weight: 500; } 
+.mhistory_cover .history_img { margin-top:1rem; } 
+.mhistory_cover .history_msg { margin-top:1.5rem; font-size: 1.25rem; font-weight: 500; color: #3987ee; line-height: 1.4; } 
+.mhistory_list { flex: 1; } 
+.mhistory_list .mhistory_item { width: 100%; display: flex; padding:1.875rem 0; gap:5rem; } 
+.mhistory_list .mhistory_item:first-child { padding-top:0; } 
+.mhistory_list .mhistory_item + .mhistory_item { border-top:1px solid #dadfe7; } 
+.mhistory_list .mhistory_item .year { display: flex; align-items: center; justify-content: center; height: 90px; flex: 0 0 90px; border-radius: 50%; font-size: 1.25rem; font-weight: 500; color: #fff; background: #1e63be; font-family: 'Gmarket'; } 
+.mhistory_list .mhistory_item:nth-child(even) .year { background: #3987ee; } 
+.mhistory_month_list li { display: flex; width: 100%; gap: 20px; } 
+.mhistory_month_list .month { font-weight: 500; color: #1e63be; } 
+.mhistory_item:nth-child(even) .mhistory_month_list .month { color: #3987ee; } 
+.mhistory_month_list li + li { margin-top: 1rem; } 
+.mhistory_event_list { font-size: 1.0625rem; font-weight: 200; } 
+.mhistory_event_list li ~ li { } 
+
+.mcollege_organ_wrap { overflow-x: auto; } 
+.mcollege_organ_wrap figure { min-width: 600px; } 
+
+.mcollege_terms_list { display: flex; gap: 20px; flex-wrap: wrap; } 
+.mcollege_terms_list li { flex: 1 1 calc(25% - 15px); max-width: calc(25% - 15px); display: flex; flex-direction: column; } 
+.mcollege_terms_list .terms_top { border:1px solid #dadfe7; padding:2.5rem 1.5rem 80px 2.5rem; background: #fff url(../images/medicine/bg_logo02.png) no-repeat 100% calc(100% + 44px); flex: 1; } 
+.mcollege_terms_list .terms_name { font-family: 'Gmarket'; color: #273454; font-size: 1.5rem; font-weight: 500; margin-top: 10px; min-height: 5.5rem; letter-spacing: -1px; } 
+.mcollege_terms_list .terms_bottom a { color: #fff; padding: 26px 2.5rem 27px 2.5rem; background: #273454 url(../images/medicine/bg_logo03.png) no-repeat 110% -5px; display: flex; align-items: center; gap: 20px; transition: 0.3s; font-size: 1rem; } 
+.mcollege_terms_list .terms_bottom a:hover { opacity: 0.9; } 
+.mcollege_terms_list .terms_bottom i { background-color:#3987ee; width: 30px; height: 30px; border-radius: 50%; background-position: center; } 
+
+.mcollege_art_list li { display: flex; padding: 3rem 0; border-bottom: 1px solid #dadfe7; } 
+.mcollege_art_list li > div { flex: 1 1 50%; } 
+.mcollege_art_list .art_name { position: relative; font-size: 1.75rem; font-weight: 700; line-height: 1.6; padding-left: 27px; margin-bottom: 0.5rem; } 
+.mcollege_art_list .art_name:before { content: ''; display: inline-block; width: 17px; height: 17px; border-radius: 50%; border: 1px solid #1e63be; background: #1e63be; box-shadow: inset 0 0 0 4px #fff; margin-right: 10px; position: absolute; left: 0; top: 13px; } 
+.mcollege_art_list .art_info1 { color: #3987ee; font-size: 1.0625rem; font-weight: 500; } 
+.mcollege_art_list .art_info2 { line-height: 2; font-weight: 200; margin-top:0.5rem; } 
+.mcollege_art_list .art_img { text-align: right; padding-left: 20px; } 
+
+.mcollege_map .list_info_box { font-size: 1.0625rem; } 
+.mcollege_traffic_wrap { margin-top: 4rem; } 
+.mcollege_traffic_wrap .con_tit { font-weight: 700; font-size: 1.75rem; display: block; } 
+.mcollege_traffic_wrap .con_tit img { vertical-align: text-top; } 
+.mcollege_traffic_wrap .traffic_station { font-weight: 400; } 
+.mcollege_traffic_wrap td .icon_arrow_right01 { vertical-align: middle; margin-bottom: 2px; } 
+
 @media (max-width:1200px){
  .mcollege_intro_box br { display: none; } 
  .circle_list02 .circle { margin: 0; } 
  .circle_list02 li ~ li .circle:before { width: 3rem; } 
  .circle_list02 { gap: 3rem; } 
 
-  .group_list01 { gap: 3rem; }
-  .group_list01 .group_name { white-space: nowrap;}
-}
+ .group_list01 { gap: 3rem; } 
+ .group_list01 .group_name { white-space: nowrap; } 
+ 
+ .mcollege_leader_history .leader_img { max-height: 240px; } 
+ .mcollege_terms_list .terms_name { font-size: 1.3rem; } 
+ .mcollege_terms_list .terms_top { padding:1.5rem 1rem 50px 1.5rem; background-size: 150px auto; } 
+ }
 @media (max-width:1000px){
  .pc_br { display: none; } 
  .mobile_br { display: block; } 
 
- .group_list01 > li { flex: 1 1 100%; max-width: none;}
- .group_list01 .group_msg { margin: auto 0 20px 0; }
-}
+ .group_list01 > li { flex: 1 1 100%; max-width: none; } 
+ .group_list01 .group_msg { margin: auto 0 20px 0; } 
+ 
+ .mcollege_diagram03 ul { gap:2rem; } 
+ .mcollege_diagram03 .diagram_circle { width: 200px; height: 200px; } 
+ .mcollege_diagram03 .diagram_circle:not(:first-child):before { width: 2rem; } 
+ 
+ .mcollege_part_list01 .part_box { padding: 1.6rem 2rem; } 
+ .mcollege_part_list01 .part_tit { margin-bottom: 0.5rem; } 
+
+ .mcollege_step_list01 { font-size: 1rem; } 
+ .mcollege_step_list01 ul li img { zoom: 0.9; } 
+ .mcollege_step_list01 .step_first:after { zoom: 0.9; } 
+
+ .gray_bg_box01 { padding:1rem 2rem; } 
+
+ .mcollege_leader_history .leader_info_box { padding:1.5rem; } 
+
+ .mcollege_history_wrap { gap: 3rem; } 
+ .mhistory_list .mhistory_item { gap: 2.5rem; } 
+ 
+ .mcollege_art_list li { flex-direction: column; gap: 20px; padding:2rem 0; } 
+ .mcollege_art_list .art_img { padding-left: 0; text-align: center; } 
+ }
 @media (max-width:800px){
  .table_scroll_wrap table :is(th, td) { padding: 0.7rem 1rem; } 
 
@@ -278,7 +491,7 @@ ul .num_list01 { margin:1rem 0; }
  
  * + .mcollege_con_wrap { margin-top: 2.5rem; } 
  .mcollege_con_wrap .con_tit { font-size: 1.5rem; } 
- .mcollege_con_wrap .con_tit:before { top: 9px; } 
+ .mcollege_con_wrap .con_tit:before { top: 8px; } 
  .mcollege_con_wrap .con_tit ~ .con_box { padding-left: 5px; } 
  .mcollege_con_wrap ~ .college_con_wrap { margin-top: 2rem; } 
  .mcollege_con_wrap .con_tit ~ .con_box + .con_box { margin-top: 2rem; } 
@@ -290,6 +503,11 @@ ul .num_list01 { margin:1rem 0; }
  [class*=mcollege_intro_msg] { font-size: 1.4rem; } 
  .mcollege_intro_msg2 { gap: 0.5rem; font-size: 1rem; } 
  .mcollege_intro_msg2 strong { font-size: 1.5rem; } 
+
+ .mcollege_intro_wrap .mcollege_intro_sign { margin-top: 2rem; justify-content: flex-end; } 
+ .mcollege_intro_wrap .people_img img { max-width: 400px; margin:0 auto; display: block; } 
+ .mcollege_intro_wrap .inner_flex { flex-direction: column; gap: 2rem; } 
+ .mcollege_intro_wrap .inner_flex > div:first-child { padding: 0; } 
 
  .mcollege_diagram01 { gap: 1.5rem; } 
  .mcollege_diagram01 .circle { width: 110px; height: 110px; } 
@@ -304,19 +522,18 @@ ul .num_list01 { margin:1rem 0; }
  .circle_list01 .circle { width: 90px; height: 90px; } 
  .circle_list01 .circle img { zoom: 0.8; } 
 
- .club_list1 .club_item_top { padding:0 ; margin-bottom:15px;  }
- .club_list1 .club_item_top .item_open_btn { font-size: 0.9rem; padding: 0 45px 0 20px; height: 54px; }
- .club_list1 .club_item_con { padding: 20px; line-height: 1.8;}
- .club_list1 .club_item_con .item_con_msg { font-size: 1.3rem; }
- .club_list1 .club_item_con .item_con_img { margin: 0 0 30px 0; text-align: center; float: none;}
- .club_list1 .club_item_con .item_con_info { gap:10px; }
- .club_list1 .club_item_con .item_con_info li { padding: 5px 15px; }
- .club_list1 .club_item_con .item_con_info p { width: calc(100% - 35px ); margin-left: auto;}
- .club_list1 .club_item_con .item_con_info img { margin: 0 auto; }  
- .club_list1 .club_item_top .item_open_btn:after { right: 20px; }
- .club_list1 .club_item_top .item_open_btn:before { right: 26px;}
+ .club_list1 .club_item_top { padding:0; margin-bottom:15px; } 
+ .club_list1 .club_item_top .item_open_btn { font-size: 0.9rem; padding: 0 45px 0 20px; height: 54px; } 
+ .club_list1 .club_item_con { padding: 20px; line-height: 1.8; } 
+ .club_list1 .club_item_con .item_con_msg { font-size: 1.3rem; } 
+ .club_list1 .club_item_con .item_con_img { margin: 0 0 30px 0; text-align: center; float: none; } 
+ .club_list1 .club_item_con .item_con_info { gap:10px; } 
+ .club_list1 .club_item_con .item_con_info li { padding: 5px 15px; } 
+ .club_list1 .club_item_con .item_con_info p { width: calc(100% - 35px ); margin-left: auto; } 
+ .club_list1 .club_item_con .item_con_info img { margin: 0 auto; } 
+ .club_list1 .club_item_top .item_open_btn:after { right: 20px; } 
+ .club_list1 .club_item_top .item_open_btn:before { right: 26px; } 
  
-
  .circle_list02 { gap: 1rem 2rem; } 
  .circle_list02 .circle { margin:0; align-items: center; width: 90px; height: 90px; } 
  .circle_list02 .circle img { zoom: 0.8; } 
@@ -324,7 +541,6 @@ ul .num_list01 { margin:1rem 0; }
  .circle_list02 li ~ li .circle:before { width: 2rem; background-size: 18px auto; } 
 
  p[class*=mcollege_notice]:before { zoom: 0.8; } 
-
  
  .icon_list01 .list_item { flex: 1 1 100%; padding: 20px !important; gap: 20px; } 
  .icon_list01 .list_item ~ .list_item { padding-top: 0 !important; } 
@@ -332,7 +548,7 @@ ul .num_list01 { margin:1rem 0; }
  .icon_list01 .icon_box { width: 72px; height: 72px; min-width: 72px; border-radius: 20px; } 
  .icon_list01 .icon_box img { zoom: 0.9; } 
 
- .num_list01 .num { width: 24px; height: 24px; min-width: 24px; } 
+ .number_list01 .num { width: 24px; height: 24px; min-width: 24px; } 
  
  .blue_bg_list01 li { font-size: 0.9rem; } 
 
@@ -341,17 +557,87 @@ ul .num_list01 { margin:1rem 0; }
  .mcollege_diagram02 { flex-direction: column; gap: 10px; align-items: center; } 
  .mcollege_diagram02 li+li:before { left: 50%; top:-20px; margin-left:-15px; width: 30px; height: 30px; } 
  
- .tab_menu01.type2 { } 
  .tab_menu01.type2 .tab_menu_item { flex: 1 1 25%; margin-left: -1px; } 
 
- .group_list01 .group_msg { font-size: 1.3rem; }
- .group_list01 .group_name { font-size: 2rem; padding: 0 20px; }
- .group_list01 .group_name:before, .group_list01 .group_name:after { font-size: 4rem; width: 20px; }
- .group_list01 .group_top_r { flex: 0 0 140px; }
-}
+ .group_list01 .group_msg { font-size: 1.3rem; } 
+ .group_list01 .group_name { font-size: 2rem; padding: 0 20px; } 
+ .group_list01 .group_name:before, .group_list01 .group_name:after { font-size: 4rem; width: 20px; } 
+ .group_list01 .group_top_r { flex: 0 0 140px; } 
+
+ .mcollege_diagram03 .diagram_tit { font-size: 1.4rem; } 
+ .mcollege_diagram03 ul { gap: 1rem !important; margin-bottom:0; border-radius: 50px !important; } 
+ .mcollege_diagram03 .diagram_circle { width: 170px; height: 170px; font-size: 0.9rem; gap: 1rem; } 
+ .mcollege_diagram03 .diagram_circle img { zoom: 0.8; } 
+ .mcollege_diagram03 .diagram_circle:not(:first-child):before { width: 1rem; background-size: 60%; } 
+ .mcollege_diagram03.type3 .diagram_tit_sub { font-size: 1.3rem; } 
+ .mcollege_diagram03.type3 p:not([class]) { font-size: 1rem; } 
+ .mcollege_diagram03.type3 .diagram_circle { gap: 0.5rem; } 
+ 
+ .desc_info01 { font-size: 0.9rem; } 
+ .desc_info01 strong { font-size: 0.9rem; } 
+
+ .mcollege_part_list01 .part_tit { font-size: 1.5rem; } 
+ .mcollege_part_list01 .part_desc { font-size: 1rem; } 
+ .mcollege_part_list01 .part_box { padding: 1.2rem 1.5rem; } 
+
+ .mcollege_step_list01 .step_first:after { zoom: 0.7; } 
+ .mcollege_step_list01 ul { min-height: 190px; } 
+ .mcollege_step_list01 ul li { padding: 1.5rem 0.5rem; } 
+ .mcollege_step_list01 ul li img { zoom: 0.8; } 
+ .mcollege_step_list01 ul li:not(.step_first) { justify-content: flex-start; } 
+ .mcollege_step_list01 .step_number { padding-bottom: 2px; } 
+ 
+ .box_list02 li { padding: 0.8rem 1.5rem; gap: 1.5rem; line-height: 1.4; } 
+
+ .gray_bg_box01 { padding: 1rem 1.5rem; } 
+ .location_box01 { padding-left:40px; } 
+ .location_box01 .icon_location01 { zoom: 0.8; } 
+
+ .mcollege_part_list01 .part_tag li { padding: 0 1rem 2px 1rem; height: 36px; font-size: 0.9rem; } 
+
+ .mcollege_leader_history > li { flex: 1 1 calc(33% - 12px); max-width: calc(33% - 12px); } 
+ .mcollege_leader_history .leader_info2 { font-size: 1.5rem; } 
+
+ .mcollege_dash_list01 > li { border-radius: 60px 30px 30px 60px; gap: 15px; } 
+ .mcollege_dash_list01 .dash_item_tit { align-self: self-start; font-size: 1.2rem; flex: 0 0 100px; border-radius: 50px; height: 100%; } 
+ .mcollege_dash_list01 .dash_item_con { font-size: 1rem; line-height: 1.8; padding: 5px 0; } 
+
+ .mcollege_history_wrap { flex-direction: column; } 
+ .mhistory_cover { display: flex; width: 100%; flex-wrap:wrap; } 
+ .mhistory_cover .history_term { width: 100%; font-size: 1.5rem; } 
+ .mhistory_cover .history_img { display: none; } 
+ .mhistory_cover .history_msg { flex: 1; margin-top:1rem; font-size: 1.1rem; } 
+ .mhistory_list .mhistory_item { padding: 1.2rem 0; gap: 1.5rem; } 
+ .mhistory_list .mhistory_item .year { flex: 0 0 70px; height: 70px; font-size: 1.1rem; } 
+ .mcollege_terms_list li { flex: 1 1 calc(33% - 12px); max-width: calc(33% - 12px); } 
+ .mcollege_terms_list .terms_bottom a { padding: 15px 2rem; background-size: 100px auto; } 
+ .mcollege_art_list .art_name { font-size: 1.5rem; } 
+ .mcollege_art_list .art_name:before { top: 8px; } 
+
+ 
+ .mcollege_traffic_wrap .con_tit { font-size: 1.5rem; } 
+ .mcollege_traffic_wrap .con_tit img { zoom: 0.8; max-height: 35px; vertical-align: bottom; } 
+ }
 @media (min-width: 641px) and (max-width: 980px) { } 
 @media (max-width:640px){
  .inner_wrap01 > img { display: none; } 
  .pic_list01 { overflow-x: auto; } 
  .pic_list01 li { width: 50%; flex: none } 
-}
+ .mcollege_diagram03 .diagram_circle:not(:first-child):before { display: none; } 
+ .mcollege_part_list01 .part_box { flex: 1 1 100% !important; } 
+ 
+ .icon_list01 .icon_box { width: 60px; height: 60px; min-width: 60px; border-radius: 15px; margin-bottom: auto; } 
+ .icon_list01 .icon_box img { zoom: 0.8 } 
+
+ .mcollege_leader_history { gap: 14px; } 
+ .mcollege_leader_history > li { flex: 1 1 calc(50% - 7px); max-width: calc(50% - 7px); } 
+ .mcollege_leader_history .leader_info2 { font-size: 1.5rem; } 
+ .mcollege_leader_history .leader_info_box { padding:1rem; } 
+ .mcollege_leader_history .leader_info1:before { left:-5px; width: 2px; height: 10px; } 
+
+ .mcollege_dash_list01 .dash_item_tit { font-size: 1.1rem; flex: 0 0 80px; } 
+ .mcollege_dash_list01 .dash_item_con { } 
+ .mcollege_dash_list01 > li { padding: 9px; border-radius: 50px 20px 20px 50px; } 
+ .mcollege_terms_list li { flex: 1 1 calc(50% - 10px); max-width: calc(50% - 10px); } 
+ .mcollege_terms_list .terms_top { background-size: 130px auto; background-position:100% calc(100% + 35px) } 
+ }
