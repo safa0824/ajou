@@ -5,25 +5,27 @@
 
 .scollege_wrap { color: #000; } 
 .scollege_wrap .main_tit { font-size: 2rem; color: #004098; font-weight: 700; margin-bottom:3rem; }
-.scollege_con_wrap .con_tit {font-size: 1.75rem; font-weight: 700;background: url('../images/sph/h3_icon.png') no-repeat left center; padding-left: 2.3rem;}
+.scollege_con_wrap .con_tit {font-size: 1.75rem; font-weight: 700;background: url('../images/sph/h3_icon.png') no-repeat left 0.4rem; padding-left: 2.3rem;}
+* + .scollege_con_wrap { margin-top: 4rem; }
 
 p[class*=scollege_notice] { display: flex; gap: 0.5rem; margin-top: 0.5rem; line-height: 1.6; font-weight: 200; } 
 p[class*=scollege_notice] * { vertical-align: middle; } 
-p[class*=scollege_notice]:before { content: ''; display: block; width: 18px; height: 18px; border-radius: 50%; background: #aaa url('../images/sph/icon_college_notice01.png') no-repeat center; flex: none; margin-top:2px; } 
+p[class*=scollege_notice]:before { content: ''; display: block; width: 18px; height: 18px; border-radius: 50%; background: #aaa url('../images/sph/icon_college_notice01.png') no-repeat center; flex: none; margin-top:4px; } 
 p.scollege_notice01:before { background-color: #ddedfa; } 
 p.scollege_notice02:before { background-color: #3987ee; } 
+.scollege_notice_wrap { margin: 1.5rem 0;}
 
 .scollege_txt_list01 { margin: 1.6rem 0; }
-.scollege_txt_list01 li {display: flex; gap: 8px; font-size: 1.0625rem; font-weight: 200; line-height: 1.6; }
+.scollege_txt_list01 li { display: block; position:relative; padding-left: 10px; font-size: 1.0625rem; font-weight: 200; line-height: 1.6; }
 .scollege_txt_list01 li ~ li { margin-top: 0.4rem; }
-.scollege_txt_list01 li:before { content: ''; display: block; width: 5px; height: 5px; background: #004098; border-radius: 50%; margin-top: calc(0.8rem - 1px);  }
+.scollege_txt_list01 li:before { content: ''; position:absolute; left:0;  display: block; width: 5px; height: 5px; background: #004098; border-radius: 50%; margin-top: calc(0.8rem - 1px);  }
 
 * + .blue_box01 { margin-top: 2rem; }
-.blue_box01 { padding: 0.5rem 1rem; border:1px solid #004098; display: flex; align-items: center; justify-content: center; min-height: 74px; gap: 10px; }
+.blue_box01 { box-sizing: border-box; padding: 0.5rem 1rem; border:1px solid #004098; display: flex; align-items: center; justify-content: center; min-height: 74px; gap: 10px; }
 .blue_box01 [class*=icon] { flex: none;}
 .blue_box01 p { font-weight: 500;}
 
-.stable_scroll_wrap { width: 100%; overflow-x:auto; border-top: 2px solid #004098; } 
+.stable_scroll_wrap { width: 100%; overflow-x:auto; border-top: 1px solid #004098; } 
 .stable_scroll_wrap table { min-width: 100%; font-size: 1.0625rem; color: #000; border-bottom:1px solid #1751a0; text-align: center; line-height: 1.6; } 
 .stable_scroll_wrap table :is(th, td) { height: 27px; border-right: 1px solid #ddd; border-top: 1px solid #ddd; line-height: 1.6; padding: 1rem 0.5rem; font-size: 1.0625rem; word-break: keep-all; letter-spacing: -0.5px;} 
 .stable_scroll_wrap tr:first-child > * { border-top:1px solid #38496b; } 
@@ -40,16 +42,19 @@ p.scollege_notice02:before { background-color: #3987ee; }
 .stable_scroll_wrap colgroup + tbody th { background: #f1f6fd; } 
 
 .scollege_schedule_wrap { margin-top: 2rem; overflow-x:auto; overflow-y: hidden; }
-.scollege_schedule_wrap .scollege_schedule_inner { min-width: 700px;}
-.scollege_schedule {display: flex; gap: 1.875rem; }
+/* .scollege_schedule_wrap .scollege_schedule_inner { min-width: 700px;} */
+.scollege_schedule {display: flex; gap: 1.875rem; min-width: 700px;}
+.scollege_schedule + .scollege_schedule { margin-top: -1px; }
 .scollege_schedule .stable_scroll_wrap { overflow-x:unset; }
-.scollege_schedule .left { max-width: 220px; width: 18%; padding-top:1.625rem; }
+.scollege_schedule .left { max-width: 220px; width: 18%; padding-top:1.625rem; position: sticky; left: 0; background-color: #fff; }
 .scollege_schedule .left:not(.none) {  border-top: 6px solid #004098; }
-.scollege_schedule .schedule_month { font-size: 1.875rem; color: #000; font-weight: 500; }
-.scollege_schedule .schedule_month span { font-size: 1rem; color: #004098; font-weight: 300; display: block; margin-top: 3px; text-transform: uppercase;}
-.scollege_schedule:not(:first-child) .stable_scroll_wrap { border-top-width: 0px;}
-.stable_scroll_wrap .scollege_schedule:not(:first-child) tr:first-child > *{ border-top-width: 0px;}
+.scollege_schedule .schedule_table_label { font-size: 1.875rem; color: #000; font-weight: 500; }
+.scollege_schedule .schedule_table_label span { font-size: 1rem; color: #004098; font-weight: 300; display: block; margin-top: 3px; text-transform: uppercase;}
+.scollege_schedule:not(:first-child) .stable_scroll_wrap { border-top-width: 1px;}
+/* .scollege_schedule:not(:last-child) table { border-bottom-width: 0; } */
+.scollege_schedule:not(:first-child) tr:first-child > *{ border-top-width: 0px;}
 /* .scollege_schedule .stable_scroll_wrap table { table-layout: fixed !important;} */
+.stable_scroll_wrap colgroup + tbody { border-bottom-width: 0;}
 .scollege_schedule table td { padding-left:0; padding-right: 0;}
 
 
@@ -59,14 +64,16 @@ p.scollege_notice02:before { background-color: #3987ee; }
     .scollege_schedule { gap: 1rem; }
 }
 @media (max-width:1000px){ 
+  .scollege_schedule .schedule_table_label { font-size: 1.5rem; }
 
     
 }
 @media (max-width:800px){ 
-    .scollege_schedule .left { width: 80px; }
-    .scollege_schedule .schedule_month { font-size: 1.5rem; }
-    .scollege_schedule .schedule_month span { font-size: 0.9rem; }
-    .stable_scroll_wrap table :is(th, td) { padding: 0.7rem 1rem; } 
+  .blue_box01 { min-height: 60px;}
+  .scollege_wrap .main_tit { margin-bottom:1.5rem;}
+  .scollege_schedule .left { width: 80px; }
+  .scollege_schedule .schedule_table_label span { font-size: 0.9rem; }
+  .stable_scroll_wrap table :is(th, td) { padding: 0.7rem 1rem; } 
 }
 @media (max-width:640px){ 
 
