@@ -122,10 +122,13 @@ p.scollege_notice02:before { background-color: #3987ee; }
 }
 @media (max-width:800px){ 
   .blue_box01 { min-height: 60px;}
-  .scollege_wrap .main_tit { margin-bottom:1.5rem;}
+  .scollege_wrap .main_tit { margin-bottom:1.5rem; font-size: 1.75rem; }
+  .scollege_con_wrap .con_tit { font-size: 1.5rem; }
+  .scollege_con_wrap .con_tit2 { font-size: 1.35rem; }
   .scollege_schedule .left { width: 80px; }
   .scollege_schedule .schedule_table_label span { font-size: 0.9rem; }
   .stable_scroll_wrap table :is(th, td) { padding: 0.7rem 1rem; } 
+  .scollege_inner_con + .scollege_inner_con { margin-top: 2rem; }
 
   .scollege_diagram01 { flex-direction: column; gap: 2rem; }
   .scollege_diagram01 [class*=icon_arrow_half] {transform: rotate(90deg); }
@@ -134,6 +137,8 @@ p.scollege_notice02:before { background-color: #3987ee; }
   .scollege_diagram01 .link_box1 { width: 90%; }
   .scollege_diagram01 .link_box1:before, .scollege_diagram01 .link_box1:after { display: none;}
   .scollege_diagram01 .circle2 i { margin-bottom:10px; }
+  .box_inner_list01 > li > img { zoom: 0.7; }
+  .box_inner_list01 > li > .box_tit { font-size: 1.1rem; }
 }
 @media (max-width:640px){ 
 
