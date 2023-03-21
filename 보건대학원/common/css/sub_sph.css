@@ -2,11 +2,16 @@
 .txt_blue01 { color: #004098;}
 .txt_red01 { color: #fd5f5f;}
 .icon_corona01 { display: inline-block; width: 42px; height: 42px; background:url('../images/sph/icon_corona01.png') no-repeat 0 0; }
+.icon_arrow_half01 { background: #004098 url(../images/sph/icon_arrow_half01.png) no-repeat center 7px; box-shadow: 0 0 0 1px #000; width: 20px; height: 20px; border-radius: 50%; display: inline-block;}
+.icon_arrow_half02 { background: #a7aeb4 url(../images/sph/icon_arrow_half01.png) no-repeat center 7px; box-shadow: 0 0 0 1px #fff; width: 20px; height: 20px; border-radius: 50%; display: inline-block;}
 
 .scollege_wrap { color: #000; } 
-.scollege_wrap .main_tit { font-size: 2rem; color: #004098; font-weight: 700; margin-bottom:3rem; }
+.scollege_wrap .main_tit { font-size: 2rem; color: #004098; font-weight: 700; margin-bottom:2rem; }
 .scollege_con_wrap .con_tit {font-size: 1.75rem; font-weight: 700;background: url('../images/sph/h3_icon.png') no-repeat left 0.4rem; padding-left: 2.3rem;}
+.scollege_con_wrap .con_tit2 { position: relative; font-size: 1.5rem; font-weight: 700; padding-left: 2.3rem; color: #004098; }
+.scollege_con_wrap .con_tit2:before { content: ''; display: block; width: 5px; height: 5px; border-radius: 50%; background: #004098; margin-top:4px; position: absolute; left: 1.3rem; top:0.5rem; } 
 * + .scollege_con_wrap { margin-top: 4rem; }
+.main_tit + .scollege_con_wrap { margin-top: 2rem; }
 
 p[class*=scollege_notice] { display: flex; gap: 0.5rem; margin-top: 0.5rem; line-height: 1.6; font-weight: 200; } 
 p[class*=scollege_notice] * { vertical-align: middle; } 
@@ -19,12 +24,32 @@ p.scollege_notice02:before { background-color: #3987ee; }
 .scollege_txt_list01 li { display: block; position:relative; padding-left: 10px; font-size: 1.0625rem; font-weight: 200; line-height: 1.6; }
 .scollege_txt_list01 li ~ li { margin-top: 0.4rem; }
 .scollege_txt_list01 li:before { content: ''; position:absolute; left:0;  display: block; width: 5px; height: 5px; background: #004098; border-radius: 50%; margin-top: calc(0.8rem - 1px);  }
+.scollege_txt_list01.type2 { }
+.scollege_txt_list01.type2 li {padding-left: 2.3rem; }
+.scollege_txt_list01 li:before { left: 1.3rem;}
 
 * + .blue_box01 { margin-top: 2rem; }
 .blue_box01 { box-sizing: border-box; padding: 0.5rem 1rem; border:1px solid #004098; display: flex; align-items: center; justify-content: center; min-height: 74px; gap: 10px; }
 .blue_box01 [class*=icon] { flex: none;}
-.blue_box01 p { font-weight: 500;}
+.blue_box01 p { font-size: 1.25rem; }
 
+.blue_box02 { box-sizing: border-box; border:1px solid #004098; display: flex;}
+
+* + .gray_box01 { margin-top: 3rem; }
+.gray_box01 { border: 1px solid #d7e0e9; background: #fafafa; padding:2.1rem 1rem; }
+
+.box_inner_list01 { display: flex; width: 100%; }
+.box_inner_list01 > li {flex: 1; text-align: center; padding: 2.3rem 2.1rem; }
+.box_inner_list01 > li + li { border-left:1px solid #004098; }
+.box_inner_list01 > li > .box_tit { color: #000; font-weight: 700; font-size: 1.5rem; margin-bottom: 1.2rem;  }
+.box_inner_list01 > li > img {  }
+.box_inner_list01 > li .sum_list01 { margin-top: 3rem;}
+.sum_list01 { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.sum_list01 li { flex: 1; background: #ebf4fc; min-height: 48px; font-size: 1.0625rem; font-weight: 500; color: #004098; display: flex; align-items: center; justify-content: center; position: relative; box-sizing: border-box; padding: 0 0.7rem; }
+.sum_list01 li.sum_result { color:#fff; font-size: 1.125rem; flex:0.6; background: #004098;}
+.sum_list01 li + li:before { content: ''; display: block; position: absolute; width: 20px; height: 20px; background: #004098 url(../images/sph/icon_plus01.png) no-repeat center; border-radius: 50%; right: 100%; top:50%; margin: -10px -7px 0 0; }
+.sum_list01 li + li.sum_result:before { background: #004098 url(../images/sph/icon_arrow_half01.png) no-repeat center 7px; box-shadow: 0 0 0 1px #000;}
+ 
 .stable_scroll_wrap { width: 100%; overflow-x:auto; border-top: 1px solid #004098; } 
 .stable_scroll_wrap table { min-width: 100%; font-size: 1.0625rem; color: #000; border-bottom:1px solid #1751a0; text-align: center; line-height: 1.6; } 
 .stable_scroll_wrap table :is(th, td) { height: 27px; border-right: 1px solid #ddd; border-top: 1px solid #ddd; line-height: 1.6; padding: 1rem 0.5rem; font-size: 1.0625rem; word-break: keep-all; letter-spacing: -0.5px;} 
@@ -41,6 +66,8 @@ p.scollege_notice02:before { background-color: #3987ee; }
 .stable_scroll_wrap colgroup + tbody { border-bottom:1px solid #1751a0; } 
 .stable_scroll_wrap colgroup + tbody th { background: #f1f6fd; } 
 
+.scollege_inner_con + .scollege_inner_con { margin-top: 3rem; }
+
 .scollege_schedule_wrap { margin-top: 2rem; overflow-x:auto; overflow-y: hidden; }
 /* .scollege_schedule_wrap .scollege_schedule_inner { min-width: 700px;} */
 .scollege_schedule {display: flex; gap: 1.875rem; min-width: 700px;}
@@ -56,7 +83,22 @@ p.scollege_notice02:before { background-color: #3987ee; }
 /* .scollege_schedule .stable_scroll_wrap table { table-layout: fixed !important;} */
 .stable_scroll_wrap colgroup + tbody { border-bottom-width: 0;}
 .scollege_schedule table td { padding-left:0; padding-right: 0;}
+.scollege_schedule tr.closed td { text-decoration: line-through; }
 
+.scollege_diagram01 { display: flex; align-items: center; justify-content: center;  gap: 0.5rem;  }
+.scollege_diagram01 .txt1 { font-weight: 700; color: #004098; font-size: 1.125rem;  }
+.scollege_diagram01 [class*=circle] { display: flex; align-items: center; font-weight: 500; justify-content: center; text-align: center; border-radius: 50%; width: 118px; height: 118px; box-sizing: border-box; border:6px solid #b9bec2; color: #000; background: #fff; position: relative;}
+.scollege_diagram01 .circle2 { color: #004098; border-color:#004098;}
+.scollege_diagram01 .circle2 i { position: absolute; right: 100%; margin-right: -10px;}
+.scollege_diagram01 .link_box1 { background: #b9bec2; height: 50px; display: flex; font-size: 1.0625rem; font-weight: 500; width: 350px; color: #fff; justify-content: center; align-items: center; text-align: center; transition: 0.3s; position: relative; margin: 0 45px;}
+.scollege_diagram01 .link_box1:before, .scollege_diagram01 .link_box1:after { content: ''; position: absolute; display: block; width: 50px; height: 2px; border-top: 2px dotted #a7aeb4; top: 50%; }
+.scollege_diagram01 .link_box1:before { right:100%; }
+.scollege_diagram01 .link_box1:after { left:100%; }
+.scollege_diagram01 .link_box1 p { flex: 1; }
+.scollege_diagram01 .link_box1 i { position: absolute; right:100%; margin-right:-10px;}
+.scollege_diagram01 .link_box1 .link_img { flex: 0 0 50px; background: #a7aeb4; height: 100%;  display: flex; align-items: center; justify-content: center; transition: 0.3s;}
+.scollege_diagram01 .link_box1:hover { background: #a7aeb4; }
+.scollege_diagram01 .link_box1:hover .link_img { background: #959ba0;}
 
 @media (max-width:1200px){ 
     .scollege_schedule .scollege_schedule { width: 100px; }
@@ -65,7 +107,17 @@ p.scollege_notice02:before { background-color: #3987ee; }
 }
 @media (max-width:1000px){ 
   .scollege_schedule .schedule_table_label { font-size: 1.5rem; }
+  .box_inner_list01 > li { padding:1.5rem; }
+  .box_inner_list01 > li > .box_tit { font-size: 1.3rem; }
+  .box_inner_list01 > li > img { zoom: 0.8;}
+  .box_inner_list01 > li .sum_list01 { margin-top: 1.5rem; }
+  
+  .sum_list01 li { font-size: 0.9rem; }
+  .sum_list01 li.sum_result { font-size: 0.9rem; }
 
+  .scollege_diagram01 .txt1 { font-size: 1rem; }
+  .scollege_diagram01 .link_box1 { margin: 0 15px; }
+  .scollege_diagram01 .link_box1:before, .scollege_diagram01 .link_box1:after { width: 20px; }
     
 }
 @media (max-width:800px){ 
@@ -74,6 +126,14 @@ p.scollege_notice02:before { background-color: #3987ee; }
   .scollege_schedule .left { width: 80px; }
   .scollege_schedule .schedule_table_label span { font-size: 0.9rem; }
   .stable_scroll_wrap table :is(th, td) { padding: 0.7rem 1rem; } 
+
+  .scollege_diagram01 { flex-direction: column; gap: 2rem; }
+  .scollege_diagram01 [class*=icon_arrow_half] {transform: rotate(90deg); }
+  .scollege_diagram01 * [class*=icon_arrow_half] { right:50%; bottom:100%; left:50%; margin:0 0 5px -10px;} 
+  .scollege_diagram01 > .icon_arrow_half01 { margin: -1.5rem 0; }
+  .scollege_diagram01 .link_box1 { width: 90%; }
+  .scollege_diagram01 .link_box1:before, .scollege_diagram01 .link_box1:after { display: none;}
+  .scollege_diagram01 .circle2 i { margin-bottom:10px; }
 }
 @media (max-width:640px){ 
 
