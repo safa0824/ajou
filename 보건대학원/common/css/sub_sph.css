@@ -26,7 +26,7 @@ p.scollege_notice02:before { background-color: #3987ee; }
 .scollege_txt_list01 li:before { content: ''; position:absolute; left:0;  display: block; width: 5px; height: 5px; background: #004098; border-radius: 50%; margin-top: calc(0.8rem - 1px);  }
 .scollege_txt_list01.type2 { }
 .scollege_txt_list01.type2 li {padding-left: 2.3rem; }
-.scollege_txt_list01 li:before { left: 1.3rem;}
+.scollege_txt_list01.type2 li:before { left: 1.3rem;}
 
 * + .blue_box01 { margin-top: 2rem; }
 .blue_box01 { box-sizing: border-box; padding: 0.5rem 1rem; border:1px solid #004098; display: flex; align-items: center; justify-content: center; min-height: 74px; gap: 10px; }
@@ -100,6 +100,18 @@ p.scollege_notice02:before { background-color: #3987ee; }
 .scollege_diagram01 .link_box1:hover { background: #a7aeb4; }
 .scollege_diagram01 .link_box1:hover .link_img { background: #959ba0;}
 
+.circle-list1 { display: flex; align-items: center; justify-content: center; gap: 50px; flex-wrap:wrap; }
+.circle-list1 li { display: flex; align-items: center; justify-content: center; min-width: 118px; height: 118px; border-radius: 60px; border: 6px solid #b9bec2; position: relative; text-align: center; font-weight: 500; box-sizing: border-box; padding:0 10px; flex-wrap:wrap; flex-direction: column; gap: 5px; letter-spacing: -1px;}
+.circle-list1 li.font_less {font-size: 0.875rem;  }
+.circle-list1 li:not(.circle-list__tit) + li:before { content: ''; display: block; position: absolute; z-index: 0; height: 0; width: 50px; border-top:2px dotted #a7aeb4; right: 100%; margin-right: 3px;}
+.circle-list1 li:not(.circle-list__tit) + li:after { content: ''; display: block; position: absolute; left: -15px; z-index: 1; width: 20px; height: 20px; background: #a7aeb4 url(../images/sph/icon_arrow_half01.png) center no-repeat; border-radius: 50%; border:1px solid #fff;} 
+.circle-list1 li.on { color: #004098; border-color:#004098  }
+.circle-list1 li.on:after { background-color:#004098 !important; border-color:#000 !important;}
+.circle-list1 li.type2 { padding: 0 20px; } 
+.circle-list1 .txt_mini { font-size: 0.8rem; color: #000; font-weight: 500; line-height: 1.2; }
+.circle-list1 .circle-list__tit { border: 0 none; min-width: auto; height: auto; font-size: 1.125rem; color: #004098; font-weight: 700; margin-right:-15px;}
+.circle-list1 .circle-list__tit:after { content: ''; display: block; position: absolute; right: -20px; z-index: 1; width: 20px; height: 20px; background: #004098 url(../images/sph/icon_arrow_half01.png) center no-repeat; border-radius: 50%; border:1px solid #000;} 
+
 @media (max-width:1200px){ 
     .scollege_schedule .scollege_schedule { width: 100px; }
     .scollege_schedule .left { width: 100px; }
@@ -118,10 +130,18 @@ p.scollege_notice02:before { background-color: #3987ee; }
   .scollege_diagram01 .txt1 { font-size: 1rem; }
   .scollege_diagram01 .link_box1 { margin: 0 15px; }
   .scollege_diagram01 .link_box1:before, .scollege_diagram01 .link_box1:after { width: 20px; }
+
+  
     
+}
+@media (max-width:900px){
+  .circle-list1 { gap: 10px 30px; }
+  .circle-list1 li + li:before { width: 30px !important; } 
+  .circle-list1 .circle-list__tit { margin-right: 0; }
 }
 @media (max-width:800px){ 
   .blue_box01 { min-height: 60px;}
+  .blue_box01 p { font-size: 1rem; }
   .scollege_wrap .main_tit { margin-bottom:1.5rem; font-size: 1.75rem; }
   .scollege_con_wrap .con_tit { font-size: 1.5rem; }
   .scollege_con_wrap .con_tit2 { font-size: 1.35rem; }
@@ -141,5 +161,7 @@ p.scollege_notice02:before { background-color: #3987ee; }
   .box_inner_list01 > li > .box_tit { font-size: 1.1rem; }
 }
 @media (max-width:640px){ 
+  .circle-list1 .circle-list__tit { flex:1 1 100%; margin-bottom: 1rem; }
+  .circle-list1 .circle-list__tit:after { display: none; }
 
 }
