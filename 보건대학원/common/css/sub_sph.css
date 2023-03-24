@@ -450,6 +450,11 @@ li > .icon_txt_list01 { margin-bottom: 3rem; }
   .sph_div02_01 li > dl dt{font-size: 20px;padding: 5px 5px 6px 25px}
   .sph_div02_01 li > p img{width: 90px;max-width: none;}
   .sph_div02_01 li > dl dd { padding: 10px 0; }
+  .sph_select > section .title span { width: 40%; border-top-width: 4px; }
+  .sph_select > section .title p.han { font-size: 1.5rem; padding: 1rem 0 0.5rem 0; }
+  .sph_select > section { margin-bottom: 3rem; }
+  .sph_select > section .title p.agaramond { font-size: 1.5rem; }
+  .sph_select > section .contents .txt { margin-top: 0.5rem; }
 }
 
    
