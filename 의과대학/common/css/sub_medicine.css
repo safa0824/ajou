@@ -4,6 +4,7 @@
 .txt_blue2 { color: #2061c4; } 
 .txt_blue3 { color: #16468f; } 
 .txt_orange { color: #ff8500; } 
+.txt_red { color: #e70909; } 
 .clear_both:after { content: ''; display: block; clear: both; } 
 .inner_flex { display: flex; } 
 .txt_center { text-align: center; } 
@@ -71,10 +72,11 @@ li .table_scroll_wrap { margin-top: 1.5rem; }
 .table_scroll_wrap thead th { color: #273454; font-weight: 500; white-space: nowrap; } 
 .table_scroll_wrap tfoot td,
 .table_scroll_wrap tbody th { background: #f7f9fb; color: #222; } 
-.table_scroll_wrap tbody td { font-weight: 200; } 
+.table_scroll_wrap tbody td {  } 
 .table_scroll_wrap colgroup + tbody { border-bottom:1px solid #000000; } 
 .table_scroll_wrap colgroup + tbody th { background: #f1f6fd; } 
 .table_scroll_wrap table th.pd_thin { padding-left:0.1rem !important; padding-right: 0.1rem !important; } 
+.table_scroll_wrap td  a:hover { text-decoration: underline;}
 .table_inner_list { min-width: 300px; text-align: left; padding-left:0.5rem; font-size: 1.0625rem; } 
 .table_inner_list dt { font-weight: 500; } 
 .table_inner_list dd { } 
