@@ -122,15 +122,6 @@
                                 <li><a href="sub06_08_01.html">오시는길</a></li>
                             </ul>
                         </li>
-                        <li class="lnb_this">
-                            <a href="javascript:void(0);" class="depth1"><span>2015~현재</span></a>
-                            <ul class="lnb_depth2_list" style="display: none">
-                                <li><a href="sub06_02_01.html">2015~현재</a></li>
-                                <li><a href="sub06_02_02.html">2010~2014</a></li>
-                                <li><a href="sub06_02_03.html">2000~2009</a></li>
-                                <li><a href="sub06_02_04.html">1987~1999</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -159,18 +150,30 @@
                 <!-- article -->
                 <article>
                     <section class="in_cover">
+                      <script>
+                        let choseTab = 0;
+                        function show(tab){
+                            $(".mcollege_history_wrap").hide();
+                            $(".tab_menu_item").removeClass("on");
+                    
+                            $(".tab_menu_item:eq("+(tab-1)+")").addClass("active");
+                            $("#tab"+tab).show();
+                            // history.pushState({tab : tab}, null, "/sub-terms.do?tab="+tab);
+                            choseTab = tab;
+                        }
+                      </script>
                         <!-- exp. 좌우 패딩 -->
                         <div class="in_w">
                             <div class="mcollege_wrap">
                                 <div class="tab_menu01">
-                                    <a class="tab_menu_item on" href="">2015~현재</a>
-                                    <a class="tab_menu_item " href="">2010~2014</a>
-                                    <a class="tab_menu_item " href="">2000~2009</a>
-                                    <a class="tab_menu_item " href="">1987~1999</a>
+                                    <a class="tab_menu_item on" href="javascript:show(1)">2021~현재</a>
+                                    <a class="tab_menu_item " href="javascript:show(2)">2011~2020</a>
+                                    <a class="tab_menu_item " href="javascript:show(3)">2001~2010</a>
+                                    <a class="tab_menu_item " href="javascript:show(4)">1987~2000</a>
                                 </div>
-                                <div class="mcollege_history_wrap">
+                                <div class="mcollege_history_wrap" id="tab1">
                                     <div class="mhistory_cover">
-                                        <div class="history_term">2015 ~ 현재</div>
+                                        <div class="history_term">2021 ~ 현재</div>
                                         <div class="history_img">
                                             <img src="/common/front/medicine/images/medicine/sub06_03_img01.png" alt="히스토리이미지">
                                         </div>
@@ -181,6 +184,117 @@
                                         </div>
                                     </div>
                                     <ul class="mhistory_list">
+                                        <li class="mhistory_item">
+                                            <p class="year">2021</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제28회 히포크라테스선서식(졸업생: 의대 43명)</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">03</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>의학과 34기 신입생 입학 (43명)</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mcollege_history_wrap" id="tab2" style="display: none;">
+                                    <div class="mhistory_cover">
+                                        <div class="history_term">2011 ~ 현재</div>
+                                        <div class="history_img">
+                                            <img src="/common/front/medicine/images/medicine/sub06_03_img01.png" alt="히스토리이미지">
+                                        </div>
+                                        <div class="history_msg">AJOU University 
+                                            School of Medicine & 
+                                            Granduate School of 
+                                            Medicine 
+                                        </div>
+                                    </div>
+                                    <ul class="mhistory_list">
+                                        <li class="mhistory_item">
+                                            <p class="year">2011</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제3회 의학전문대학원 입학식</li>
+                                                        <li>제18회 의학부 졸업생 배출(37명)</li>                                                          
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">08</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>임상교육센터-실험동물센터 준공식</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">09</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>SRC 선도연구센터 “유전체불안정성제어연구센터” 선정</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                        <li class="mhistory_item">
+                                          <p class="year">2012</p>
+                                          <ul class="mhistory_month_list">
+                                              <li><span class="month">02</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제4회 의학전문대학원 입학식</li>
+                                                      <li>제19회 의학부 졸업생 배출(46명)</li>                                                        
+                                                  </ul>
+                                              </li>
+                                              <li><span class="month">04</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제4회 의학전문대학원 입학식</li>
+                                                      <li>제19회 의학부 졸업생 배출(46명)</li>                                                        
+                                                  </ul>
+                                              </li>
+                                              <li><span class="month">06</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제4회 의학전문대학원 입학식</li>
+                                                      <li>제19회 의학부 졸업생 배출(46명)</li>                                                        
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">2013</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제5회 의학전문대학원 입학식</li>
+                                                        <li>제20회 히포크라테스선서식(졸업생 : 의대 25명, 의전원 13명)</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">12</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>의학교육 평가인증 6년 인정기간 획득</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">2014</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제6회 의학전문대학원 입학식</li>
+                                                        <li>제21회 히포크라테스선서식(졸업생 : 의대 22명, 의전원 22명)</li>                                                          
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">09</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제14대 의과대학장 주일로 교수 취임</li>
+                                                        <li>의학과장 주일로 교수 임수</li>
+                                                        <li>교무부학장 오영택 교수 임명</li>
+                                                        <li>학생부학장 정연훈 교수 임명</li>
+                                                        <li>의학교육실장 정윤석 교수 임명</li>
+                                                        <li>의학문헌정보센터소장 김병곤 교수 임명</li>                                                          
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
                                         <li class="mhistory_item">
                                             <p class="year">2015</p>
                                             <ul class="mhistory_month_list">
@@ -217,25 +331,10 @@
                                                 <li><span class="month">09</span>
                                                     <ul class="mhistory_event_list">
                                                         <li>제15대 의과대학장 주일로 교수 연임</li>
-                                                        <li>교무부학장 원예연 교수</li>
-                                                        <li>연구부학장 강엽 교수</li>
-                                                        <li>학생부학장 정연훈 교수</li>
-                                                        <li>의학교육실장 정윤석 교수</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="mhistory_item">
-                                            <p class="year">2016</p>
-                                            <ul class="mhistory_month_list">
-                                                <li><span class="month">02</span>
-                                                    <ul class="mhistory_event_list">
-                                                        <li>제23회 히포크라테스선서식(졸업생 : 의대 24명, 의전원 23명)</li>
-                                                    </ul>
-                                                </li>
-                                                <li><span class="month">03</span>
-                                                    <ul class="mhistory_event_list">
-                                                        <li>의학과 29기 신입생/편입생 입학 (42명)</li>
+                                                        <li>교무부학장 원예연 교수 임명</li>
+                                                        <li>연구부학장 강엽 교수 임명</li>
+                                                        <li>학생부학장 정연훈 교수 임명</li>
+                                                        <li>의학교육실장 정윤석 교수 임명</li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -271,11 +370,11 @@
                                                 <li><span class="month">09</span>
                                                     <ul class="mhistory_event_list">
                                                         <li>제16대 의과대학장 오영택 교수 취임</li>
-                                                        <li>의학과장 김병곤 교수</li>
-                                                        <li>교무부학장 이재호 교수</li>
-                                                        <li>학생부학장 선주성 교수</li>
-                                                        <li>의학교육실장 김미란 교수</li>
-                                                        <li>의학문헌정보센터소장 김대중 교수</li>                                                        
+                                                        <li>의학과장 김병곤 교수 임명</li>
+                                                        <li>교무부학장 이재호 교수 임명</li>
+                                                        <li>학생부학장 선주성 교수 임명</li>
+                                                        <li>의학교육실장 김미란 교수 임명</li>
+                                                        <li>의학문헌정보센터소장 김대중 교수 임명</li>                                                        
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -315,17 +414,366 @@
                                                 </li>
                                             </ul>
                                         </li>
+                                    </ul>
+                                </div>
+                                <div class="mcollege_history_wrap" id="tab3" style="display: none;">
+                                    <div class="mhistory_cover">
+                                        <div class="history_term">2001 ~ 2010</div>
+                                        <div class="history_img">
+                                            <img src="/common/front/medicine/images/medicine/sub06_03_img01.png" alt="히스토리이미지">
+                                        </div>
+                                        <div class="history_msg">AJOU University 
+                                            School of Medicine & 
+                                            Granduate School of 
+                                            Medicine 
+                                        </div>
+                                    </div>
+                                    <ul class="mhistory_list">
                                         <li class="mhistory_item">
-                                            <p class="year">2021</p>
+                                            <p class="year">2001</p>
                                             <ul class="mhistory_month_list">
                                                 <li><span class="month">02</span>
                                                     <ul class="mhistory_event_list">
-                                                        <li>제28회 히포크라테스선서식(졸업생: 의대 43명)</li>
+                                                        <li>제8회 의학부 졸업생 배출 (29명)</li>
                                                     </ul>
                                                 </li>
+                                                <li><span class="month">04</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제7대 학장 김효철 교수 취임</li>                                                        
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">06</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>의학부장 왕희정 교수 임명</li>                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li> 
+                                        <li class="mhistory_item">
+                                          <p class="year">2002</p>
+                                          <ul class="mhistory_month_list">
+                                              <li><span class="month">02</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제9회 의학부 졸업생 배출 (35명</li>
+                                                  </ul>
+                                              </li>
+                                              <li><span class="month">09</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제8대 학장 김영수 교수 취임</li>
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                          <p class="year">2003</p>
+                                          <ul class="mhistory_month_list">
+                                              <li><span class="month">02</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제10회 의학부 졸업생 배출 (39명)</li>
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                          <p class="year">2004</p>
+                                          <ul class="mhistory_month_list">
+                                              <li><span class="month">02</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제11회 의학부 졸업생 배출 (37명)</li>
+                                                  </ul>
+                                              </li>
+                                              <li><span class="month">05</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제9대 학장 문창현 교수 취임</li>
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                          <p class="year">2005</p>
+                                          <ul class="mhistory_month_list">
+                                              <li><span class="month">02</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제12회 의학부 졸업생 배출 (38명)</li>
+                                                  </ul>
+                                              </li>
+                                              <li><span class="month">06</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>의학부장 겸 교무담당학장보 이은소 교수 임명</li>
+                                                      <li>교육연구담당학장보 이재호 교수 임명</li>
+                                                      <li>학생담당학장보 장기홍 교수 임명</li>                                                        
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                          <p class="year">2006</p>
+                                          <ul class="mhistory_month_list">
+                                              <li><span class="month">02</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제13회 의학부 졸업생 배출(43명)</li>
+                                                      <li>BK21 사업단 지정</li>                                                        
+                                                  </ul>
+                                              </li>
+                                              <li><span class="month">05</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제10대 학장 임인경 교수 취임</li>
+                                                      <li>교무부학장 이관우 교수 임명</li>
+                                                      <li>연구부학장 주일로 교수 임명</li>
+                                                      <li>대학원 의학과장 백은주 교수 임명</li>                                                        
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                          <p class="year">2007</p>
+                                          <ul class="mhistory_month_list">
+                                              <li><span class="month">02</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제14회 의학부 졸업생 배출(53명)</li>
+                                                  </ul>
+                                              </li>
+                                              <li><span class="month">06</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>학생부학장 한경진 교수 임명</li>
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                          <p class="year">2008</p>
+                                          <ul class="mhistory_month_list">
+                                              <li><span class="month">02</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제15회 의학부 졸업생 배출(55명)</li>
+                                                  </ul>
+                                              </li>
+                                              <li><span class="month">09</span>
+                                                  <ul class="mhistory_event_list">
+                                                      <li>제11대 의과대학장 임인경 교수 연임</li>
+                                                      <li>의학부장 겸 교무부학장 오영택 교수</li>
+                                                      <li>대학원 의학과장 이수환 부교수</li>
+                                                      <li>의학교육실장 주인수 교수 임명</li>                                                        
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">2010</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제2회 의학전문대학원 입학식</li>
+                                                        <li>제17회 의학부 졸업생 배출(56명)</li>                                                          
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">09</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제12대 의과대학장 임기영 교수 취임 </li>
+                                                        <li>의학부장 백은주 교수 임명 </li>
+                                                        <li>교무부학장 오영택 교수 임명 </li>
+                                                        <li>연구부학장 이윤환 부교수 임명 </li>
+                                                        <li>의학교육실장 정윤석 교수 임명 </li>
+                                                        <li>의학문헌정보센터소장 이은소 교수 임명 </li>
+                                                        <li>대학원 의학과장 서해영 교수 임명</li>                                                          
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mcollege_history_wrap" id="tab4" style="display: none;">
+                                    <div class="mhistory_cover">
+                                        <div class="history_term">1987 ~ 2000</div>
+                                        <div class="history_img">
+                                            <img src="/common/front/medicine/images/medicine/sub06_03_img01.png" alt="히스토리이미지">
+                                        </div>
+                                        <div class="history_msg">AJOU University 
+                                            School of Medicine & 
+                                            Granduate School of 
+                                            Medicine 
+                                        </div>
+                                    </div>
+                                    <ul class="mhistory_list">
+                                        <li class="mhistory_item">
+                                            <p class="year">1987</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">10</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>정원 30명 의학과 인가</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1988</p>
+                                            <ul class="mhistory_month_list">
                                                 <li><span class="month">03</span>
                                                     <ul class="mhistory_event_list">
-                                                        <li>의학과 34기 신입생 입학 (43명)</li>
+                                                        <li>제1기 신입생 입학</li>
+                                                        <li>김효규 총장 의과대학장 대행</li>                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1989</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">08</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>의과대학 전임교원 3인 임용</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1990</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">03</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>초대 학장 이성낙 교수 취임</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1991</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">10</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>의학관 1차준공 (지하1층, 지상4층) 및 부속병원 기공</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1992</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">01</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제2대 학장 이성낙 교수 취임</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">09</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li></li>                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1994</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제1회 졸업생 배출 (22명)</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">08</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>전국 의학과 평가에서 우수 의과대학으로 선정</li>                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1995</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">01</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제4대 학장 이호영 교수 
+                                                        </li>
+                                                      </ul>
+                                                </li>
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제2회 졸업생 배출 (21명)</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">05</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>의학관 증축준공 (10개층)</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">12</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>의학관 송재관으로 개칭</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1996</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제3회 졸업생 배출 (22명)</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">08</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>전국 의학과 평가에서 우수 의과대학으로 선정</li>                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1997</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">01</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제4대 학장 이호영 교수 취임</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제4회 졸업생 배출 (39명)</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">12</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>의학부 정원 10명 증원승인 (총 40명)</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1998</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제5회 졸업생 배출 (30명)</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">06</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>뇌질환연구센터 과학기술부</li>
+                                                        <li>한국과학재단 지정 우수연구센터(SRC) 개소</li>                                                        
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">11</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>병역특례기관으로 뇌질환연구센터 지정</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mhistory_item">
+                                            <p class="year">1999</p>
+                                            <ul class="mhistory_month_list">
+                                                <li><span class="month">01</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제5대 학장 이호영 교수 취임</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">02</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제6회 졸업생 배출 (36명)</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="month">09</span>
+                                                    <ul class="mhistory_event_list">
+                                                        <li>제6대 학장 박기현 교수 취임</li>                                                        
                                                     </ul>
                                                 </li>
                                             </ul>
