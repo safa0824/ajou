@@ -150,18 +150,6 @@
                 <!-- article -->
                 <article>
                     <section class="in_cover">
-                      <script>
-                        let choseTab = 0;
-                        function show(tab){
-                            $(".mcollege_history_wrap").hide();
-                            $(".tab_menu_item").removeClass("on");
-                    
-                            $(".tab_menu_item:eq("+(tab-1)+")").addClass("active");
-                            $("#tab"+tab).show();
-                            // history.pushState({tab : tab}, null, "/sub-terms.do?tab="+tab);
-                            choseTab = tab;
-                        }
-                      </script>
                         <!-- exp. 좌우 패딩 -->
                         <div class="in_w">
                             <div class="mcollege_wrap">
@@ -784,6 +772,18 @@
                         </div>
                     </section>
                 </article>
+                <script>
+                  let choseTab = 0;
+                  function show(tab){
+                      $(".mcollege_history_wrap").hide();
+                      $(".tab_menu_item").removeClass("on");
+              
+                      $(".tab_menu_item:eq("+(tab-1)+")").addClass("active");
+                      $("#tab"+tab).show();
+                      // history.pushState({tab : tab}, null, "/sub-terms.do?tab="+tab);
+                      choseTab = tab;
+                  }
+                </script>
                 <!--// article -->
             </div>
             <!--// sub content_w -->
