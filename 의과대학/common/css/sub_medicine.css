@@ -135,7 +135,8 @@ p[class*=mcollege_notice] .btn_download02 { margin-top: -3px; }
 .mcollege_desc01 .desc_link { display: flex; align-items: flex-start; gap: 0.5rem; } 
 .mcollege_desc01 .desc_link > img { margin-top:0.2rem; } 
 .mcollege_desc01 .desc_link .txt_blue2 { display: inline-block; } 
-.mcollege_desc01 .desc_link .txt_blue2 a { display: flex; align-items: center; gap: 0.5rem; } 
+.mcollege_desc01 .desc_link .txt_blue2 a { display: flex; align-items: center; gap: 0.5rem; }
+.mcollege_desc01 .desc_link .txt_blue2 a:hover { text-decoration: underline;}
 .mcollege_desc01 .desc_link > div { flex: 1; } 
 
 .mcollege_desc01 .desc_info01 { display: flex; flex-wrap:wrap; gap:1rem 3rem; justify-content: center; align-items: center; } 
@@ -238,6 +239,7 @@ ul .number_list01 { margin:1rem 0; }
 .circle_list02 li { display: flex; flex-direction: column; gap:0.8rem; justify-content: center; text-align: center; line-height: 1.6; font-size:1.0625rem; } 
 .circle_list02 li ~ li .circle:before { content:''; position: absolute; display: block; height: 100%; background: url(../images/medicine/icon_arrow_right_half02.png) no-repeat center; right:100%; top: 0; width: 6rem; } 
 .circle_list02 .circle { display: flex; align-items: center; justify-content: center; width: 106px; height: 106px; border-radius: 50%; border:1px solid #dadfe7; background: #fff; margin: 0 3rem; position: relative; } 
+.circle_list02 li a:hover { text-decoration: underline;}
 
 .blue_bg_box01 { background: #f7f9fb; border:1px solid #dadfe7; border-top-color:#16468f; padding: 3.75rem 1rem 3.4rem 1rem; margin: 1.5rem 0; } 
 .blue_bg_box02 { background: #f7f9fb; border: 1px solid #dce1e9; padding: 2rem 1rem; margin: 1.5rem 0; } 
