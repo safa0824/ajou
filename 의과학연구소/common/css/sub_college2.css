@@ -11,8 +11,11 @@
 
 /* 의과학연구소 */
 .college_wrap2 { color: #000; }
+.college_wrap2_desc { margin-bottom: 40px; }
+.college_wrap2_desc span { display: inline;}
 .college_wrap2_tit { font-size: 2rem; font-weight: 700; color: #004098; margin-bottom: 2.5rem;}
 .college_wrap2_intro .intro_main_img { position: relative; float: right; margin-left: 3.5rem; max-width: 50vw; }
+.college_wrap2_desc,
 .college_wrap2_intro .intro_main_msg { font-size: 1.75rem; margin:0 0 30px 0; line-height: 1.6; }
 .college_wrap2_intro .intro_main_msg strong { font-size: 1.75rem; }
 .college_wrap2_intro .intro_eng_tit { font-family: 'Agaramond'; font-size: 2.375rem; color:#004098;  margin-top:0.5rem; line-height: 1.4;}
@@ -48,19 +51,42 @@
 .college_wrap2 .feature_gray_box { background: #fafafa; border:1px solid #d7e0e9; border-radius: 6px; font-weight: 200; text-align: center; padding:15px; line-height: 2; }
 .college_con_wrap2 .gray_box { background: #fafafa; border:1px solid #dadce0; padding: 35px 20px; margin:2rem 0 3rem 0;}
 
-.organ2 .organ_head { position: relative; width: fit-content; height: 84px; display: flex; align-items: center; justify-content: center; padding: 0 55px; font-size: 1.375rem; font-weight: 500; color: #fff; background: #004098; outline:1px dashed #004098; box-shadow: inset 0 0 0 10px #fff; margin:0 auto;}
-.organ2 .organ_head:after { content: ''; display: block; position:absolute; top:100%; margin-top:-5px; border-radius: 50%; background: #004098; width: 9px; height: 9px; }
-.organ2 :is(.organ_group1, .organ_group2) { display: flex; align-items: start;}
-.organ2 :is(.organ_group1, .organ_group2) > li > p { display: flex; align-items: center; justify-content: center; background: #ffa415; font-weight: 500; color: #fff; font-size: 1.06rem;height: 48px; box-sizing: border-box;  text-align: center; margin: auto; } 
-.organ2 .organ_group1 > li { flex: 1 1 50%; }
-.organ2 .organ_group1 > li > p { width: fit-content; margin: 0 auto; padding:0 45px;   }
-.organ2 .organ_group2 { gap: 15px; }
-.organ2 .organ_group2 > li > p { background: #004098; width: 204px; position: relative;}
-.organ2 .organ_group2 > li > p:after { content: ''; display: block; position:absolute; bottom:100%; margin-bottom: 37px; border-radius: 50%; background: #004098; width: 9px; height: 9px; }
-.organ2 .organ_group2 ul p { display: flex; align-items: center; justify-content: center; border: 1px solid #004098; width: 126px; min-height: 48px; color: #004098;  text-align: center; font-weight: 500; box-sizing: border-box; padding: 12px 0; background: #fff; }
-.organ2 .organ_group2_1 { display: flex; justify-content: center; gap: 10px; padding-top:45px;  }
-.organ2 .organ_group2_1 ul { display: flex; padding-top: 30px; gap: 10px; }
+.imc_map .organ_head { position: relative; width: fit-content; height: 84px; display: flex; align-items: center; justify-content: center; padding: 0 55px; font-size: 1.375rem; font-weight: 500; color: #fff; background: #004098; outline:1px dashed #004098; box-shadow: inset 0 0 0 10px #fff; margin:0 auto;}
+.imc_map .organ_head:after { content: ''; display: block; position:absolute; top:100%; margin-top:-5px; border-radius: 50%; background: #004098; width: 9px; height: 9px; }
+.imc_map :is(.organ_group1, .organ_group2) { display: flex; align-items: start; justify-content: center;}
+.imc_map :is(.organ_group1, .organ_group2) > li > p { display: flex; align-items: center; justify-content: center; background: #ffa415; font-weight: 500; color: #fff; font-size: 1.06rem;height: 48px; box-sizing: border-box;  text-align: center; margin: auto; } 
+.imc_map .organ_group1 { position: relative; padding: 50px 0; }
+.imc_map .organ_group1:before { content: ''; position: absolute; display: block; width: 1px; top:0; bottom:0; background: #004098; left: 50%; margin-left: -1px;}
+.imc_map .organ_group2 > li > p { background: #004098; width: 165px; position: relative;}
+.imc_map .organ_group1 > li { position: relative; flex: 1 1 50%; }
+.imc_map .organ_group2 ul p { display: flex; align-items: center; justify-content: center; border: 1px solid #004098; width: 105px; min-height: 48px; color: #004098;  text-align: center; font-weight: 500; box-sizing: border-box; padding: 12px 0; background: #fff; }
 
+@media (min-width:901px) { 
+.imc_map .organ_group1 > li:before { content: ''; position: absolute; display: block; height: 1px; top:50%;  background: #004098; width: 100px; }
+.imc_map .organ_group1 > li:last-child p { margin: 0 auto 0 100px;}
+.imc_map .organ_group1 > li:first-child p { margin: 0 100px 0 auto;}
+.imc_map .organ_group1 > li:last-child:before { right: 100%; }
+.imc_map .organ_group1 > li:first-child:before { left: 100%; }
+.imc_map .organ_group1 > li > p { width: fit-content; margin: 0 auto; padding:0 45px;   }
+.imc_map .organ_group2 { padding: 0 10px; }
+.imc_map .organ_group2 > li { position: relative; padding: 50px 7px 0 7px;  }
+.imc_map .organ_group2 > li:before { content: ''; position: absolute; display: block; height: 1px; top:0; left:0; right: 0; background: #004098; }
+.imc_map .organ_group2 > li:first-child:before { left: 50% ;} 
+.imc_map .organ_group2 > li:last-child:before { right: 50% ;} 
+.imc_map .organ_group2 > li:after { content: ''; position: absolute; display: block; width: 1px; top:0; height: 50px; left: 50%; background: #004098; }
+.imc_map .organ_group2 > li > p:after { content: ''; display: block; position:absolute; top:-50px; left: 50%; margin: -4px 0 0 -4px; border-radius: 50%; background: #004098; width: 9px; height: 9px; }
+.imc_map .organ_group2_1 { display: flex; justify-content: center; position: relative;}
+.imc_map .organ_group2_1 ul { display: flex; gap: 10px;  }
+.imc_map .organ_group2_1 li { position:relative; padding: 45px 0 0 0; }
+.imc_map .organ_group2_1 > li {  padding: 45px 5px 0 5px; }
+.imc_map .organ_group2_1 li:after { content: ''; position: absolute; display: block; width: 1px; top:0; height:45px; left: 50%; background: #004098; }
+.imc_map .organ_group2_1:after { content: ''; position: absolute; display: block; width: 1px; top:0; height:23px; left: 50%; background: #004098; 
+}
+.imc_map .organ_group2_1 > li:after { height: 23px; top:23px; }
+.imc_map .organ_group2_1 > li:before { content: ''; position: absolute; display: block; height: 1px; top:22px; left:0; right: 0; background: #004098; }
+.imc_map .organ_group2_1 > li:first-child:before { left: 50%;}
+.imc_map .organ_group2_1 > li:last-child:before { right: 50%;}
+}
 
 
 .table_scroll_wrap2 { overflow-x:auto;}
@@ -141,7 +167,7 @@
 .circle-list1 li.type2 { padding: 0 20px; }
 .circle-list1 .txt_mini { font-size: 0.8rem; color: #000; font-weight: 500; line-height: 1.2; }
 
-.inner_con_tit { display: flex; align-items: center;  line-height: 1; color: #004098; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; }
+.inner_con_tit { display: flex; align-items: center;  line-height: 1; color: #004098; font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; }
 .inner_con_tit:before { content: ''; display: inline-block; width: 5px; height:5px; border-radius: 50%; background: #004098; margin:0 8px 0 20px;}
 .inner_con_tit ~ .inner_con_tit { margin-top: 2.5rem; }
 .con_icon_wrap1 .con_main { align-self: center; flex:1;}
@@ -264,39 +290,17 @@
 .college_step_list2 .type2 .step_order + .step_order:before { background-color: #001e45; box-shadow: 0 0 0 8px rgba(0,30,69,0.1); }
 
 
-@media (min-width:901px) { 
-  .medi_science_map { background: url(../images/sub01_02_bg01.png) no-repeat 64px 80px; width: 1060px; height: 510px; position: relative; margin:0 auto; }
-  .medi_science_map p { position: absolute !important; }
-  .medi_science_map .organ_head { position: absolute; left: 396px; }
-  .medi_science_map .organ_group1 li > p{ top: 130px;}
-  .medi_science_map .organ_group1 li:first-child > p { left: 267px;}
-  .medi_science_map .organ_group1 li:last-child > p { left: 688px;}
-  .medi_science_map .organ_group2 > li > p { top: 265px}
-  .medi_science_map .organ_group2 > li:nth-child(1) > p { left: 99px;}
-  .medi_science_map .organ_group2 > li:nth-child(2) > p { left: 418px;}
-  .medi_science_map .organ_group2 > li:nth-child(3) > p { left: 638px;}
-  .medi_science_map .organ_group2 > li:nth-child(4) > p { left: 856px;}
-  .medi_science_map .organ_group2 > li > .organ_group2_1 > li > p { bottom: 105px; }
-  .medi_science_map .organ_group2 > li:nth-child(1) > .organ_group2_1 > li:nth-child(1) > p { left: 0px; }
-  .medi_science_map .organ_group2 > li:nth-child(1) > .organ_group2_1 > li:nth-child(2) > p { left: 136px;}
-  .medi_science_map .organ_group2 > li:nth-child(1) > .organ_group2_1 > li:nth-child(3) > p { left: 272px;}
-  .medi_science_map .organ_group2 > li:nth-child(1) > .organ_group2_1 > li:nth-child(1) > ul li:nth-child(1) > p { bottom:0; left: 0; }
-  .medi_science_map .organ_group2 > li:nth-child(2) > .organ_group2_1 > li:nth-child(1) > p { left: 456px; }
-  .medi_science_map .organ_group2 > li:nth-child(3) > .organ_group2_1 > li:nth-child(1) > p { left: 609px; }
-  .medi_science_map .organ_group2 > li:nth-child(3) > .organ_group2_1 > li:nth-child(2) > p { left: 745px; }
-  .medi_science_map .organ_group2 > li:nth-child(4) > .organ_group2_1 > li:nth-child(1) > p { left: 896px; }
-  
-}
 
 @media ( max-width:1200px){  
-  .medi_science_map { zoom: 0.9; }
+  .imc_map { zoom: 0.9; }
 
 }
 @media (max-width:1100px){ 
-  .medi_science_map { zoom: 0.85; }
+  .imc_map { zoom: 0.85; }
+  .imc_map .organ_group2 > li > p { width: 150px; }
 }
 @media (max-width: 1000px){ 
-  .medi_science_map { zoom: 0.75; }
+  .imc_map { zoom: 0.75; }
   .equip_listl { gap: 30px; }
   .equip_listl li { padding: 30px; }
   .equip_listl .equip_img { height: 150px; }
@@ -304,33 +308,35 @@
   .college_terms_box1 .terms_tit { flex: 1}
   .college_terms_box1 .terms_con { flex: 3; padding: 10px 15px; }
   .college_step_list1,.college_step_list1 .label_box > p span { font-size: 0.9rem; }
+
   
 }
 @media (max-width: 900px){ 
-  .medi_science_map { zoom: 1; }
-  .medi_science_map li > p { position: relative; z-index: 1;}
-  .medi_science_map .organ_group1 { justify-content: center; position: relative; padding: 30px 20px 20px 20px; gap: 50px; }
-  .medi_science_map .organ_group1:after { content:''; position: absolute; display: block; left: 50%; top:0; bottom:0; width: 1px; background: #004098; margin-left: -1px; ;}
-  .medi_science_map .organ_group1:before { content:''; position: absolute; display: block; top: 50%; left: 30%; right:30%; height: 1px; background: #004098; z-index: 0;}
-  .medi_science_map .organ_group1 > li { max-width: 250px;}
-  .medi_science_map .organ_group1 > li > p { width: 100%; padding: 0 5px; }
-  .medi_science_map .organ_group2 { flex-wrap:wrap; position: relative; padding: 15px 20px 0 60px; max-width: 600px; margin:0 auto; }
-  .medi_science_map .organ_group2:before { content:''; position: absolute; display: block; top:0; height: 1px; background: #004098; left: 35px; right:50%; }
-  .medi_science_map .organ_group2 > li { flex: 1 1 100%; position: relative;}
-  .medi_science_map .organ_group2 li:after { content:''; position: absolute; display: block; height: 1px; background: #004098; z-index: 0; top: 20px; left: -25px; width: 25px;}
+  .imc_map { zoom: 1; }
+  .imc_map li > p { position: relative; z-index: 1;}
+  .imc_map .organ_group1 { justify-content: center; position: relative; padding: 30px 20px 20px 20px; gap: 50px; }
+  .imc_map .organ_group1:after { content:''; position: absolute; display: block; left: 50%; top:0; bottom:0; width: 1px; background: #004098; margin-left: -1px; ;}
+  .imc_map .organ_group1:before { content:''; position: absolute; display: block; top: 50%; left: 30%; right:30%; height: 1px; background: #004098; z-index: 0;}
+  .imc_map .organ_group1 > li { max-width: 250px;}
+  .imc_map .organ_group1 > li > p { width: 100%; padding: 0 5px; }
+  .imc_map .organ_group2 { flex-wrap:wrap; position: relative; padding: 15px 20px 0 60px; max-width: 600px; margin:0 auto; }
+  .imc_map .organ_group2:before { content:''; position: absolute; display: block; top:0; height: 1px; background: #004098; left: 35px; right:50%; }
+  .imc_map .organ_group2 > li { flex: 1 1 100%; position: relative;}
+  .imc_map .organ_group2 li:after { content:''; position: absolute; display: block; height: 1px; background: #004098; z-index: 0; top: 20px; left: -25px; width: 25px;}
   
-  .medi_science_map .organ_group2 li:before { content:''; position: absolute; display: block; top:-15px; bottom:0; width: 1px; background: #004098; left: -25px;}
-  .medi_science_map .organ_group2 li:last-child:before { bottom: unset; height: 36px;}
-  .medi_science_map .organ_group2 > li > p { width: 35%; min-width: 150px; margin: 0; }
-  .medi_science_map .organ_group2 > li > p:after { content: ''; display: block; position:absolute; left: -29px;top:50%; margin:-8px 0 0 0; border-radius: 50%; background: #004098; width: 9px; height: 9px; }
-  .medi_science_map .organ_group2_1 { flex-wrap: wrap; padding:15px 0 0 30px; }
-  .medi_science_map .organ_group2_1 li { position: relative; display: flex; flex-wrap: wrap; flex: 1 1 100%; }
-  .medi_science_map .organ_group2_1 li:before { left: -15px;  } 
-  .medi_science_map .organ_group2_1 li:after { width: 15px; left: -15px;}
-  .medi_science_map .organ_group2_1 ul { padding: 15px 0 0 30px; flex-wrap:wrap; flex: 1 1 100%; }
+  .imc_map .organ_group2 li:before { content:''; position: absolute; display: block; top:-15px; bottom:0; width: 1px; background: #004098; left: -25px;}
+  .imc_map .organ_group2 li:last-child:before { bottom: unset; height: 36px;}
+  .imc_map .organ_group2 > li > p { width: 35%; min-width: 150px; margin: 0; }
+  .imc_map .organ_group2 > li > p:after { content: ''; display: block; position:absolute; left: -29px;top:50%; margin:-8px 0 0 0; border-radius: 50%; background: #004098; width: 9px; height: 9px; }
+  .imc_map .organ_group2_1 { flex-wrap: wrap; padding:15px 0 0 30px; }
+  .imc_map .organ_group2_1 li { position: relative; display: flex; flex-wrap: wrap; flex: 1 1 100%; }
+  .imc_map .organ_group2 li + li { margin-top: 15px;}
+  .imc_map .organ_group2_1 li:before { left: -15px;  } 
+  .imc_map .organ_group2_1 li:after { width: 15px; left: -15px;}
+  .imc_map .organ_group2_1 ul { padding: 15px 0 0 30px; flex-wrap:wrap; flex: 1 1 100%; }
   
-  .medi_science_map .organ_group2 ul p { width: 35%; min-width: 150px; }
-  .medi_science_map .organ_group2 ul br { display: none;}
+  .imc_map .organ_group2 ul p { width: 35%; min-width: 150px; }
+  .imc_map .organ_group2 ul br { display: none;}
   .btn_download1 { padding: 0 30px; min-width: 30%; justify-content: center; height: 70px; }
   .circle-list1 { gap: 10px 30px; }
   .circle-list1 li + li:before { width: 30px ; }
