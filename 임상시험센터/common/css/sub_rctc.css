@@ -15,6 +15,7 @@
 
 [class*=icon_arrow_circle_down] { display: inline-block; width: 19px; height: 19px; background: #3986ee url(../images/rctc/icon_arrow_down1.png) no-repeat center; border-radius: 50%; box-shadow: 0 0 0 8px rgba(57,134,238,0.1); } 
 .icon_arrow_circle_down1 { background-color: #3986ee; } 
+.icon_arrow_circle_down3 { }
 .icon_arrow_circle_down2 { background-color: #4db1b1; box-shadow: 0 0 0 8px rgba(77,177,177,0.1); } 
 [class*=icon_arrow_circle_down].line_top { position: relative; } 
 [class*=icon_arrow_circle_down].line_top:after { content:''; display: block; position: absolute; background: #dddddd; height: 87px; width: 1px; bottom:100%; left: 50%; margin-left: -1px; } 
@@ -57,7 +58,7 @@
 .ctrial_blue_box1:first-child { margin: 0; } 
 .ctrial_blue_box1 { position: relative; border: 1px solid #e2e7eb; border-radius: 5px; background: #eff8ff; padding: 2rem 2rem 3rem 2rem; text-align: center; line-height: 2rem; font-weight: 200; color: #444444; margin-top: 2rem; } 
 .ctrial_blue_box1 .icon_arrow_circle_down1 { position: absolute; left: 50%; margin-left: -10px; top:100%; margin-top: 50px; } 
-.ctrial_diagram01 { margin: 70px 0 100px 0; position: relative; padding-bottom: 70px; border-bottom: 1px solid #38496b; } 
+.ctrial_diagram01 { margin: 70px 0 100px 0; position: relative; padding-bottom: 70px;  } 
 .ctrial_diagram01:after { content: ''; display: block; position: absolute; left: 0; right: 0; top:0; height: 210px; background: url(../images/rctc/sub01_02_01_bg01.png) no-repeat center 0; } 
 .ctrial_diagram01 .icon_arrow_circle_down2 { position: absolute; left: 50%; margin-left: -10px; top:100%; margin-top: 50px; } 
 .ctrial_diagram01 ul { justify-content: center; display: flex; gap: 22px; padding:15px 0 0 0; } 
@@ -76,7 +77,7 @@
 .ctrial_diagram01 .circle3 .circle_number strong { color: #1e63be; } 
 .ctrial_diagram01 .circle4 .circle_number strong { color: #164690; } 
 
-.ctrial_common_footer { text-align: center; } 
+.ctrial_common_footer { text-align: center; padding-top: 100px; } 
 .ctrial_common_footer .ctrial_logo { margin-bottom: 2rem; } 
 .ctrial_common_footer .footer_msg1 { color: #000000; font-size: 1.25rem; font-weight: 500; line-height: 2; } 
 .ctrial_common_footer .footer_msg1 strong { line-height: 1; display: inline-block; padding: 1px 2px; } 
@@ -177,6 +178,10 @@
 .table_common_list1 li { width: 100%; display: list-item; display: flex; } 
 .table_common_list1 li ~ li { margin-top: 0.5rem; } 
 .table_common_list1 li:before { content:''; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: #222; margin:0.7rem 8px 0 0; align-self: flex-start; } 
+
+.txt_list1 {text-align: left; margin:20px auto; width: fit-content; font-weight: 400; }
+.txt_list1 li { display:block; line-height: 1.6; }
+.txt_list1 li + li { margin-top: 0.4rem; }
 
 /* 시설 및 장비현황 */
 .ctrial_tab_menu { display: flex; background: #eff8ff; border-radius: 0 32px; height: 58px; } 
