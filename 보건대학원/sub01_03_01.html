@@ -149,78 +149,222 @@
                         <div class="in_w">
 
                             <div class="sph_wrap">
-                                <!-- <h3 class="title">연혁</h3> -->
-<!-- 실제컨텐츠 S -->
                                 <ul class="menu_tabs_01">
-                                    <li class="on"><a href="">2022~2018</a></li>
-                                    <li><a href="">2012~2008</a></li>
-                                    <li><a href="">2017~2013</a></li>
-                                    <li><a href="">2007~2003</a></li>
+                                    <li class="on"><a href="javascript:show('1')">2022~2018</a></li>
+                                    <li><a href="javascript:show('2')">2017~2013</a></li>
+                                    <li><a href="javascript:show('3')">2012~2008</a></li>
+                                    <li><a href="javascript:show('4')">2007~2003</a></li>
                                 </ul>
-
-                                <div class="sph_history">
+                                <div class="sph_history" id="tab1">
                                     <div class="history_ttle agaramond">
                                         <p>2022~2018</p>
-                                        <span>Graduate <br>
-                                            School of <br>
-                                            Public health.<br>
-                                            History</span>
-                                            <img src="/common/front/sph/images/sph/sub01_03_mark.png" alt="">
-                                        </div>
-
-                                        <div class="history_list">
-                                            <dl class="first">
-                                                <dt class="agaramond">2022</dt>
-                                                <dd><span>03</span>   전기 신입생 36 입학</dd>
-                                                <dd><span>03</span>   제 10대 보건대학원장 이순영 교수 취임</dd>
-                                                <dd><span>02</span>   학위수여 (2021-전기), 석사학위 21명 배출 (고령보건전문과정 2명 포함)</dd>
-                                                <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img01.png" alt=""></dd>
-                                            </dl>
-                                            <dl>
-                                                <dt class="agaramond">2021</dt>
-                                                <dd><span>09</span>   후기 신입생 4명 입학</dd>
-                                                <dd><span>08</span>   학위수여 (2020-후기), 석사학위 5명 배출</dd>
-                                                <dd><span>03</span>   전기 신입생 36명 입학</dd>
-                                                <dd><span>03</span>   학위수여 (2020-전기), 석사학위 30명 배출 (고령보건전문과정 2명 포함)</dd>
-                                                <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img02.png" alt=""></dd>
-                                            </dl>
-                                            <dl>
-                                                <dt class="agaramond">2020</dt>
-                                                <dd><span>09</span>   후기 신입생 11명 입학</dd>
-                                                <dd><span>08</span>   학위수여 (2019-후기), 석사학위 13명 배출 (고령보건전문과정 4명 포함)</dd>
-                                                <dd><span>03</span>  전기 신입생 22명 입학 </dd>
-                                                <dd><span>03</span>  제 9대 보건대학원장 이경종 교수 취임</dd>
-                                                <dd><span>02</span>  학위수여 (2019-전기), 석사학위 19명 배출 </dd>
-                                                <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img03.png" alt=""></dd>
-                                            </dl>
-                                            <dl>
-                                                <dt class="agaramond">2019</dt>
-                                                <dd><span>09</span>  후기 신입생 11명 입학 </dd>
-                                                <dd><span>08</span> 학위수여 (2018-후기), 석사학위 9명 배출 (고령보건전문과정 3명 포함)</dd>
-                                                <dd><span>03</span>  전기 신입생 28명 입학</dd>
-                                                <dd><span>02</span>   학위수여 (2018-전기), 석사학위 18명 배출 (고령보건전문과정 1명 포함)</dd>
-                                                <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img04.png" alt=""></dd>
-                                            </dl>
-                                            <dl class="last">
-                                                <dt class="agaramond">2018</dt>
-                                                <dd><span>09</span>  후기 신입생 11명 입학 </dd>
-                                                <dd><span>08</span>  학위수여 (2017-후기), 석사학위 8명 배출 (고령보건전문과정3명 포함)</dd>
-                                                <dd><span>03</span>  전기 신입생 34명 입학</dd>
-                                                <dd><span>02</span>   학위수여 (2017-전기), 석사학위 35명 배출 (고령보건전문과정 7명 포함)</dd>
-                                                <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img05.png" alt=""></dd>
-                                            </dl>
-                                        </div>
-                                                                
+                                        <span>Graduate <br>School of <br>Public health.<br>History</span>
+                                        <img src="/common/front/sph/images/sph/sub01_03_mark.png" alt="">
+                                    </div>
+                                    <div class="history_list">
+                                        <dl class="first">
+                                            <dt class="agaramond">2022</dt>
+                                            <dd><span>03</span>   전기 신입생 36 입학</dd>
+                                            <dd><span>03</span>   제 10대 보건대학원장 이순영 교수 취임</dd>
+                                            <dd><span>02</span>   학위수여 (2021-전기), 석사학위 21명 배출 (고령보건전문과정 2명 포함)</dd>
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img01.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2021</dt>
+                                            <dd><span>09</span>   후기 신입생 4명 입학</dd>
+                                            <dd><span>08</span>   학위수여 (2020-후기), 석사학위 5명 배출</dd>
+                                            <dd><span>03</span>   전기 신입생 36명 입학</dd>
+                                            <dd><span>03</span>   학위수여 (2020-전기), 석사학위 30명 배출 (고령보건전문과정 2명 포함)</dd>
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img02.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2020</dt>
+                                            <dd><span>09</span>   후기 신입생 11명 입학</dd>
+                                            <dd><span>08</span>   학위수여 (2019-후기), 석사학위 13명 배출 (고령보건전문과정 4명 포함)</dd>
+                                            <dd><span>03</span>  전기 신입생 22명 입학 </dd>
+                                            <dd><span>03</span>  제 9대 보건대학원장 이경종 교수 취임</dd>
+                                            <dd><span>02</span>  학위수여 (2019-전기), 석사학위 19명 배출 </dd>
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img03.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2019</dt>
+                                            <dd><span>09</span>  후기 신입생 11명 입학 </dd>
+                                            <dd><span>08</span> 학위수여 (2018-후기), 석사학위 9명 배출 (고령보건전문과정 3명 포함)</dd>
+                                            <dd><span>03</span>  전기 신입생 28명 입학</dd>
+                                            <dd><span>02</span>   학위수여 (2018-전기), 석사학위 18명 배출 (고령보건전문과정 1명 포함)</dd>
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img04.png" alt=""></dd>
+                                        </dl>
+                                        <dl class="last">
+                                            <dt class="agaramond">2018</dt>
+                                            <dd><span>09</span>  후기 신입생 11명 입학 </dd>
+                                            <dd><span>08</span>  학위수여 (2017-후기), 석사학위 8명 배출 (고령보건전문과정3명 포함)</dd>
+                                            <dd><span>03</span>  전기 신입생 34명 입학</dd>
+                                            <dd><span>02</span>   학위수여 (2017-전기), 석사학위 35명 배출 (고령보건전문과정 7명 포함)</dd>
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img05.png" alt=""></dd>
+                                        </dl>
+                                    </div>                                                                
                                 </div>
+                                <div class="sph_history" id="tab2" style="display: none;">
+                                    <div class="history_ttle agaramond">
+                                        <p>2017~2013</p>
+                                        <span>Graduate <br>School of <br>Public health.<br>History</span>
+                                        <img src="/common/front/sph/images/sph/sub01_03_mark.png" alt="">
+                                    </div>
+                                    <div class="history_list">
+                                        <dl class="first">
+                                            <dt class="agaramond">2017</dt>
+                                            <dd><span>09</span>   후기 신입생 10명 입학</dd>
+                                            <dd><span>08</span>   학위수여 (2016-후기), 석사학위 12명 배출</dd>
+                                            <dd><span>03</span>   전기 신입생 31명 입학</dd>
+                                            <dd><span>02</span>   학위수여 (2016-전기), 석사학위 13명 배출</dd>
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img04.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2016</dt>
+                                            <dd><span>09</span>   후기 신입생 11명 입학</dd>
+                                            <dd><span>08</span>   학위수여 (2015-후기), 석사학위 12명 배출 (고령보건전문과정 3명 포함)</dd>
+                                            <dd><span>03</span>   보건대학원장 전기홍 교수 연임(제6, 7, 8대)</dd>
+                                            <dd><span>03</span>   전기 신입생 28명 입학</dd>
+                                            <dd><span>02</span>   학위수여 (2015-전기), 석사학위 23명 배출</dd>
+
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img05.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2015</dt>
+                                            <dd><span>09</span>   후기 신입생 14명 입학</dd>
+                                            <dd><span>09</span>   고령보건전문과정 신설</dd>
+                                            <dd><span>03</span>   전기 신입생 27명 입학</dd>
+                                            <dd><span>03</span>   제 10회 학위수여 (2014-전기), 석사학위 28명 배출</dd>
+
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img01.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2014</dt>
+                                            <dd><span>08</span>   학위수여 (2013-후기), 석사학위 28명 배출</dd>
+                                            <dd><span>02</span>   제 9회 학위수여 (2013-전기), 석사학위 28명 배출</dd>
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img02.png" alt=""></dd>
+                                        </dl>
+                                        <dl class="last">
+                                            <dt class="agaramond">2013</dt>
+                                            <dd><span>08</span>   학위수여 (2012-후기), 석사학위 5명 배출 </dd>
+                                            <dd><span>03</span>   정원내 전기 신입생 40명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 안전보건 전공, 구강위생관리 전공) </dd>
+                                            <dd><span>03</span> 정원외 전기 신입생 1명 입학 </dd>
+                                            <dd><span>02</span>   제 8회 학위수여 (2012-전기), 석사학위 34명 배출 </dd>
+
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img03.png" alt=""></dd>
+                                        </dl>
+                                    </div>                                                                
+                                </div>
+                                <div class="sph_history" id="tab3" style="display: none">
+                                    <div class="history_ttle agaramond">
+                                        <p>2012~2008</p>
+                                        <span>Graduate <br>School of <br>Public health.<br>History</span>
+                                        <img src="/common/front/sph/images/sph/sub01_03_mark.png" alt="">
+                                    </div>
+                                    <div class="history_list">
+                                        <dl class="first">
+                                            <dt class="agaramond">2012</dt>
+                                            <dd><span>08</span>   학위수여 (2011-후기), 석사학위 3명 배출</dd>
+                                            <dd><span>03</span>   전기 신입생 40명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 안전보건 전공, 구강위생관리 전공)</dd>
+                                            <dd><span>02</span>   제 7회 학위수여 (2011-전기), 석사학위 35명 배출</dd>
+
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img02.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2011</dt>
+                                            <dd><span>08</span>   학위수여 (2010-후기), 석사학위 2명 배출</dd>
+                                            <dd><span>03</span>   전기 신입생 40명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 안전보건 전공, 구강위생관리 전공)</dd>
+                                            <dd><span>02</span>   제 6회 학위수여 (2009-전기), 석사학위 25명 배출</dd>
+
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img03.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2010</dt>
+                                            <dd><span>03</span>   제 2대 보건대학원장 김문식 교수 취임 (제 4, 5대)</dd>
+                                            <dd><span>03</span>   전기 신입생 40명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 안전보건 전공,구강위생관리 전공)</dd>
+                                            <dd><span>02</span>   제 6회 학위수여 (2010-전기), 석사학위 25명 배출</dd>
+
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img04.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2009</dt>
+                                            <dd><span>08</span>   학위수여 (2008-후기), 석사학위 9명 배출</dd>
+                                            <dd><span>03</span>   전기 신입생 30명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 안전보건 전공)</dd>
+                                            <dd><span>02</span>   제 4회 학위수여 (2008-전기), 석사학위 13명 배출</dd>
+
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img05.png" alt=""></dd>
+                                        </dl>
+                                        <dl class="last">
+                                            <dt class="agaramond">2008</dt>
+                                            <dd><span>08</span>   학위수여 (2007-후기), 석사학위 9명 배출</dd>
+                                            <dd><span>03</span>   전기 신입생 30명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 안전보건 전공)</dd>
+                                            <dd><span>02</span>   제 3회 학위수여 (2007-전기), 석사학위 15명 배출</dd>
+
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img01.png" alt=""></dd>
+                                        </dl>
+                                    </div>                                                                
+                                </div>
+                                <div class="sph_history" id="tab4" style="display: none">
+                                    <div class="history_ttle agaramond">
+                                        <p>2007~2003</p>
+                                        <span>Graduate <br>School of <br>Public health.<br>History</span>
+                                        <img src="/common/front/sph/images/sph/sub01_03_mark.png" alt="">
+                                    </div>
+                                    <div class="history_list">
+                                        <dl class="first">
+                                            <dt class="agaramond">2007</dt>
+                                            <dd><span>09</span>9   후기 신입생 4명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 안전보건 전공)</dd>
+                                            <dd><span>08</span>8   학위수여 (2006-후기), 석사학위 7명 배출</dd>
+                                            <dd><span>03</span>3   전기 신입생 26명 입학</dd>
+                                            <dd><span>02</span>2   학위수여 (2006-전기), 석사학위 17명 배출</dd>
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img03.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2006</dt>
+                                            <dd><span>09</span>   후기 신입생 4명 입학 (안전보건 전공)</dd>
+                                            <dd><span>08</span>   학위수여 (2005-후기), 석사학위 6명 배출</dd>
+                                            <dd><span>03</span>   전기 신입생 26명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 안전보건 전공)</dd>
+                                            <dd><span>02</span>   제 1회 학위수여식 (2005-전기), 석사학위 12명 배출</dd>
 
 
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img04.png" alt=""></dd>
+                                        </dl>
+                                        <dd>
+                                            <dt class="agaramond">2005</dt>
+                                            <dd><span>09</span>9   후기 신입생 12명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 환경·산업보건 전공) </dd>
+                                            <dd><span>03</span>3   전기 신입생 18명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 환경·산업보건 전공) </dd>
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img05.png" alt=""></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="agaramond">2004</dt>
+                                            <dd><span>09</span>   후기 신입생 5명 입학 <br> (보건정책과 관리 전공, 역학과 건강증진 전공, 환경·산업보건 전공)</dd>
+                                            <dd><span>03</span>   제 1회 전기 신입생 25명 입학 <br> (보건정책과 관리전공, 역학과 건강증진 전공, 환경·산업보건 전공)</dd>
+                                            <dd><span>03</span>   초대 보건대학원장 조병륜 교수 취임 (제 1, 2, 3대)</dd>
 
-<!-- 실제컨텐츠 E -->
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img01.png" alt=""></dd>
+                                        </dl>
+                                        <dl class="last">
+                                            <dt class="agaramond">2003</dt>
+                                            <dd><span>10</span>   교육인적자원부 인가</dd>
+                                            <dd class="photo"><img src="/common/front/sph/images/sph/sub01_03_img02.png" alt=""></dd>
+                                        </dl>
+                                    </div>                                                                
+                                </div>
                             </div>
-
                         </div>
                     </section>
                 </article>
+                <script>
+                  let choseTab = 0;
+                  function show(tab){
+                      $(".sph_history").hide();
+                      $(".menu_tabs_01 li").removeClass("on");
+              
+                      $(".menu_tabs_01 li:eq("+(tab-1)+")").addClass("on");
+                      $("#tab"+tab).show();
+                      choseTab = tab;
+                  }
+                </script>
                 <!--// article -->
             </div>
             <!--// sub content_w -->
