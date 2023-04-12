@@ -406,6 +406,7 @@ p.college_notice { padding-left:25px; background:url(../images/college/icon_noti
   .college_wrap2 .feature_box .feature_bottom { font-size: 2rem; padding: 30px 20px; min-height: auto; text-align: center;}
   .college_wrap2 .feature_box .feature_item + .feature_item { border: 0 none; border-top: 1px solid #004098;}
   
+  
 }  
 @media (min-width: 641px) and (max-width: 980px) {
   .mobile_map :is(.organ_dep1,.organ_dep2) > li { display: flex; align-items: flex-start;}

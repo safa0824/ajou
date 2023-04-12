@@ -17,10 +17,9 @@
         <meta property="og:description" content="아주대학교병원" />
         <title>아주대학교병원</title>
 
-        <link type="text/css" rel="stylesheet" href="common/css/jquery-ui.css" />
-        <link type="text/css" rel="stylesheet" href="common/css/swiper.min.css" />
+        <link type="text/css" rel="stylesheet" href="../common/css/jquery-ui.css" />
+        <link type="text/css" rel="stylesheet" href="../common/css/swiper.min.css" />
         <link type="text/css" rel="stylesheet" href="common/css/default.css" />
-        <link type="text/css" rel="stylesheet" href="common/css/mo_default.css" />
 
         <script type="text/javascript" src="common/js/jquery-1.12.4.js"></script>
         <script type="text/javascript" src="common/js/jquery-ui.min.js"></script>
@@ -778,9 +777,8 @@
                       $(".mcollege_history_wrap").hide();
                       $(".tab_menu_item").removeClass("on");
               
-                      $(".tab_menu_item:eq("+(tab-1)+")").addClass("active");
+                      $(".tab_menu_item:eq("+(tab-1)+")").addClass("on");
                       $("#tab"+tab).show();
-                      // history.pushState({tab : tab}, null, "/sub-terms.do?tab="+tab);
                       choseTab = tab;
                   }
                 </script>

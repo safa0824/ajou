@@ -17,11 +17,11 @@
         <meta property="og:description" content="아주대학교병원" />
         <title>아주대학교병원</title>
 
-        <link type="text/css" rel="stylesheet" href="common/css/jquery-ui.css" />
-        <link type="text/css" rel="stylesheet" href="common/css/swiper.min.css" />
+        <link type="text/css" rel="stylesheet" href="../common/css/jquery-ui.css" />
+        <link type="text/css" rel="stylesheet" href="../common/css/swiper.min.css" />
         <link type="text/css" rel="stylesheet" href="common/css/default.css" />
         <link type="text/css" rel="stylesheet" href="common/css/mo_default.css" />
-        <link type="text/css" rel="stylesheet" href="common/css/sub_crinic_trial.css" />
+        <!-- <link type="text/css" rel="stylesheet" href="common/css/sub_crinic_trial.css" /> -->
 
         <script type="text/javascript" src="../common/js/jquery-1.12.4.js"></script>
         <script type="text/javascript" src="../common/js/jquery-ui.min.js"></script>
@@ -156,16 +156,16 @@
                                 </div> -->
                                 <div class="gallery_wrap1">
                                     <div class="gallery_view1">
-                                        <div class="gallery_view_img">
+                                        <div class="gallery_view_img" data-img="1">
                                             <img src="/common/front/rctc/images/rctc/sub01_06_img01_big.png" alt="임상시험센터 이미지">
                                         </div>
                                         <p class="gallery_item_name">임상시험센터</p>
-                                        <button type="button" class="prev_btn">이전</button>
-                                        <button type="button" class="next_btn">다음</button>
+                                        <button type="button" class="prev_btn" onclick="galleryImg(1)" disabled>이전</button>
+                                        <button type="button" class="next_btn" onclick="galleryImg(2)" >다음</button>
                                     </div>
                                     <div class="gallery_list1">
                                         <ul>
-                                            <li class="gallery_item">
+                                            <li class="gallery_item on">
                                                 <div class="gallery_item_img">
                                                     <img src="/common/front/rctc/images/rctc/sub01_06_img01.png" alt="임상시험센터 이미지">
                                                 </div>
@@ -293,6 +293,65 @@
                         </div>
                     </section>
                 </article>
+                <script>
+                    let itemTotal = $('.gallery_item').length;
+                    $('.gallery_item').on('click',function(){
+                        let itemIdx = $(this).index() + 1;
+                        let url = $(this).find('.gallery_item_img img').attr('src');
+                        
+                        $(this).addClass('on').siblings().removeClass('on');
+                        $('.gallery_view_img img').attr('src', url);
+                        $('.gallery_view_img').attr('data-img', itemIdx);
+
+                        console.log(itemIdx, itemTotal);
+
+                        if( itemIdx <= 1 ){
+                            $('.next_btn').removeAttr('disabled');
+                            $('.prev_btn').attr('disabled', 'true');
+                        }else if( itemIdx >= itemTotal ){
+                            $('.next_btn').attr('disabled', 'true');
+                            $('.prev_btn').removeAttr('disabled');
+                        }else { 
+                            $('.next_btn').removeAttr('disabled');
+                            $('.prev_btn').removeAttr('disabled');
+                        }
+                        
+                        var tit = $(`.gallery_item:nth-child(${itemIdx}) .gallery_item_name`).html().replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, ""); ;
+                        $('.gallery_view1 .gallery_item_name').html(tit)
+                    });
+                    function galleryImg(direction){
+
+                        let currentIdx = $('.gallery_view_img').attr('data-img');
+                        let imgList = $('.gallery_item');
+                        
+                        if( direction == 1 ){
+                            currentIdx --;
+                            var changeUrl = $(`.gallery_item:nth-child(${currentIdx}) .gallery_item_img img`).attr('src');
+                            $(`.gallery_item:nth-child(${currentIdx}`).addClass('on').siblings().removeClass('on');
+                            $('.gallery_view_img').attr('data-img',currentIdx);
+                            $('.gallery_view_img img').attr('src',changeUrl);
+                        }else if ( direction == 2 ){ 
+                            currentIdx ++; 
+                            var changeUrl = $(`.gallery_item:nth-child(${currentIdx}) .gallery_item_img img`).attr('src');
+                            $(`.gallery_item:nth-child(${currentIdx}`).addClass('on').siblings().removeClass('on');
+                            $('.gallery_view_img').attr('data-img',currentIdx);
+                            $('.gallery_view_img img').attr('src',changeUrl);
+                        }
+                        var tit = $(`.gallery_item:nth-child(${currentIdx}) .gallery_item_name`).html().replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?(\s)*(\/)?>/ig, ""); ;
+                        $('.gallery_view1 .gallery_item_name').html(tit)
+                        
+                        if( currentIdx <= 1 ){
+                            $('.next_btn').removeAttr('disabled');
+                            $('.prev_btn').attr('disabled', 'true');
+                        }else if( currentIdx >= itemTotal ){
+                            $('.prev_btn').removeAttr('disabled');
+                            $('.next_btn').attr('disabled', 'true');
+                        }else { 
+                            $('.prev_btn').removeAttr('disabled');
+                            $('.next_btn').removeAttr('disabled');
+                        }
+                    }
+                </script>
                 <!--// article -->
             </div>
             <!--// sub content_w -->
