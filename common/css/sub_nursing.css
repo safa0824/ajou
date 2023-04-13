@@ -198,6 +198,7 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 .bus_info td { white-space: nowrap; }
 
 .study_info tbody td { padding: 10px 7px; }
+.subject_info tbody td { padding: 20px 7px; } 
 
 /*  학과소개 */
 .college_con_wrap.type2 .con_tit,

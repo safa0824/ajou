@@ -196,6 +196,7 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 .bus_info td { white-space: nowrap; } 
 
 .study_info tbody td { padding: 10px 7px; } 
+.subject_info tbody td { padding: 20px 7px; } 
 
 /* 학과소개 */
 .college_con_wrap.type2 .con_tit,
@@ -315,29 +316,19 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 .contact_type1 p img { margin-right: 5px; } 
 .contact_type1 p strong { margin-left: 3px; } 
 
-/* 의과학연구소 */
-.college_wrap2 { color: #000; } 
-.college_wrap2_tit { font-size: 2rem; font-weight: 700; color: #004098; } 
-.college_intro2 .main_intro_tit { color: #004098; font-size: 2.25rem; font-family: 'Agaramond'; font-weight: 400; margin:2.5rem 0; } 
-.college_intro2 .main_intro_tit strong { font-weight: 700; text-transform: uppercase; font-size: 2.625rem; } 
-.college_intro2 .inner_flex { gap: 5rem; flex-wrap: wrap; } 
-.college_intro2 .inner_flex > div { flex:1 1 400px; } 
-.college_intro2 .inner_flex img { margin: 0 auto; display: block; } 
-.college_intro2 .main_intro_desc { font-size: 1.625rem; line-height: 1.5; margin-bottom: 30px; } 
-.college_intro2 .sub_intro_desc { font-weight: 200; font-size: 1.06rem; line-height: 2; } 
-.college_intro2 .sub_intro_desc + .sub_intro_desc { margin-top: 1.8rem; } 
-.college_wrap2 .full_img { margin-top: 7.5rem; } 
-.college_wrap2 .feature_box { display: flex; flex-wrap: wrap; margin-top: 3.75rem; border:1px solid #004098; } 
-.college_wrap2 .feature_box .feature_item { flex: 1; padding: 2rem; } 
-.college_wrap2 .feature_box .feature_item + .feature_item { border-left: 1px solid #004098; } 
-.college_wrap2 .feature_box .feature_item_tit { text-align: center; font-size: 1.5rem; font-weight: 700; margin-top:2rem; } 
-.college_wrap2 .feature_box .feature_item_img { margin: 1.5rem auto 2.5rem auto; display: block; } 
-.college_wrap2 .feature_box .feature_bottom { display: flex; flex: 1 1 100%; align-items: center; justify-content: center; color: #fff; background: #004098; min-height: 125px; font-family: 'Agaramond'; font-weight: 700; font-size: 2.5rem; } 
-.college_wrap2 .num_list2 { font-weight: 200; } 
-.college_wrap2 .num_list2 li { display: flex; width: 100%; gap: 10px; } 
-.college_wrap2 .num_list2 li + li { margin-top: 10px; } 
-.college_wrap2 .num_list2 .list_num { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 26px; border-radius: 50%; width: 26px; height: 26px; color: #fff; background: #004098; } 
-.college_wrap2 .feature_gray_box { background: #fafafa; border:1px solid #d7e0e9; border-radius: 6px; font-weight: 200; text-align: center; padding:15px; line-height: 2; } 
+
+
+
+.popup1 { height: 100vh; position: fixed; z-index: 201; top: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; visibility: hidden; opacity: 0; transition: 0.3s; } 
+.popup1 .popup-body { background: #fff; max-width: 960px; width: calc(100% - 40px); padding: 30px 32px; transform: translateY(100%); transition: 0.3s; box-sizing: border-box; } 
+.popup1 .popup-tit { font-size: 1.25rem; background: #004098; color: #d9e4ff; padding: 1.2rem 0 1.2rem 2.1rem; } 
+.popup1 .popup-con { margin-top: 2rem; } 
+.popup1 .popup-con .con_tit { font-size: 1.75rem; font-weight: 700; }
+.popup1 .popup-close { background: url(../images/nursing/icon_pop_close.png) no-repeat center; width: 30px; height: 30px; position: absolute; top: 3rem; right: 50px; } 
+.popup1 .popup-con .course_con { border-bottom: 0 none; }
+
+.popup1.on { visibility: visible; opacity: 1; } 
+.popup1.on .popup-body { transform: translateY(0); transition: 0.3s 0.2s; } 
 
 @media (max-width:1200px){
  .leader_history_list .leader_info { padding: 25px; background-position: 90% 1rem; } 
@@ -420,18 +411,24 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
  .match_box_list.type2 .match_desc { font-size: 1rem; } 
  .match_box_list.type2 .match_desc br { display: none; } 
 
- .college_intro2 .main_intro_tit { font-size: 1.8rem; margin:1.5rem 0; } 
- .college_intro2 .main_intro_desc { font-size: 1.5rem; } 
- .college_wrap2 .full_img { margin-top:3rem; } 
- .college_wrap2 .feature_box.type2 .feature_item { flex: 1 1 100%; } 
- .college_wrap2 .feature_box .feature_item_tit { margin-top:0; } 
- .college_wrap2 .num_list2 li { gap: 5px; } 
- .college_wrap2 .num_list2 .list_num { font-size:0.8rem; width: 24px; height: 24px; flex: 0 0 24px; } 
- .college_wrap2 .feature_box .feature_bottom { font-size: 2rem; padding: 30px 20px; min-height: auto; text-align: center; } 
- .college_wrap2 .feature_box .feature_item + .feature_item { border: 0 none; border-top: 1px solid #004098; } 
- 
  .college_search_box select { flex: 1; max-width: 30%; } 
  .college_search_box { margin-bottom: 30px; } 
+ 
+ .popup1 .popup-body { padding: 20px 15px; }
+ .popup1 .popup-con { margin-top: 1.5rem; }
+ .popup1 .popup-tit { padding: 1rem 0 1rem 1rem; font-size: 1rem; }
+ .popup1 .popup-con .con_tit { font-size: 1.5rem; }
+ .popup1 .popup-close { zoom: 0.9; top: 2.3rem; right: 30px; }
+ .popup1.nursing_subject .popup-con { position: relative; max-height: 75vh; overflow-y: auto;}
+ .popup1.nursing_subject .con_tit { padding-left: 70px; min-height: 50px; }
+ .course_box { display: block; } 
+ .course_box .course_con { line-height: 1.4; padding:0 0 20px 0; } 
+ .course_box .icon_box_blue { width: 50px; height: 50px; position: absolute; left: 0; top: 3px; border-radius: 5px; } 
+ .course_box .icon_box_blue img { zoom: 0.5; } 
+ .course_box .number_list1 li + li { margin: 0; }
+ .course_box .number_list1 li { padding:3px 0 3px 30px; }
+ .course_box .number_list1 .list_number { top:5px; zoom: 0.9; }
+
  }
 @media (min-width: 641px) and (max-width: 980px){
  .mobile_map :is(.organ_dep1,.organ_dep2) > li { display: flex; align-items: flex-start; } 
@@ -511,11 +508,6 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
  .college_blue_box2 .inner_flex.center .credits_box { margin: 0; } 
  .icon_box_list { justify-content: center; } 
  .college_intro_msg + .college_blue_box { margin: 0; } 
-
- .course_box { display: block; } 
- .course_box .course_con { padding:0 0 20px 0; } 
- .course_box .icon_box_blue { width: 50px; height: 50px; float: left; margin: 4px 20px 5px 0; border-radius: 5px; } 
- .course_box .icon_box_blue img { zoom: 0.5; } 
  
  .college_con_wrap.type2 .intro_main_img { margin-bottom: 30px; } 
  .nurse_research_map { position: relative; } 
@@ -544,16 +536,3 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 
 
  
-
-
-
-.popup1 { height: 100vh; position: fixed; z-index: 201; top: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; visibility: hidden; opacity: 0; transition: 0.3s; } 
-.popup1 .popup-body { background: #fff; max-width: 960px; width: calc(100% - 40px); padding: 30px 32px; transform: translateY(100%); transition: 0.3s; box-sizing: border-box; } 
-.popup1 .popup-tit { font-size: 1.25rem; background: #004098; color: #d9e4ff; padding: 1.2rem 0 1.2rem 2.1rem; } 
-.popup1 .popup-con { margin-top: 2rem; } 
-.popup1 .popup-con .con_tit { font-size: 1.75rem; font-weight: 700; }
-.popup1 .popup-close { background: url(../images/nursing/icon_pop_close.png) no-repeat center; width: 30px; height: 30px; position: absolute; top: 3rem; right: 50px; } 
-.popup1 .popup-con .course_con { border-bottom: 0 none; }
-
-.popup1.on { visibility: visible; opacity: 1; } 
-.popup1.on .popup-body { transform: translateY(0); transition: 0.3s 0.2s; } 
