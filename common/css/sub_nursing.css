@@ -235,25 +235,32 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 .icon_box_list { margin-top: 40px; display: flex; gap: 20px; }
 
 /* 동아리 */
-.club_list1 li { display: block;}
-.club_list1 .club_item_top {  margin-bottom: 23px }
-.club_list1 .club_item_top .item_tit { color: #2061c4; font-weight: 500;  }
-.club_list1 .club_item_top .item_tit span { margin-left: 5px; font-weight:200; color: #000; }
-.club_list1 .club_item_top .item_open_btn { width: 100%; height: 65px; display: flex; align-items: center; justify-content: space-between; background: #f7f9fb; border:1px solid #dce1e9; padding: 0 70px 0 35px; box-sizing: border-box; font-size: 1.06rem; position: relative; font-weight: 500; font-size: 1rem; align-items: center; letter-spacing: 0;}
-.club_list1 .club_item_top .item_open_btn:after { content:''; display: block; position: absolute; right:35px; background: #b6bfcf; height: 3px; width: 15px;}
-.club_list1 .club_item_top .item_open_btn:before { content:''; display: block; position: absolute; right:41px; background: #b6bfcf; height: 15px; width: 3px; transition: 0.3s; }
-.club_list1 .on .club_item_top .item_open_btn{ background: #2061c4; border-color: #2061c4;}
-.club_list1 .on .club_item_top :is(.item_tit, .item_tit span, .item_open_btn ) { color: #fff;}
-.club_list1 .on .club_item_top .item_open_btn:before { background: #fff; transform: rotate(270deg); }
-.club_list1 .on .club_item_top .item_open_btn:after { background: #fff; }
-.club_list1 .club_item_con { padding: 50px 55px; background: #f1f6fd; margin-bottom: 23px ; }
-.club_list1 .club_item_con .item_con_img { float: right; margin-left: 10px;} 
-.club_list1 .club_item_con .item_con_msg { font-weight: 500; font-size: 1.625rem; font-family: 'Gmarket'; letter-spacing: -1px; line-height: 1.4; margin-bottom:5px;}
-.club_list1 .club_item_con .item_con_name { font-size: 1.06rem; color:#3987ee; font-weight: 500;  font-family: 'Gmarket';  }
-.club_list1 .club_item_con .item_con_info { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap:wrap; }
-.club_list1 .club_item_con .item_con_info li { display: flex; flex: 1 1 250px; align-items: center; gap: 5px; background: #ffffff; border:1px solid #dadfe7; border-radius: 3px; padding: 5px 25px; height: 57px; font-size: 1.06rem; font-weight: 300; box-sizing: border-box;}
-.club_list1 .club_item_con .item_con_info img { margin-right: 5px; }
+.club_list1 { margin-top: 4rem; } 
+.club_list1:first-child { margin-top: 0;}
+.club_list1 li { display: block; } 
+.club_list1 .club_item_top { margin-bottom: 23px } 
+.club_list1 .club_item_top .item_tit { color: #2061c4; font-weight: 500; text-align: left; } 
+.club_list1 .club_item_top .item_tit span { font-weight: 200; color: #000000; } 
+.club_list1 .club_item_top .item_open_btn { width: 100%; height: 65px; display: flex; align-items: center; justify-content: space-between; background: #f7f9fb; border:1px solid #dce1e9; padding: 0 65px 0 35px; box-sizing: border-box; font-size: 1.06rem; position: relative; font-weight: 500; font-size: 1rem; align-items: center; letter-spacing: 0; } 
+.club_list1 .club_item_top .item_open_btn:hover { border-color:#2061c4; } 
+.club_list1 .club_item_top .item_open_btn:after { content:''; display: block; position: absolute; right:35px; background: #b6bfcf; height: 3px; width: 15px; } 
+.club_list1 .club_item_top .item_open_btn:before { content:''; display: block; position: absolute; right:41px; background: #b6bfcf; height: 15px; width: 3px; transition: 0.3s; } 
+.club_list1 .on .club_item_top .item_open_btn { background: #2061c4; border-color: #2061c4; } 
+.club_list1 .on .club_item_top :is(.item_tit, .item_tit span, .item_open_btn ) { color: #fff; } 
+.club_list1 .on .club_item_top .item_open_btn:before { background: #fff; transform: rotate(270deg); } 
+.club_list1 .on .club_item_top .item_open_btn:after { background: #fff; } 
+.club_list1 .club_item_con { font-size:1.0625rem; font-weight: 200; padding: 50px 55px; background: #f1f6fd; margin-bottom: 23px; line-height: 2; display: none; min-height: 88px; } 
+.club_list1 .club_item_con .item_con_msg { font-weight: 500; font-size: 1.625rem; font-family: 'Gmarket'; letter-spacing: -1px; line-height: 1.4; margin:0.8rem 0 0.6rem; } 
+.club_list1 .club_item_con .icon_box { float:left; margin-right: 1.5rem; width: 88px; height: 88px; border-radius: 25px; background: #fff; display: flex; align-items: center; justify-content: center; } 
 
+
+.club_list1 .club_item_con .item_con_img { float: right; margin-left: 30px; margin-bottom: 20px;} 
+.club_list1 .club_item_con .item_con_img img { object-fit: cover; max-height: 400px; max-width: 400px; width: 100%;}
+.club_list1 .club_item_con .item_con_name { font-size:1.0625rem; color:#3987ee; font-weight: 500; font-family: 'Gmarket'; } 
+.club_list1 .club_item_con .item_con_info { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap:wrap; clear: both;} 
+.club_list1 .club_item_con .item_con_info li { display: flex; flex: 1 1 250px; align-items: center; gap: 5px; background: #ffffff; border:1px solid #dadfe7; border-radius: 3px; padding: 5px 25px; height: 57px; font-size: 1.06rem; font-weight: 300; box-sizing: border-box; } 
+.club_list1 .club_item_con .item_con_info img { margin-right: 5px; } 
+.club_list1 .on .club_item_con { display: block; } 
 /* 대학원 */
 .course_box .icon_box_blue { width: 132px; height: 118px; }
 .course_box { display: flex; gap: 30px;}
