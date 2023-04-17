@@ -191,7 +191,7 @@ li > .icon_txt_list01 { margin-bottom: 3rem; }
 .scollege_subject_list .subject_icon img { } 
 .scollege_subject_list .subject_tit { font-size: 1.75rem; letter-spacing: -1px; } 
 .scollege_subject_list .subject_tit p + p { margin-top: 5px; } 
-.scollege_subject_list .subject_tit .subject_tit_eng { color: #004098; font-size: 2.375rem; } 
+.scollege_subject_list .subject_tit .subject_tit_eng { color: #004098; font-size: 2.375rem; min-height: 6.175rem;} 
 .scollege_subject_list .subject_desc { margin: 1.5rem 0 2rem 0; line-height: 2; } 
 .scollege_subject_list .subject_img:not(.no_margin) { margin-top: auto; } 
 .scollege_subject_list .subject_img img { width: 100%; } 
@@ -329,7 +329,7 @@ li > .icon_txt_list01 { margin-bottom: 3rem; }
  .scollege_subject_list_inner > li { padding-right: 0; } 
  .scollege_subject_list .subject_icon { margin-top: 10px; } 
  .scollege_subject_list .subject_tit { font-size: 1.6rem; } 
- .scollege_subject_list .subject_tit .subject_tit_eng { font-size: 2rem; } 
+ .scollege_subject_list .subject_tit .subject_tit_eng { font-size: 2rem; min-height: auto;} 
  }
 @media (max-width:900px){
  .circle-list1 { gap: 10px 30px; } 
