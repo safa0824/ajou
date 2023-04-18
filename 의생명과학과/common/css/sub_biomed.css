@@ -1,0 +1,552 @@
+@charset "UTF-8";
+
+/* biomed */
+
+.txt_black { color: #000; }
+.txt_blue { color: #004098; }
+.txt_orange { color: #ff8500; }
+.clear_both:after { content: ''; display: block; clear: both;}
+.inner_flex { display: flex; }
+
+.font_17px{font-size: 1.05rem;}
+.font_18px{font-size: 1.125rem;}
+.font_20px{font-size: 1.25rem;}
+.font_24px{font-size: 1.5rem;}
+.font_28px{font-size: 1.75rem;}
+.bold_txt{font-weight: bold;}
+
+h3.title{    font-size: 2rem;font-weight: 700;color: #004098;}
+.h4_title{font-size: 1.75rem;line-height: 1.5;}    
+.h5_title{line-height: 1.5;font-size: 1.5rem}  
+.h3_title{font-size: 1.75rem;line-height: 1.5;background: url('../images/biomed/h3_icon.png') no-repeat left 12px;padding-left: 30px;font-weight: 600;}  
+.cont_font01{font-weight: 200;    font-size: 1.06rem;    line-height: 2;}
+.gmarkt{ font-family: 'Gmarket';}
+.montserrat{font-family: 'Montserrat', sans-serif;}
+.agaramond{ font-family: 'Agaramond';}
+.contents_bule{background: #004098;color:#fff;font-size: 1.25rem;line-height: 2.5rem;text-align: center;padding: 1.5rem 1rem;margin:2rem 0}
+
+.menu_tabs_01{display: flex;margin: 3rem 0;}
+.menu_tabs_01 li{width: 33.3%;margin-left: -1px;}
+.menu_tabs_01.half li{width: 50%;margin-left: 0px;}
+.menu_tabs_01 li a{display: block;border: 1px solid #001e45;font-size: 1.125rem;text-align: center;padding: .6em;}
+.menu_tabs_01 li.on a{background: #001e45;color: #fff;}
+
+.list_contents01{margin: 3rem 0;}
+.list_contents01 dd{position: relative;padding: 6px 5px 6px 40px;}
+.list_contents01 dd:after{background: #000;width: 4px;height: 4px;border-radius: 50%;display: block;content:'';position: absolute;top:15px;left:30px}
+.list_contents02{}
+.list_contents02 li{position: relative;padding: 6px 5px 6px 25px;display: block;box-sizing: border-box;}
+.list_contents02 li:after{background: #000;width: 3px;height: 3px;border-radius: 50%;display: block;content:'';position: absolute;top:15px;left:15px}
+.list_contents03 li{padding: 5px 2px 5px 2px;display: block;}
+.list_contents03 li::before{display:inline-block;content:'-';padding-right: 5px;}
+.list_contents04 li{position: relative;padding: 6px 5px 6px 25px;display: block;box-sizing: border-box;}
+.list_contents04 li:after{background: #004098;width: 5px;height: 5px;border-radius: 50%;display: block;content:'';position: absolute;top:15px;left:15px}
+
+.table_style01{border-bottom: 1px solid #004098 ;}
+.table_style01 table{width: 100%;border-top: 2px solid #004098;}
+.table_style01 table th{background:#e7f2fb;border-bottom: 1px solid #004098;color: #004098;border-right: 1px solid #dadfe7;font-size 17px;padding: 15px 10px;box-sizing: border-box;}
+.table_style01 table td{border-bottom: 1px solid #dadee7;border-right: 1px solid #dadfe7;padding: 1rem;text-align: center;}
+.table_style01 table th:last-child, .table_style01 table tr td:last-child{border-right:0}
+
+
+@media (max-width:960px) { 
+    .m_br{display: none;}
+}
+    /* 인사말 */
+    .biomed_wrap01{ color: #000;font-size: 1.0625rem;}
+    .greeting_div01{margin-bottom:5rem;}
+    .greeting_div01 > div .h4_title{letter-spacing: -1px; margin: 2rem 0;}
+    .greeting_div01 > div .h5_title{letter-spacing: -1px; margin: 3rem 0 1rem;}
+    .greeting_div01 .photo{    position: relative; float: right; margin-left: 3em;}
+    .greeting_div02 .ul_list{display: flex;margin-left: 1px;}
+    .greeting_div02 .ul_list li{border: 1px solid #004098;padding: 2rem;    flex: 1;margin-left: -1px;box-sizing: border-box;}
+    .greeting_div02 .ul_list li > div{text-align: center;}
+    .greeting_div02 .ul_list li > div img{}
+    .greeting_div02 .ul_list li > div span{display:block;color: #004098;padding: 1rem 0;}
+    .greeting_div02  .txtbox01{font-family: 'Agaramond';background: #004098;color: #fff;text-align: center;font-size: 34px;padding:2rem 1rem;}
+    .greeting_div02  .txtbox02 > p{position: relative;text-align: center;}
+    .greeting_div02  .txtbox02 > p::after{display: block;content:'';position: absolute;top:0;left:50%;transform: rotateX('-50%');}
+    .greeting_div02  .txtbox02 .txt01{font-family: 'Agaramond';font-size: 40px;color: #004098;font-weight: 600;padding-top: 80px;}
+    .greeting_div02  .txtbox02 .txt01::after{width: 1px;height: 65px;background: #004098;}
+    .greeting_div02  .txtbox02 .txt02{font-size: 1.25rem;;color: #004098;padding-top: 30px;margin-top: 20px;}
+    .greeting_div02  .txtbox02 .txt02::after{background: #004098;width: 10px;height: 10px;border-radius: 50%;;}
+
+    @media (max-width:1200px) { 
+        .greeting_div01 .photo{float: none;margin-left: 0;width: 100%;text-align: center;}
+        .greeting_div01 .photo img{max-width: 70%;}
+        .greeting_div01 .h4_title span{display: inline;}
+    }
+    @media (max-width:680px) { 
+        .greeting_div01 .photo img{max-width: 100%;}
+        .greeting_div02 .ul_list{flex-wrap: wrap;flex-direction: row;}
+        .greeting_div02 .ul_list li{margin-bottom: -1px;flex: 1 50%}
+    }
+    
+/* 인재상 */
+.staff_education{display: flex;    justify-content: space-between;margin:3rem 0 4em;}
+.staff_education .title{border-top:5px solid #004098;width: 250px;font-size: 1.875rem;}
+.staff_education .title h4{font-size: 1.875rem;letter-spacing: -2px;padding: 2rem 0 0.5rem;}
+.staff_education .cont{border-top:1px solid #004098;width: calc(100% - 290px);line-height: 2;padding-top: 2rem;}
+@media (max-width:768px) { 
+   .staff_education{flex-direction: column;}
+   .staff_education .title, .staff_education .cont{width: 100%;}
+   .staff_education .title br{display: none;}
+}
+
+
+    /* 연혁 */
+    .biomed_history{display: flex;}
+    .biomed_history .history_ttle{width: 230px;color: #004098;flex: 0.25;}
+    .biomed_history .history_ttle p{font-size: 3rem;font-weight: 700;}
+    .biomed_history .history_ttle span{font-size: 1.875rem;font-weight: 700;line-height: 1;margin: 2rem 0 2rem 0;display: block;}
+    .biomed_history .history_list {background: url('../images/biomed/sub01_03_line_y.png') repeat-y left;flex: 0.85}
+    .biomed_history .history_list dl{position: relative;padding-left: 95px;box-sizing: border-box;margin-bottom: 3rem;}
+    .biomed_history .history_list dl:after{position: absolute;top:15px;left:0;display: block;content: '';width:83px;height:13px;background: url('../images/biomed/sub01_03_line.png')  no-repeat ;}
+    .biomed_history .history_list dt{position: relative;font-size: 2.375rem;color: #004098;}
+    .biomed_history .history_list dl.first:before{position: absolute;top:0;left:4px;display: block;content: '';width:5px;height:15px;background: #fff;}
+    .biomed_history .history_list dl.last{margin-bottom: 0;}
+    .biomed_history .history_list dl.last:before{position: absolute;bottom:0;left:4px;display: block;content: '';width:5px;height:calc(100% - 20px);background: #fff;}
+    .biomed_history .history_list dd{padding: 5px 0;display: block;}
+    .biomed_history .history_list dd span{font-weight: 500;margin-right: 10px;}
+    .biomed_history .history_list dd.photo{padding:20px 0}
+    @media (max-width:1160px) { 
+        .biomed_history{flex-direction: column;}
+        .biomed_history .history_ttle{width: auto;}
+        .biomed_history .history_ttle span {margin: 0;}
+        .biomed_history .history_ttle span br{display: none;}
+        .biomed_history .history_list dl{padding-left: 30px;}
+        .biomed_history .history_list dl:after{width: 20px;}
+    }
+
+       /*위원회*/
+   .biomed_div01_03{border: 1px solid #ccc;padding: 3rem;box-sizing: border-box;}
+   .biomed_div01_03 .top_title{text-align: center;}
+   .biomed_div01_03 .top_title {position: relative;}
+   .biomed_div01_03 .top_title:after{position: absolute;bottom:-120px;left:50%;display: block;content: '';width:1px;height:40px;background: #004098 ;transform: translateX(-50%);}
+   .biomed_div01_03 .top_title h4{font-size: 36px;font-weight: 700;}
+   .biomed_div01_03 .top_title span{font-size: 1.125rem;}
+   .biomed_div01_03  .committeebox{margin-top: 1rem;}
+   .biomed_div01_03  .committeebox h5{font-size: 24px;color: #004098;text-transform: uppercase;font-weight: 600;text-align: center;padding: 1.5rem 0;}
+   .committeebox .listbox{display: flex;justify-content: center;}
+   .committeebox .listbox > div{margin-left:-13px ;}
+   .committeebox .listbox .top_circle{width: 250px;height: 250px;border: 1px dashed #004098;background: #fff;border-radius: 50%;padding: 18px;box-sizing: border-box;}
+   .committeebox .listbox .top_circle > div{width: 100%;height: 100%;border-radius: 50%;background: #004098;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+   .committeebox .listbox .top_circle.yellow{border: 1px dashed #ffa415;}
+   .committeebox .listbox .top_circle.yellow > div{background: #ffa415;}
+   .committeebox .listbox .top_circle > div span{display: block;color: #fff;font-size: 1.375rem;margin-bottom: 10px;}
+   .committeebox .listbox .top_circle > div img{display: block;}
+   .committeebox .listbox ul{position: relative;;border: 1px solid #004098;width: 215px;margin:47px auto 0;padding: 1rem;box-sizing: border-box;min-height: 200px;}
+   .committeebox .listbox ul::after{position: absolute;top:-55px;left:50%;display: block;content: '';width:13px;height:54px;background: url('../images/biomed/sub01_04_01_line.png')  no-repeat ;transform: translateX(-50%);}
+   .committeebox .listbox .list_contents02 li{color: #004098;}
+   .committeebox .listbox .list_contents02 li:after{background: #004098;}
+   
+   .committeebox .listbox .list_contents02 li p{color: #004098;font-size: .9rem;color: #6c6c6c;margin-left: -10px;}
+   .committeebox .listbox .list_contents02 li p::before{content: '- ';display: inline-block;}
+   .biomed_div01_03 .list_last{text-align: center;margin-top: 2rem;}
+   .biomed_div01_03 .list_last span{background: #004098;color: #fff;display: inline-block;padding: 1rem 3rem;border-radius: 30px;}
+
+   @media (max-width:800px) {
+     .committeebox .listbox { flex-direction: column; align-items: center;gap:15px}
+     .committeebox .listbox ul{min-height: auto;width: 250px;}
+   }
+
+   
+     /*교학팀*/
+     .biomed_div01_04{}
+     .biomed_div01_04 .top_area{display: flex;justify-content: space-between;align-items: center;}
+     .biomed_div01_04 .top_title01{font-size: 2.375rem;color: #004098;margin: 2rem 0;}
+     .biomed_div01_04 .top_title01 span{font-size: 2.625rem;display: block;font-weight: 700;text-transform:uppercase }
+     .biomed_div01_04 .top_title02 {font-size: 1.75rem;margin: 2rem 0; line-height: 1.5;letter-spacing: -2px;}
+     .biomed_div01_04 .contents_area{display: flex;margin-top: 2rem;}
+     .biomed_div01_04 .contents_area dl{border-top: 5px solid #004098;margin-right: 2rem;}
+     .biomed_div01_04 .contents_area dt {padding: 1.5rem 0;}
+     .biomed_div01_04 .contents_area dt h5{font-size: 1.875rem;font-weight: 700;margin-bottom: 0;}
+     .biomed_div01_04 .contents_area dt span{text-transform:uppercase ;color: #004098;}
+     .biomed_div01_04 .contents_area .table_style01{flex: 1;}
+
+     @media (max-width:960px) { 
+        .biomed_div01_04 .top_area{flex-direction: column;align-items: flex-start}
+        .biomed_div01_04 .contents_area{flex-direction: column;}
+        .biomed_div01_04 .contents_area dd{display: none;}
+        .biomed_div01_04 .contents_area dl{margin-right: 0}
+    }
+
+    /*map*/
+ 
+    .map_address { font-size: 1.75rem;text-align: center;}
+.map_address img { margin-right:5px;}
+.map_box1 { border:1px solid #004098; margin-top: 2rem; }
+.map_box1 .map_bot { display: flex;  flex-wrap:wrap; border-top: 1px solid #004098; align-items: center;}
+.map_box1 .map_bot > * { height: 70px; }
+.map_box1 .map_tel { display: flex; align-items: center; padding-left: 55px; flex: 1; color: #004098; gap: 15px; font-size: 1.06rem;  } 
+.map_box1 .map_link { display: flex; align-items: center; justify-content: center; flex: 0 0 390px; border-left: 1px solid #004098;}
+.map_box1 .map_link a { font-size: 1.06rem; position: relative; }
+.map_box1 .map_link a + a { margin-left: 40px; }
+.map_box1 .map_link a + a:before { content: ''; display: block; position:absolute; height: 19px; width: 1px; background: #004098; left: -20px; 
+  top: 4px; }
+
+.find_way_box { display: flex; background: #f7f9fb; height: 100px; justify-content: center; align-items: center; margin-top:50px; font-size:1rem; color:#000; gap: 5px; padding: 0 20px; }
+.map_target_box { display: flex; gap: 7px; align-items: center; margin-left: 15px; }
+.map_target_box .change_target { font-size:0; line-height: 0; background: url(../images/biomed/sub01_03_01_icon05.png) 0 0 / contain no-repeat ; width: 33px; height: 31px; }
+.map_target_box input { flex: 0 1 200px; border:1px solid #d4d5d7; padding-left: 40px; color: #000; }
+.map_target_box input::placeholder { color: #000; opacity: 1; }
+.map_target_box .map_target1 { background: url(../images/biomed/icon_depart1.png) 17px center / auto no-repeat #fff; }
+.map_target_box .map_target2{ background: url(../images/biomed/icon_arrival1.png) 17px center / auto no-repeat #fff; }
+.map_target_box .search_way_btn { background: #004098; color: #fff; height: 47px; font-size: 1rem; width: 143px;  }
+
+    .table_style02{flex: 1;}
+.table_style02 table{width: 100%;border-top: 2px solid #004098;}
+.table_style02 table th{background:#e7f2fb;border-bottom: 1px solid #dadfe7;color: #004098;border-right: 1px solid #dadfe7;font-size 17px;padding: 15px 10px;box-sizing: border-box;text-align: center;}
+.table_style02 table td{border-bottom: 1px solid #dadee7;padding: 1rem;text-align: left;}
+.table_style02 table td.txtcenter{text-align: center;}
+.table_style02 table tr:last-child th, .table_style02 table tr:last-child td{border-bottom: 1px solid #004098 ;}
+.table_style02 table td ul{}
+.table_style02 table td li{padding: 3px 0;}
+.table_style02 table td li::before{display:inline-block;content: '-';padding-right: 5px;}
+.biomed_map .contents_area{display: flex;margin-top: 3rem;}
+     .biomed_map .contents_area dl{border-top: 5px solid #004098;margin-right: 2rem;width:160px;}
+     .biomed_map .contents_area dt {padding: 1.5rem 0;}
+     .biomed_map .contents_area dt h5{font-size: 1.6rem;margin-bottom: 0;}
+     .biomed_map .contents_area dt span{text-transform:uppercase ;color: #004098;}
+     .biomed_map .contents_area .table_style01{flex: 1;}
+
+     @media (max-width:960px) { 
+        .biomed_map .map_top .contactus{align-items: flex-start; flex-direction: column;}
+        .biomed_map .map_top .contactus .left_z{border-bottom: 1px solid #004098;border-right:0;width: 100%;box-sizing: border-box;}
+        .biomed_map .map_top .contactus .right_z{padding: 1rem;}
+        .biomed_map .map_search > span{margin: 4px 2px;}
+  
+      .map_address { font-size: 1.3rem; }
+   .map_address img { width: 32px;}
+   .map_box1 { margin-top: 30px; }
+   .map_box1 .map_bot > * { flex: 1 1 100%; height: 50px; justify-content: center; padding: 0;}
+   .map_box1 .map_link { border: 0 none; border-top: 1px solid #004098; }
+   .find_way_box { flex-wrap:wrap; padding: 20px 10px; margin-top: 30px; height: auto; gap:15px;  }
+   .map_target_box { flex: 1 1 100%; margin:0; flex-wrap:wrap; }
+   .map_target_box input { flex: 1;}
+   .map_target_box .search_way_btn { flex: 1 1 100%; }
+   }
+     @media (max-width:800px) { 
+        .biomed_map .map_top .contactus .left_z, .biomed_map .map_top .contactus .right_z{padding: 0;}
+        .biomed_map .map_top .contactus .left_z span, .biomed_map .map_top .contactus .right_z a{display: block;margin: 10px;}
+        .biomed_map .map_top .contactus .right_z a.naver{border-right: 0}
+        .biomed_map .contents_area{flex-direction: column}
+        .biomed_map .contents_area dl{margin-right:0;width:100%;display: flex;align-items: center;}
+        .biomed_map .contents_area dd{margin-left: 20px;}
+        .biomed_map .contents_area dd img{max-width: 50px;}
+     }
+     
+/* 캠퍼스안내도 */
+.biomed_campus{}
+.compus_div{margin-top: 3rem;}
+.compus_div .title{display: flex;justify-content: space-between;margin-bottom: 1rem;}
+.compus_div .compus_list{border-top:2px solid #004098 ;border-bottom:1px solid #004098 ;}
+.compus_div .compus_list table{width: 100%;min-width:600px;}
+.compus_div .compus_list table td{border: 1px solid #dadfe7;padding: 1rem;width: 25%;}
+.compus_div .compus_list table td span{display: inline-block;margin: 0 5px;}
+.compus_div .compus_list .list_num { display: inline-flex; width: 27px; height: 27px; background: #004098; color: #fff; font-size: 0.93rem; border-radius: 50%; align-items: center; justify-content: center;margin-right: 10px; flex: 0 0 26px; margin-top: 2px;}
+
+.biomed_btn1s a{display: inline-flex;align-items: center;padding: 0 28px;color: #fff;background: #004098;height: 48px;transition: 0.3s;}
+.biomed_btn1s a:hover {transform: translateY(-2px);}
+.biomed_btn1s .link_btn {padding-right: 70px;background-image:url('../images/biomed/arrow_b.png');background-repeat: no-repeat;background-position: 80% center;margin-left: 3px;}
+.biomed_btn1s .link_btn img{margin-right: 10px;}
+.link_btn_up {display: inline-flex;align-items: center;padding: 0 28px;color: #fff !important;background: #004098;height: 48px;transition: 0.3s;
+   padding-right: 70px;background-image:url('../images/biomed/arrow_t.png');background-repeat: no-repeat;background-position: 85% center;}
+   .link_btn_down {display: inline-flex;align-items: center;padding: 0 28px;color: #fff !important;background: #004098;height: 48px;transition: 0.3s;
+      padding-right: 70px;background-image:url('../images/biomed/arrow_b.png');background-repeat: no-repeat;background-position: 85% center;}   
+@media (max-width:800px) { 
+   .compus_div .title{flex-direction: column;}
+   .compus_div .compus_list table td{padding: 1rem 0;}
+   .compus_list { overflow-x: auto !important;}
+}
+
+/*  전공소개 */
+.biomed_sciencediv{display:flex;margin: 3rem 0;gap: 50px;}
+.biomed_sciencediv > dl{ width: 200px;flex: 1;padding-top: 10px;}
+.biomed_sciencediv > dl > dt{border-top: 5px solid #004098; padding: 1.5rem 0 1rem;font-size: 1.875rem;   font-weight:500;}
+.biomed_sciencediv > div{border-bottom: 1px solid #004098;padding-bottom:  3rem;flex: 5;}
+.biomed_sciencediv .title_div{margin-bottom: 2rem;}
+.biomed_sciencediv .title_div h4{color: #004098;font-size: 2.625rem;font-weight:600;}
+.biomed_sciencediv .title_div p{line-height: 1.8;}
+.biomed_sciencediv .contents_div{display: flex;    align-items: flex-end}
+.biomed_sciencediv .contents_div .content_box{flex: 1 1 150px;   padding-right: 1.5rem;}
+.biomed_sciencediv .contents_div .content_box dl{margin-bottom: 2rem;}
+.biomed_sciencediv .contents_div .content_box dt{font-size:1.5rem;font-weight: 500;margin: 0.5rem 0;}
+.biomed_sciencediv .contents_div .content_box dd{line-height: 1.6;}
+.biomed_sciencediv .contents_div .content_box dd img{margin: 0 5px;}
+.biomed_sciencediv .contents_div .img_box{width: 400px;position: relative;}
+.biomed_sciencediv .contents_div .img_box img{}
+.biomed_sciencediv .contents_div .img_box a{color: #fff;position: absolute;bottom: 0;left:0}
+
+@media (max-width:1000px) { 
+   .biomed_sciencediv{flex-direction: column;gap:10px}
+   .biomed_sciencediv > dl{width: 100%;}
+   .biomed_sciencediv > div{border-bottom: 0;padding-bottom: 0;}
+}
+@media (max-width:760px) { 
+   .biomed_sciencediv .contents_div{flex-direction: column-reverse;align-items: flex-start;}
+   .biomed_sciencediv .contents_div .img_box{width: 100%;margin-bottom: 10px;}
+   .biomed_sciencediv .contents_div .img_box img {      width: 100%;}
+}
+
+
+/*통합 교과과정 체계*/
+.biomed_div02_01{}
+.biomed_div02_01 .h3_title{margin: 3rem 0 2rem;}
+.courses_div_box{border: 1px solid #cad0d8;padding: 3rem;margin-top: -1px;}
+.courses_div_box h4{font-size: 2.375rem;font-weight: 600;}
+.courses_div_box .courses_box{display: flex;gap:10px}
+.courses_div_box .courses_box .title_div{background: #004098;width: 185px;display: flex;flex-direction: column;   justify-content: space-between;}
+.courses_div_box .courses_box .title_div h5{color: #fff;font-size: 1.5rem;padding: 2rem;flex: 1;}
+.courses_div_box .courses_box .title_div h5.list01{background: url('../images/biomed/sub02_02_img01.png') no-repeat 30px 90%;}
+.courses_div_box .courses_box .title_div h5.list02{background: url('../images/biomed/sub02_02_img02.png') no-repeat 30px 90%;}
+.courses_div_box .courses_box .title_div h5.list03{background: url('../images/biomed/sub02_02_img03.png') no-repeat 30px 90%;}
+.courses_div_box .courses_box .title_div p.link{border-top: 1px solid #4d7ab7;}
+.courses_div_box .courses_box .title_div p.link .link_btn_up{background-position: 90% center;}
+.courses_div_box .courses_box .content_div{border-bottom: 1px solid #004098;padding-bottom: 0.5rem;flex: 5;}
+.courses_div_box .courses_box .content_div dl{background: #fafafa;border: 1px solid #d7e0e9;padding: 1rem 2rem 1.5rem;}
+.courses_div_box .courses_box .content_div dt{font-size: 1.5rem;font-weight: 500;padding: 10px 0;}
+.courses_div_box .courses_box .content_div p{padding: 1.5rem;}
+.courses_div_box .courses_box .content_div p span{display: block;background: url(../images/biomed/sub02_02_icon01.png) no-repeat left 6px;padding-left: 30px;line-height: 2;letter-spacing: -1px;}
+
+.courses_div_box.committeebox .listbox ul{padding: 1rem 0.5rem;}
+.courses_div_box .listbox ul::before{position: absolute;   bottom: -40px;left: 50%;display: block;content: '';width: 1px;   height: 40px;
+   background: #004098;   transform: translateX(-50%);}
+   .courses_div_box .listbox > div{position: relative;}
+   
+   .courses_div_box .listbox > div::after{  display: block;   width: 100%;    height: 1px;   background: #004098;     position: absolute;     bottom: -37px;}
+      .courses_div_box .listbox > div:first-child:after{left: 50%;}
+      .courses_div_box .listbox > div:last-child:after{right: calc(50% - 2px)}
+      .courses_div_box .last_line_txt{margin: 37px 0;background: url(../images/biomed/sub02_02_lastine.png) no-repeat center top;padding-top: 70px;text-align: center;font-size: 1.875rem;color: #004098;font-weight: 600;}
+
+      @media (max-width:1020px) { 
+         .courses_div_box.committeebox .listbox .top_circle{width: 200px;height: 200px;}
+         .courses_div_box.committeebox .listbox ul{width: 180px;font-size: 15px;}
+
+      }
+@media (max-width:860px) { 
+   .courses_div_box{padding: 2rem;}
+   .courses_div_box .courses_box{flex-direction: column;}
+   .courses_div_box .courses_box .title_div{width: 100%;}
+   .courses_div_box .courses_box .title_div h5.list01, .courses_div_box .courses_box .title_div h5.list02, .courses_div_box .courses_box .title_div h5.list03{background-position: 95% center;padding: 1.5rem 2rem 1rem;}
+}
+@media (max-width:800px) { 
+.courses_div_box .listbox > div::after{display: none;}
+.courses_div_box.committeebox .listbox > div{margin-left: 0;}
+}
+
+
+/* 공통핵심*/
+.courses_div_box02{border: 1px solid #004098;padding: 3rem;margin-top: -1px;}
+.courses_div_box02 h4{font-size: 2.375rem;font-weight: 600;}
+.courses_div_box02 .courses_box{display: flex;gap:10px}
+.courses_div_box02 .courses_box .title_div{background: #004098;width: 185px;display: flex;flex-direction: column;   justify-content: space-between;}
+.courses_div_box02 .courses_box .title_div h5{color: #fff;font-size: 1.5rem;padding: 2rem;flex: 1;}
+.courses_div_box02 .courses_box .title_div h5.list01{background: url('../images/biomed/sub02_02_img01.png') no-repeat 30px 90%;}
+.courses_div_box02 .courses_box .title_div h5.list02{background: url('../images/biomed/sub02_02_img02.png') no-repeat 30px 90%;}
+.courses_div_box02 .courses_box .title_div h5.list03{background: url('../images/biomed/sub02_02_img03.png') no-repeat 30px 90%;}
+.courses_div_box02 .courses_box .content_div{flex: 5;background: #fafafa;border: 1px solid #d7e0e9;}
+.courses_div_box02 .courses_box .content_div dl{padding: 1rem 2rem 0.5rem;}
+.courses_div_box02 .courses_box .content_div dt{font-size: 1.5rem;font-weight: 500;padding: 10px 0;}
+.courses_div_box02 .courses_box .content_div .link{text-align: right;}
+.courses_div_box02 .courses_box .content_div .link_btn_down{padding:0 90px 0 30px;}
+.courses_tb{margin-top: 3rem;}
+.courses_tb table {min-width: 500px;}
+.courses_tb table td{border-left: 1px solid #dadee7;text-align: center;}
+.courses_tb table td.line01{border-right: 1px solid #dadee7;}
+.courses_tb table td:first-child{border-left: 0;font-weight: 500;}
+.courses_tb table tr:nth-child(even) td{background:#fafafa ;}
+.courses_tb .contents_tds{text-align: left;padding: 2rem;}
+.courses_tb .contents_tds dl.mt2{margin-top: 3rem;}
+.courses_tb .contents_tds dt{font-size: 1.25rem;font-weight: bold;line-height: 1.8;}
+.courses_tb .contents_tds dd{line-height: 1.7;}
+.courses_tb .contents_tds .eng_view_box{border: 1px solid #004098;margin-top: 1.5rem;}
+.courses_tb .contents_tds .eng_view_box > div{background: #ebf4fd;}
+.courses_tb .contents_tds .eng_view_box > div a{display: block;padding: 0.5rem 2rem;font-size: 1.25rem;}
+.courses_tb .contents_tds .eng_view_box > div a.open{background: url(../images/biomed/arrow_down.png) no-repeat 97% center;}
+.courses_tb .contents_tds .eng_view_box > div a.closed{background: url(../images/biomed/arrow_up.png) no-repeat 97% center;}
+.courses_tb .contents_tds .eng_view_box > p{border-top: 1px solid #004098;padding: 1rem 2rem;line-height: 1.8;}
+
+@media (max-width:860px) { 
+   .courses_div_box02{padding: 2rem;}
+   .courses_div_box02 .courses_box{flex-direction: column;}
+   .courses_div_box02 .courses_box .title_div{width: 100%;}
+   .courses_div_box02 .courses_box .title_div h5.list01, .courses_div_box02 .courses_box .title_div h5.list02, .courses_div_box02 .courses_box .title_div h5.list03{background-position: 95% center;padding: 1.5rem 2rem 1rem;}
+}
+
+
+/*교육과정*/
+.biomed_div02_04{}
+.biomed_div02_04 h4{font-size: 1.5rem;position: relative;font-weight: 600;color: #004098;padding-left: 30px;}
+.biomed_div02_04 h4:after{background: #004098;width: 6px;height: 6px;border-radius: 50%;display: block;content:'';position: absolute;top:15px;left:15px}
+.courses_tb02{margin-bottom:  3rem;}
+.courses_tb02 table {min-width: 500px;}
+.courses_tb02 table td{border-left: 1px solid #dadee7;text-align: center;padding: 1.1rem 0.5rem;}
+.courses_tb02 table td.left{text-align: left;}
+.courses_tb02 table td.line01{border-right: 1px solid #dadee7;}
+.courses_tb02 table td:first-child{border-left: 0;}
+.courses_tb02 table th:last-child{border-right: 0;}
+.courses_tb02 table tr.grey_line td{background:#fafafa ;}    
+.courses_tb02 table td .list_tt{display: flex;}
+.courses_tb02 table td .list_tt p{text-align: left;width: 50%;line-height: 1.8;}
+
+
+     /* 졸업요건 */
+     .graduate_div{margin-bottom: 3rem;}
+     .graduate_div .graduate_01{border: 1px solid #cad0d8;padding:4rem 2rem;}
+     .graduate_div .graduate_01 ul{display: flex;justify-content: center;}
+     .graduate_div .graduate_01 li{width: 220px;height: 220px;outline: 1px dashed #004098;border-radius: 50%;border: 15px solid #fff;background: #004098;margin: -5px;text-align: center;
+        display: inline-flex;align-items: center;justify-content: center;    flex-direction: column;font-size:1.25rem;color: #fff;}
+    .graduate_div .graduate_01 li:nth-child(even){background: #ffa415;outline: 1px dashed #ffa415;}
+    .graduate_div .graduate_01 li span{font-size: 14px;}
+    .graduate_div .graduate_01 li p{padding: 10px 0;}
+    .graduate_div .h4_title{background: url('../images/biomed/dot01.png') no-repeat 25px 15px;font-size:1.5rem;color: #004098;font-weight: 600 ;padding-left: 40px;margin:1.5rem 0;}
+    .graduate_div .table_style02 .line{border-bottom: 1px solid #004098;}
+    .graduate_div .table_style02 td{border-right: 1px solid #dadfe7;text-align: center;}
+    .graduate_div .table_style02 td:last-child{border-right:0}
+    .m_scroll_b{overflow-x: auto;}
+    .graduate_div .boxbox{background: #ebf4fc;border: 1px solid #004098;padding: 0 1.5rem;margin: 3rem 0;}
+    .graduate_div .boxbox span{color: #004098;display:inline-block;padding: 0 1rem;font-weight: 500;}
+   .graduate_div .step_flow{}
+   .graduate_div .step_flow li{position: relative;display:flex;background: #fafafa; border: 1px solid #d7e0e9;padding: 1.5rem 1.5rem 1.5rem 3rem;align-items: center;margin-bottom: 2rem;}
+   .graduate_div .step_flow li::after{display: block;content: '';width: 30px;height: 18px;position: absolute;bottom:-25px;left:50%;transform: translateX(-50%);z-index: 3;
+      background: url('../images/biomed/sub02_05_arrow.png') no-repeat;}
+   .graduate_div .step_flow li:last-child:after{display: none;}
+   .graduate_div .step_flow li .img{padding: 0 2rem;}
+   .graduate_div .step_flow li div.step span{display: block;color: #004098;}
+   .graduate_div .step_flow li div.step .num{font-size:1.85rem;font-weight: 500;}
+   .graduate_div .step_flow li div.txt{font-size: 1.06rem;}
+   .attention01{background: url('../images/biomed/icon_po.png') no-repeat left 25px;padding: 20px 0 20px 25px;}
+   .graduate_div ul.list01{padding-left: 40px;}
+   .graduate_div ul.list01 li{display: block;padding-bottom: 10px;}
+   .graduate_div table .cont_list{text-align: left;line-height: 1.8;padding-left: 1.5rem;}
+
+   @media (max-width:1030px) { 
+      .graduate_div .graduate_01 ul{    flex-wrap: wrap;}
+   }
+   @media (max-width:520px) { 
+      .graduate_div .step_flow li .img{padding: 0 0.7rem;}
+   }
+
+
+/* 연구시설 */
+.contents_div.research_list{align-items: flex-start}
+.contents_div.research_list .content_box{padding-right:3rem}
+.contents_div.research_list .reser_ulList{display: flex;gap:10px;flex-wrap: wrap}
+.contents_div.research_list .reser_ulList li{display: block;width: 49%;}
+.contents_div.research_list .reser_ulList li span{display: flex;align-items: center;;border: 1px solid #004098;background: url('../images/biomed/dot01.png') no-repeat 15px center;color: #004098;padding-left: 25px;
+min-height: 45px;;}
+.contents_div.research_list .reser_ulList li.w100{width: 100%;}
+.contents_div.research_list .reser_ulList li .link_btn_up{display:flex}
+
+@media (max-width:1280px) { 
+   .contents_div.research_list .reser_ulList li{width: 100%;}
+}
+@media (max-width:760px) { 
+   .contents_div.research_list .content_box{padding-right:0;margin-top: 1.5rem;width: 100%;}
+}
+
+
+
+/* 입학전형 */
+.fusion_info_box_flow{border: 1px solid #e5e7eb;padding: 3rem;box-sizing: border-box;text-align: center;margin: 2rem 0 3rem;}
+.admission_dl{display: flex}
+.admission_dl.firstline{margin-bottom: 3rem;}
+.admission_dl dt{background: #004098;color: #fff;width: 190px;margin-right: 10px;display: flex;flex-direction: column-reverse;align-items: center;justify-content: center;}
+.admission_dl dt img{margin-top: 5px;}
+.admission_dl dd{flex:1}
+.admission_dl dd ul{display: flex}
+.admission_dl dd ul li{position: relative;;background: #fafafa;border: 1px solid #d7e0e9;padding: 1rem;flex:1}
+.admission_dl dd ul li::after{display: block;content: '';width: 22px;height: 23px;background: url('../images/biomed/sub07_01_arrow01.png') no-repeat;
+position: absolute;top:50%;right:-10px;transform: translateY(-50%);z-index: 3;}
+.admission_dl dd ul li:last-child:after{display: none;}
+.admission_dl dd ul li .first_day{display: block;content: '';width: 145px;height: 46px;background: url('../images/biomed/sub04_01_step01_img.png') no-repeat;
+   position: absolute;bottom:-30px;left:50%;transform: translateX(-50%);z-index: 3;}
+.admission_dl dd ul li .first_day span{color:#004098;display: inline-block;margin-top: 15px;} 
+.admission_dl dd ul li > p{display: flex;flex-direction: column;align-items: center;}
+.admission_dl dd ul li > p span{font-size: 17px;color: #000;margin: 5px 0;}
+
+@media (max-width:760px) { 
+   .admission_dl{flex-direction: column;}
+   .admission_dl dt{width: 100%;}
+   .admission_dl dd ul li > p span{font-size: 15px;}
+}
+
+
+
+/* 입학 장학*/
+.procedure{display: flex;gap:20px;padding:1rem;}
+.procedure_ol{display: flex;flex-direction: column;gap:20px;width: 50%;}
+.procedure_ol li{background:#fafafa;border: 1px solid #d7e0e9;padding: 1rem 2rem;display:inline-flex;align-items: center;gap:30px}
+.procedure_ol li p{}
+.procedure_ol li p.step{color: #004098;}
+.procedure_ol li p.step span{display:block;font-size:30px;font-weight: 500;}
+.procedure_ol li p.txt{text-align: left;}
+.list_contents05 li{padding: 3px 0;display: block;padding: 5px;}
+.list_contents05 li::before{display:inline-block;content: '-';padding-right: 5px;}
+.bule_boxbox{background: #ebf4fc; border: 1px solid #004098;padding: 0 1.5rem; margin: 3rem 0;}
+.bule_boxbox span{color:#004098;padding: 2px 15px 0 15px;}
+.facilities_list{display: flex;}
+.facilities_list li{margin-right: -1px;}
+.facilities_list li dl{}
+.facilities_list li dt{padding: 5px;border: 1px solid #004098;}
+.facilities_list li dd{width: 100%;height: 80px;background: #004098;display: inline-flex;align-items: center;padding:2rem 1.5rem;box-sizing:
+    border-box;    justify-content: space-between;border-right:1px solid #fff;border-left:1px solid #fff ;}
+.facilities_list li dd span{color: #fff;}
+.facilities_list li dd a{display: block;width: 35px;height: 35px;background: url('../images/biomed/sub07_02_icon10.png') no-repeat;}
+
+@media (max-width:1000px) { 
+   .procedure{flex-direction: column;padding: 0;}
+   .procedure_ol{width: 100%;}
+   .facilities_list{flex-wrap: wrap;}
+   .facilities_list li{width:50%;}
+   .facilities_list li dt img{width: 100%;}
+}
+@media (max-width:680px) { 
+   .procedure_ol li{flex-direction: column;gap:10px}
+   .facilities_list li{width:100%;}
+}
+
+/* 장학제도 */
+.scholarship_div01{display: flex;justify-content: space-between;}
+.scholarship_div02{margin-top: 2rem;}
+.scholarship_div02 h5{text-align: center;color: #004098;font-size: 22px;margin-bottom:2rem;}
+.scholarship_div02 .graduate_01 li{position: relative;}
+.scholarship_div02 .graduate_01 li::after{display: block;content: '';width:46px;height: 46px;background: url('../images/biomed/sub07_03_icon01.png') no-repeat;
+   position: absolute;top:50%;right:-35px;transform: translateY(-50%);z-index: 10;}
+.scholarship_div02 .graduate_01 li:last-child:after   {display: none;}
+
+@media (max-width:720px) { 
+   .scholarship_div01{    flex-direction:column}
+   .scholarship_div01 p{margin-top: 15px;}
+   .scholarship_div01 p img{width: 100%;}
+   .graduate_div .graduate_01 ul{flex-direction: column;align-items: center}
+   .scholarship_div02 .graduate_01 li::after{top:95%;left:50%;transform: translateY(0);transform: translateX(-50%);}
+   .bule_boxbox {display: flex;    flex-wrap: nowrap;      align-items: center}
+}
+
+/* 대학생활 */
+.dormitory{border: 1px solid #cad0d8;padding: 3rem;box-sizing: border-box;}
+.dormitory_div01{background: #fafafa;border: 1px solid #004098;display: flex;justify-content: space-between}
+.dormitory_div01 dl{padding: 3rem;}
+.dormitory_div01 dt{font-size: 24px;color: #004098;font-weight: 600;}
+.dormitory_div01 dd.cont{line-height: 1.8;display: block;}
+.dormitory_div01 dd.agaramond{font-size: 42px;font-weight: bold;}
+.dormitory_div01 p{}
+.dormitory_div01 p img{height: 100%;}
+.dormitory_div02{margin-top: 2rem;}
+.dormitory_div02 h5{font-size: 1.5rem;position: relative;font-weight: 600;color: #004098;padding-left: 30px;margin:2rem 0;}
+.dormitory_div02 h5:after{background: #004098;width: 6px;height: 6px;border-radius: 50%;display: block;content:'';position: absolute;top:15px;left:15px}
+.dormitory_div02 ul{display: flex;gap:10px}
+.dormitory_div02 li{flex: 1;}
+.dormitory_div02 li p.img{background: #004098;text-align: center;padding: 1.5rem;}
+.dormitory_div02 li p.txt{text-align: center;padding-top: 1rem;}
+
+@media (max-width:1000px) { 
+   .dormitory_div02 ul{    flex-wrap: wrap}
+   .dormitory_div02 li{flex:auto}
+}
+@media (max-width:760px) { 
+   .dormitory_div01{flex-direction: column}
+   .dormitory_div01 p img{width: 100%;height: auto;}
+}
