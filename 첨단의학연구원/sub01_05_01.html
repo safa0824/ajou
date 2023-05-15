@@ -161,8 +161,9 @@
                                                 <div class="box01_a">
                                                     <p>의과대학</p>
                                                     <ul class="list">
-                                                        <li>3차원 면역시스템</li>
-                                                        <li>핵심연구지원센터</li>
+                                                        <li>3차원 면역시스템 <br> 핵심연구지원센터
+
+                                                        </li>
                                                         <li>의과학연구소</li>
                                                     </ul>
                                                 </div>
@@ -176,7 +177,7 @@
                                                         <li>뇌혈관질환연구단</li>
                                                         <li>노인정신질환연구단</li>
                                                         <li>임상빅데이터 연구단</li>
-                                                        <li>의료정보/빅데이터 연구단</li>
+                                                        <li>의료정보/ 인공지능연구단 </li>
                                                         <li>재생의료/의료기기 연구단</li>
                                                         <li>간암 정밀의료 연구단</li>
                                                         <li>위암 혁신치료 연구단</li>
@@ -205,6 +206,7 @@
                                                         <li>의학연구협력센터</li>
                                                         <li>의약바이오데이터센터</li>
                                                         <li>개방혈실험실운영 지원센터</li>
+                                                        <li>연구중심병원정책지원센터</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -218,7 +220,7 @@
                                                         <li>혁신의료기기실증 지원센터</li>
                                                     </ul>
                                                 </div>
-                                                <div class="box03_b"><p>병원연구행정팀</p></div>
+                                                <div class="box03_b"><p>연구행정팀</p></div>
                                                 <div class="box03_c"><p>의료기술사업팀</p></div>
                                                 <div class="box_last">
                                                     <p>연구지원 인프라</p>
@@ -237,10 +239,137 @@
                                 <!-- //조직도 -->
                                 <section class="group_contact">
                                     <div class="tab_box">
-                                        <button class="tab_box_item on">연구행정팀 업무분장</button>
-                                        <button class="tab_box_item">의료기술사업팀 업무분장</button>
+                                        <button class="tab_box_item on" onclick="show('1')">연구행정팀 업무분장</button>
+                                        <button class="tab_box_item" onclick="show('2')">의료기술사업팀 업무분장</button>
                                     </div>
-                                    <div class="table_scroll_wrap">
+                                    <div class="table_scroll_wrap" id="tab1">
+                                        <table>
+                                            <caption>
+                                                연구행정팀 업무분장
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width: 180px">
+                                                <col>
+                                                <col style="width: 145px">
+                                                <col style="width: 175px">
+                                                <col style="width: 300px">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>업무구분</th>
+                                                    <th>업무상세</th>
+                                                    <th>담당</th>
+                                                    <th>전화번호(031-219-)</th>
+                                                    <th>E-MAIL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>부원장</th>
+                                                    <td >첨단의학연구원 운영</td>
+                                                    <td>홍창형</td>
+                                                    <td>&nbsp;</td>
+                                                    <td ><a href="mailto:antiaging@ajou.ac.kr">antiaging@ajou.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>팀장</th>
+                                                    <td >연구행정팀 업무 총괄</td>
+                                                    <td>유재중</td>
+                                                    <td>4413</td>
+                                                    <td ><a href="mailto:yjj0623@aumc.ac.kr">yjj0623@aumc.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="8">연구진흥<br>파트</th>
+                                                    <td >대학연구활동실태조사, 연구수주실적 통계, 대응자금 검토, 기타 정부부처(RCMS위탁 제외), 지자체 연구관리(협약)</td>
+                                                    <td>김혜진<br>(파트장)</td>
+                                                    <td>4551</td>
+                                                    <td ><a href="mailto:khj140914@aumc.ac.kr">khj140914@aumc.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td >복지부(용역, 보조금사업), RCMS 위탁과제 연구관리 <br>
+                                                    과기부 산하(한국연구재단 제외) 연구관리</td>
+                                                    <td>임세원</td>
+                                                    <td>4412</td>
+                                                    <td ><a href="mailto:ajourctc@aumc.ac.kr">ajourctc@aumc.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td >지자체, 복지부 용역과제 연구비관리</td>
+                                                    <td>황혜인</td>
+                                                    <td>4925</td>
+                                                    <td ><a href="mailto:hhi7432@ajou.ac.kr">hhi7432@ajou.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td >복지부(국가연구개발사업), 범부처사업단 연구관리, 연구지원체계평가, 학생인건비/기타소득인건비</td>
+                                                    <td>김성은</td>
+                                                    <td>4553</td>
+                                                    <td ><a href="mailto:kkk81@ajou.ac.kr">kkk81@ajou.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td >교육부, 과기부, 한국연구재단 등 연구관리, 연구시설장비비 통합관리제</td>
+                                                    <td>정재영</td>
+                                                    <td>4501</td>
+                                                    <td ><a href="mailto:carlisle112@aumc.ac.kr">carlisle112@aumc.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td >한국연구재단(이공기초연구사업) 연구비관리</td>
+                                                    <td>김해미</td>
+                                                    <td>4928</td>
+                                                    <td ><a href="mailto:goal5089@ajou.ac.kr">goal5089@ajou.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td >기업체 연구관리(협약, 문서보관) 의료질평가(IRB연구책임자수), 기업체 연구비관리(PMS, 비임상)</td>
+                                                    <td>박재욱</td>
+                                                    <td>4415</td>
+                                                    <td ><a href="mailto:jaewook3408@ajou.ac.kr">jaewook3408@ajou.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td >기업체 연구비관리(카드관리)(PMS, 비임상 제외)</td>
+                                                    <td>유인아</td>
+                                                    <td>4410</td>
+                                                    <td ><a href="mailto:yia1347@aumc.ac.k">yia1347@aumc.ac.k</a></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <th rowspan="5">연구기획<br>파트</th>
+                                                    <td >연구기획관리, 교내·외 연구과제 지원, 회의체 관리, 규정 제·개정관리, 연구공간 관리, 개방형실험실 사업관리, 수입, 대체결의서 접수</td>
+                                                    <td>이해경<br>(파트장)</td>
+                                                    <td>4414</td>
+                                                    <td ><a href="mailto:sea8001@ajou.ac.kr">sea8001@ajou.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td >산학협력단 회계결산, 결의서접수/세무검토, 계산서 발행, 부가세/원천세 신고</td>
+                                                    <td>박은영</td>
+                                                    <td>4542</td>
+                                                    <td ><a href="mailto:ekffo@aumc.ac.kr">ekffo@aumc.ac.kr</a></td>
+                                                </tr>
+                                                <!--<tr>
+                                                    <td >산학협력단 회계결산, 결의서접수/세무검토, 원천세신고, 부가세신고, 연구원 급여관리, 부서 법인카드 관리</td>
+                                                    <td>곽동현</td>
+                                                    <td>4542</td>
+                                                    <td ><a href="mailto:euston19a@aumc.ac.kr">euston19a@aumc.ac.kr</a></td>
+                                                </tr>-->
+                                                <tr>
+                                                    <td >산학협력단 자금, 교내연구비 정산관리,연구소(센터)현황 관리, 인프라 수입실적 관리</td>
+                                                    <td>박성진</td>
+                                                    <td>4523</td>
+                                                    <td ><a href="mailto:sungjin8745@ajou.ac.kr">sungjin8745@ajou.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td >연구예산, 연구간접비 관리, 연구개발능률성과급, 연구중심병원 사업관리, 산학협력단 유형자산관리, 서무</td>
+                                                    <td>남승효</td>
+                                                    <td>4524</td>
+                                                    <td ><a href="mailto:nsh94@ajou.ac.kr">nsh94@ajou.ac.kr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td >연구인력 인사/급여관리, 홈페이지 관리</td>
+                                                    <td>정희연</td>
+                                                    <td>4511</td>
+                                                    <td ><a href="mailto:hyjeong@ajou.ac.kr">hyjeong@ajou.ac.kr</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table_scroll_wrap" id="tab2" style="display: none">
                                         <table>
                                             <caption>
                                                 연구행정팀 업무분장
@@ -248,7 +377,7 @@
                                             <colgroup>
                                                 <col style="width: 180px" />
                                                 <col />
-                                                <col style="width: 125px" />
+                                                <col style="width: 145px" />
                                                 <col style="width: 175px" />
                                                 <col style="width: 300px" />
                                             </colgroup>
@@ -263,98 +392,60 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th>부원장</th>
-                                                    <td>첨단의학연구원 운영</td>
-                                                    <td>홍창형</td>
-                                                    <td></td>
-                                                    <td>antiaging@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>팀장</th>
-                                                    <td>연구행정팀 업무 총괄</td>
-                                                    <td>유재중</td>
+                                                    <th>산학협력<br />교수겸직 팀장</th>
+                                                    <td>
+                                                        <dl class="table_inner_list">
+                                                            <dt>의료기술사업팀 업무 총괄 및 대외업무</dt>
+                                                            <dd>- 기술사업화 기반 구축 및 고도화 추진</dd>
+                                                            <dd>- 창업상담 및 기술사업화 협상 및 계약검토</dd>
+                                                            <dd>- 대외업무 및 정부사업 수주 관리</dd>
+                                                            <dd>- 지식재산 및 기술사업화 관련 교육진행 및 전문가 양성</dd>
+                                                        </dl>
+                                                    </td>
+                                                    <td>백승우<br />(벤쳐캐피탈 리스트,기술가치평가사,창업지도사)</td>
                                                     <td>4413</td>
                                                     <td>yjj0623@ajou.ac.kr</td>
                                                 </tr>
                                                 <tr>
-                                                    <th rowspan="8">연구진흥<br />파트</th>
-                                                    <td>연구실태조사 및 평가관리, 연구수주실적 통계, 기타 정부부처 연구비관리, 지자체 연구관리(협약)</td>
-                                                    <td>김혜진<br />(파트장)</td>
-                                                    <td>4551</td>
-                                                    <td>khj140914@ajou.ac.kr</td>
+                                                    <th rowspan="3">기술사업화</th>
+                                                    <td>
+                                                        <dl class="table_inner_list">
+                                                            <dt>창업지원 및 내부업무 관리</dt>
+                                                            <dd>- 창업지원 및 예비창업자 발굴</dd>
+                                                            <dd>- 산업자문 관리, 연구노트 관리</dd>
+                                                            <dd>- 부서 의료원관련 내부업무 관리</dd>
+                                                        </dl>
+                                                    </td>
+                                                    <td>곽우실<br />[과장]<br />(기술거래사,병원행정사,기술평가사)</td>
+                                                    <td>4248</td>
+                                                    <td>bluerain@ajou.ac.kr</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>복지부(용역, 보조금사업), RCMS 위탁과제 연구관리, 학생인건비/기타소득관리</td>
-                                                    <td>박은영</td>
-                                                    <td>4412</td>
-                                                    <td>ekffo@ajou.ac.kr</td>
+                                                    <td>
+                                                        <dl class="table_inner_list">
+                                                            <dt>기술이전 관리</dt>
+                                                            <dd>- 기술이전 후보 및 수요기업 분석/발굴</dd>
+                                                            <dd>- 직무발명보상금 지급관리</dd>
+                                                            <dd>- 지식재산권 진흥위원회 관리</dd>
+                                                            <dd>- 공공기관 용역사업 운영</dd>
+                                                        </dl>
+                                                    </td>
+                                                    <td>진성록</td>
+                                                    <td>4248</td>
+                                                    <td>bluerain@ajou.ac.kr</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>지자체, 기타국고 및 복지부 용역과제 연구비관리</td>
-                                                    <td>황혜민</td>
-                                                    <td>4925</td>
-                                                    <td>hhi7432@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>복지부(국가연구개발사업) 연구관리, 교내연구비 정산관리</td>
-                                                    <td>김성은</td>
-                                                    <td>4553</td>
-                                                    <td>kkk81@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>교육부, 과기부(한국연구재단) 연구관리</td>
-                                                    <td>정재영</td>
-                                                    <td>4501</td>
-                                                    <td>carlisle112@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>한국연구재단(이공기초연구사업) 연구비관리</td>
-                                                    <td>김해미</td>
-                                                    <td>4928</td>
-                                                    <td>goal5089@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>기업체 연구관리(협약, 문서보관)</td>
-                                                    <td>박재욱</td>
-                                                    <td>4415</td>
-                                                    <td>jaewook3408@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>기업체 연구비관리(카드관리)</td>
-                                                    <td>박지현</td>
-                                                    <td>4410</td>
-                                                    <td>pjih9330@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <th rowspan="5">연구기획<br />파트</th>
-                                                    <td>연구기획관리, 교내·외 연구과제 지원, 회의체관리, 규정 제·개정관리, 연구공간 관리, 개방형실험실사업관리</td>
-                                                    <td>이해경<br />(파트장)</td>
-                                                    <td>4414</td>
-                                                    <td>sea8001@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>연구예산, 자금계획, 연구간접비 관리, 예금시재관리, 자금출납, 수입확정, 계산서발행</td>
-                                                    <td>임세원</td>
-                                                    <td>4523</td>
-                                                    <td>ajourctc@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>산학협력단 회계결산, 결의서접수/세무검토, 원천세신고, 부가세신고, 연구원 인사관리</td>
-                                                    <td>관동현</td>
-                                                    <td>4542</td>
-                                                    <td>euston19a@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>연구중심병원 지정/육성 사업관리, 연구소(센터)현황 관리, 연구인력 급여관리, 부서 법인카드 관리, 서무</td>
-                                                    <td>박성진</td>
-                                                    <td>4524</td>
-                                                    <td>sungjin8745@ajou.ac.kr</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>산학협력단 유형자산관리, 기업체 연구비관리(PMS,일반), 연구인력 퇴직금관리, 인프라 수입실적관리, 홈페이지관리</td>
-                                                    <td>정희연</td>
-                                                    <td>4511</td>
-                                                    <td>hyjeong@ajou.ac.kr</td>
+                                                    <td>
+                                                        <dl class="table_inner_list">
+                                                            <dt>지식재산 관리</dt>
+                                                            <dd>- 특허등록 프로세스 관리</dd>
+                                                            <dd>- 특허관련 비용지급</dd>
+                                                            <dd>- 기술사업 용역과제 등록 및 관리</dd>
+                                                        </dl>
+                                                    </td>
+                                                    <td>주해수</td>
+                                                    <td>4222</td>
+                                                    <td>hsjoo@ajou.ac.kr</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -365,6 +456,17 @@
                         </div>
                     </section>
                 </article>
+                <script>
+                  let choseTab = 0;
+                  function show(tab){
+                      $(".table_scroll_wrap").hide();
+                      $(".tab_box_item").removeClass("on");
+              
+                      $(".tab_box_item:eq("+(tab-1)+")").addClass("on");
+                      $("#tab"+tab).show();
+                      choseTab = tab;
+                  }
+                </script>
                 <!--// article -->
             </div>
             <!--// sub content_w -->

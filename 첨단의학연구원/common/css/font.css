@@ -68,24 +68,32 @@
 
 /* gmarket font */
 @font-face {
-  font-family: 'GmarketSansLight';
-  src: url(../fonts/GmarketSansLight.otf) format('opentype');
-  font-weight: normal;
+  font-family: 'GmarketSans';
   font-style: normal;
+  font-weight: 300;
+  src: local('GmarketSansLight'), local('G마켓 산스 Light');
+  src: url(../fonts/GmarketSansLight.woff2) format('woff2'),
+  url(../fonts/GmarketSansLight.woff) format('woff'),
+  url(../fonts/GmarketSansLight.otf) format('opentype');
 }
 @font-face {
-  font-family: 'GmarketSansMedium';
-  src: url(../fonts/GmarketSansMedium.otf) format('opentype');
-  font-weight: normal;
+  font-family: 'GmarketSans';
   font-style: normal;
+  font-weight: 500;
+  src: local('GmarketSansMedium'), local('G마켓 산스 Medium');
+  src: url(../fonts/GmarketSansMedium.woff2) format('woff2'),
+  url(../fonts/GmarketSansMedium.woff) format('woff'),
+  url(../fonts/GmarketSansMedium.otf) format('opentype');
 }
 @font-face {
-  font-family: 'GmarketSansBold';
-  src: url(../fonts/GmarketSansBold.otf) format('opentype');
-  font-weight: normal;
+  font-family: 'GmarketSans';
   font-style: normal;
+  font-weight: 700;
+  src: local('GmarketSansBold'), local('G마켓 산스 Bold');
+  src: url(../fonts/GmarketSansBold.woff2) format('woff2'),
+  url(../fonts/GmarketSansBold.woff) format('woff'),
+  url(../fonts/GmarketSansBold.otf) format('opentype');
 }
-
 @font-face {
   font-family: 'Gmarket';
   src: url(../fonts/GmarketSansLight.otf) format('opentype');
