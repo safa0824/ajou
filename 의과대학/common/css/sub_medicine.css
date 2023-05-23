@@ -296,7 +296,7 @@ ul .number_list01 { margin:1rem 0; }
 .club_list1 .club_item_con .item_con_img img { object-fit: cover; max-height: 400px; max-width: 400px; width: 100%;}
 .club_list1 .club_item_con .item_con_name { font-size:1.0625rem; color:#3987ee; font-weight: 500; font-family: 'Gmarket'; } 
 .club_list1 .club_item_con .item_con_info { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap:wrap; clear: both;} 
-.club_list1 .club_item_con .item_con_info li { display: flex; flex: 1 1 250px; align-items: center; gap: 5px; background: #ffffff; border:1px solid #dadfe7; border-radius: 3px; padding: 5px 25px; height: 57px; font-size: 1.06rem; font-weight: 300; box-sizing: border-box; } 
+.club_list1 .club_item_con .item_con_info li { display: flex; flex: 1 1 250px; align-items: center; gap: 5px; background: #ffffff; border:1px solid #dadfe7; border-radius: 3px; padding: 5px 5px 5px 25px; height: 57px; font-size: 1.06rem; font-weight: 300; box-sizing: border-box; } 
 .club_list1 .club_item_con .item_con_info img { margin-right: 5px; } 
 .club_list1 .on .club_item_con { display: block; } 
 
@@ -349,6 +349,8 @@ ul .number_list01 { margin:1rem 0; }
 .mcollege_part_list01 .part_info li { display: flex; font-weight: 200; color: #16468f; font-size: 1rem; align-items: center; gap: 0.5rem; } 
 .mcollege_part_list01 .part_info li ~ li { margin-top: 8px; } 
 .mcollege_part_list01 .part_info li:before { content:''; display: block; width: 4px; height: 4px; border-radius: 50%; background: #3987ee; } 
+.mcollege_part_list01 .part_info li:first-child{font-weight: 600;}
+.mcollege_part_list01 .part_info li:first-child:before {display: none;}
 .mcollege_part_list01 .part_icon { display: flex; align-items: center; justify-content: center; background: #f1f6fd; width: 88px; height: 88px; border-radius: 25px; } 
 .mcollege_part_list01 .part_link { margin-top: 1.5rem; } 
 .mcollege_part_list01 .part_link_btn { background: #13376e url(../images/medicine/icon_arrow_right01.png) no-repeat 85% center; color: #fff; font-weight: 500; min-width: 137px; height: 41px; border-radius: 30px; padding: 10px 60px 10px 20px; box-sizing: border-box; transition: 0.3s; } 
