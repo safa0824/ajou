@@ -81,6 +81,7 @@ li .table_scroll_wrap { margin-top: 1.5rem; }
 .table_inner_list dt { font-weight: 500; } 
 .table_inner_list dd { } 
 .table_scroll_wrap table.table2 :is(th, td) { padding:1rem 2rem; } 
+.table_scroll_wrap table.table3 :is(th, td) { padding:1rem 0.8rem; } 
 
 .table_common_list1 li { width: 100%; display: list-item; display: flex; } 
 .table_common_list1 li ~ li { margin-top: 0.5rem; } 
@@ -143,7 +144,7 @@ p[class*=mcollege_notice] .btn_download02 { margin-top: -3px; }
 .mcollege_desc01 .desc_info01 strong { font-weight: 500; color: #fff; background: #3987ee; line-height: 1; padding:4px 15px 6px 15px; border-radius: 30px; margin-right:10px; } 
 .mcollege_desc01 .desc_list01 { display: flex; flex-wrap:wrap; } 
 .mcollege_desc01 .desc_list01 li { flex: 1; display: flex; flex-wrap:wrap; align-content: flex-start; } 
-.mcollege_desc01 .desc_list01 li strong { font-weight: 500; } 
+.mcollege_desc01 .desc_list01 li strong { font-weight: 500; margin-left: 4px;} 
 
 .mcollege_diagram01 { display: flex; align-items: center; justify-content: center; flex-wrap:wrap; gap: 3rem; margin: 3.75rem 0; } 
 .mcollege_diagram01_item01 { display: flex; gap: 2rem; } 
@@ -449,6 +450,14 @@ ul .number_list01 { margin:1rem 0; }
 .mcollege_traffic_wrap .con_tit img { vertical-align: text-top; } 
 .mcollege_traffic_wrap .traffic_station { font-weight: 400; } 
 .mcollege_traffic_wrap td .icon_arrow_right01 { vertical-align: middle; margin-bottom: 2px; } 
+
+.common_link_box01 { border: 1px solid #cbcbcb; padding:1.25rem 0; }
+.common_link_box01 ul { display: flex; align-items: center; justify-content: center; }
+.common_link_box01 li { flex: 1 1 100%; text-align: center; position: relative; display: flex; align-items: center; justify-content: center; padding:0 10px;
+}
+.common_link_box01 li + li:before { content: ''; display: inline-block; width: 1px; height: 20px;
+  background: #cbcbcb; position: absolute; left: 0; }
+.common_link_box01 li img { max-height: 2rem;}
 
 @media (max-width:1200px){
  .mcollege_intro_box br { display: none; } 
