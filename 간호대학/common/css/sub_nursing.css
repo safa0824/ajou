@@ -74,7 +74,7 @@
 .college_schema_box1 li img { margin-bottom: 15px; margin-top: -15px; } 
 
 .college_schema_box2 { display: flex; justify-content: center; background:url(../images/nursing/sub01_02_01_bg02.png) no-repeat center 100%; padding-bottom: 70px; position: relative; z-index: 1; } 
-.college_txt_box1 { font-size: 1.125rem; color:#fff; font-weight: 400; border-radius: 30px; background: #ffa414; width: fit-content; padding: 10px 55px; min-height: 55px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; } 
+.college_txt_box1 { font-size: 1.125rem; color:#fff; font-weight: 400; border-radius: 30px; background: #011e46; width: fit-content; padding: 10px 55px; min-height: 55px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; } 
 .college_schema_box2 + .college_txt_box1 { margin-top: -13px; } 
 
 .college_con_wrap .con_tit ~ .con_box { padding-left: 27px; } 
@@ -140,13 +140,20 @@
 .mobile_map .organ_dep2 > li > p { color: #fff; background:#011e46; border-color:#011e46; } 
 .mobile_map .organ_dep2.type2 > li > p { background: #ffa414; border-color:#ffa414; } 
 .mobile_map .organ_dep2:first-child > li:first-child:before { height: 35px; top:19px; } 
+.mobile_map .organ_dep2 > li:before { content: ''; display: block; position: absolute; left: -15px; top:-10px; height: calc(100% + 20px); border-left:1px solid #cbcbcb; } 
 .mobile_map .organ_dep3 > li { width: 100%; position: relative; } 
 .mobile_map .organ_dep3 > li:before { content: ''; display: block; position: absolute; left: -15px; top:-10px; height: calc(100% + 20px); border-left:1px solid #cbcbcb; } 
 .mobile_map .organ_dep3 > li:after { content: ''; display: block; position: absolute; left: -15px; top:19px; height: 1px; width: 15px; background: #cbcbcb; } 
 .mobile_map .organ_dep3 > li:last-child:before { height: 30px; } 
 .mobile_map .organ_dep3 > li ~ li { margin-top: 10px; } 
 .mobile_map .organ_dep3 > li > p { border: 1px solid #aaa; background: #fbfbfb; color: #010000; } 
-.mobile_map .organ_dep2 > li:before { content: ''; display: block; position: absolute; left: -15px; top:-10px; height: calc(100% + 20px); border-left:1px solid #cbcbcb; } 
+.mobile_map .organ_dep4 { margin: 10px 0 0 30px;  } 
+.mobile_map .organ_dep4 > li { width: 100%; position: relative; } 
+.mobile_map .organ_dep4 > li:before { content: ''; display: block; position: absolute; left: -15px; top:-10px; height: calc(100% + 20px); border-left:1px solid #cbcbcb; } 
+.mobile_map .organ_dep4 > li:after { content: ''; display: block; position: absolute; left: -15px; top:19px; height: 1px; width: 15px; background: #cbcbcb; } 
+.mobile_map .organ_dep4 > li:last-child:before { height: 30px; } 
+.mobile_map .organ_dep4 > li ~ li { margin-top: 10px; } 
+.mobile_map .organ_dep4 > li > p { border: 1px solid #a6a6a6; background: #ffffff; color: #444444; } 
 .mobile_map .type2 .organ_dep3> li > p { border-color: #ffa414; background: #fff; } 
 .organ_inner_list { border: 1px solid #aaa; background: #fbfbfb; color: #010000; display: block; padding: 10px; position: relative; z-index: 1; } 
 .organ_inner_list li { display: list-item; font-size: 1.1rem; } 
@@ -181,7 +188,7 @@
 .college_table_wrap { border-top:1px solid #004098; border-bottom: 0 none; color: #000; margin-bottom:20px; margin-top: 15px; } 
 .college_table_wrap table * { box-sizing: border-box; } 
 .college_table_wrap table th { background: #f7f9fb; color: #273454; } 
-.college_table_wrap table :is(th, td) { text-align: center; height: 53px; font-size: 1.06rem; line-height: 1.75; padding: 10px 20px; border:1px solid #dadfe7 !important; } 
+.college_table_wrap table :is(th, td) { text-align: center; height: 53px; font-size: 1.06rem; line-height: 1.75; padding: 10px 15px; border:1px solid #dadfe7 !important; } 
 
 
 .college_table_wrap table th.th_line4 { line-height: 1.4; padding:3px 0; } 
@@ -397,6 +404,44 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 .popup1.on { visibility: visible; opacity: 1; } 
 .popup1.on .popup-body { transform: translateY(0); transition: 0.3s 0.2s; } 
 
+
+/* AP10사업개요 */
+.college_blue_box.type3 { padding:0 ; flex-wrap:wrap;}
+.intro_txt_label { display: flex; justify-content: flex-end; line-height: 1; margin-top: 30px;}
+.intro_txt_label p { color: #fff; background: #011e46; padding: 1rem 2.1rem;  }
+.intro_txt_label p:first-child { background: #004098; }
+
+
+.ap_list { width: 100%; padding: 0 4.375rem 3.125rem 4.375rem;}
+.ap_list .montserrat { font-family: "Montserrat"; font-weight: 900; color: #004098; font-size: 1.75rem; }
+.ap_list > li { display: flex; font-size: 1.25rem; line-height: 1.6; align-items: baseline; gap: 1rem 2.5rem; }
+.ap_list > li + li { margin-top: 2.4rem; }
+.ap_list .ap_tit { width: 135px; font-weight: 700; background:url(../images/nursing/icon_arrow_three.png)  100% center no-repeat; }
+.ap_list .ap_con { flex: 1; }
+.ap_list .ap_txt { text-align: center;}
+.ap_list .ap_txt strong,
+.ap_list .ap_txt [class*=icon_grammer] { vertical-align: middle;}
+.icon_grammer_l { display: inline-block; background: url(../images/nursing/icon_grammar1_left.png) no-repeat; width: 11px; height: 27px; margin-right: 10px; }
+.icon_grammer_r { display: inline-block; background: url(../images/nursing/icon_grammar1_right.png) no-repeat; width: 11px; height: 27px; margin-left: 10px; }
+
+.ap_list .color_list { display: flex; gap: 0.825rem;}
+.ap_list .color_list p {  flex: 1; color: #fff; display: flex; align-items: center; justify-content: center; height: 3.44rem; border-radius: 2rem; font-size: 1.125rem;  }
+.color_item1 {background: #004098;}
+.color_item2 {background: #011e46;}
+.color_item3 {background: #ffa414;}
+
+.ap_list .check_list { background: #fff; border-radius: 5px; display: flex; align-items: center; justify-content: center; gap: 1rem 2rem;  padding: 2rem 1rem; position: relative; margin: 30px 0 100px; flex-wrap:wrap; }
+.ap_list .check_list:before { content: ''; display: block; position: absolute; top: 0; width: 19px; height: 43px; background: url(../images/nursing/icon_mark02.png) no-repeat 0 0;  margin-top:-40px; }
+.ap_list .check_list:after { content: ''; display: block; position: absolute; top: 100%; background: url(../images/nursing/sub04_06_bg01.png) no-repeat center 100%; height: 120px; width: 190px;}
+.ap_list .check_list p { color: #011e46; font-size: 1.125rem;padding-left: 30px;  background:url(../images/nursing/sub04_06_icon02.png) no-repeat 0 center; }
+
+.ap_list .goal_list { display: flex; gap: 0.6rem;}
+.ap_list .goal_list li { font-size: 1.0625rem; flex: 1; line-height: 2; }
+.ap_list .goal_tit { text-align: center; color: #fff; background: #2061c4; padding: 1rem 0.5rem;  font-weight: 500;}
+.ap_list .goal_desc { margin-top:0.6rem; background: #f7f9fb; border:1px solid #dbe1e9; padding: 2.3rem; }
+.ap_list .goal_desc p {font-weight: 300; }
+.ap_list .goal_desc p:before { content:''; display: inline-block; width: 4px; height: 4px; background: #004098; border-radius: 50%; vertical-align: super; margin-right: 10px; }
+
 @media (max-width:1200px){
  .leader_history_list .leader_info { padding: 25px; background-position: 90% 1rem; } 
  .leader_history_list .leader_name { font-size: 1.5rem; } 
@@ -445,6 +490,16 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
  
  .college_blue_box2 { padding: 20px; } 
  .campus_map_wrap .campus_map { margin-left: -200px;} 
+
+ .ap_list { padding: 0 2rem 2rem 2rem; }
+ .ap_list > li { font-size: 1rem;}
+ .ap_list .ap_tit { width: 100px; }
+ .ap_list .color_list p { font-size: 1rem;}
+ .ap_list .check_list{ margin: 20px 0 60px; }
+ .ap_list .check_list:after { zoom: 0.7;}
+ .ap_list .goal_list { flex-direction: column;}
+ .ap_list .goal_desc { padding: 1rem 1.5rem; }
+ .ap_list .ap_txt [class*=icon_grammer] { zoom: 0.8; }
 }
 @media (max-width:800px){
  .college_schema_box1 { background: none; flex-wrap:wrap; } 
@@ -519,6 +574,9 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
   .map_address { font-size: 1.3rem; } 
   .map_address img { width: 32px; } 
   .map_box1 { margin-top: 20px; } 
+  
+  .ap_list > li { flex-wrap: wrap;}
+  .ap_list .ap_con { min-width: 100%; }
 }
 @media (min-width: 641px) and (max-width: 980px){
  .mobile_map :is(.organ_dep1,.organ_dep2) > li { display: flex; align-items: flex-start; } 
