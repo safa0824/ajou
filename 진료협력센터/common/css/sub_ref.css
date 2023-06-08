@@ -326,15 +326,17 @@ a.link_btn03 img { margin-left:10px }
 
 .contents_div01 .tab_menu { margin-bottom: 3rem; } 
 .contents_div01 .tab_menu ul { display: flex; background: #edeff2; border-radius: 0 30px 0 30px; } 
-.contents_div01 .tab_menu li { width: 33.3%; } 
+.contents_div01 .tab_menu li { width: 50%; } 
 .contents_div01 .tab_menu li a { display: block; text-align: center; padding: 15px 0; } 
 .contents_div01 .tab_menu li.on a { background: #011e46; color: #fff; font-weight: 600; box-shadow: 0px 7px 15px rgba(0,0,0,.4); border-radius: 0 30px 0 30px; } 
 
 .contents_div01 .tab_menu.type2 li { width: 50%; } 
-.img_bd_box01 { border: 1px solid #dadfe7; height: 810px; display: flex; align-items: center; justify-content: center; padding: 20px; margin-bottom: 40px; } 
+.img_bd_box01 { border: 1px solid #dadfe7; display: flex; align-items: center; justify-content: center; padding: 30px 35px; margin-bottom: 30px; flex-wrap:wrap; } 
+.img_bd_box01 h4 { color: #004098; font-size: 1.75rem; font-weight: 700; width: 100%;}
 @media (max-width:1000px){
- .img_bd_box01 { height: 100vw; } 
- }
+  .img_bd_box01 { padding: 20px; }
+  .img_bd_box01 h4 { font-size: 1.3rem; }
+}
 
 .table_style02 { margin-bottom: 50px; overflow-x: auto } 
 .table_style02 table { width: 100%; } 
@@ -345,6 +347,8 @@ a.link_btn03 img { margin-left:10px }
 .table_style02 table td.line02 { background: #e7f2fb; text-align: center; padding: 0.7rem 1rem; } 
 .table_style02 table td li { display: block; margin:5px 0; } 
 .table_style02 table td li img { margin-right: 8px; } 
+.table_style02 table td li { text-align: left;}
+.table_style02 table td.txt-left { text-align: left;}
 
 
 

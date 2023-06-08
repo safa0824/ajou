@@ -130,3 +130,84 @@
   font-weight: 400;
   font-style: italic;
 }
+
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Black.otf) format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Bold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-SemiBold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Light.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-ExtraLight.otf) format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular');
+  src: url(../fonts/Montserrat-Regular.woff2) format('woff2'),
+       url(../fonts/Montserrat-Regular.woff) format('woff'),
+       url(../fonts/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat Medium');
+  src: url(../fonts/montserrat-Medium.woff2) format('woff2'),
+       url(../fonts/montserrat-Medium.woff) format('woff'),
+       url(../fonts/montserrat-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat SemiBold');
+  src: url(../fonts/Montserrat-SemiBold.woff2) format('woff2'),
+       url(../fonts/Montserrat-SemiBold.woff) format('woff'),
+       url(../fonts/Montserrat-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat bold');
+  src: url(../fonts/montserrat-bold.woff2) format('woff2'),
+       url(../fonts/montserrat-bold.woff) format('woff'),
+       url(../fonts/montserrat-bold.ttf) format('truetype');
+}

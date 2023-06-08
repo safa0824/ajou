@@ -1,4 +1,71 @@
 @charset "UTF-8";
+@font-face {
+   font-family: 'Agaramond';
+   src: url(../fonts/AGaramondPro-Bold.otf) format('opentype');
+   font-weight: 700;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: 'Agaramond';
+   src: url(../fonts/AGaramondPro-BoldItalic.otf) format('opentype');
+   font-weight: 700;
+   font-style: italic;
+ }
+ @font-face {
+   font-family: 'Agaramond';
+   src: url(../fonts/AGaramondPro-Regular.otf) format('opentype');
+   font-weight: 400;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: 'Agaramond';
+   src: url(../fonts/AGaramondPro-Italic.otf) format('opentype');
+   font-weight: 400;
+   font-style: italic;
+ }
+
+ @font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Black.otf) format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Bold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-SemiBold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Light.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-ExtraLight.otf) format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
 
 /* biomed */
 
@@ -48,6 +115,8 @@ h3.title{    font-size: 2rem;font-weight: 700;color: #004098;}
 .table_style01 table td{border-bottom: 1px solid #dadee7;border-right: 1px solid #dadfe7;padding: 1rem;text-align: center;}
 .table_style01 table th:last-child, .table_style01 table tr td:last-child{border-right:0}
 
+.table_style02.left_txt td{text-align: left;}
+.table_style02.center_txt td{text-align: center;}
 
 @media (max-width:960px) { 
     .m_br{display: none;}
@@ -62,7 +131,7 @@ h3.title{    font-size: 2rem;font-weight: 700;color: #004098;}
     .greeting_div02 .ul_list li{border: 1px solid #004098;padding: 2rem;    flex: 1;margin-left: -1px;box-sizing: border-box;}
     .greeting_div02 .ul_list li > div{text-align: center;}
     .greeting_div02 .ul_list li > div img{}
-    .greeting_div02 .ul_list li > div span{display:block;color: #004098;padding: 1rem 0;}
+    .greeting_div02 .ul_list li > div span{display:block;color: #004098;padding: 1rem 0;line-height: 1.6;}
     .greeting_div02  .txtbox01{font-family: 'Agaramond';background: #004098;color: #fff;text-align: center;font-size: 34px;padding:2rem 1rem;}
     .greeting_div02  .txtbox02 > p{position: relative;text-align: center;}
     .greeting_div02  .txtbox02 > p::after{display: block;content:'';position: absolute;top:0;left:50%;transform: rotateX('-50%');}
@@ -70,6 +139,7 @@ h3.title{    font-size: 2rem;font-weight: 700;color: #004098;}
     .greeting_div02  .txtbox02 .txt01::after{width: 1px;height: 65px;background: #004098;}
     .greeting_div02  .txtbox02 .txt02{font-size: 1.25rem;;color: #004098;padding-top: 30px;margin-top: 20px;}
     .greeting_div02  .txtbox02 .txt02::after{background: #004098;width: 10px;height: 10px;border-radius: 50%;;}
+    .greeting_youtube{}
 
     @media (max-width:1200px) { 
         .greeting_div01 .photo{float: none;margin-left: 0;width: 100%;text-align: center;}
@@ -95,11 +165,15 @@ h3.title{    font-size: 2rem;font-weight: 700;color: #004098;}
 
 
     /* 연혁 */
-    .biomed_history{display: flex;}
+    .biomed_history{display: flex; flex-wrap: wrap;} 
+    .biomed_history_photo { width: 100%; margin: 50px 0 30px 0; }
+    .biomed_history_photo:first-child { margin-top: 20px; }
+    .biomed_history_photo img { object-fit: cover; min-height: 120px;}
     .biomed_history .history_ttle{width: 230px;color: #004098;flex: 0.25;}
     .biomed_history .history_ttle p{font-size: 3rem;font-weight: 700;}
+    .biomed_history .history_ttle p > span { display: inline-block; font-size: 2.25rem; font-family: 'Noto Serif KR', sans-serif; font-weight: 900; margin: 0; }
     .biomed_history .history_ttle span{font-size: 1.875rem;font-weight: 700;line-height: 1;margin: 2rem 0 2rem 0;display: block;}
-    .biomed_history .history_list {background: url('../images/biomed/sub01_03_line_y.png') repeat-y left;flex: 0.85}
+    .biomed_history .history_list {background: url('../images/biomed/sub01_03_line_y.png') repeat-y left;flex: 0.85;  }
     .biomed_history .history_list dl{position: relative;padding-left: 95px;box-sizing: border-box;margin-bottom: 3rem;}
     .biomed_history .history_list dl:after{position: absolute;top:15px;left:0;display: block;content: '';width:83px;height:13px;background: url('../images/biomed/sub01_03_line.png')  no-repeat ;}
     .biomed_history .history_list dt{position: relative;font-size: 2.375rem;color: #004098;}
@@ -282,6 +356,9 @@ h3.title{    font-size: 2rem;font-weight: 700;color: #004098;}
    .biomed_sciencediv{flex-direction: column;gap:10px}
    .biomed_sciencediv > dl{width: 100%;}
    .biomed_sciencediv > div{border-bottom: 0;padding-bottom: 0;}
+
+   .biomed_sciencediv.type2 { gap: 20px; }
+   .biomed_sciencediv.type2 > dl { flex: auto !important;}
 }
 @media (max-width:760px) { 
    .biomed_sciencediv .contents_div{flex-direction: column-reverse;align-items: flex-start;}
@@ -341,7 +418,7 @@ h3.title{    font-size: 2rem;font-weight: 700;color: #004098;}
 .courses_div_box02 h4{font-size: 2.375rem;font-weight: 600;}
 .courses_div_box02 .courses_box{display: flex;gap:10px}
 .courses_div_box02 .courses_box .title_div{background: #004098;width: 185px;display: flex;flex-direction: column;   justify-content: space-between;}
-.courses_div_box02 .courses_box .title_div h5{color: #fff;font-size: 1.5rem;padding: 2rem;flex: 1;}
+.courses_div_box02 .courses_box .title_div h5{color: #fff;font-size: 1.5rem;padding: 2rem 1rem 3.5rem 1rem;flex: 1;}
 .courses_div_box02 .courses_box .title_div h5.list01{background: url('../images/biomed/sub02_02_img01.png') no-repeat 30px 90%;}
 .courses_div_box02 .courses_box .title_div h5.list02{background: url('../images/biomed/sub02_02_img02.png') no-repeat 30px 90%;}
 .courses_div_box02 .courses_box .title_div h5.list03{background: url('../images/biomed/sub02_02_img03.png') no-repeat 30px 90%;}
@@ -360,7 +437,7 @@ h3.title{    font-size: 2rem;font-weight: 700;color: #004098;}
 .courses_tb .contents_tds dl.mt2{margin-top: 3rem;}
 .courses_tb .contents_tds dt{font-size: 1.25rem;font-weight: bold;line-height: 1.8;}
 .courses_tb .contents_tds dd{line-height: 1.7;}
-.courses_tb .contents_tds .eng_view_box{border: 1px solid #004098;margin-top: 1.5rem;}
+.courses_tb .contents_tds .eng_view_box{border: 1px solid #004098;margin-top: 1.5rem;display: none;}
 .courses_tb .contents_tds .eng_view_box > div{background: #ebf4fd;}
 .courses_tb .contents_tds .eng_view_box > div a{display: block;padding: 0.5rem 2rem;font-size: 1.25rem;}
 .courses_tb .contents_tds .eng_view_box > div a.open{background: url(../images/biomed/arrow_down.png) no-repeat 97% center;}
@@ -401,7 +478,7 @@ h3.title{    font-size: 2rem;font-weight: 700;color: #004098;}
     .graduate_div .graduate_01 li span{font-size: 14px;}
     .graduate_div .graduate_01 li p{padding: 10px 0;}
     .graduate_div .h4_title{background: url('../images/biomed/dot01.png') no-repeat 25px 15px;font-size:1.5rem;color: #004098;font-weight: 600 ;padding-left: 40px;margin:1.5rem 0;}
-    .graduate_div .table_style02 .line{border-bottom: 1px solid #004098;}
+  .table_style02 .line{border-bottom: 1px solid #004098;}
     .graduate_div .table_style02 td{border-right: 1px solid #dadfe7;text-align: center;}
     .graduate_div .table_style02 td:last-child{border-right:0}
     .m_scroll_b{overflow-x: auto;}
@@ -439,11 +516,68 @@ min-height: 45px;;}
 .contents_div.research_list .reser_ulList li.w100{width: 100%;}
 .contents_div.research_list .reser_ulList li .link_btn_up{display:flex}
 
+/* 연구 */
+.biomed_wrap02 h3.title { text-align: center; color: #000;}
+.biomed_wrap02 .title_desc { font-size: 1.125rem; color: #222; text-align: center; font-weight: 500;}
+.research_cate_list { margin-top:2.5rem; }
+.research_cate_list dl { position: relative; margin-bottom: 20px; }
+.research_cate_tit { height: 180px; display: flex;}
+.research_cate_tit .icon_box { background: #004098; display: flex; flex: 0 0 180px; align-items: center; justify-content: center; }
+.research_cate_name { color: #fff; font-size: 1.125rem; }
+.research_cate_tit .research_cate_name { color: #fff; display: flex; align-items: center; justify-content: center; width: 100%; flex-direction: column; gap: 0.8rem; }
+.research_cate_name span { font-family: 'Montserrat', sans-serif; font-weight: 600; text-transform: uppercase;}
+.research_cate_name strong { font-size: 1.625rem; font-weight: 500; } 
+[class*=research_cate_icon] { display: inline-block; }
+.research_cate_icon1 { width: 67px; height: 63px; background: url(../images/biomed/sub03_01_icon01.png) no-repeat 0 0; background-size:contain; }
+.research_cate_icon2 { width: 56px; height: 62px; background: url(../images/biomed/sub03_01_icon02.png) no-repeat 0 0; background-size:contain; }
+.research_cate_icon3 { width: 66px; height: 63px; background: url(../images/biomed/sub03_01_icon03.png) no-repeat 0 0; background-size:contain; }
+.research_cate_icon4 { width: 72px; height: 65px; background: url(../images/biomed/sub03_01_icon04.png) no-repeat 0 0; background-size:contain; }
+.research_cate_icon5 { width: 67px; height: 64px; background: url(../images/biomed/sub03_01_icon05.png) no-repeat 0 0; background-size:contain; }
+.research_cate_icon6 { width: 66px; height: 64px; background: url(../images/biomed/sub03_01_icon06.png) no-repeat 0 0; background-size:contain; }
+.research_cate_icon7 { width: 71px; height: 64px; background: url(../images/biomed/sub03_01_icon07.png) no-repeat 0 0; background-size:contain; }
+.research_cate_icon8 { width: 64px; height:64px; background: url(../images/biomed/sub03_01_icon08.png) no-repeat 0 0; background-size:contain; }
+
+.research_cate_tit.cate1 { background: url(../images/biomed/sub03_01_bg01.png) no-repeat center; background-size: cover; }
+.research_cate_tit.cate2 { background: url(../images/biomed/sub03_01_bg02.png) no-repeat center; background-size: cover; }
+.research_cate_tit.cate3 { background: url(../images/biomed/sub03_01_bg03.png) no-repeat center; background-size: cover; }
+.research_cate_tit.cate4 { background: url(../images/biomed/sub03_01_bg04.png) no-repeat center; background-size: cover; }
+.research_cate_tit.cate5 { background: url(../images/biomed/sub03_01_bg05.png) no-repeat center; background-size: cover; }
+.research_cate_tit.cate6 { background: url(../images/biomed/sub03_01_bg06.png) no-repeat center; background-size: cover; }
+.research_cate_tit.cate7 { background: url(../images/biomed/sub03_01_bg07.png) no-repeat center; background-size: cover; }
+.research_cate_tit.cate8 { background: url(../images/biomed/sub03_01_bg08.png) no-repeat center; background-size: cover; }
+
+.research_cate_con { position: absolute; left: 0; top:0; right: 0; background: #004098;
+ box-shadow: 7px 7px 7px rgba(0,0,0,0.2); padding:30px 4.75rem; z-index: 1; }
+.research_cate_con .research_cate_name { text-align: center; display: flex; gap: 7px; flex-direction: row; align-items: center; justify-content: center;}
+.research_cate_con .research_cate_name [class*=research_cate_icon] { zoom: 0.45; }
+.research_cate_con .research_cate_name strong { margin-right: 10px;}
+
+.prof_list { display: flex; flex-wrap: wrap; gap:2px; margin-top: 30px; }
+.prof_list li { flex: 1 1 260px; max-width: calc(25% - 2px);}
+.prof_list li a { line-height: 1; background: #fff; display: flex; align-items: center;  padding: 13px 20px; gap: 5px;}
+.prof_list li a strong { font-family: 1.0625rem; font-weight: 500; color: #004098;}
+.prof_list li a span { color: #000;}
+.prof_list .link_icon { display: inline-block; width: 22px; height: 22px; background: url(../images/biomed/sub07_01_arrow01.png) no-repeat center; background-size: cover; margin-left: auto;}
+.prof_list li a:hover { background: #d9e9ff;} 
+.prof_list li a:hover span { opacity: 0.9; } 
+
+
+/* 학과조직 */
+.biomed_sciencediv .table_style02 td {  border-right: 1px solid #dadfe7;}
+.biomed_sciencediv .table_style02 td:last-child { border-right: 0 none;}
+.biomed_sciencediv.type2 > dl { padding-top:0; flex: 0 1 240px; }
+.biomed_sciencediv.type2 > div { border-top: 1px solid #004098; border-bottom:0; padding-top: 3rem;padding: 2rem 0;  }
+.biomed_sciencediv.type2.line0 > div { border: 0 none; padding-top:0;} 
+
+.biomed_sciencediv.type2  .content_box2 { width: 100%;}
+.biomed_sciencediv.type2  .reser_ulList.type2 li { flex: 0 1 312px; max-width: 312px;}
+
 @media (max-width:1280px) { 
    .contents_div.research_list .reser_ulList li{width: 100%;}
 }
 @media (max-width:760px) { 
    .contents_div.research_list .content_box{padding-right:0;margin-top: 1.5rem;width: 100%;}
+   .biomed_sciencediv.type2 .reser_ulList.type2 li { flex: 1 1 auto; max-width: 100%;}
 }
 
 
@@ -495,12 +629,17 @@ position: absolute;top:50%;right:-10px;transform: translateY(-50%);z-index: 3;}
 .facilities_list li dd span{color: #fff;}
 .facilities_list li dd a{display: block;width: 35px;height: 35px;background: url('../images/biomed/sub07_02_icon10.png') no-repeat;}
 
+.grad_ajou_top{position: relative;}
+.grad_ajou_top .download_ajou{position: absolute;top:0;right:0}
+.grad_ajou_top .download_ajou a{background: #004098;color: #fff;display: inline-block;padding: 10px 15px;border-radius: 5px;margin: 0 5px;}
+
 @media (max-width:1000px) { 
    .procedure{flex-direction: column;padding: 0;}
    .procedure_ol{width: 100%;}
    .facilities_list{flex-wrap: wrap;}
    .facilities_list li{width:50%;}
    .facilities_list li dt img{width: 100%;}
+   .grad_ajou_top .download_ajou{position: static;}
 }
 @media (max-width:680px) { 
    .procedure_ol li{flex-direction: column;gap:10px}
@@ -516,6 +655,7 @@ position: absolute;top:50%;right:-10px;transform: translateY(-50%);z-index: 3;}
    position: absolute;top:50%;right:-35px;transform: translateY(-50%);z-index: 10;}
 .scholarship_div02 .graduate_01 li:last-child:after   {display: none;}
 
+.scholarship_div{margin-top: 2.5rem;}
 @media (max-width:720px) { 
    .scholarship_div01{    flex-direction:column}
    .scholarship_div01 p{margin-top: 15px;}
@@ -549,4 +689,32 @@ position: absolute;top:50%;right:-10px;transform: translateY(-50%);z-index: 3;}
 @media (max-width:760px) { 
    .dormitory_div01{flex-direction: column}
    .dormitory_div01 p img{width: 100%;height: auto;}
+}
+
+/* 산학, 국제 */
+.link_content01 ul { display: flex; }
+.link_content01 ul li { flex: 1; }
+.link_content01 .link_img { display: flex; align-items: center; justify-content: center; height: 120px;}
+.link_content01 .link_img { border: 1px solid #004098;  }
+.link_content01 ul li + li .link_img { border-left: 0 none;} 
+.link_content01 .link_txt a { display: flex; justify-content: space-between; padding: 25px; align-items: center; background: #004098; color: #fff; border-right:1px solid #fff; }
+.link_content01 .link_txt a:hover { opacity: 0.8;}
+.link_content01  ul li:last-child .link_txt a { border: 0 none; }
+.link_content01 .link_icon{ display: block; width: 35px;height: 35px;background: url('../images/biomed/sub07_02_icon10.png') no-repeat;}
+
+.desc_content01 > p { font-size: 1.0625rem; font-weight: 500; margin-bottom: 10px;}
+.desc_content01 .list_contents04 li { font-size: 1.0625rem; padding-left: 15px;}
+.desc_content01 .list_contents04 li:after {left: 3px; }
+@media (max-width: 760px) { 
+  .link_content01 .link_txt a { padding: 20px 15px; }
+  .link_content01 .link_img img { zoom: 0.8;}
+  .link_content01 .link_img { height: 95px;}
+}
+@media (max-width: 600px) { 
+  .link_content01 ul { flex-wrap:wrap; }
+  .link_content01 ul li { width: 100%; flex: auto; }
+  .link_content01 .link_txt a { border: 0 none; padding: 15px 20px 15px 30px; }
+  .link_content01 ul li + li .link_img { border: 1px solid #004098}
+  .link_content01 .link_img { height:120px;}
+  .link_content01 .link_img img { zoom: 1;}
 }
