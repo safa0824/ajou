@@ -131,4 +131,47 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Black.otf) format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Bold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-SemiBold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-Light.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url(../fonts/NotoSerifKR-ExtraLight.otf) format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
