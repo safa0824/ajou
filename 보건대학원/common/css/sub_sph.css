@@ -1,5 +1,5 @@
 @charset "UTF-8"; article { font-size:1.05rem; } 
-.txt_blue { color: #004098; } 
+.txt_blue { color: #004098 !important; } 
 .txt_red { color: #fd5f5f; } 
 .txt_black { color: #000; } 
 .txt_orange { color: #ff8500; } 
@@ -756,3 +756,19 @@ li > .icon_txt_list01 { margin-bottom: 3rem; }
  .compus_div .compus_list table td { padding: 1rem 0; } 
  .compus_list { overflow-x: auto !important; } 
  }
+
+ /* 교학팀 */
+.dentistry_div01_04{border-top: 2px solid #004098;border-bottom: 1px solid #004098;display: flex;align-items: center}
+.dentistry_div01_04 > p{flex: 1;padding-right: 2rem;}
+.dentistry_div01_04 > div{flex:3.5}
+.dentistry_div01_04 > div > dl{border-bottom: 1px solid #CAD0D8;padding-bottom: 1.5rem;}
+.dentistry_div01_04 > div >  dl > dt{display: block;color: #004098;padding: 10px 0;}
+.dentistry_div01_04 > div >  dl > dt span{font-size: 24px;font-weight: 600;}
+.dentistry_div01_04 > div >  dl > dd{display: block;font-weight: 600;}
+.dentistry_div01_04 > div >  dl > dd:nth-child(2){margin-bottom: 1rem;}
+.dentistry_div01_04 > div > p{margin: 1.5rem;}
+@media (max-width:960px) {
+   .dentistry_div01_04{flex-direction: column}
+   .dentistry_div01_04 > div{width: 100%;}
+   .dentistry_div01_04 > div > dl{text-align: center;}
+}

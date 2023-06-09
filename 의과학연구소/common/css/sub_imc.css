@@ -155,7 +155,7 @@
 .equip_listl .equip_name { font-family: 'Agaramond'; font-weight: 700; font-size: 1.625rem; margin-bottom: 20px; position: relative; padding-top:17px; } 
 .equip_listl .equip_name:before { content: ''; position: absolute; display: block; left: 0; top:0; width: 27px; height: 4px; border-radius: 4px; background: #004098; } 
 .equip_listl .equip_info { display: flex; gap: 5px; background: #fafafa; border:1px solid #d7e0e9; border-radius:5px; padding: 15px 25px; margin-top: 8px; } 
-.equip_listl .equip_info span { color: #004098; font-weight: 500; } 
+.equip_listl .equip_info span { color: #004098; font-weight: 500; width: 55px;padding-right: 2px;} 
 .btn_box1 { margin-top: 75px; text-align: center; } 
 .btn_download1 { display: inline-flex; align-items: center; padding:0 100px; height: 86px; background: #004098; color: #fff !important; border-radius:0 43px 0 43px; box-shadow: 7px 7px 14px 0 rgba(0,30,69,0.25); font-size: 1.19rem; font-weight: 700; transition: 0.3s; } 
 .btn_download1:hover { transform: translateY(-2px); box-shadow: 0px 0px 20px 0 rgba(0,30,69,0.3); } 
@@ -432,4 +432,39 @@
  .college_step_list2 .step_order + .step_order { margin-top: 1rem; } 
  .college_step_list2 .step_order + .step_order:after { height: 1rem; } 
  .college_step_list2 .step_order + .step_order:before { box-shadow: 0 0 0 4px rgb(57 134 238 / 10%); margin: 0 0 -10px -9px; } 
+ }
+
+ /* 추가 */
+ .college_wrap2 .addition_top_title{display: flex;align-items: center;gap:40px;margin-bottom: 1.5rem;}
+ .college_wrap2 .addition_top_title img{}
+ .college_wrap2 .addition_top_title p{font-size: 1.05rem;line-height: 1.8;}
+ ._laserdiv{margin-top: 3rem;}
+ ._laserdiv .table_scroll_wrap2 table tr.point_tit td{background:#ffedd0 ;font-weight: 600;}
+
+.example_div{margin: 1rem 0 3rem;}
+.example_div > div{border: 1px solid #cad0d8;border-radius: 5px;padding: 2rem 3rem;box-sizing: border-box;margin: 1rem 0;}
+.example_div .ul_list{}
+.example_div .ul_list li{padding: 3px 0;display: flex;}
+.example_div .ul_list li span.title{display: inline-block;font-weight: 600;position: relative;padding:0 0 0 8px;min-width: 78px;}
+.example_div .ul_list li span.title::after{content: '';display: block;position: absolute;top:9px;left:0;width: 3px;height: 3px;background: #000;border-radius: 50%;}
+.example_div .figure{display: flex;gap: 1rem;margin: 1rem 0;justify-content: space-around;}
+.example_div .figure.exa01 > div{flex:1;}
+.example_div .figure.exa02 div:nth-child(1){flex:1.5}
+.example_div .figure.exa02 div:nth-child(2){flex:1}
+.example_div .figure.exa03 div:nth-child(1){flex:2.5}
+.example_div .figure.exa03 div:nth-child(2){flex:1}
+.example_div .figure div{border: 1px solid #cad0d8;border-radius: 5px;}
+.example_div .figure dt{background: #ebf4fd;color:#004098;font-weight: 500;text-align: center;padding: 1em ;border-bottom: 1px solid #cad0d8;}
+.example_div .figure dd{padding: 1rem;display: flex;   justify-content: center;}
+
+ @media (max-width:1080px){
+    .college_wrap2 .addition_top_title p br{display: none;}
+ }
+ @media (max-width:960px){
+   .example_div > div{padding:2rem;}
+   .example_div .figure{flex-direction: column;}
+   .example_div .ul_list li span.title{min-width: 70px}
+ }
+ @media (max-width:600px){
+    .college_wrap2 .addition_top_title{gap:20px}
  }

@@ -1,5 +1,72 @@
 @charset "UTF-8"; /* college */
 
+
+/* gmarket font */
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url(../fonts/GmarketSansLight.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url(../fonts/GmarketSansMedium.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url(../fonts/GmarketSansBold.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gmarket';
+  src: url(../fonts/GmarketSansLight.otf) format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gmarket';
+  src: url(../fonts/GmarketSansMedium.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gmarket';
+  src: url(../fonts/GmarketSansBold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Agaramond';
+  src: url(../fonts/AGaramondPro-Bold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Agaramond';
+  src: url(../fonts/AGaramondPro-BoldItalic.otf) format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Agaramond';
+  src: url(../fonts/AGaramondPro-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Agaramond';
+  src: url(../fonts/AGaramondPro-Italic.otf) format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
 .txt_blue { color: #3987ee; } 
 .txt_blue2 { color: #2061c4; } 
 .txt_blue3 { color: #16468f; } 
