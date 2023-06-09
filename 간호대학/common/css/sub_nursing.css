@@ -189,7 +189,7 @@
 .college_table_wrap table * { box-sizing: border-box; } 
 .college_table_wrap table th { background: #f7f9fb; color: #273454; } 
 .college_table_wrap table :is(th, td) { text-align: center; height: 53px; font-size: 1.06rem; line-height: 1.75; padding: 10px 15px; border:1px solid #dadfe7 !important; } 
-
+.college_table_wrap table :is(th, td)[align="left"] { text-align: left;}
 
 .college_table_wrap table th.th_line4 { line-height: 1.4; padding:3px 0; } 
 .college_table_wrap table th.th_line5 { line-height: 1.2; font-size: 15px; padding:3px 0; } 
@@ -197,6 +197,7 @@
 .college_table_wrap thead tr:last-child th { border-bottom: 1px solid #004098 !important; } */
 .college_table_wrap tbody tr:first-child > * { border-top: 1px solid #004098 !important; } 
 .college_table_wrap .bg_td { background: #e7f2fb; } 
+.college_table_wrap .bg_td2 { background: rgb(255, 250, 205)}
 
 .college_table_wrap table td.divider { padding:0 !important; height: 1px !important; border-color: #000000 !important; } 
 .college_table_wrap table tr.total_tr { font-weight: 500; } 
@@ -377,11 +378,13 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 .campus_info_box .campus_info_detail > div { padding: 20px; line-height: 1.8; max-height: 350px; overflow-y: auto;}
 .campus_info_box .campus_info_detail ul { margin-top: 20px; padding-left: 30px;}
 .campus_info_box .campus_info_detail ul span { margin-left: -30px;}
+.campus_info_box .campus_info_detail ul li { display: block;}
 
 
 /* 시설대관 */
 .match_box_list.type3 li { position: relative; } 
 .match_box_list.type3 li + li:before { content: ''; display: block; position: absolute; right: 100%; background:url(../images/nursing/icon_arrow_half.png) no-repeat center; width: 4.375rem; top:0; height: 110px; } 
+.match_box_list.type3 .match_tit { display: block; text-align: center; line-height: 1.6; }
 .contact_type1 { display: flex; gap: 25px; flex-wrap:wrap; font-size: 1.06rem; line-height: 1; align-items: center; } 
 .contact_type1 :is(.contact_tit, .contact_download) { color: #fff; padding: 16px 35px; } 
 .contact_type1 .contact_tit { background: #ffa414; } 
@@ -390,7 +393,16 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 .contact_type1 p img { margin-right: 5px; } 
 .contact_type1 p strong { margin-left: 3px; } 
 
-
+/* bi */
+.bi_wrap01 .bi_type_name { color: #004098; font-size: 1.5rem; font-weight: 700; margin-bottom: 0;  }
+.bi_wrap01 .bi_lang { color: #004098; font-size: 1.0625rem; color: #000; margin-bottom: 10px; }
+.bi_wrap01 .bi_lang:before { content: ''; width: 3px; height: 3px; background: #004098; display: inline-block; border-radius: 50%; vertical-align: middle; margin-right: 15px;}
+.bi_wrap01 .bi_box { border:1px solid #dadfe7; min-height: 80px; display: flex; align-items: center; justify-content: center; padding: 40px 20px;}
+.bi_wrap01 .bi_box img { max-width: max-content;}
+.bi_wrap01 .inner_flex { gap: 30px; }
+.bi_wrap01 .inner_flex > div { width: 100%; }
+.bi_wrap01 .bi_download_btn { display: flex;  align-items: center; justify-content: center; border:1px solid #004098; background: #fff; width: 100%; height: 50px; gap: 10px; color: #004098 !important; font-weight: 500; transition: 0.3s; margin-top: 20px;} 
+.bi_wrap01 .bi_download_btn:hover { background: #f5f9ff;}
 
 
 .popup1 { height: 100vh; position: fixed; z-index: 201; top: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; visibility: hidden; opacity: 0; transition: 0.3s; } 
@@ -577,6 +589,9 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
   
   .ap_list > li { flex-wrap: wrap;}
   .ap_list .ap_con { min-width: 100%; }
+
+  .bi_wrap01 .inner_flex { gap: 1rem; }
+  .bi_wrap01 .bi_download_btn { margin-top: 1rem; font-size: 0.9rem; }
 }
 @media (min-width: 641px) and (max-width: 980px){
  .mobile_map :is(.organ_dep1,.organ_dep2) > li { display: flex; align-items: flex-start; } 
@@ -680,6 +695,8 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
  .contact_type1 p:not(.contact_tit) { flex: 1 1 100%; } 
  .contact_type1 :is(.contact_tit, .contact_download) { padding: 12px 30px; } 
  .contact_type1 .contact_download { margin-top: 20px; } 
+ .bi_wrap01 .inner_flex { flex-direction: column; gap: 0;}
+ .bi_wrap01 .bi_download_btn { font-size: 1rem; }
  }
 
 

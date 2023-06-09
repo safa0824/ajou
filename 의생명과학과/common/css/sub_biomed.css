@@ -525,7 +525,7 @@ min-height: 45px;;}
 .research_cate_tit .icon_box { background: #004098; display: flex; flex: 0 0 180px; align-items: center; justify-content: center; }
 .research_cate_name { color: #fff; font-size: 1.125rem; }
 .research_cate_tit .research_cate_name { color: #fff; display: flex; align-items: center; justify-content: center; width: 100%; flex-direction: column; gap: 0.8rem; }
-.research_cate_name span { font-family: 'Montserrat', sans-serif; font-weight: 600; text-transform: uppercase;}
+.research_cate_name span { font-family: 'Montserrat', sans-serif; font-weight: 600; text-transform: uppercase; margin-top: 1px;}
 .research_cate_name strong { font-size: 1.625rem; font-weight: 500; } 
 [class*=research_cate_icon] { display: inline-block; }
 .research_cate_icon1 { width: 67px; height: 63px; background: url(../images/biomed/sub03_01_icon01.png) no-repeat 0 0; background-size:contain; }
@@ -547,19 +547,37 @@ min-height: 45px;;}
 .research_cate_tit.cate8 { background: url(../images/biomed/sub03_01_bg08.png) no-repeat center; background-size: cover; }
 
 .research_cate_con { position: absolute; left: 0; top:0; right: 0; background: #004098;
- box-shadow: 7px 7px 7px rgba(0,0,0,0.2); padding:30px 4.75rem; z-index: 1; }
-.research_cate_con .research_cate_name { text-align: center; display: flex; gap: 7px; flex-direction: row; align-items: center; justify-content: center;}
+ box-shadow: 7px 7px 7px rgba(0,0,0,0.2); padding:30px 4.75rem; z-index: 1; opacity: 0; visibility:hidden; transition: 0.3s; }
+.research_cate_con .research_cate_name { text-align: center; display: flex; gap: 7px; flex-direction: row; align-items: center; justify-content: center; line-height: 1;}
 .research_cate_con .research_cate_name [class*=research_cate_icon] { zoom: 0.45; }
 .research_cate_con .research_cate_name strong { margin-right: 10px;}
 
-.prof_list { display: flex; flex-wrap: wrap; gap:2px; margin-top: 30px; }
+.research_cate_list dl:hover .research_cate_con { opacity: 1; visibility: visible; }
+
+.prof_list { display: flex; flex-wrap: wrap; gap:2px; margin-top: 30px;}
 .prof_list li { flex: 1 1 260px; max-width: calc(25% - 2px);}
 .prof_list li a { line-height: 1; background: #fff; display: flex; align-items: center;  padding: 13px 20px; gap: 5px;}
-.prof_list li a strong { font-family: 1.0625rem; font-weight: 500; color: #004098;}
+.prof_list li a strong { font-size: 1.0625rem; min-width: 43px; font-weight: 500; color: #004098;}
 .prof_list li a span { color: #000;}
-.prof_list .link_icon { display: inline-block; width: 22px; height: 22px; background: url(../images/biomed/sub07_01_arrow01.png) no-repeat center; background-size: cover; margin-left: auto;}
+.prof_list .link_icon { display: inline-block; flex: 0 0 22px; width: 22px; height: 22px; background: url(../images/biomed/sub07_01_arrow01.png) no-repeat center; background-size: cover; margin-left: auto;}
 .prof_list li a:hover { background: #d9e9ff;} 
 .prof_list li a:hover span { opacity: 0.9; } 
+
+@media (max-width:1000px) { 
+.research_cate_list .research_cate_tit { display: none;}
+.research_cate_list .research_cate_con { opacity: 1; visibility: visible; transition: 0s; position: static; display: block; padding: 30px 1.2rem; }
+.prof_list li a { padding: 12px 15px; }
+.prof_list li { flex: 1 1 33.3%; max-width: calc(33.3% - 2px); }
+
+.research_cate_con .research_cate_name { flex-wrap:wrap;}
+.research_cate_name strong { font-size: 1.4rem; }
+}
+@media (max-width:800px) {
+  .prof_list li { flex: 1 1 50%; max-width: calc(50% - 2px); }  
+}
+@media (max-width:600px) {
+  .prof_list li { flex: 1 1 100%; max-width: 100%; } 
+}
 
 
 /* 학과조직 */
