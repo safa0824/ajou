@@ -518,7 +518,7 @@ ul .number_list01 { margin:1rem 0; }
 .mcollege_traffic_wrap .traffic_station { font-weight: 400; } 
 .mcollege_traffic_wrap td .icon_arrow_right01 { vertical-align: middle; margin-bottom: 2px; } 
 
-.common_link_box01 { border: 1px solid #cbcbcb; padding:1.25rem 0; }
+.common_link_box01 { padding:1.25rem 0; }
 .common_link_box01 ul { display: flex; align-items: center; justify-content: center; }
 .common_link_box01 li { flex: 1 1 100%; text-align: center; position: relative; display: flex; align-items: center; justify-content: center; padding:0 10px;
 }
