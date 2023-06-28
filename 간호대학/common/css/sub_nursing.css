@@ -85,8 +85,10 @@
 .college_txt_list1 li ~ li { margin-top: 10px; } 
 .college_txt_list1 > li:before { content:'·'; display: inline-block; position: absolute; left:0; font-weight: 900; color: #004098; font-size: 18px; } 
 .college_txt_list1 strong { font-weight: 500; } 
+.college_txt_list1 .underline { text-decoration: underline;}
 .college_txt_list1 ul { margin-top: 10px;}
 .college_txt_list1 ul li { font-weight: 400;}
+.college_txt_list1 .bg_label { height: 1.4rem; width: 3rem; background: #ffdfdf; vertical-align: top;}
 
 .college_wrap .top_img_banner { margin:55px 0; } 
 .college_wrap .top_img_banner img { height: 200px; object-fit: cover; } 
@@ -214,7 +216,8 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 
 .study_info tbody td { padding: 10px 7px; } 
 .subject_info tbody td { padding: 20px 7px; } 
-.subject_info td a:hover { text-decoration: underline;}
+.subject_info td a[href*="javascript: popOpen"]:hover { text-decoration: underline; }
+.subject_info td a.bg_subject { background-color: #ffdfdf; padding: 0 5px; }
 
 /* 학과소개 */
 .college_con_wrap.type2 .con_tit,
@@ -246,6 +249,7 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 .number_list1 > li { position: relative; padding: 5px 0 5px 40px; } 
 .number_list1 .list_number { position: absolute; top: 3px; left: 0; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #fea921; border-radius: 50%; background: #fcf1df; width: 29px; height: 29px; color: #ffa414; font-weight: 400; margin-right: 5px; box-sizing: border-box; padding-bottom: 1px; } 
 .number_list1 ul { margin: 10px 0 0 10px; font-weight: 500; } 
+.number_list1.type2 {padding-left: 10px;}
 
 /* 대학생활 */
 .icon_box_list { margin-top: 40px; display: flex; gap: 20px; } 
@@ -284,6 +288,8 @@ p.college_notice { padding-left:25px; background:url(../images/nursing/icon_noti
 .course_box .course_con { flex: 1; padding: 10px 0 30px 0; line-height: 2; border-bottom: 1px solid #cbcbcb; font-size: 1.06rem; } 
 .course_box .course_con > p { font-weight: 200; } 
 .course_box .course_con ul { margin-top: 10px; font-weight: 200; } 
+.course_box .course_con.type2 { padding-top: 0; }
+.course_box .course_con.type2 ul { padding-left: 10px;}
 
 .match_box_list.type2 { gap: 0; width: 100%; flex-wrap:wrap; } 
 .match_box_list.type2 > li { flex: 1; width: 50%; padding: 50px 10px 40px 10px; max-width: unset; align-items: center; gap: 25px; } 
