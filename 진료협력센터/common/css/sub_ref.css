@@ -78,7 +78,18 @@ h4.tit_b { font-size: 1.5rem; font-weight: 700; color: #000; line-height: 1.2; m
 /* 진료협력센터 의뢰 */
 .request_div { } 
 .request_div .top_list { overflow: hidden; margin-bottom: 3rem; } 
-.request_div .top_list li { float: left;; border: 1px solid #DADFE7; width: 25%; height: 140px; margin-right: -1px; box-sizing: border-box; display: flex; align-items: center; flex-direction: column; justify-content: center; } 
+.request_div .top_list li {    float: left;
+  border: 1px solid #DADFE7;
+  width: 25%;
+  height: 168px;
+  margin-right: -1px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  text-align: center;} 
 .request_div .top_list li .img { padding-bottom: 1.1rem; } 
 .request_div .top_list li span.tit { font-size: 1.05rem; } 
 .request_div .top_list li span.cont { font-family: 'Pretendard_R'; font-size: 1.25rem; color: #000; } 
@@ -114,10 +125,9 @@ h4.tit_b { font-size: 1.5rem; font-weight: 700; color: #000; line-height: 1.2; m
 
 @media (max-width:600px){
  .request_div .downlink li { width: 100%; } 
- .att_new01 { gap: 0; }
- .att_new01 a { width: 100%;}
- .att_new01 .downlink { width: 100%; margin-bottom: 10px;}
- }
+ .request_div .sectiion_box01 li { width: 100%;}
+ .request_div .sectiion_box01 li .cont { width: 100%; text-align: center; margin-top: 5px; }
+}
 
 /* 진료정보교류 의뢰 */
 .request_div .top_title { display: flex; justify-content: space-between; align-items: center; } 
@@ -346,10 +356,26 @@ a.link_btn03 img { margin-left:10px }
 .sub07_02_box01 .organi_01 dt { width: 150px; height: 150px; font-size:1.38rem; font-family: 'Gmarket'; color: #fff; font-weight: 800; background: #004098; margin: 0 auto; border-radius: 50%; border: 1rem solid #b9cee7; box-sizing: border-box; } 
 .sub07_02_box01 .organi_01 dt p { text-align: center; padding-top: 50px; } 
 .sub07_02_box01 .organi_01 dd { display: block; width: 100%; background: #011e46; font-size: 1.05rem; color: #fff; text-align: center; padding: 1rem 0; margin: 1rem 0; border-radius: 0 10px 0 10px; box-sizing: border-box; } 
-.sub07_02_box01 .foot_organi { display: flex; justify-content: space-around; width: 1100px; margin: 0 auto; background: url('../images/ref/sub07_02_line02.svg') no-repeat center top; } 
-.sub07_02_box01 .foot_organi dl { } 
-.sub07_02_box01 .foot_organi dt { display: block; width: 180px; background: #ffa414; font-size: 1.05rem; color: #fff; text-align: center; padding: 1rem 0; margin: 2rem auto; border-radius: 0 10px 0 10px; } 
-.sub07_02_box01 .foot_organi dd { display: inline-flex; align-items: center; justify-content: center; width: 180px; height: 40px;; background: #fff; border: 2px solid #cbcbcb; font-size: 1.05rem; color: #000; text-align: center; padding: 1rem 0; margin: 1rem .5rem; border-radius: 0 10px 0 10px; vertical-align: top; } 
+.sub07_02_box01 .foot_organi { display: flex; margin: 0 auto; justify-content:center;  } 
+/* .sub07_02_box01 .foot_organi { display: flex; justify-content: space-around; width: 1100px; margin: 0 auto; background: url('../images/ref/sub07_02_line02.svg') no-repeat center top; }  */
+.sub07_02_box01 .foot_organi dl { position: relative; text-align: center; }
+.sub07_02_box01 .foot_organi dl:after,
+.sub07_02_box01 .foot_organi dl:before { content:''; position:absolute; display: block; background: #c4c4c4; } 
+.sub07_02_box01 .foot_organi dl.organi_02 { padding-right: 2vw; flex: 6; }
+.sub07_02_box01 .foot_organi dl.organi_03 { flex: 4}
+.sub07_02_box01 .foot_organi dl.organi_02:before { height: 1px; width: calc(50% + 1vw); right: 0; top:0; } 
+.sub07_02_box01 .foot_organi dl.organi_03:before { height: 1px; width: 50%; left: 0; top:0; } 
+.sub07_02_box01 .foot_organi dt { position: relative; display: block; width: 180px; background: #ffa414; font-size: 1.05rem; color: #fff; text-align: center; padding: 1rem 0; margin: 2rem auto 1rem auto; border-radius: 0 10px 0 10px; } 
+.sub07_02_box01 .foot_organi dt:after { content:''; position:absolute; display: block; background: #c4c4c4; bottom:100%; width: 1px; height: 2rem; left: 50%; z-index: 0;}
+.sub07_02_box01 .foot_organi dt:before  { content:''; position:absolute; display: block; background: #c4c4c4; top:100%; width: 1px; height: 1rem; width: 1px; left: 50%; z-index: 0;}
+.sub07_02_box01 .foot_organi dd { position: relative; display: inline-flex; align-items: center; justify-content: center; max-width: 180px; width: 13vw; height: 40px;; background: #fff; border: 2px solid #cbcbcb; font-size: 1.05rem; color: #000; text-align: center; padding: 1rem 0; margin: 2rem 10px 1rem 10px; border-radius: 0 10px 0 10px; vertical-align: top; } 
+.sub07_02_box01 .foot_organi dd:after,
+.sub07_02_box01 .foot_organi dd:before { content:''; position:absolute; display: block; background: #c4c4c4; } 
+.sub07_02_box01 .foot_organi dd:after { height: 1px; width: calc(100% + 2rem); left: -1rem; top:calc(-2rem + -2px); } 
+/* .sub07_02_box01 .foot_organi dd:after { height: 1px; width: calc(50% + 0.5rem); left: 0;; top:-1rem; }  */
+.sub07_02_box01 .foot_organi dd:before  { height: 2rem; width: 1px; left: 50%; bottom:calc(100% + 2px); } 
+.sub07_02_box01 .foot_organi dt + dd:after { width: calc(50% + 1rem); left: 50%;}
+.sub07_02_box01 .foot_organi dd:last-child:after { width: calc(50% + 1rem); right: 50%;}
  
 .sub07_02_box02 { } 
 .sub07_02_box02 ul { display: flex; justify-content: space-between; } 
@@ -363,18 +389,54 @@ a.link_btn03 img { margin-left:10px }
 .call_time_info li .cont { font-family: 'Pretendard_R'; font-size: 1.25rem; color: #000; } 
 .call_time_info li:nth-child(2) { border-left: 1px solid #DADFE7; } 
 
- @media (max-width:1100px){
- .sub07_02_box01 .mobi { transform: scale(0.85); } 
- .call_time_info ul { flex-direction: row; } 
+@media (max-width:1100px){
+  .call_time_info ul { flex-direction: row; } 
+  .sub07_02_box01 .foot_organi dd { font-size: 1rem; width: 13vw;}
  }
- @media (max-width:960px){
- .sub07_02_box01 .mobi { transform: scale(1); } 
- .sub07_02_box01 .foot_organi { border:1px solid #cbcbcb; flex-direction: column; width: auto; background: none; align-items: center } 
- .sub07_02_box01 .foot_organi dl { } 
-
- .sub07_02_box02 ul { justify-content: flex-start; flex-wrap: wrap; gap: 10px; } 
- .call_time_info li span { display: block; padding: .3rem; } 
+@media (max-width:960px){
+  .sub07_02_box01 { padding: 1.875rem 1rem;  }
+  /* .sub07_02_box01 .foot_organi { border:1px solid #cbcbcb; flex-direction: column; width: auto; background: none; align-items: center } 
+  .sub07_02_box01 .foot_organi dl { }  */
+  .sub07_02_box01 .foot_organi dl.organi_02 { padding-right: 0; }
+  .sub07_02_box01 .foot_organi dl.organi_02:before { width: 50%; }
+  .sub07_02_box01 .foot_organi dd {  width: 14vw; font-size: 0.9rem;}
+  .sub07_02_box02 ul { justify-content: flex-start; flex-wrap: wrap; gap: 10px; } 
+  .call_time_info li span { display: block; padding: .3rem; } 
  }
+ @media (max-width:760px){
+  .sub07_02_box01 .organi_01 { width: 100%; background: none; position: relative; padding-bottom: 0; }
+  .sub07_02_box01 .organi_01:after {content: ''; display: block; position: absolute; background: #c4c4c4; left: 1rem; right: calc(50% - 1px); height: 1px; top: 180px; }
+  .sub07_02_box01 .organi_01 dt { position: relative; margin-bottom:50px; border-width: 15px;}
+  .sub07_02_box01 .organi_01 dt:after,
+  .sub07_02_box01 .organi_01 dd:before,
+  .sub07_02_box01 .organi_01 dd:after,
+  .sub07_02_box01 .foot_organi dt:after,
+  .sub07_02_box01 .foot_organi dt:before,
+  .sub07_02_box01 .foot_organi dl.organi_03 dt:before,
+  .sub07_02_box01 .foot_organi dl.organi_02:before { content: ''; display: block; position: absolute; background: #c4c4c4;}
+  .sub07_02_box01 .organi_01 dt:after { width: 1px; height: 30px; bottom: -45px; left: 50%;}
+  .sub07_02_box01 .organi_01 dd { position: relative; margin-right: auto; width: 200px; margin: 20px 0 0 2rem; }
+  .sub07_02_box01 .organi_01 dd:before { width: 1px; top:-20px; bottom:0; left: -1rem; }
+  .sub07_02_box01 .organi_01 dd:after { height: 1px; width: 1rem; bottom: 50%; left: -1rem; }
+  .sub07_02_box01 .foot_organi { flex-direction: column;}
+  .sub07_02_box01 .foot_organi dl { text-align: left; flex: 100%; }
+  .sub07_02_box01 .foot_organi dt { position: relative; margin: 20px 0 0 2rem; width: 200px; }
+  .sub07_02_box01 .foot_organi dd { margin: 0; width: auto; height: auto; padding: 1rem 0; margin-top: 20px; font-size: 1rem;} 
+  .sub07_02_box01 .foot_organi dd br { display: none;}
+  .sub07_02_box01 .foot_organi dt:after { height: 1px; width: 1rem; bottom: 50%; left: -1rem; }
+  .sub07_02_box01 .foot_organi dt:before { display: none; } 
+  .sub07_02_box01 .foot_organi dl.organi_02 { position: relative;}
+  .sub07_02_box01 .foot_organi dl.organi_02:before { width: 1px; top:0; bottom:0; left: 1rem; height: auto; }
+  .sub07_02_box01 .foot_organi dl.organi_03 dt:before { width: 1px; top:-20px; bottom:50%; left: -1rem; height: auto; }
+  .sub07_02_box01 .foot_organi dl.organi_03:before { display: none; left: -20px;}
+  .sub07_02_box01 .foot_organi dd { display: block; margin-left: 60px; max-width: 200px;}
+  .sub07_02_box01 .foot_organi dt + dd:after,
+  .sub07_02_box01 .foot_organi dd:last-child:after,
+  .sub07_02_box01 .foot_organi dd:after { right: auto; width: 20px; bottom: 50%; left: -20px; top: 50%; } 
+  .sub07_02_box01 .foot_organi dt + dd:before,
+  .sub07_02_box01 .foot_organi dd:before { top:-22px; left: -20px; bottom:-2px; height: auto; }
+  .sub07_02_box01 .foot_organi dd:last-child:before { bottom: 50%; }
+}
 
  /* 연혁 */
  .history_div { display: flex; justify-content: space-between; flex-wrap: wrap } 
@@ -514,3 +576,8 @@ a.link_btn03 img { margin-left:10px }
 .att_new01 .downlink a span { position: relative; } 
 .att_new01 .downlink a:hover span::after { content: ''; position: absolute; top:2px; right:-25px; display: block; background: url('../images/ref/downon.png') no-repeat; width: 12px; height: 14px; } 
 .att_new01 .downlink a span::after { content: ''; position: absolute; top:2px; right:-25px; display: block; background: url('../images/ref/sub01_icon_down.png') no-repeat; width: 12px; height: 14px; } 
+@media (max-width:600px){
+  .att_new01 { gap: 0; flex-wrap:wrap;  }
+  .att_new01 a { width: 100%;}
+  .att_new01 .downlink { width: 100%; margin-bottom: 10px; margin-left: 0;}
+}

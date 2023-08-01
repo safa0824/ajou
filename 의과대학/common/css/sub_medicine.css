@@ -155,7 +155,7 @@ li .table_scroll_wrap { margin-top: 1.5rem; }
 .table_common_list1 li:before { content:''; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: #222; margin:0.7rem 8px 0 0; align-self: flex-start; } 
 
 .mcollege_intro_box { display: flex; align-items: center; justify-content: space-between; position: relative; background: #f1f6fd; padding: 28px 30px 28px 130px; gap: 1rem; margin-bottom: 1.5rem; flex-wrap:wrap; min-height: 90px; box-sizing: border-box; color: #000; } 
-* + .mcollege_intro_box { margin-top: 4rem; } 
+* + .mcollege_intro_box { margin-top: 2rem; } 
 .mcollege_intro_logo { width: 90px; height: 90px; background: #16468f; display: flex; align-items: center; justify-content: center; position: absolute; left: 0; top:0; } 
 .mcollege_intro_box + .con_desc { line-height: 2; font-weight: 200; font-size: 1.0625rem; margin-top: 1rem; } 
 [class*=mcollege_intro_msg] { font-family: 'Gmarket'; font-size: 1.625rem; font-weight: 500; } 
@@ -182,9 +182,10 @@ li .table_scroll_wrap { margin-top: 1.5rem; }
 .mcollege_intro_sub { max-width: 1060px; margin: 0 auto; } 
 
 
-p[class*=mcollege_notice] { display: flex; gap: 0.5rem; margin-top: 0.5rem; line-height: 1.6; font-weight: 200; } 
-p[class*=mcollege_notice] * { vertical-align: middle; } 
-p[class*=mcollege_notice]:before { content: ''; display: block; width: 26px; height: 26px; border-radius: 50%; background: #aaa url(../images/medicine/icon_notice01.png) no-repeat center; flex: 0 0 26px; } 
+/* p[class*=mcollege_notice] { display: flex; gap: 0.5rem; margin-top: 0.5rem; line-height: 1.6; font-weight: 200; }  */
+/* p[class*=mcollege_notice] * { vertical-align: middle; }  */
+p[class*=mcollege_notice] { position: relative; padding-left:2rem; margin-top: 0.5rem; line-height: 1.6; font-weight: 200; word-break: normal; } 
+p[class*=mcollege_notice]:before { position: absolute; left: 0; top:2px;  content: ''; display: block; width: 26px; height: 26px; border-radius: 50%; background: #aaa url(../images/medicine/icon_notice01.png) no-repeat center; flex: 0 0 26px; } 
 p.mcollege_notice01:before { background-color: #767676; } 
 p.mcollege_notice02:before { background-color: #3987ee; } 
 p.mcollege_notice02.color_txt { color: #3987ee; } 

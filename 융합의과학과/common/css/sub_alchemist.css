@@ -169,7 +169,7 @@ table td.line01_B{border-bottom: 1px solid #004098 !important;}
     .fusions_div01_2 .cont_box .list_ul li dl{}
     .fusions_div01_2 .cont_box .list_ul li dt{font-size: 1.125rem;text-align: center;}
     .fusions_div01_2 .cont_box .list_ul li dd{color: #004098;text-align: center;display: block;margin:10px 0}
-    .fusions_div01_2 .cont_box .point_txt{text-transform:uppercase ;font-weight: 700;font-size: 2.375rem;text-align: center;margin-top: 2rem;color: #004098;}
+    .fusions_div01_2 .cont_box .point_txt{ font-weight: 700;font-size: 2.375rem;text-align: center;margin-top: 2rem;color: #004098;}
     .fusions_div01_2 .cont_box .point_txt em{color: #ffa415;}
 
     @media (max-width:640px) {
@@ -188,7 +188,7 @@ table td.line01_B{border-bottom: 1px solid #004098 !important;}
     /*설립배경*/
     .fusions_div01_3{}
     .fusions_div01_3 .top_title01{font-size: 2.375rem;color: #004098;margin: 3rem 0;}
-    .fusions_div01_3 .top_title01 span{font-size: 2.625rem;display: block;font-weight: 700;text-transform:uppercase }
+    .fusions_div01_3 .top_title01 span{font-size: 2.625rem;font-weight: 700;}
     .fusions_div01_3 .top_title02{font-size: 1.45rem;margin: 3rem 0;line-height: 1.5;}
     .fusions_div01_3  .contents_list{}
     .fusions_div01_3  .contents_list li{position: relative;padding-left: 120px;box-sizing: border-box;}
@@ -229,6 +229,8 @@ table td.line01_B{border-bottom: 1px solid #004098 !important;}
     .fusions_history{display: flex;}
     .fusions_history .history_ttle{width: 230px;color: #004098;flex: 0.25;}
     .fusions_history .history_ttle p{font-size: 3rem;font-weight: 700;}
+    .fusions_history .history_ttle p.tit { font-size: 2rem; color: #000;}
+    .fusions_history .history_ttle p.tit em { color: #004098;}
     .fusions_history .history_ttle span{font-size: 1.875rem;font-weight: 700;line-height: 1;margin: 2rem 0 2rem 0;display: block;}
     .fusions_history .history_list {background: url('../images/alchemist/sub01_03_line_y.png') repeat-y left;flex: 0.85}
     .fusions_history .history_list dl{position: relative;padding-left: 95px;box-sizing: border-box;margin-bottom: 3rem;}
@@ -284,7 +286,7 @@ table td.line01_B{border-bottom: 1px solid #004098 !important;}
      .fusions_div01_5{}
      .fusions_div01_5 .top_area{display: flex;justify-content: space-between;align-items: center;}
      .fusions_div01_5 .top_title01{font-size: 2.375rem;color: #004098;margin: 2rem 0;}
-     .fusions_div01_5 .top_title01 span{font-size: 2.625rem;display: block;font-weight: 700;text-transform:uppercase }
+     .fusions_div01_5 .top_title01 span{font-size: 2.625rem; font-weight: 700; }
      .fusions_div01_5 .top_title02 {font-size: 1.75rem;margin: 2rem 0; line-height: 1.5;}
      .fusions_div01_5 .contents_area{display: flex;margin-top: 2rem;}
      .fusions_div01_5 .contents_area dl{border-top: 5px solid #004098;margin-right: 2rem;}
@@ -369,6 +371,7 @@ table td.line01_B{border-bottom: 1px solid #004098 !important;}
      .vision_major li:first-child{margin-right: -1px;}
      .vision_major .txtbox01{background: #004098;color: #fff;text-align: center;font-size: 1.25rem;padding: 2.5rem 1rem;}
      .vision_major .txtbox01 .agaramond{font-size: 2.5rem ;font-weight: 700;}
+     .vision_major .txtbox01 .agaramond em { color: #ffa415;}
      @media (max-width:960px) { 
         .medical_major{    flex-direction: column-reverse;}
      .medical_major .infodepartment{width:auto;padding-right:0}
@@ -485,6 +488,7 @@ table td.line01_B{border-bottom: 1px solid #004098 !important;}
     .graduate_div .table_style02 .line{border-bottom: 1px solid #004098;}
     .graduate_div .table_style02 td{border-right: 1px solid #dadfe7;text-align: center;}
     .graduate_div .table_style02 td:last-child{border-right:0}
+    .x_box_scroll,
     .m_scroll_b{overflow-x: auto;}
     .graduate_div .boxbox{background: #ebf4fc;border: 1px solid #004098;padding: 0 1.5rem;margin: 3rem 0;}
     .graduate_div .boxbox span{color: #004098;display:inline-block;padding: 0 1rem;font-weight: 500;}
@@ -511,7 +515,7 @@ table td.line01_B{border-bottom: 1px solid #004098 !important;}
    .biomed_wrap01{}
    .biomed_wrap01 .top_area{display: flex;justify-content: space-between;align-items: center;}
    .biomed_wrap01 .top_title01{font-size: 2.375rem;color: #004098;margin: 2rem 0;}
-   .biomed_wrap01 .top_title01 span{font-size: 2.625rem;display: block;font-weight: 700;text-transform:uppercase }
+   .biomed_wrap01 .top_title01 span{font-size: 2.625rem;font-weight: 700; }
    .biomed_wrap01 .top_title02 {font-size: 1.75rem;margin: 2rem 0; line-height: 1.5;letter-spacing: -2px;}
    .biomed_wrap01 .contents_area{display: flex;margin-top: 2rem;}
    .biomed_wrap01 .contents_area dl{border-top: 5px solid #004098;margin-right: 2rem;}
@@ -520,23 +524,24 @@ table td.line01_B{border-bottom: 1px solid #004098 !important;}
    .biomed_wrap01 .contents_area dt span{text-transform:uppercase ;color: #004098;}
    .biomed_wrap01 .contents_area .table_style01{flex: 1;}
    .biomed_wrap01  .txtbox01{font-family: 'Agaramond';background: #004098;color: #fff;text-align: center;font-size: 34px;padding:2rem 1rem;}
+   .courses_tb{margin-top: 3rem;}
+   .courses_tb table {min-width: 500px;}
+   .courses_tb table td{border-left: 1px solid #dadee7;text-align: center;}
+   .courses_tb table td.line01{border-right: 1px solid #dadee7;}
+   .courses_tb table td:first-child{border-left: 0;font-weight: 500;color:#000}
+   .courses_tb table tr:nth-child(even) td{background:#fafafa ;}
+   .courses_tb .contents_tds{text-align: left;padding: 2rem;}
+   .courses_tb .contents_tds dl.mt2{margin-top: 3rem;}
+   .courses_tb .contents_tds dt{font-size: 1.25rem;font-weight: bold;line-height: 1.8;}
+   .courses_tb .contents_tds dd{line-height: 1.7;}
    @media (max-width:960px) { 
       .biomed_wrap01  .greeting_div02 .ul_list{flex-direction: column;}
       .biomed_wrap01 .top_area{flex-direction: column;align-items: flex-start}
       .biomed_wrap01 .contents_area{flex-direction: column;}
       .biomed_wrap01 .contents_area dd{display: none;}
       .biomed_wrap01 .contents_area dl{margin-right: 0}
+      .courses_tb .contents_tds{text-align: left;padding: 1rem;}
   }
-  .courses_tb{margin-top: 3rem;}
-  .courses_tb table {min-width: 500px;}
-  .courses_tb table td{border-left: 1px solid #dadee7;text-align: center;}
-  .courses_tb table td.line01{border-right: 1px solid #dadee7;}
-  .courses_tb table td:first-child{border-left: 0;font-weight: 500;color:#000}
-  .courses_tb table tr:nth-child(even) td{background:#fafafa ;}
-  .courses_tb .contents_tds{text-align: left;padding: 2rem;}
-  .courses_tb .contents_tds dl.mt2{margin-top: 3rem;}
-  .courses_tb .contents_tds dt{font-size: 1.25rem;font-weight: bold;line-height: 1.8;}
-  .courses_tb .contents_tds dd{line-height: 1.7;}
   /*  연구시설 */
 .biomed_sciencediv{display:flex;margin: 3rem 0;gap: 50px;}
 .biomed_sciencediv > dl{ width: 200px;flex: 1;padding-top: 10px;}

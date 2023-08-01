@@ -653,44 +653,38 @@ h4.gmarkt { font-family:'GmarketSansMedium'; font-size: 1.87rem; padding: 1.5rem
 /* 해외출원절차 */
 .diagram02 { width: 630px; margin: 0 auto; } 
 .diagram02 .top_tit { position: relative; background: #0B1F46; font-size: 1.125rem; color: #fff; font-weight: 500; width: 450px; margin: 0 auto; padding: 1rem 0; } 
-.diagram02 .top_tit:after { position: absolute; bottom:-36px; left: 50%; transform: translate(-50%, 0); content: ''; display: block; width:10px; height: 35px; background:url('../images/research/sub06_04_topline.png') no-repeat; z-index: 10; } 
+.diagram02 .top_tit:after { position: absolute; bottom:-35px; left: 50%; transform: translate(-50%, 0); content: ''; display: block; width:10px; height: 35px; background:url('../images/research/sub06_04_topline.png') no-repeat; z-index: 10; } 
 .diagram02 article { position: relative;; display: flex; justify-content: space-between; padding-top: 30px; padding-bottom:10px } 
-.diagram02 article::after { position: absolute; top:31px; left:100px; content: ''; display: block; width:400px; height: 1px; background: #D3D3D3; } 
-.diagram02 article .diagram_left { background: url('../images/research/sub06_04_box01.png') no-repeat; width: 194px; } 
-.diagram02 article .diagram_right { background: url('../images/research/sub06_04_box02.png') no-repeat; width: 215px; } 
-.diagram02 article .diagram_left .list { } 
-.diagram02 article .diagram_left .list li { color:#fff; text-align: center; display: block; } 
-.diagram02 article .diagram_left .list li:nth-child(1) { margin-top:60px } 
-.diagram02 article .diagram_left .list li:nth-child(2) { margin-top:150px } 
-.diagram02 article .diagram_left .list li:nth-child(3) { margin-top:242px } 
-.diagram02 article .diagram_right .list li { color:#004098; text-align: center; display: block; } 
-.diagram02 article .diagram_right .list li:nth-child(1) { margin-top:60px } 
-.diagram02 article .diagram_right .list li:nth-child(2) { margin-top:64px } 
-.diagram02 article .diagram_right .list li:nth-child(3) { margin-top:58px } 
-.diagram02 article .diagram_right .list li:nth-child(4) { margin-top:45px } 
-.diagram02 article .diagram_right .list li:nth-child(5) { margin-top:55px } 
-.diagram02 article .diagram_right .list li:nth-child(6) { margin-top:66px } 
-.diagram02 article .attention_list { margin-top: 40px; text-align: left; } 
+.diagram02 article::after { content: ''; display: block;  position: absolute; top:30px; left: 97px; right: 97px; height: 1px; background: #D3D3D3; } 
+.diagram02 article > div { width: fit-content;}
+.diagram02 article .list li { position: relative; display: block; height: 58px; background: #004098; border: 1px solid #004098; color: #fff; margin-top: 30px; width: 194px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; }
+.diagram02 article .list li:before{ content: ''; position: absolute; display: block; left: 50%; height: 30px; top:-31px; width: 1px; background: #d3d3d3; }
+.diagram02 article .diagram_left .list li { color:#fff; text-align: center; height: 58px; border: 0 none;  } 
+.diagram02 article .diagram_left .list li:before { top: -30px; }
+.diagram02 article .diagram_left .list li:first-child:after,
+.diagram02 article .list li.empty:after { content: ''; position: absolute; display: block; background: url(../images/research/sub01_arrow01.png) no-repeat 0 0; width: 28px; height: 28px; transform: rotate(90deg); top:-22px; left: 50%; margin-left: -14px;  }
+.diagram02 article .list li.empty { background: none; }
+.diagram02 article .list li.empty:before { content: ''; position: absolute; display: block; width: 1px; background: #d3d3d3; bottom:0; height: auto;}
+.diagram02 article .list li.empty.li2 { height: 146px;}
+.diagram02 article .list li.empty:after { top: 50%; margin-top: -14px; }
+.diagram02 article .diagram_right .list li { background: #fff; color: #004098; }
+.diagram02 article .diagram_right .list li:after { content: ''; position: absolute; display: block; background: url(../images/research/sub01_arrow03.png) no-repeat 0 0; width: 28px; height: 28px; transform: rotate(90deg); top:-22px; left: 50%; margin-left: -14px;  }
+.diagram02 article .attention_list { margin-top: 40px; text-align: left; display: flex; flex-direction: column;}  
 .diagram02 article .attention_list li { color: #273454; text-align: left; padding: .3em 0; } 
 .diagram02 article .attention_list li span { display: inline-block; vertical-align: top; } 
-.diagram02 article .attention_list li span.title { background: url('../images/research/sub06_04_icon.png') no-repeat; padding: 0 .3rem 0 1.4rem; } 
+.diagram02 article .attention_list li span.title { background: url('../images/research/sub06_04_icon.png') no-repeat 0 2px;  padding: 0 0 5px 1.4rem; } 
 
 @media (max-width: 760px){
- .diagram02, .diagram02 .top_tit { width: auto } 
  .founded_div .contnet_box_style01 { padding: 3rem 1rem; } 
- .diagram02 article::after { width: calc(100% - 230px); } 
- .diagram02 article .diagram_left { background-size: 170px auto; } 
- .diagram02 article .diagram_right { background-size: 174px auto; } 
- .diagram02 article .diagram_left .list li:nth-child(1) { margin-top:55px } 
-.diagram02 article .diagram_left .list li:nth-child(2) { margin-top:132px } 
-.diagram02 article .diagram_left .list li:nth-child(3) { margin-top:212px } 
-.diagram02 article .diagram_right .list li:nth-child(1) { margin-top:52px } 
-.diagram02 article .diagram_right .list li:nth-child(2) { margin-top:60px } 
-.diagram02 article .diagram_right .list li:nth-child(3) { margin-top:50px } 
-.diagram02 article .diagram_right .list li:nth-child(4) { margin-top:40px } 
-.diagram02 article .diagram_right .list li:nth-child(5) { margin-top:50px } 
-.diagram02 article .diagram_right .list li:nth-child(6) { margin-top:60px } 
- }
+}
+@media (max-width: 640px){
+ .diagram02, .diagram02 .top_tit { width: auto } 
+ .diagram02 article { gap: 30px; }
+ .diagram02 article .list li { width: 100%;}
+ .diagram02 article > div { flex: 1; }
+ .diagram02 article::after { left: calc(25% - 7.5px); right: calc(25% - 7.5px);}
+ .diagram02 article .attention_list li span.title { background-size: 16px auto; }
+}
 
 /* 기술이전 */
 .technology_div { margin-bottom: 4rem; } 
